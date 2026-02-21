@@ -5,7 +5,7 @@ const authorizeChangeMiddleware = require('../../middleware/authorizeChangeMiddl
 const handleError = require('../../utils/errorHandler');
 const sendEmail = require('../../utils/sendEmail');
 
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const customLogger = require('../../utils/logHandler');
 
 // Get all users
