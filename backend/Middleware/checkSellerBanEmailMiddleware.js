@@ -1,4 +1,4 @@
-const Seller = require('../Models/seller/sellerSchema');
+const Seller = require('../models/seller/sellerSchema');
 const moment = require('moment');
 const handleError = require('../utils/errorHandler');
 

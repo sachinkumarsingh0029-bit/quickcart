@@ -1,7 +1,7 @@
 const { parse } = require("uuid");
-const Order = require("../../Models/order/orderSchema");
-const Payroll = require("../../Models/payroll/payrollSchema");
-const WithdrawalRequest = require("../../Models/payroll/withdrawalRequest");
+const Order = require("../../models/order/orderSchema");
+const Payroll = require("../../models/payroll/payrollSchema");
+const WithdrawalRequest = require("../../models/payroll/withdrawalRequest");
 
 const customLogger = require("../../utils/logHandler");
 

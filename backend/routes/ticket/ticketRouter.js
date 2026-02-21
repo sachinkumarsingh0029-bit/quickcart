@@ -1,5 +1,5 @@
 const express = require('express');
-const Ticket = require('../../Models/ticket/ticketSchema');
+const Ticket = require('../../models/ticket/ticketSchema');
 const authenticateMiddleware = require("../../middleware/authenticateMiddleware");
 const ticketController = require('../../controllers/ticket/ticketController');
 const { check } = require('express-validator');

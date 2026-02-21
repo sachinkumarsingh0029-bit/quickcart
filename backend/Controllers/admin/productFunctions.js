@@ -1,6 +1,6 @@
 const { validationResult } = require('express-validator');
-const Product = require('../../Models/product/productSchema');
-const Seller = require('../../Models/seller/sellerSchema');
+const Product = require('../../models/product/productSchema');
+const Seller = require('../../models/seller/sellerSchema');
 const handleError = require('../../utils/errorHandler');
 const sendEmail = require('../../utils/sendEmail');
 const customLogger = require('../../utils/logHandler');

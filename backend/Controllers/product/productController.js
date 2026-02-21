@@ -1,8 +1,8 @@
-const Seller = require("../../Models/seller/sellerSchema");
-const Product = require("../../Models/product/productSchema");
+const Seller = require("../../models/seller/sellerSchema");
+const Product = require("../../models/product/productSchema");
 const handleError = require("../../utils/errorHandler");
 const natural = require("natural");
-const Search = require("../../Models/search/searchSchema");
+const Search = require("../../models/search/searchSchema");
 
 // GET all products of a seller by username
 exports.getAllProductsOfSellerByUsername = async (req, res, next) => {

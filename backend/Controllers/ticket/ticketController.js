@@ -1,5 +1,5 @@
 const { validationResult } = require('express-validator');
-const Ticket = require('../../Models/ticket/ticketSchema');
+const Ticket = require('../../models/ticket/ticketSchema');
 const handleError = require('../../utils/errorHandler');
 const customLogger = require('../../utils/logHandler');
 

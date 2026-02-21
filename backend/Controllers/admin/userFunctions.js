@@ -1,6 +1,6 @@
 const { validationResult } = require('express-validator');
 
-const User = require('../../Models/auth/userSchema');
+const User = require('../../models/auth/userSchema');
 const authorizeChangeMiddleware = require('../../middleware/authorizeChangeMiddleware');
 const handleError = require('../../utils/errorHandler');
 const sendEmail = require('../../utils/sendEmail');

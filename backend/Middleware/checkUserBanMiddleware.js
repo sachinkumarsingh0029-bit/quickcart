@@ -1,4 +1,4 @@
-const User = require('../Models/auth/userSchema');
+const User = require('../models/auth/userSchema');
 const moment = require('moment');
 const handleError = require('../utils/errorHandler');
 

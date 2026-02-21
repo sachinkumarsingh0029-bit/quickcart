@@ -4,7 +4,7 @@ const router = express.Router();
 const authenticateMiddleware = require("../../middleware/authenticateMiddleware");
 const authorizeMiddleware = require("../../middleware/authorizeMiddleware");
 const checkVerificationMiddleware = require("../../middleware/checkVerificationMiddleware");
-const transactionSchema = require('../../Models/transaction/transactionSchema');
+const transactionSchema = require('../../models/transaction/transactionSchema');
 
 // Get all transactions by customer
 router.get('/transactions', [authenticateMiddleware, authorizeMiddleware(["admin", "superadmin", "root"]), checkVerificationMiddleware], async (req, res) => {

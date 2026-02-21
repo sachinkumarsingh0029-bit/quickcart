@@ -5,7 +5,7 @@ const authenticateMiddleware = require("../../middleware/authenticateMiddleware"
 const authorizeMiddleware = require("../../middleware/authorizeMiddleware");
 const checkVerificationMiddleware = require("../../middleware/checkVerificationMiddleware");
 
-const Log = require('../../Models/log/logSchema');
+const Log = require('../../models/log/logSchema');
 
 // Get all logs of user
 router.get('/userlogs', [authenticateMiddleware, authorizeMiddleware(["superadmin", "root"]), checkVerificationMiddleware], async (req, res) => {

@@ -1,11 +1,11 @@
 const express = require("express");
 const { check } = require("express-validator");
-const authenticateMiddleware = require("../../Middleware/authenticateMiddleware");
-const authorizeMiddleware = require("../../Middleware/authorizeMiddleware");
-const sellerController = require("../../Controllers/seller/sellerController");
-const checkVerificationMiddleware = require("../../Middleware/checkVerificationMiddleware");
-const checkSellerBanMiddleware = require("../../Middleware/checkSellerBanMiddleware");
-const checkSellerBanEmailMiddleware = require("../../Middleware/checkSellerBanEmailMiddleware");
+const authenticateMiddleware = require("../../middleware/authenticateMiddleware");
+const authorizeMiddleware = require("../../middleware/authorizeMiddleware");
+const sellerController = require("../../controllers/seller/sellerController");
+const checkVerificationMiddleware = require("../../middleware/checkVerificationMiddleware");
+const checkSellerBanMiddleware = require("../../middleware/checkSellerBanMiddleware");
+const checkSellerBanEmailMiddleware = require("../../middleware/checkSellerBanEmailMiddleware");
 
 const router = express.Router();
 

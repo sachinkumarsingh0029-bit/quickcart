@@ -1,5 +1,5 @@
 const rateLimit = require("express-rate-limit");
-const Ip = require('../Models/auth/ipSchema.js');
+const Ip = require('../models/auth/ipSchema.js');
 const moment = require('moment');
 
 const MIN_BAN_TIME = 10 * 60 * 1000; // 10 minutes

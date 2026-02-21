@@ -1,4 +1,4 @@
-const Transaction = require("../../Models/transaction/transactionSchema");
+const Transaction = require("../../models/transaction/transactionSchema");
 const authenticateMiddleware = require("../../middleware/authenticateMiddleware");
 
 const router = require("express").Router();

@@ -1,16 +1,16 @@
 const { validationResult } = require("express-validator");
 
-const Seller = require("../../Models/seller/sellerSchema");
-const applyForSellerModel = require("../../Models/seller/applySellerSchema");
-const Product = require("../../Models/product/productSchema");
-const Order = require("../../Models/order/orderSchema");
+const Seller = require("../../models/seller/sellerSchema");
+const applyForSellerModel = require("../../models/seller/applySellerSchema");
+const Product = require("../../models/product/productSchema");
+const Order = require("../../models/order/orderSchema");
 const sendEmail = require("../../utils/sendEmail");
 
 const handleError = require("../../utils/errorHandler");
 const { default: mongoose } = require("mongoose");
-const User = require("../../Models/auth/userSchema");
+const User = require("../../models/auth/userSchema");
 const bcrypt = require("bcryptjs");
-const RefundRequest = require("../../Models/transaction/refundRequestSchema");
+const RefundRequest = require("../../models/transaction/refundRequestSchema");
 const customLogger = require("../../utils/logHandler");
 const generateCode = require("../../utils/generateCode");
 
@@ -295,7 +295,7 @@ const checkVerificationCode = async (req, res) => {
     
     // If not found by businessEmail, try to find by user's email
     if (!seller) {
-      const User = require('../Models/auth/userSchema');
+      const User = require('../models/auth/userSchema');
       const user = await User.findOne({ email: email, role: 'seller' });
       if (user && user.seller) {
         seller = await Seller.findById(user.seller);

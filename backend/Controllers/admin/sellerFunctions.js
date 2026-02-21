@@ -1,8 +1,8 @@
 const { validationResult } = require('express-validator');
 
-const User = require('../../Models/auth/userSchema');
-const Seller = require('../../Models/seller/sellerSchema');
-const applySeller = require('../../Models/seller/applySellerSchema');
+const User = require('../../models/auth/userSchema');
+const Seller = require('../../models/seller/sellerSchema');
+const applySeller = require('../../models/seller/applySellerSchema');
 const sendEmail = require('../../utils/sendEmail');
 const handleError = require('../../utils/errorHandler');
 const generateCode = require('../../utils/generateCode');

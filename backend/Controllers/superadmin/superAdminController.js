@@ -1,4 +1,4 @@
-const Admin = require('../../Models/auth/userSchema');
+const Admin = require('../../models/auth/userSchema');
 const handleError = require('../../utils/errorHandler');
 
 // get all admins

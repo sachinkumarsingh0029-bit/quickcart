@@ -12,7 +12,7 @@ const adminStatsRouter = require("./adminStatsRouter");
 
 const { check, validationResult } = require("express-validator");
 const handleError = require("../../utils/errorHandler");
-const User = require("../../Models/auth/userSchema");
+const User = require("../../models/auth/userSchema");
 const customLogger = require("../../utils/logHandler");
 
 const router = express.Router();

@@ -5,7 +5,7 @@ const router = express.Router();
 const authenticateMiddleware = require('../../middleware/authenticateMiddleware');
 const authorizeMiddleware = require('../../middleware/authorizeMiddleware');
 const checkVerificationMiddleware = require('../../middleware/checkVerificationMiddleware');
-const User = require('../../Models/auth/userSchema');
+const User = require('../../models/auth/userSchema');
 
 
 // Get all transactions by customer

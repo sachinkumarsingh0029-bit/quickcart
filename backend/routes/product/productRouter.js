@@ -1,11 +1,11 @@
 const express = require('express');
 const { getSellerProduct, getAllProductsOfSellerByUsername, getProductById, getTopProductsInCategory, getRecommendations, getTopProducts, searchProductsByKeywords, getTopProductsByDifferentFilters, getTopProductsByTopCategorySearched, searchProductsByCategory } = require('../../controllers/product/productController');
-const Product = require('../../Models/product/productSchema');
+const Product = require('../../models/product/productSchema');
 const { default: mongoose } = require('mongoose');
 const authenticateMiddleware = require("../../middleware/authenticateMiddleware");
 const handleError = require('../../utils/errorHandler');
 const jwt = require('jsonwebtoken');
-const User = require('../../Models/auth/userSchema');
+const User = require('../../models/auth/userSchema');
 
 const router = express.Router();
 

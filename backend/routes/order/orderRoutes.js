@@ -1,16 +1,16 @@
 const express = require("express");
 const router = express.Router();
-const Order = require("../../Models/order/orderSchema");
-const User = require('../../Models/auth/userSchema')
-const Transaction = require("../../Models/transaction/transactionSchema");
-const Product = require("../../Models/product/productSchema");
+const Order = require("../../models/order/orderSchema");
+const User = require('../../models/auth/userSchema')
+const Transaction = require("../../models/transaction/transactionSchema");
+const Product = require("../../models/product/productSchema");
 const { v4: uuidv4 } = require("uuid");
 
 const authenticateMiddleware = require("../../middleware/authenticateMiddleware");
 const { check, validationResult, body } = require("express-validator");
 const { ObjectId } = require("mongodb");
 const { default: mongoose } = require("mongoose");
-const RefundRequest = require("../../Models/transaction/refundRequestSchema");
+const RefundRequest = require("../../models/transaction/refundRequestSchema");
 const sendEmail = require("../../utils/sendEmail");
 const handleError = require("../../utils/errorHandler");
 

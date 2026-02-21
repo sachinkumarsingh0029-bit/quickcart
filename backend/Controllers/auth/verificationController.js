@@ -1,4 +1,4 @@
-const User = require('../../Models/auth/userSchema');
+const User = require('../../models/auth/userSchema');
 const sendEmail = require('../../utils/sendEmail');
 const generateVerificationCode = require('../../utils/generateCode');
 

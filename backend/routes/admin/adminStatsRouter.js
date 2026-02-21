@@ -4,12 +4,12 @@ const router = express.Router();
 const authenticateMiddleware = require("../../middleware/authenticateMiddleware");
 const authorizeMiddleware = require("../../middleware/authorizeMiddleware");
 const checkVerificationMiddleware = require("../../middleware/checkVerificationMiddleware");
-const Order = require('../../Models/order/orderSchema');
-const Product = require('../../Models/product/productSchema');
-const Ticket = require('../../Models/ticket/ticketSchema');
-const Search = require('../../Models/search/searchSchema');
-const User = require('../../Models/auth/userSchema');
-const Seller = require('../../Models/seller/sellerSchema');
+const Order = require('../../models/order/orderSchema');
+const Product = require('../../models/product/productSchema');
+const Ticket = require('../../models/ticket/ticketSchema');
+const Search = require('../../models/search/searchSchema');
+const User = require('../../models/auth/userSchema');
+const Seller = require('../../models/seller/sellerSchema');
 
 // Get all transactions by customer
 router.get('/get-metrics', [authenticateMiddleware, authorizeMiddleware(["admin", "superadmin", "root"]), checkVerificationMiddleware], async (req, res) => {

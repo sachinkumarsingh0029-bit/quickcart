@@ -1,6 +1,6 @@
 const jwt = require('jsonwebtoken');
-const User = require('../Models/auth/userSchema');
-const Seller = require('../Models/seller/sellerSchema');
+const User = require('../models/auth/userSchema');
+const Seller = require('../models/seller/sellerSchema');
 
 const authenticateMiddleware = async (req, res, next) => {
     try {

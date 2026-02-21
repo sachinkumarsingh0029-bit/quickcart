@@ -5,9 +5,9 @@ const authenticateMiddleware = require("../../middleware/authenticateMiddleware"
 const authorizeMiddleware = require("../../middleware/authorizeMiddleware");
 const checkVerificationMiddleware = require("../../middleware/checkVerificationMiddleware");
 
-const WithdrawalRequest = require("../../Models/payroll/withdrawalRequest");
-const transactionSchema = require("../../Models/transaction/transactionSchema");
-const Payroll = require("../../Models/payroll/payrollSchema");
+const WithdrawalRequest = require("../../models/payroll/withdrawalRequest");
+const transactionSchema = require("../../models/transaction/transactionSchema");
+const Payroll = require("../../models/payroll/payrollSchema");
 
 const customLogger = require("../../utils/logHandler");
 

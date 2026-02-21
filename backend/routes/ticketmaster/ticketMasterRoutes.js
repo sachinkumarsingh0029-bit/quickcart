@@ -5,7 +5,7 @@ const ticketController = require('../../controllers/ticketmaster/ticketMasterCon
 const authenticateMiddleware = require('../../middleware/authenticateMiddleware');
 const authorizeMiddleware = require('../../middleware/authorizeMiddleware');
 
-const Ticket = require('../../Models/ticket/ticketSchema');
+const Ticket = require('../../models/ticket/ticketSchema');
 const { check } = require('express-validator');
 
 // login as tikcet master

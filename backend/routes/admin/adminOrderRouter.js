@@ -4,9 +4,9 @@ const router = express.Router();
 const authenticateMiddleware = require("../../middleware/authenticateMiddleware");
 const authorizeMiddleware = require("../../middleware/authorizeMiddleware");
 const checkVerificationMiddleware = require("../../middleware/checkVerificationMiddleware");
-const transactionSchema = require('../../Models/transaction/transactionSchema');
-const RefundRequest = require('../../Models/transaction/refundRequestSchema');
-const orderSchema = require('../../Models/order/orderSchema');
+const transactionSchema = require('../../models/transaction/transactionSchema');
+const RefundRequest = require('../../models/transaction/refundRequestSchema');
+const orderSchema = require('../../models/order/orderSchema');
 const sendEmail = require('../../utils/sendEmail');
 
 const customLogger = require('../../utils/logHandler')

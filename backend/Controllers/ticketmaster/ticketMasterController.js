@@ -1,7 +1,7 @@
 const handleError = require('../../utils/errorHandler');
-const Ticket = require('../../Models/ticket/ticketSchema');
+const Ticket = require('../../models/ticket/ticketSchema');
 const { validationResult } = require('express-validator');
-const User = require('../../Models/auth/userSchema');
+const User = require('../../models/auth/userSchema');
 const { ObjectId } = require('mongodb');
 const customLogger = require('../../utils/logHandler');
 

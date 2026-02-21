@@ -1,4 +1,4 @@
-const Ip = require('../Models/auth/ipSchema');
+const Ip = require('../models/auth/ipSchema');
 const moment = require('moment');
 
 const ipBannedMiddleware = async (req, res, next) => {

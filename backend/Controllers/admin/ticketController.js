@@ -1,4 +1,4 @@
-const Ticket = require('../Models/ticket/ticketSchema');
+const Ticket = require('../models/ticket/ticketSchema');
 
 // Get all tickets
 const getAllTickets = async (req, res) => {

@@ -2,13 +2,13 @@ const bcrypt = require('bcryptjs');
 const { validationResult } = require('express-validator');
 const jwt = require("jsonwebtoken");
 
-const Ip = require('../../Models/auth/ipSchema');
-const User = require('../../Models/auth/userSchema');
+const Ip = require('../../models/auth/ipSchema');
+const User = require('../../models/auth/userSchema');
 const { sendVerificationCode } = require('./verificationController');
 const handleError = require('../../utils/errorHandler');
 const sendEmail = require('../../utils/sendEmail');
 const { default: mongoose } = require('mongoose');
-const Seller = require('../../Models/seller/sellerSchema');
+const Seller = require('../../models/seller/sellerSchema');
 const generateCode = require('../../utils/generateCode');
 const customLogger = require('../../utils/logHandler');
 
