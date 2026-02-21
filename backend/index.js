@@ -10,7 +10,7 @@ const csurf = require('csurf');
 const https = require('https');
 const fs = require('fs');
 
-const authRouter = require('./Routes/auth/authRouter');
+const authRouter = require('./routes/auth/authRouter');
 const sellerRouter = require('./Routes/seller/sellerRouter');
 const adminRouter = require('./Routes/admin/adminRouter');
 const productRouter = require('./Routes/product/productRouter');
