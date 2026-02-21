@@ -23,7 +23,10 @@ const ticketMasterRoutes = require('./routes/ticketmaster/ticketMasterRoutes')
 const superAdminRoutes = require('./routes/superadmin/superAdminRouter')
 const rootRouter = require('./routes/root/rootRouter')
 
-const rateLimiterMiddleware = require('./middleware/rateLimitermiddleware.js');
+const rateLimiterMiddleware = require('./middleware/rateLimiterMiddleware.js');
+// #region agent log
+fetch('http://127.0.0.1:7884/ingest/99bc0ae6-7f64-46a9-956e-04d43ad5cae7',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'9637ea'},body:JSON.stringify({sessionId:'9637ea',location:'index.js:27',message:'rateLimiterMiddleware loaded',data:{module:'rateLimiterMiddleware'},timestamp:Date.now()})}).catch(()=>{});
+// #endregion
 
 const connectDB = require('./utils/connectDB');
 const ipBannedMiddleware = require('./middleware/checkIpBanned');
