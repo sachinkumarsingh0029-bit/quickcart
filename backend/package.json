@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon -L index.js",
-    "start": "nodemon -L index.js"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
@@ -22,12 +22,10 @@
     "express-mongo-sanitize": "^2.2.0",
     "express-rate-limit": "^6.7.0",
     "express-validator": "^6.15.0",
-    "fs": "^0.0.1-security",
     "googleapi": "^1.0.2",
     "googleapis": "^114.0.0",
     "handlebar": "^1.0.0",
     "helmet": "^6.0.1",
-    "https": "^1.0.0",
     "jsonwebtoken": "^9.0.0",
     "moment": "^2.29.4",
     "mongodb": "^7.1.0",
