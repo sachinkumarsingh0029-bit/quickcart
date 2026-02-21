@@ -1,15 +1,18 @@
 const express = require("express");
 const { check, validationResult } = require("express-validator");
-const authController = require("../../controllers/auth/authController");
-const authenticateMiddleware = require("../../middleware/authenticateMiddleware");
+
+const authController = require("../../Controllers/auth/authController");
+const authenticateMiddleware = require("../../Middleware/authenticateMiddleware");
 const checkUserBanMiddleware = require("../../Middleware/checkUserBanMiddleware");
 const signupRateLimiter = require("../../Middleware/signupRateLimiter");
+
 const {
   sendVerificationCodeAgain,
   verifyUser,
-} = require("../../controllers/auth/verificationController");
+} = require("../../Controllers/auth/verificationController");
+
 const handleError = require("../../utils/errorHandler");
-const checkVerificationMiddleware = require("../../middleware/checkVerificationMiddleware");
+const checkVerificationMiddleware = require("../../Middleware/checkVerificationMiddleware");
 const customLogger = require("../../utils/logHandler");
 
 const router = express.Router();
