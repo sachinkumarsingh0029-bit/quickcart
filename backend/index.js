@@ -6,7 +6,6 @@ const dotenv = require('dotenv');
 const mongoSanitize = require('express-mongo-sanitize');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
-const csurf = require('csurf');
 
 const authRouter = require('./routes/auth/authRouter');
 const sellerRouter = require('./routes/seller/sellerRouter');
@@ -62,37 +61,28 @@ app.use(ipBannedMiddleware);
 app.use(assignUniqueIdentity);
 
 /* =======================
-   CSRF CONFIG
-======================= */
-
-let csrfProtection;
-
-if (process.env.NODE_ENV === 'production') {
-    csrfProtection = csurf({
-        cookie: {
-            secure: true,
-            httpOnly: true,
-        },
-    });
-} else {
-    csrfProtection = (req, res, next) => next();
-}
-
-/* =======================
    ROUTES
 ======================= */
 
-app.use('/api/auth', csrfProtection, authRouter);
-app.use('/api/seller', csrfProtection, sellerRouter);
-app.use('/api/admin', csrfProtection, adminRouter);
-app.use('/api/product', csrfProtection, productRouter);
-app.use('/api/superadmin', csrfProtection, superAdminRouter);
-app.use('/api/order', csrfProtection, orderRoutes);
-app.use('/api/payment', csrfProtection, paymentRoutes);
-app.use('/api/payroll', csrfProtection, payrollRoutes);
-app.use('/api/ticket', csrfProtection, ticketRoutes);
-app.use('/api/ticketmaster', csrfProtection, ticketMasterRoutes);
-app.use('/api/root', csrfProtection, rootRouter);
+app.use('/api/auth', authRouter);
+app.use('/api/seller', sellerRouter);
+app.use('/api/admin', adminRouter);
+app.use('/api/product', productRouter);
+app.use('/api/superadmin', superAdminRouter);
+app.use('/api/order', orderRoutes);
+app.use('/api/payment', paymentRoutes);
+app.use('/api/payroll', payrollRoutes);
+app.use('/api/ticket', ticketRoutes);
+app.use('/api/ticketmaster', ticketMasterRoutes);
+app.use('/api/root', rootRouter);
+
+/* =======================
+   ROOT ROUTE (Optional but Recommended)
+======================= */
+
+app.get('/', (req, res) => {
+    res.send('🚀 QuickCart API is running successfully');
+});
 
 /* =======================
    ERROR HANDLING
