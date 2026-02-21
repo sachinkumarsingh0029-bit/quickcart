@@ -1,0 +1,37 @@
+[
+  {
+    "_id": "6455d09220b107fe1762e13d",
+    "address": "::1",
+    "isWhitelisted": false,
+    "isBanned": false,
+    "signupCount": 7,
+    "__v": 0,
+    "lastSignupAt": {
+      "$date": "2025-11-24T05:52:06.672Z"
+    }
+  },
+  {
+    "_id": "6979aeb0e3963da6d2d662ff",
+    "address": "::ffff:127.0.0.1",
+    "isWhitelisted": false,
+    "isBanned": false,
+    "signupCount": 0,
+    "__v": 0
+  },
+  {
+    "_id": "697a56e30c262442bdbb7acb",
+    "address": "::ffff:192.168.1.5",
+    "isWhitelisted": false,
+    "isBanned": false,
+    "signupCount": 0,
+    "__v": 0
+  },
+  {
+    "_id": "697a56e40c262442bdbb7afd",
+    "address": "::ffff:192.168.1.14",
+    "isWhitelisted": false,
+    "isBanned": false,
+    "signupCount": 0,
+    "__v": 0
+  }
+]

@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS Variables for Design System */
+:root {
+  --color-primary: #8B5CF6;
+  --color-primary-dark: #7c3aed;
+  --color-secondary: #06B6D4;
+  --color-accent: #F97316;
+  --color-pink: #EC4899;
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-error: #EF4444;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Gradient Text Utility */
+@layer utilities {
+  .text-gradient-primary {
+    @apply bg-gradient-to-r from-primary-600 to-pink-500 bg-clip-text text-transparent;
+  }
+  
+  .text-gradient-vibrant {
+    @apply bg-gradient-to-r from-primary-600 via-pink-500 to-accent-500 bg-clip-text text-transparent;
+  }
+  
+  .glass-effect {
+    @apply bg-white/80 dark:bg-gray-800/80 backdrop-blur-md;
+  }
+  
+  .glass-card {
+    @apply glass-effect rounded-xl shadow-lg border border-white/20 dark:border-gray-700/20;
+  }
+  
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+/* Custom Animations */
+@keyframes gradient {
+  0%, 100% {
+    background-size: 200% 200%;
+    background-position: left center;
+  }
+  50% {
+    background-size: 200% 200%;
+    background-position: right center;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(236, 72, 153, 0.8);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite;
+}
+
+.privacy h2 {
+  font-size: x-large;
+  margin-top: 15px;
+}
+
+.loader {
+  border-top-color: #fff;
+  -webkit-animation: spinner 1.5s linear infinite;
+  animation: spinner 1.5s linear infinite;
+}
+
+@-webkit-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

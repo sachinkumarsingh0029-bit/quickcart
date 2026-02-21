@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Data Updated Notification</title>
+  </head>
+  <body style="font-family: Arial, sans-serif; font-size: 16px; color: #444">
+    <div style="max-width: 600px; margin: 0 auto">
+      <header
+        style="background-color: #f8f8f8; padding: 20px; text-align: center"
+      >
+        <h1 style="margin: 0; color: #1abc9c; font-size: 28px">
+          Product Data Updated Notification
+        </h1>
+      </header>
+      <main style="padding: 20px">
+        <p>Dear {{username}},</p>
+        <p>
+          This is to inform you that your product "{{productName}}" has been
+          updated due to "{{updateReason}}".
+        </p>
+        <p>
+          We would like to remind you that it is your responsibility to ensure
+          that the information you provide is accurate and up-to-date. Please
+          review the updated information and make any necessary changes to
+          ensure that it complies with our terms and conditions.
+        </p>
+        <p>
+          If you have any questions or concerns, please don't hesitate to
+          contact our friendly customer support team at support@QuickCart.com.
+          We are always here to help and happy to answer any questions you may
+          have.
+        </p>
+        <p>Thank you for your understanding and cooperation in this matter.</p>
+        <p>Best regards,</p>
+        <p>{{adminUsername}} - QuickCart</p>
+      </main>
+      <footer
+        style="background-color: #f8f8f8; padding: 20px; text-align: center"
+      >
+        <p style="margin: 0">&copy; 2023 QuickCart. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>

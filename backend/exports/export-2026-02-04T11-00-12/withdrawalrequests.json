@@ -1,0 +1,78 @@
+[
+  {
+    "_id": "6455ad8e1d19b84f00edac49",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "bankDetails": {
+      "bankName": "fgdsgdfsgsdf",
+      "accountNumber": "4534531235",
+      "accountHolderName": "vcxvzcxvzxc",
+      "ifscCode": "vcx43523"
+    },
+    "amount": 16777,
+    "status": "Approved",
+    "createdAt": {
+      "$date": "2023-05-06T01:29:50.342Z"
+    },
+    "updatedAt": {
+      "$date": "2023-05-06T02:22:39.335Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": "6455ad064822837563312757",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "bankDetails": {
+      "bankName": "fgdsgdfsgsdf",
+      "accountNumber": "4534531235",
+      "accountHolderName": "vcxvzcxvzxc",
+      "ifscCode": "vcx43523"
+    },
+    "amount": 10000,
+    "status": "Approved",
+    "createdAt": {
+      "$date": "2023-05-06T01:27:34.801Z"
+    },
+    "updatedAt": {
+      "$date": "2023-05-06T02:12:03.980Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": "6455ad7c1d19b84f00edab1a",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "bankDetails": {
+      "bankName": "fgdsgdfsgsdf",
+      "accountNumber": "4534531235",
+      "accountHolderName": "vcxvzcxvzxc",
+      "ifscCode": "vcx43523"
+    },
+    "amount": 1000,
+    "status": "Approved",
+    "createdAt": {
+      "$date": "2023-05-06T01:29:32.437Z"
+    },
+    "updatedAt": {
+      "$date": "2023-05-06T02:22:36.805Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": "64c26eb7cc470f04c54c5fdc",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "bankDetails": {
+      "bankName": "bob",
+      "accountNumber": "4534531235",
+      "accountHolderName": "ritik",
+      "ifscCode": "bob341552"
+    },
+    "amount": 1000,
+    "status": "Approved",
+    "createdAt": {
+      "$date": "2023-07-27T13:18:47.262Z"
+    },
+    "updatedAt": {
+      "$date": "2023-07-27T13:54:41.159Z"
+    },
+    "__v": 0
+  }
+]

@@ -1,0 +1,334 @@
+[
+  {
+    "_id": "6462ff6ba601f1d4fcdac72f",
+    "username": "superadmin",
+    "email": "superadmin@gmail.com",
+    "password": "$2b$10$fDEfzFNxE96QIsdgDBQyceBye7HrBRcfy9CUpE./b1kIxo.dZvyrm",
+    "verificationStatus": true,
+    "role": "superadmin",
+    "cart": [],
+    "wishlist": [],
+    "orders": [],
+    "tickets": [],
+    "banStatus": {
+      "isBanned": false,
+      "banExpiresAt": null
+    },
+    "verificationCode": "",
+    "verificationCodeExpiresAt": null,
+    "tokens": [],
+    "createdAt": {
+      "$date": "2023-05-16T03:58:35.706Z"
+    },
+    "updatedAt": {
+      "$date": "2024-06-22T11:17:33.019Z"
+    },
+    "__v": 13
+  },
+  {
+    "_id": "6462fd38534af5392a1d021e",
+    "username": "admin",
+    "email": "admin@gmail.com",
+    "password": "$2b$10$7wkuLqlXm1UHffJN.espT.Vug66PnY0lWOt16eyL/80cuYSM86KhW",
+    "verificationStatus": true,
+    "role": "admin",
+    "cart": [],
+    "wishlist": [],
+    "orders": [],
+    "tickets": [],
+    "banStatus": {
+      "isBanned": false,
+      "banExpiresAt": null
+    },
+    "verificationCode": "",
+    "verificationCodeExpiresAt": null,
+    "tokens": [],
+    "createdAt": {
+      "$date": "2023-05-16T03:49:12.319Z"
+    },
+    "updatedAt": {
+      "$date": "2025-05-16T05:53:33.362Z"
+    },
+    "__v": 36
+  },
+  {
+    "_id": "6462fdf4a601f1d4fcdac69b",
+    "username": "root",
+    "email": "root@gmail.com",
+    "password": "$2b$10$tUC/c8P3FYCkhwVlnuK7QuG9c3lv02zwjYWmH3AhlASdj.7VqDs8y",
+    "verificationStatus": true,
+    "role": "root",
+    "cart": [],
+    "wishlist": [],
+    "orders": [],
+    "tickets": [],
+    "banStatus": {
+      "isBanned": false,
+      "banExpiresAt": null
+    },
+    "verificationCode": "",
+    "verificationCodeExpiresAt": null,
+    "tokens": [
+      {
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDYyZmRmNGE2MDFmMWQ0ZmNkYWM2OWIiLCJpYXQiOjE3NDMzOTYwMDksImV4cCI6MTc0MzQxNDAwOX0.4D6D4hSGUlfUpqFQQLj6rf6545jsCvS6-rFHaJy6xM4",
+        "_id": "67ea1ca9a3391e04769ae786"
+      }
+    ],
+    "createdAt": {
+      "$date": "2023-05-16T03:52:20.458Z"
+    },
+    "updatedAt": {
+      "$date": "2025-03-31T04:40:09.936Z"
+    },
+    "__v": 19
+  },
+  {
+    "_id": "649306363fa2c89a322a63b5",
+    "username": "ticketmaster",
+    "email": "ticketmaster@gmail.com",
+    "password": "$2b$10$9hdiOOWi6pOASQH8rG3yA.xaaaHMSv9CsB9d.r4h2Bj.0T/jXKhBi",
+    "verificationStatus": true,
+    "role": "ticketmaster",
+    "cart": [],
+    "wishlist": [],
+    "orders": [],
+    "tickets": [],
+    "banStatus": {
+      "isBanned": false,
+      "banExpiresAt": null
+    },
+    "verificationCode": "",
+    "verificationCodeExpiresAt": null,
+    "resetPasswordCode": null,
+    "resetPasswordCodeExpiresAt": null,
+    "tokens": [],
+    "createdAt": {
+      "$date": "2023-06-21T14:16:22.952Z"
+    },
+    "updatedAt": {
+      "$date": "2025-05-16T05:53:48.360Z"
+    },
+    "__v": 42
+  },
+  {
+    "_id": "643b7de40a416cdcadd8d065",
+    "username": "john_doe",
+    "email": "ritikmakhija2002@gmail.com",
+    "password": "$2a$10$QHcVyGeKslfqPDvPpkHWZuHZrX7EkaCB7lBHEIaAc8qLjmFXm7BRS",
+    "verificationStatus": true,
+    "role": "seller",
+    "cart": [],
+    "wishlist": [],
+    "orders": [],
+    "tickets": [
+      "6446b3430e0a9e01376daaf6",
+      "6447a43438a98fa1f39a9e52",
+      "6449d4bcf13e1c1121f1fdeb",
+      "6453d651697173a593818ef6",
+      "64572a58dd5f14534b95c7f4",
+      "664dc19eb72ef177c3d35ebd"
+    ],
+    "banStatus": {
+      "isBanned": false,
+      "banExpiresAt": null
+    },
+    "verificationCode": "",
+    "verificationCodeExpiresAt": null,
+    "createdAt": {
+      "$date": "2023-04-16T04:47:32.042Z"
+    },
+    "updatedAt": {
+      "$date": "2026-02-03T05:57:15.911Z"
+    },
+    "__v": 598,
+    "seller": "643b80c00a416cdcadd8d0af",
+    "address": "fdsafsdafdasaa fsd f sdaf sda f sd f sdafas",
+    "number": "8269591710",
+    "name": "rdsfdsfadsafdas",
+    "tokens": [
+      {
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDNiN2RlNDBhNDE2Y2RjYWRkOGQwNjUiLCJpYXQiOjE3NzAwOTgyMzUsImV4cCI6MTc3MDExNjIzNX0.Y_sdGlKvE1IbIvJzP4qvEVpmKufuStyH4koJq7GByO8",
+        "expiresAt": {
+          "$date": "2026-02-03T10:57:15.910Z"
+        },
+        "_id": "69818e3b066a38701def98de"
+      }
+    ],
+    "resetPasswordCode": "resetpassword_643b7de40a416cdcadd8d065_776e7acf-94b6-4e9f-b52e-0a63eee6f05e_1763640551534",
+    "resetPasswordCodeExpiresAt": {
+      "$date": "2025-11-20T12:14:11.534Z"
+    }
+  },
+  {
+    "_id": "664d9b2699e4f841ed91d51e",
+    "username": "gawece5507",
+    "email": "gawece5507@qiradio.com",
+    "password": "$2a$10$VqkKWvLiqRxUBo69cwM0Bu3uiFojzchoL9wcwPCM5WaG8NgW0M9Va",
+    "verificationStatus": true,
+    "role": "seller",
+    "cart": [],
+    "wishlist": [],
+    "orders": [],
+    "tickets": [],
+    "banStatus": {
+      "isBanned": false,
+      "banExpiresAt": null
+    },
+    "verificationCode": "",
+    "verificationCodeExpiresAt": null,
+    "resetPasswordCode": null,
+    "resetPasswordCodeExpiresAt": null,
+    "tokens": [],
+    "createdAt": {
+      "$date": "2024-05-22T07:13:42.673Z"
+    },
+    "updatedAt": {
+      "$date": "2024-05-22T09:52:55.099Z"
+    },
+    "__v": 12,
+    "seller": "664d9bc399e4f841ed91d5fd"
+  },
+  {
+    "_id": "66cec26d41751fc36795f602",
+    "username": "testing1",
+    "email": "voxek62905@daypey.com",
+    "password": "$2a$10$t0sUqTHJ9ztWLEqfLvNn4ezP.coQmv0sU7CNKOl64c9xwJmAihUxS",
+    "verificationStatus": true,
+    "role": "user",
+    "cart": [],
+    "wishlist": [],
+    "orders": [],
+    "tickets": [
+      "66cecf9f4909378ef433ecfa"
+    ],
+    "banStatus": {
+      "isBanned": false,
+      "banExpiresAt": null
+    },
+    "verificationCode": "",
+    "verificationCodeExpiresAt": null,
+    "resetPasswordCode": null,
+    "resetPasswordCodeExpiresAt": null,
+    "tokens": [
+      {
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NmNlYzI2ZDQxNzUxZmMzNjc5NWY2MDIiLCJpYXQiOjE3MjQ4Mjk1MTUsImV4cCI6MTcyNDg0NzUxNX0.v_LeKuk-37Ez-MJmAUotq-QuRk89LeR2JImjsipybYM",
+        "_id": "66cecf4b4909378ef433eb40"
+      }
+    ],
+    "createdAt": {
+      "$date": "2024-08-28T06:23:41.368Z"
+    },
+    "updatedAt": {
+      "$date": "2024-08-28T07:19:59.704Z"
+    },
+    "__v": 7,
+    "address": "tresting testing testing",
+    "name": "Testing124",
+    "number": "1234567890"
+  },
+  {
+    "_id": "69205f956e6e1b6d1f2a4001",
+    "username": "ram123",
+    "email": "vimleshkumar8076@gmail.com",
+    "password": "$2b$10$jJ2x1Agnz3E2WNKNjB1GTOuNefbWH9uoAb6dx22naRz5fpYNWICYm",
+    "verificationStatus": false,
+    "role": "user",
+    "cart": [],
+    "wishlist": [],
+    "orders": [],
+    "tickets": [],
+    "banStatus": {
+      "isBanned": false,
+      "banExpiresAt": null
+    },
+    "verificationCode": "4854",
+    "verificationCodeExpiresAt": {
+      "$date": "2025-11-21T12:53:21.512Z"
+    },
+    "resetPasswordCode": null,
+    "resetPasswordCodeExpiresAt": null,
+    "tokens": [
+      {
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OTIwNWY5NTZlNmUxYjZkMWYyYTQwMDEiLCJpYXQiOjE3NjM3Mjk0NTAsImV4cCI6MTc2Mzc0NzQ1MH0.HucHzJAkWyveyMesglqt3XrFj5GE5lHlSFkPYlgf-g4",
+        "_id": "6920602a6e6e1b6d1f2a400e"
+      }
+    ],
+    "createdAt": {
+      "$date": "2025-11-21T12:48:21.103Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-21T12:50:50.596Z"
+    },
+    "__v": 1
+  },
+  {
+    "_id": "692069bbdf5a56425c2c19e6",
+    "username": "manaswi2025",
+    "email": "jainricha562@gmail.com",
+    "password": "$2b$10$njyZuyQerlNCBsp29as1GO8qxANEVyBpBH50Zm6vUSvZ1eE/K4qie",
+    "verificationStatus": false,
+    "role": "user",
+    "cart": [],
+    "wishlist": [],
+    "orders": [],
+    "tickets": [],
+    "banStatus": {
+      "isBanned": false,
+      "banExpiresAt": null
+    },
+    "verificationCode": "8383",
+    "verificationCodeExpiresAt": {
+      "$date": "2025-11-21T13:36:40.216Z"
+    },
+    "resetPasswordCode": null,
+    "resetPasswordCodeExpiresAt": null,
+    "tokens": [
+      {
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OTIwNjliYmRmNWE1NjQyNWMyYzE5ZTYiLCJpYXQiOjE3NjM3ODExNDgsImV4cCI6MTc2Mzc5OTE0OH0.QzNwPu_7gc_J2ZRiPzrHnbTODVIUVd_0FzVd_7BIT0g",
+        "_id": "69212a1cb586f6f37ad98bc9"
+      }
+    ],
+    "createdAt": {
+      "$date": "2025-11-21T13:31:39.753Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-22T03:12:28.614Z"
+    },
+    "__v": 2
+  },
+  {
+    "_id": "6923f28613941f1b54fd7022",
+    "username": "manaswi",
+    "email": "mgarg5_be21@thapar.edu",
+    "password": "$2b$10$jk8IhYIB6kWOj4jsRfge7.FP0SttbbbcNXbFPh0fR11rnQGCpEPg.",
+    "verificationStatus": false,
+    "role": "user",
+    "cart": [],
+    "wishlist": [],
+    "orders": [],
+    "tickets": [],
+    "banStatus": {
+      "isBanned": false,
+      "banExpiresAt": null
+    },
+    "verificationCode": "0775",
+    "verificationCodeExpiresAt": {
+      "$date": "2025-11-24T05:57:06.545Z"
+    },
+    "resetPasswordCode": null,
+    "resetPasswordCodeExpiresAt": null,
+    "tokens": [
+      {
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OTIzZjI4NjEzOTQxZjFiNTRmZDcwMjIiLCJpYXQiOjE3NjM5NjM1NTYsImV4cCI6MTc2Mzk4MTU1Nn0.Cx7XtgyuX-9d3ehg5xLizE4BiM2UXguoNNDQ908pXqU",
+        "_id": "6923f2a413941f1b54fd702f"
+      }
+    ],
+    "createdAt": {
+      "$date": "2025-11-24T05:52:06.182Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-24T05:52:36.646Z"
+    },
+    "__v": 1
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "_id": "664d9b9199e4f841ed91d5a8",
+    "businessEmail": "ritikmakhija2002@gmail.com",
+    "businessNumber": "8269591721",
+    "businessName": "testing",
+    "businessUsername": "testing",
+    "businessRegistrationNumber": "123451",
+    "businessType": "Retail",
+    "businessAddress": "Ghanta Ghar",
+    "businessWebsite": "https://business.com",
+    "taxIDNumber": "42354321",
+    "productCategories": [
+      "Beauty & Personal Care",
+      "Bags & Luggage",
+      "Bedding"
+    ],
+    "location": {
+      "latitude": "23.8041161",
+      "longitude": "80.3817975"
+    },
+    "user": "664d9b2699e4f841ed91d51e",
+    "status": "Approved",
+    "createdAt": {
+      "$date": "2024-05-22T07:15:29.294Z"
+    },
+    "updatedAt": {
+      "$date": "2024-05-22T07:16:19.698Z"
+    },
+    "__v": 0
+  }
+]

@@ -1,0 +1,20 @@
+Before generating any code, please take context from the code provided and the prompt itself and provide code not explanation.
+
+As an expert Full Stack Web Developer and Backend Developer, your task is to enhance the below codebase to make it production-ready and secure. Follow the below guidelines:
+
+1) Add all possible features to make the application more functional and user-friendly.
+2) Optimize the codebase for performance, efficiency, and scalability.
+3) Ensure the application is secure and free of vulnerabilities by addressing all security issues.
+4) Refactor the codebase to adhere to best practices and design patterns.
+5) Do not change existing features, such as the generation of an AWT token.
+6) Add any necessary libraries or dependencies to improve the application's functionality and performance.
+8) Use the context provided in our previous conversation to guide your work.
+9) Include status codes, status messages, and error messages in all API responses to improve clarity and user experience.
+
+Your code should be well-organized, well-documented, and efficient. You should not add any unnecessary code, and you should adhere to all requirements specified in this prompt.
+
+code:-
+
+
+- Generate left code
+Please generate the remaining lines of code to complete the task. Use the information and requirements provided so far to ensure that the code is correct and functional and don't provide any explanation.

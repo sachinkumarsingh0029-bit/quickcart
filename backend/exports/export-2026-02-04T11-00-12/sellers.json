@@ -1,0 +1,178 @@
+[
+  {
+    "_id": "643b80c00a416cdcadd8d0af",
+    "businessEmail": "ritikmakhija2002@gmail.com",
+    "businessNumber": "8269591710",
+    "businessName": "Test Business",
+    "businessUsername": "testbusiness",
+    "businessRegistrationNumber": "1234567890",
+    "businessType": "Retail",
+    "businessAddress": "ritikmakhija2002@gmail.com",
+    "businessWebsite": "https://testbusiness.com",
+    "taxIDNumber": "0987654321",
+    "productCategories": [
+      "Books & Magazines",
+      "Automotive",
+      "Auto Parts & Accessories"
+    ],
+    "productListings": [
+      "643b835f0a416cdcadd8d0d1",
+      "643b83620a416cdcadd8d0e0",
+      "643b83620a416cdcadd8d0f1",
+      "643b83630a416cdcadd8d104",
+      "643b83630a416cdcadd8d119",
+      "643b83640a416cdcadd8d130",
+      "643b83650a416cdcadd8d149",
+      "64464bf5200552ee40fd4c85",
+      "64464c2f7aa24d21388fc6ca",
+      "64474e22a05427337bdc6e43",
+      "646c38e739938acf1a4f1029",
+      "647e07167ed3bb3870bbe152",
+      "647e087f7ed3bb3870bbe24a",
+      "647e0b5a7ed3bb3870bbe3b8",
+      "647ea773dbc83afab0fec83c",
+      "647ea8c2dbc83afab0fec962",
+      "647eab90dbc83afab0fecaf9",
+      "647eb138dbc83afab0fecb71",
+      "647eb4e3dbc83afab0fecc73",
+      "69818f36066a38701def9aaf",
+      "6981900b066a38701def9b30",
+      "69819079066a38701def9bc6",
+      "698190b4066a38701def9c5c",
+      "698190d4066a38701def9cf8",
+      "698190f8066a38701def9d94",
+      "6981911c066a38701def9e33",
+      "69819183066a38701def9ed5",
+      "698192e8066a38701def9f7a"
+    ],
+    "ratingAvg": 0.25263157894736843,
+    "user": "643b7de40a416cdcadd8d065",
+    "verificationStatus": true,
+    "verificationCode": null,
+    "verificationCodeExpiresAt": null,
+    "createdAt": {
+      "$date": "2023-04-16T04:59:44.633Z"
+    },
+    "updatedAt": {
+      "$date": "2026-02-03T06:17:12.690Z"
+    },
+    "sellerID": "EC9E1FF9-D2C6-4748-BD24-FB254F278C2E",
+    "__v": 99,
+    "blockchainWalletAddress": "0x45451231432552523",
+    "paymentPreferences": "paypal",
+    "paypalAccountEmailAddress": "ritikmakhija2002@gmail.com",
+    "businessLogo": "https://assets.materialup.com/uploads/01d7570f-01ca-4e3a-8dc1-b8a16864f916/preview.jpg",
+    "orders": [
+      "643ffd61a0d77e0b918952e6",
+      "64400e68e054d4541dc75587",
+      "64400fca9fac291fac6d5ee0",
+      "644093ad0197c7511b058e27",
+      "64409d3b292d9b644875df6e",
+      "64409d3b292d9b644875df6e",
+      "64409d3b292d9b644875df6e",
+      "64409d3b292d9b644875df6e",
+      "64409d3b292d9b644875df6e",
+      "64409d3b292d9b644875df6e",
+      "64409d3b292d9b644875df6e",
+      "64475eede8674dd1e21b50f5",
+      "64478e86d1d77885a22d456d",
+      "6447dfd44993b86bcda3d979",
+      "6448e19665f135712c03052c",
+      "6448e2a765f135712c030624",
+      "6448e2fc65f135712c030702",
+      "6450e1b0dd3c04af0b1976a6",
+      "6450e3a5e6363ab1f0855ce0",
+      "6450e69ecc8d5868bd5feb84",
+      "6450e7b6009e41e34f9004c6",
+      "645123714af8da7b01964e82",
+      "64512463970251f5d0892be0",
+      "6457a43903b63ab9546b8dd1",
+      "6457d839169b3bc0c9a8b502",
+      "6457e020169b3bc0c9a8bd28",
+      "6457e0c11ba9c61524d9845f",
+      "6457e90f1ba9c61524d9881a",
+      "6458d1eaf9789f104f04be5b",
+      "6458fc6f959606c9d08757f0",
+      "6459c1e20867d08ef880a315",
+      "6459ce463f9c353beb3c49f8",
+      "646305dbd66b8622c7bb6b4c",
+      "6475e158c1ce1a42fe091891",
+      "6487f5629a2e0d2efbc51c2f",
+      "649132cd756677597894c60c",
+      "649305ab3fa2c89a322a60e8",
+      "64a3a3059516788112c5f53c",
+      "64a3a350c688dfb4b42cb0d7",
+      "64c238c66d80836f4c243201",
+      "64c28ed891ca536ce7b8ae56",
+      "64c3222c86e191a9c8d9b3be",
+      "64c3224b516ae9380b470981",
+      "64c33ae13a048b7fe83b6765",
+      "64c370216c95682356bbbad8",
+      "664dc14eb72ef177c3d35a83",
+      "6676b1fa9a18be336d8a679c",
+      "66cecea24909378ef433e7b0",
+      "66cecf7e4909378ef433ec38",
+      "67ea14fa4807c655792a9bb0",
+      "67f0d60154702fd6821f1df7",
+      "6826ca4cd666982d4d30d704"
+    ],
+    "banStatus": {
+      "isBanned": false,
+      "banExpiresAt": null
+    },
+    "loginCode": "6174",
+    "loginCodeExpiresAt": {
+      "$date": "2026-02-04T05:57:16.061Z"
+    },
+    "location": {
+      "latitude": "23.8086176",
+      "longitude": "80.3791319"
+    }
+  },
+  {
+    "_id": "664d9bc399e4f841ed91d5fd",
+    "businessEmail": "mgarg5_be21@thapar.eduu",
+    "businessNumber": "8269591721",
+    "businessName": "testing",
+    "businessUsername": "testing",
+    "businessRegistrationNumber": "123451",
+    "businessType": "Retail",
+    "businessAddress": "Ghanta Ghar",
+    "businessWebsite": "https://business.com",
+    "taxIDNumber": "42354321",
+    "productCategories": [
+      "Beauty & Personal Care",
+      "Bags & Luggage",
+      "Bedding"
+    ],
+    "productListings": [
+      "664d9e5eccc5ba3787e2d5af"
+    ],
+    "orders": [],
+    "ratingAvg": 0,
+    "user": "664d9b2699e4f841ed91d51e",
+    "loginCode": null,
+    "loginCodeExpiresAt": null,
+    "verificationStatus": true,
+    "verificationCode": "8093",
+    "verificationCodeExpiresAt": {
+      "$date": "2024-05-23T07:16:19.879Z"
+    },
+    "location": {
+      "latitude": "23.8041161",
+      "longitude": "80.3817975"
+    },
+    "banStatus": {
+      "isBanned": false,
+      "banExpiresAt": null
+    },
+    "createdAt": {
+      "$date": "2024-05-22T07:16:19.587Z"
+    },
+    "updatedAt": {
+      "$date": "2024-05-22T09:51:54.489Z"
+    },
+    "sellerID": "7F78D708-2634-45CC-BFC6-6D4B3C096F4A",
+    "__v": 1
+  }
+]

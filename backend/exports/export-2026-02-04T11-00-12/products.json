@@ -1,0 +1,2093 @@
+[
+  {
+    "_id": "643b83620a416cdcadd8d0f1",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "productName": "Apple 2023 MacBook Pro Laptop M2 Pro chip with 10‑core CPU and 16‑core GPU: 33.74 cm (14.2-inch), 16GB Unified Memory, 512GB SSD Storage.",
+    "businessName": "Test Business",
+    "productDescription": "Experience unparalleled power and performance with the M2 Pro or M2 Max chip in the MacBook Pro. The M2 Pro chip boasts up to 12 CPU cores, up to 19 GPU cores, and up to 32GB unified memory, while the M2 Max chip offers 12 CPU cores, up to 38 GPU cores, and up to 96GB unified memory, enabling you to tackle demanding projects effortlessly. Enjoy extended productivity with up to 18 hours of battery life, thanks to the power-efficient design of the M2 Pro or M2 Max chip. Whether you're working on battery or plugged in, the MacBook Pro delivers exceptional performance. The device is fully compatible with a range of professional applications, including Adobe Creative Cloud, Xcode, Affinity Designer, Microsoft 365, and popular iPhone and iPad apps, ensuring lightning-fast performance for all your tasks. Immerse yourself in the stunning visuals of the 14.2-inch Liquid Retina XDR display, featuring Extreme Dynamic Range and over 1,000 nits of brightness for HDR content.",
+    "price": 199900,
+    "discountedPrice": 183908,
+    "quantity": 32,
+    "category": "Electronics",
+    "imagesUrl": [
+      "https://res.cloudinary.com/dwenudxjh/image/upload/v1685981504/swiftmarket/dzbpoyveyw80njwfz8aj.jpg",
+      "https://res.cloudinary.com/dwenudxjh/image/upload/v1685981504/swiftmarket/bwtzztartoe5wm22pry5.jpg",
+      "https://res.cloudinary.com/dwenudxjh/image/upload/v1685981504/swiftmarket/xrm8temegolobdavjcoy.jpg",
+      "https://res.cloudinary.com/dwenudxjh/image/upload/v1685981504/swiftmarket/nnfblklg3ut7kdcab3o7.jpg"
+    ],
+    "thumbnailUrl": "https://res.cloudinary.com/dwenudxjh/image/upload/v1685981504/swiftmarket/dzbpoyveyw80njwfz8aj.jpg",
+    "purchaseCount": 0,
+    "tags": [
+      "MacBook Pro",
+      "Apple",
+      "Laptop",
+      "Computer"
+    ],
+    "faqs": [
+      {
+        "question": "What is the battery life of the MacBook Pro?",
+        "answer": "The MacBook Pro has a battery life of up to 10 hours on a single charge.",
+        "_id": "643b83620a416cdcadd8d0f2"
+      },
+      {
+        "question": "Does the MacBook Pro come with a warranty?",
+        "answer": "Yes, the MacBook Pro comes with a one-year limited warranty.",
+        "_id": "643b83620a416cdcadd8d0f3"
+      }
+    ],
+    "featured": false,
+    "views": 270,
+    "likes": [
+      "643b7de40a416cdcadd8d065",
+      "6459cc873f9c353beb3c419f"
+    ],
+    "popularityScore": 0.6218895894981581,
+    "updatedBy": {
+      "role": "seller",
+      "userId": "643b7de40a416cdcadd8d065"
+    },
+    "isAvailable": true,
+    "keywords": [
+      "macbook",
+      "pro",
+      "13",
+      "inch",
+      "test",
+      "busi",
+      "macbook",
+      "pro",
+      "power",
+      "comput",
+      "design",
+      "profession",
+      "need",
+      "reliabl",
+      "effici",
+      "machin",
+      "work",
+      "thi",
+      "13",
+      "inch",
+      "model",
+      "retina",
+      "displai",
+      "core",
+      "cpu",
+      "1tb",
+      "storag",
+      "electron",
+      "macbook",
+      "pro"
+    ],
+    "ratings": [
+      {
+        "user": "643b7de40a416cdcadd8d065",
+        "rating": 4,
+        "review": "testing",
+        "_id": "644cf760d22e0a83bc8747a7",
+        "date": {
+          "$date": "2023-04-29T10:54:24.757Z"
+        }
+      },
+      {
+        "user": "64475b08e8674dd1e21b4be5",
+        "rating": 5,
+        "review": "fdsafdasfadsf",
+        "_id": "6450f5f11b4074dce86cd6da",
+        "date": {
+          "$date": "2023-05-02T11:37:21.710Z"
+        }
+      },
+      {
+        "user": "64475b08e8674dd1e21b4be5",
+        "rating": 5,
+        "review": "fdsafdasfadsf",
+        "_id": "6450f606370c2e491111ac16",
+        "date": {
+          "$date": "2023-05-02T11:37:42.803Z"
+        }
+      },
+      {
+        "user": "64475b08e8674dd1e21b4be5",
+        "rating": 5,
+        "review": "fdsafdasfadsf",
+        "_id": "6450f689adb51d97d2992b3f",
+        "date": {
+          "$date": "2023-05-02T11:39:53.654Z"
+        }
+      },
+      {
+        "user": "64475b08e8674dd1e21b4be5",
+        "rating": 5,
+        "review": "fdsafdasfadsf",
+        "_id": "6450f68eadb51d97d29937b3",
+        "date": {
+          "$date": "2023-05-02T11:39:58.274Z"
+        }
+      }
+    ],
+    "createdAt": {
+      "$date": "2023-04-16T05:10:58.856Z"
+    },
+    "updatedAt": {
+      "$date": "2026-01-28T18:28:08.992Z"
+    },
+    "__v": 3,
+    "ratingsAvg": 4.8,
+    "model3dUrl": "https://raw.githubusercontent.com/shahdinsalman23/react-macbookpro/main/public/mac.glb"
+  },
+  {
+    "_id": "647e087f7ed3bb3870bbe24a",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "productName": "Samsung Galaxy Z Fold4 5G (Beige, 12GB RAM, 512GB Storage)",
+    "productDescription": "The Galaxy Z Fold4 is a versatile smartphone that stands out with its innovative design and functionality. It features a 6.2-inch Cover Screen for convenient one-handed use, and when unfolded, a 7.6-inch Main Screen provides an immersive viewing experience with minimal bezels and an Under Display Camera. The Infinity Flex Display offers a breathtaking visual experience without any interruptions. With Multi View, users can easily switch between apps, texts, and emails, maximizing the productivity of the expansive Main Screen. The Taskbar feature enables PC-like multitasking, allowing for efficient navigation and seamless switching between multiple apps. The Galaxy Z Fold4 is built to withstand daily wear and tear, featuring durable materials such as Corning Gorilla Glass Victus+ for the front and rear panels and an Armor Aluminum frame. It is also the world's first water-resistant foldable smartphone, providing peace of mind even in challenging weather conditions.",
+    "price": 164999,
+    "discountedPrice": 145199,
+    "quantity": 14,
+    "category": "Mobiles",
+    "imagesUrl": [
+      "https://res.cloudinary.com/dwenudxjh/image/upload/v1685981186/swiftmarket/dvutoaual50jpibdjpxn.jpg",
+      "https://res.cloudinary.com/dwenudxjh/image/upload/v1685981186/swiftmarket/re4iukkhzv0v9bfhpezb.jpg",
+      "https://res.cloudinary.com/dwenudxjh/image/upload/v1685981186/swiftmarket/b8mo7epaxd5hvjxrtras.jpg",
+      "https://res.cloudinary.com/dwenudxjh/image/upload/v1685981186/swiftmarket/yzmahsz6ga8co1iponl9.jpg"
+    ],
+    "thumbnailUrl": "https://res.cloudinary.com/dwenudxjh/image/upload/v1685981186/swiftmarket/dvutoaual50jpibdjpxn.jpg",
+    "purchaseCount": 0,
+    "tags": [
+      "GalaxyZFold4",
+      "FoldableSmartphone",
+      "InnovativeDesign",
+      "Multitasking",
+      "WaterResistant"
+    ],
+    "ratingsAvg": 0,
+    "faqs": [
+      {
+        "question": "What are the screen sizes of the Galaxy Z Fold4?",
+        "answer": "The Galaxy Z Fold4 has a 6.2-inch Cover Screen and a 7.6-inch Main Screen when unfolded.",
+        "_id": "647e087f7ed3bb3870bbe24b"
+      },
+      {
+        "question": "Does the Main Screen have minimal bezels?",
+        "answer": "Yes, the Main Screen of the Galaxy Z Fold4 has pushed-back bezels for an immersive viewing experience.",
+        "_id": "647e087f7ed3bb3870bbe24c"
+      },
+      {
+        "question": "Does the Galaxy Z Fold4 have an Under Display Camera?",
+        "answer": "Yes, the Galaxy Z Fold4 features an Under Display Camera, eliminating the need for a visible camera notch or cutout on the Main Screen.",
+        "_id": "647e087f7ed3bb3870bbe24d"
+      },
+      {
+        "question": "Can I multitask on the Galaxy Z Fold4?",
+        "answer": "Yes, the Galaxy Z Fold4 supports multitasking with its Multi View feature, allowing you to switch between apps, texts, and emails effortlessly.",
+        "_id": "647e087f7ed3bb3870bbe24e"
+      }
+    ],
+    "featured": false,
+    "views": 0,
+    "likes": [
+      "64c36e876c95682356bbb852"
+    ],
+    "popularityScore": 0,
+    "updatedBy": {
+      "role": "seller",
+      "userId": "643b7de40a416cdcadd8d065"
+    },
+    "isAvailable": true,
+    "keywords": [
+      "samsung",
+      "galaxi",
+      "fold4",
+      "5g",
+      "beig",
+      "12gb",
+      "ram",
+      "512gb",
+      "storag",
+      "galaxi",
+      "fold4",
+      "versatil",
+      "smartphon",
+      "stand",
+      "innov",
+      "design",
+      "function",
+      "featur",
+      "inch",
+      "cover",
+      "screen",
+      "conveni",
+      "hand",
+      "us",
+      "unfold",
+      "inch",
+      "main",
+      "screen",
+      "provid",
+      "immers",
+      "view",
+      "experi",
+      "minim",
+      "bezel",
+      "displai",
+      "camera",
+      "infin",
+      "flex",
+      "displai",
+      "offer",
+      "breathtak",
+      "visual",
+      "experi",
+      "without",
+      "ani",
+      "interrupt",
+      "multi",
+      "view",
+      "user",
+      "easili",
+      "switch",
+      "app",
+      "text",
+      "email",
+      "maxim",
+      "product",
+      "expans",
+      "main",
+      "screen",
+      "taskbar",
+      "featur",
+      "enabl",
+      "pc",
+      "multitask",
+      "allow",
+      "effici",
+      "navig",
+      "seamless",
+      "switch",
+      "multipl",
+      "app",
+      "galaxi",
+      "fold4",
+      "built",
+      "withstand",
+      "daili",
+      "wear",
+      "tear",
+      "featur",
+      "durabl",
+      "materi",
+      "corn",
+      "gorilla",
+      "glass",
+      "victu",
+      "front",
+      "rear",
+      "panel",
+      "armor",
+      "aluminum",
+      "frame",
+      "world",
+      "first",
+      "water",
+      "resist",
+      "foldabl",
+      "smartphon",
+      "provid",
+      "peac",
+      "mind",
+      "even",
+      "challeng",
+      "weather",
+      "condit",
+      "mobil",
+      "galaxyzfold4"
+    ],
+    "ratings": [],
+    "createdAt": {
+      "$date": "2023-06-05T16:08:31.771Z"
+    },
+    "updatedAt": {
+      "$date": "2025-05-16T05:17:00.806Z"
+    },
+    "__v": 1
+  },
+  {
+    "_id": "647eb138dbc83afab0fecb71",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "productName": "See Designs Cotton Regular Mens Kurta",
+    "productDescription": "Care Instructions: Machine Wash\nFit Type: Regular\nMaterial: Cotton specially designed for your skin which will provide you a elegant and trendy look\nFit Type: Regular Fit\nOccasions: Party, festive, wedding wear, traditional wear\nThe perfect present for your dad, husband, son, or friend.\nCare Instructions: Machine wash/ do not dry in direct sunlight",
+    "price": 1999,
+    "discountedPrice": 1699,
+    "quantity": 19,
+    "category": "Fashion",
+    "imagesUrl": [
+      "https://res.cloudinary.com/dwenudxjh/image/upload/v1686024054/swiftmarket/gkscopu1lhznl4defw3j.jpg",
+      "https://res.cloudinary.com/dwenudxjh/image/upload/v1686024054/swiftmarket/usmg4wpycxwo4jmejx8g.jpg",
+      "https://res.cloudinary.com/dwenudxjh/image/upload/v1686024054/swiftmarket/kzbgjwjvmsi5fcww1vji.jpg"
+    ],
+    "thumbnailUrl": "https://res.cloudinary.com/dwenudxjh/image/upload/v1686024054/swiftmarket/gkscopu1lhznl4defw3j.jpg",
+    "purchaseCount": 0,
+    "tags": [
+      "mens",
+      "kurta",
+      "cotton",
+      "traditional wear"
+    ],
+    "ratingsAvg": 0,
+    "faqs": [
+      {
+        "question": "Can I machine wash the cotton outfit designed for a trendy and elegant look?",
+        "answer": "Yes, you can machine wash the cotton outfit. It is designed to be convenient and easy to care for. However, it is recommended to follow the care instructions provided. Use a gentle cycle and mild detergent while washing. Avoid using bleach or harsh chemicals. After washing, air dry the outfit, and avoid drying it directly in sunlight to prevent color fading or damage.",
+        "_id": "647eb138dbc83afab0fecb72"
+      },
+      {
+        "question": "What is the material of the outfit?",
+        "answer": "The outfit is made of cotton specially designed for your skin. The cotton fabric provides a comfortable and breathable feel, making it suitable for various occasions. The fabric is chosen to ensure both elegance and trendiness, offering a stylish look while maintaining comfort.",
+        "_id": "647eb138dbc83afab0fecb73"
+      }
+    ],
+    "featured": false,
+    "views": 0,
+    "likes": [],
+    "popularityScore": 0,
+    "updatedBy": {
+      "role": "seller",
+      "userId": "643b7de40a416cdcadd8d065"
+    },
+    "isAvailable": true,
+    "keywords": [
+      "design",
+      "cotton",
+      "regular",
+      "men",
+      "kurta",
+      "care",
+      "instruct",
+      "machin",
+      "wash",
+      "fit",
+      "type",
+      "regular",
+      "materi",
+      "cotton",
+      "special",
+      "design",
+      "skin",
+      "will",
+      "provid",
+      "eleg",
+      "trendi",
+      "look",
+      "fit",
+      "type",
+      "regular",
+      "fit",
+      "occas",
+      "parti",
+      "festiv",
+      "wed",
+      "wear",
+      "tradit",
+      "wear",
+      "perfect",
+      "present",
+      "dad",
+      "husband",
+      "son",
+      "friend",
+      "care",
+      "instruct",
+      "machin",
+      "wash",
+      "not",
+      "dry",
+      "direct",
+      "sunlight",
+      "fashion",
+      "men"
+    ],
+    "ratings": [],
+    "createdAt": {
+      "$date": "2023-06-06T04:08:24.131Z"
+    },
+    "updatedAt": {
+      "$date": "2024-08-28T07:19:26.679Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": "647eab90dbc83afab0fecaf9",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "productName": "Ethluxis® Men's Silk Blend Kurta Churidar Pyjama with Ethnic Bundi Jacket Set",
+    "productDescription": "Care Instructions: Dry Clean Only\nFit Type: Regular\nMaterial: Silk Blend Kurta Set Jacquard Nehru Jacket\nLong sleeve with Banded Mandarin collar\nComfortable to Wear\nProduct Size Guidance: Please refer to CHEST size measurement in the SIZE CHART for your correct size,For Example If your Chest measurement is 42 Buy 42 Size.\nMade in India\nPackage Contents 1 Set Kurta Pyjama 1 Bundi Jacket",
+    "price": 5436,
+    "discountedPrice": 3696,
+    "quantity": 32,
+    "category": "Fashion",
+    "imagesUrl": [
+      "https://res.cloudinary.com/dwenudxjh/image/upload/v1686022919/swiftmarket/gidwgapgb44xaeymyjkt.jpg",
+      "https://res.cloudinary.com/dwenudxjh/image/upload/v1686022919/swiftmarket/jvllumbinjb18lttatwn.jpg",
+      "https://res.cloudinary.com/dwenudxjh/image/upload/v1686022919/swiftmarket/fbfcadm20tfdz91witik.jpg",
+      "https://res.cloudinary.com/dwenudxjh/image/upload/v1686022918/swiftmarket/fwnmiif7lkybalvchcmu.jpg"
+    ],
+    "thumbnailUrl": "https://res.cloudinary.com/dwenudxjh/image/upload/v1686022919/swiftmarket/gidwgapgb44xaeymyjkt.jpg",
+    "purchaseCount": 0,
+    "tags": [
+      "Ethluxis",
+      "mens",
+      "men",
+      "kurta",
+      "mens kurta"
+    ],
+    "ratingsAvg": 0,
+    "faqs": [
+      {
+        "question": "How should I care for the Silk Blend Kurta Set with Jacquard Nehru Jacket?",
+        "answer": "The Silk Blend Kurta Set with Jacquard Nehru Jacket requires dry cleaning for proper care. It is recommended to avoid washing it at home or using regular detergents.",
+        "_id": "647eab90dbc83afab0fecafa"
+      },
+      {
+        "question": "What is the fit type of the Kurta Set with Nehru Jacket?",
+        "answer": "The fit type of the Kurta Set with Nehru Jacket is regular. It is designed to provide a comfortable and relaxed fit for the wearer. The regular fit allows for easy movement and ensures that the outfit drapes well, enhancing your overall appearance.",
+        "_id": "647eab90dbc83afab0fecafb"
+      }
+    ],
+    "featured": false,
+    "views": 0,
+    "likes": [],
+    "popularityScore": 0,
+    "updatedBy": {
+      "role": "seller",
+      "userId": "643b7de40a416cdcadd8d065"
+    },
+    "isAvailable": true,
+    "keywords": [
+      "ethluxi",
+      "men",
+      "silk",
+      "blend",
+      "kurta",
+      "churidar",
+      "pyjama",
+      "ethnic",
+      "bundi",
+      "jacket",
+      "set",
+      "care",
+      "instruct",
+      "dry",
+      "clean",
+      "onli",
+      "fit",
+      "type",
+      "regular",
+      "materi",
+      "silk",
+      "blend",
+      "kurta",
+      "set",
+      "jacquard",
+      "nehru",
+      "jacket",
+      "long",
+      "sleev",
+      "band",
+      "mandarin",
+      "collar",
+      "comfort",
+      "wear",
+      "product",
+      "size",
+      "guidanc",
+      "pleas",
+      "refer",
+      "chest",
+      "size",
+      "measur",
+      "size",
+      "chart",
+      "correct",
+      "size",
+      "exampl",
+      "chest",
+      "measur",
+      "42",
+      "bui",
+      "42",
+      "size",
+      "made",
+      "india",
+      "packag",
+      "content",
+      "set",
+      "kurta",
+      "pyjama",
+      "bundi",
+      "jacket",
+      "fashion",
+      "ethluxi"
+    ],
+    "ratings": [],
+    "createdAt": {
+      "$date": "2023-06-06T03:44:16.013Z"
+    },
+    "updatedAt": {
+      "$date": "2023-06-06T03:44:16.013Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": "647eb4e3dbc83afab0fecc73",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "productName": "WINTAGE Men's Regular Fit Blazer",
+    "productDescription": "Care Instructions: Dry Clean\nFit Type: Regular Fit\nRecommended Wear- South Asian Traditional, Festive, Party, Prom, Wedding, Evening and other occasions as preferred by the customer\nFree Delivery\nHandmade in India. The entire garment is made by a single artisan instead of chain-system production.",
+    "price": 3562,
+    "discountedPrice": 2422,
+    "quantity": 65,
+    "category": "Fashion",
+    "imagesUrl": [
+      "https://res.cloudinary.com/dwenudxjh/image/upload/v1686025154/swiftmarket/gifkonksewl6restksv0.jpg",
+      "https://res.cloudinary.com/dwenudxjh/image/upload/v1686025152/swiftmarket/u6wgpplsqru3r3dhimoa.jpg",
+      "https://res.cloudinary.com/dwenudxjh/image/upload/v1686025153/swiftmarket/fsdncnwzzgtvi3ntbbbo.jpg"
+    ],
+    "thumbnailUrl": "https://res.cloudinary.com/dwenudxjh/image/upload/v1686025154/swiftmarket/gifkonksewl6restksv0.jpg",
+    "purchaseCount": 0,
+    "tags": [
+      "mens",
+      "blazer",
+      "handmade"
+    ],
+    "ratingsAvg": 0,
+    "faqs": [
+      {
+        "question": "How should I care for the garment with the recommended dry clean instructions?",
+        "answer": "The garment is recommended to be dry cleaned for proper care and maintenance. Dry cleaning helps to preserve the fabric and intricate details of the handmade garment. It is advised to take the garment to a professional dry cleaner who specializes in delicate fabrics and traditional attire. Following the dry clean instructions will ensure that the garment retains its quality and longevity.",
+        "_id": "647eb4e3dbc83afab0fecc74"
+      }
+    ],
+    "featured": false,
+    "views": 0,
+    "likes": [],
+    "popularityScore": 0,
+    "updatedBy": {
+      "role": "seller",
+      "userId": "643b7de40a416cdcadd8d065"
+    },
+    "isAvailable": true,
+    "keywords": [
+      "wintag",
+      "men",
+      "regular",
+      "fit",
+      "blazer",
+      "care",
+      "instruct",
+      "dry",
+      "clean",
+      "fit",
+      "type",
+      "regular",
+      "fit",
+      "recommend",
+      "wear",
+      "south",
+      "asian",
+      "tradit",
+      "festiv",
+      "parti",
+      "prom",
+      "wed",
+      "even",
+      "occas",
+      "prefer",
+      "custom",
+      "free",
+      "deliveri",
+      "handmad",
+      "india",
+      "entir",
+      "garment",
+      "made",
+      "singl",
+      "artisan",
+      "instead",
+      "chain",
+      "system",
+      "product",
+      "fashion",
+      "men"
+    ],
+    "ratings": [],
+    "createdAt": {
+      "$date": "2023-06-06T04:24:03.592Z"
+    },
+    "updatedAt": {
+      "$date": "2023-06-06T04:24:03.592Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": "646c38e739938acf1a4f1029",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "productName": "Apple iPhone 13 (128GB) - White",
+    "productDescription": "Experience stunning visuals with the 6.1-inch Super Retina XDR display of this device. It brings your content to life with vibrant colors and sharp details. The cinematic mode takes your videos to the next level by adding a shallow depth of field effect and automatically shifting focus. The advanced dual-camera system, featuring 12MP Wide and Ultra Wide cameras, enables you to capture professional-quality photos. With features like Photographic Styles, Smart HDR 4, Night mode, and 4K Dolby Vision HDR recording, your photos will always look impressive. The 12MP TrueDepth front camera includes Night mode and 4K Dolby Vision HDR recording, ensuring great selfies even in low-light situations. Powering it all is the A15 Bionic chip, providing lightning-fast performance for smooth multitasking, gaming, and more. Get ready to elevate your smartphone photography and enjoy powerful performance with this device.",
+    "price": 82000,
+    "discountedPrice": 69700,
+    "quantity": 18,
+    "category": "Mobiles",
+    "imagesUrl": [
+      "https://d2xamzlzrdbdbn.cloudfront.net/products/e9bd9fa2-fcdf-445d-8d73-4b723a4fffd922081212.jpg"
+    ],
+    "thumbnailUrl": "https://d2xamzlzrdbdbn.cloudfront.net/products/e9bd9fa2-fcdf-445d-8d73-4b723a4fffd922081212.jpg",
+    "purchaseCount": 0,
+    "tags": [
+      "iphone",
+      "smartphone",
+      "apple",
+      "white"
+    ],
+    "ratingsAvg": 0,
+    "faqs": [
+      {
+        "question": "Does it support wireless charging?",
+        "answer": "Yes, the iPhone 12 Pro supports wireless charging.",
+        "_id": "646c38e739938acf1a4f102a"
+      },
+      {
+        "question": "What is the screen size?",
+        "answer": "The iPhone 12 Pro has a 6.1-inch Super Retina XDR display.",
+        "_id": "646c38e739938acf1a4f102b"
+      }
+    ],
+    "featured": false,
+    "views": 0,
+    "likes": [
+      "6459cc873f9c353beb3c419f"
+    ],
+    "popularityScore": 0,
+    "updatedBy": {
+      "role": "seller",
+      "userId": "643b7de40a416cdcadd8d065"
+    },
+    "isAvailable": true,
+    "keywords": [
+      "iphon",
+      "12",
+      "pro",
+      "white",
+      "iphon",
+      "12",
+      "pro",
+      "flagship",
+      "smartphon",
+      "appl",
+      "mobil",
+      "iphone"
+    ],
+    "ratings": [],
+    "createdAt": {
+      "$date": "2023-05-23T03:54:15.105Z"
+    },
+    "updatedAt": {
+      "$date": "2024-06-22T11:14:03.351Z"
+    },
+    "__v": 2
+  },
+  {
+    "_id": "647ea773dbc83afab0fec83c",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "productName": "GOTIHOUSE Women's Katan Silk Meenakari Swarnachari Baluchari Saree Banarasi Work greay",
+    "productDescription": "Care Instructions: Hand Wash Only\nSaree Fabric:- *Pure Katan Silk* Saree Color: *Coral pink*\nComes with un-stitched blouse\nThis saree is suitable for get stylish contemporary look in functions, parties, reception, festive occasions, marriage ceremony, get together, evening & gifting to loved ones\nIt gives designer rich look to your personality.\nHigh Grade Organza Saree with Beautiful Floral Print. Made In India",
+    "price": 60000,
+    "discountedPrice": 51600,
+    "quantity": 20,
+    "category": "Fashion",
+    "imagesUrl": [
+      "https://res.cloudinary.com/dwenudxjh/image/upload/v1686021908/swiftmarket/kwezcvfss6tuqrz8my3j.jpg",
+      "https://res.cloudinary.com/dwenudxjh/image/upload/v1686021909/swiftmarket/oybaxqrjyt20tg22b8p5.jpg",
+      "https://res.cloudinary.com/dwenudxjh/image/upload/v1686021908/swiftmarket/n2xkjn4dmwhxlkqbxqxb.jpg",
+      "https://res.cloudinary.com/dwenudxjh/image/upload/v1686021909/swiftmarket/cbfphucdkdfmeefypvkb.jpg"
+    ],
+    "thumbnailUrl": "https://res.cloudinary.com/dwenudxjh/image/upload/v1686021908/swiftmarket/kwezcvfss6tuqrz8my3j.jpg",
+    "purchaseCount": 0,
+    "tags": [
+      "GOTIHOUSE",
+      "saree",
+      "sarees",
+      "Meenakari"
+    ],
+    "ratingsAvg": 0,
+    "faqs": [
+      {
+        "question": "How should I care for the Pure Katan Silk Saree?",
+        "answer": "The Pure Katan Silk Saree requires special care to maintain its quality and appearance. It is recommended to hand wash the saree to ensure its longevity. Avoid using harsh detergents or bleach as they can damage the fabric.",
+        "_id": "647ea773dbc83afab0fec83d"
+      }
+    ],
+    "featured": false,
+    "views": 0,
+    "likes": [
+      "643b7de40a416cdcadd8d065",
+      "6459cc873f9c353beb3c419f"
+    ],
+    "popularityScore": 0,
+    "updatedBy": {
+      "role": "seller",
+      "userId": "643b7de40a416cdcadd8d065"
+    },
+    "isAvailable": true,
+    "keywords": [
+      "gotihous",
+      "women",
+      "katan",
+      "silk",
+      "meenakari",
+      "swarnachari",
+      "baluchari",
+      "sare",
+      "banarasi",
+      "work",
+      "greai",
+      "care",
+      "instruct",
+      "hand",
+      "wash",
+      "onli",
+      "sare",
+      "fabric",
+      "pure",
+      "katan",
+      "silk",
+      "sare",
+      "color",
+      "coral",
+      "pink",
+      "un",
+      "stitch",
+      "blous",
+      "thi",
+      "sare",
+      "suitabl",
+      "stylish",
+      "contemporari",
+      "look",
+      "function",
+      "parti",
+      "recept",
+      "festiv",
+      "occas",
+      "marriag",
+      "ceremoni",
+      "togeth",
+      "even",
+      "gift",
+      "love",
+      "give",
+      "design",
+      "rich",
+      "look",
+      "person",
+      "high",
+      "grade",
+      "organza",
+      "sare",
+      "beauti",
+      "floral",
+      "print",
+      "made",
+      "india",
+      "fashion",
+      "gotihous",
+      "saree",
+      "sarees"
+    ],
+    "ratings": [],
+    "createdAt": {
+      "$date": "2023-06-06T03:26:43.675Z"
+    },
+    "updatedAt": {
+      "$date": "2023-07-28T07:37:06.011Z"
+    },
+    "__v": 4
+  },
+  {
+    "_id": "647e07167ed3bb3870bbe152",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "productName": "OnePlus Nord CE 2 Lite 5G (Black Dusk, 6GB RAM, 128GB Storage)",
+    "productDescription": "Introducing the feature-packed smartphone, equipped with a powerful camera system and a stunning display. The device boasts a 64MP main camera with EIS, accompanied by a 2MP depth lens and a 2MP macro lens, while the front camera captures impressive selfies with its 16MP Sony IMX471 sensor. With AI scene enhancement, Dual-View Video, HDR, and various shooting modes like Night Portrait, Panorama, and Time-Lapse, users can capture professional-grade photos and videos effortlessly. The 6.59-inch display offers a smooth experience with its 120 Hz refresh rate and supports sRGB and Display P3 for vibrant visuals, featuring a resolution of 2412 x 1080 pixels and an aspect ratio of 20:9. Running on Oxygen OS based on Android 12, the device is powered by a Qualcomm Snapdragon 695 5G processor for seamless performance. Its 5000 mAh battery supports 33W SuperVOOC fast charging, ensuring extended usage without frequent recharging. Additionally, the smartphone is Alexa Hands-Free capable, allowing",
+    "price": 19990,
+    "discountedPrice": 17991,
+    "quantity": 19,
+    "category": "Mobiles",
+    "imagesUrl": [
+      "https://res.cloudinary.com/dwenudxjh/image/upload/v1685980858/swiftmarket/lmeaeoiyrttm0hfzpcy1.jpg",
+      "https://res.cloudinary.com/dwenudxjh/image/upload/v1685980858/swiftmarket/nrkuuzqqlsekonulozec.jpg"
+    ],
+    "thumbnailUrl": "https://res.cloudinary.com/dwenudxjh/image/upload/v1685980834/swiftmarket/nram1vuy1kxvuofbra37.jpg",
+    "purchaseCount": 0,
+    "tags": [
+      "OnePlus Nord CE 2",
+      "CE 2",
+      "oneplus",
+      "nord",
+      "5g"
+    ],
+    "ratingsAvg": 0,
+    "faqs": [
+      {
+        "question": "What is the main camera resolution of this smartphone?",
+        "answer": "The main camera of this smartphone has a resolution of 64MP.",
+        "_id": "647e07167ed3bb3870bbe153"
+      },
+      {
+        "question": "What are the additional lenses included in the camera system?",
+        "answer": "The camera system includes a 2MP depth lens and a 2MP macro lens.",
+        "_id": "647e07167ed3bb3870bbe154"
+      },
+      {
+        "question": "What is the resolution and refresh rate of the display?",
+        "answer": "The display has a resolution of 2412 x 1080 pixels with a refresh rate of 120 Hz.",
+        "_id": "647e07167ed3bb3870bbe155"
+      }
+    ],
+    "featured": false,
+    "views": 0,
+    "likes": [],
+    "popularityScore": 0,
+    "updatedBy": {
+      "role": "seller",
+      "userId": "643b7de40a416cdcadd8d065"
+    },
+    "isAvailable": true,
+    "keywords": [
+      "oneplu",
+      "nord",
+      "ce",
+      "lite",
+      "5g",
+      "black",
+      "dusk",
+      "6gb",
+      "ram",
+      "128gb",
+      "storag",
+      "introduc",
+      "featur",
+      "pack",
+      "smartphon",
+      "equip",
+      "power",
+      "camera",
+      "system",
+      "stun",
+      "displai",
+      "devic",
+      "boast",
+      "64mp",
+      "main",
+      "camera",
+      "ei",
+      "accompani",
+      "2mp",
+      "depth",
+      "len",
+      "2mp",
+      "macro",
+      "len",
+      "front",
+      "camera",
+      "captur",
+      "impress",
+      "selfi",
+      "16mp",
+      "soni",
+      "imx471",
+      "sensor",
+      "ai",
+      "scene",
+      "enhanc",
+      "dual",
+      "view",
+      "video",
+      "hdr",
+      "variou",
+      "shoot",
+      "mode",
+      "night",
+      "portrait",
+      "panorama",
+      "time",
+      "laps",
+      "user",
+      "captur",
+      "profession",
+      "grade",
+      "photo",
+      "video",
+      "effortlessli",
+      "59",
+      "inch",
+      "displai",
+      "offer",
+      "smooth",
+      "experi",
+      "120",
+      "hz",
+      "refresh",
+      "rate",
+      "support",
+      "srgb",
+      "displai",
+      "p3",
+      "vibrant",
+      "visual",
+      "featur",
+      "resolut",
+      "2412",
+      "1080",
+      "pixel",
+      "aspect",
+      "ratio",
+      "20",
+      "run",
+      "oxygen",
+      "os",
+      "base",
+      "android",
+      "12",
+      "devic",
+      "power",
+      "qualcomm",
+      "snapdragon",
+      "695",
+      "5g",
+      "processor",
+      "seamless",
+      "perform",
+      "5000",
+      "mah",
+      "batteri",
+      "support",
+      "33w",
+      "supervooc",
+      "fast",
+      "charg",
+      "ensur",
+      "extend",
+      "usag",
+      "without",
+      "frequent",
+      "recharg",
+      "addition",
+      "smartphon",
+      "alexa",
+      "hand",
+      "free",
+      "capabl",
+      "allow",
+      "mobil",
+      "oneplu",
+      "nord",
+      "ce",
+      "oneplus"
+    ],
+    "ratings": [],
+    "createdAt": {
+      "$date": "2023-06-05T16:02:30.777Z"
+    },
+    "updatedAt": {
+      "$date": "2024-08-28T07:15:46.937Z"
+    },
+    "__v": 1
+  },
+  {
+    "_id": "647e0b5a7ed3bb3870bbe3b8",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "productName": "MSI Titan GT77 HX, Intel 13th Gen. i9-13980HX, 44CM FHD 144Hz Mini LED, HDR 1000 Gaming Laptop (64GB/2TB NVMe SSD/Windows 11 Home/Nvidia GeForce RTX40",
+    "productDescription": "This powerful gaming laptop features a 13th Generation Intel Core i9-13980HX processor, delivering impressive performance with speeds up to 5.6GHz. It comes pre-loaded with Windows 11 Home for a seamless user experience, and the package includes MSI Center software for easy system management. The laptop's display is a 44CM UHD panel with a resolution of 3840x2160 pixels, featuring Mini LED with Local Dimming, HDR 1000, and 100% DCI-P3 color gamut for stunning visuals. The laptop is equipped with 32GBx2 DDR5 Dual Channel RAM and a spacious 2TB NVMe PCIe Gen4x4 SSD for fast and efficient multitasking and storage. The NVIDIA GeForce RTX 4080 graphics card with 12GB GDDR6 VRAM ensures exceptional gaming performance. Connectivity options include Killer Gb LAN, Killer ax Wi-Fi 6E, and Bluetooth v5.3. The laptop features a Cherry Mechanical Per-Key RGB Gaming Keyboard by SteelSeries, providing a responsive and customizable typing experience It also includes an IR HD camera and a built-in mic.",
+    "price": 489990,
+    "discountedPrice": 450791,
+    "quantity": 23,
+    "category": "Electronics",
+    "imagesUrl": [
+      "https://res.cloudinary.com/dwenudxjh/image/upload/v1685981900/swiftmarket/ad9rxwzyipb51ukdjav6.jpg",
+      "https://res.cloudinary.com/dwenudxjh/image/upload/v1685981900/swiftmarket/dfcbagpjmrau19csrkfa.jpg",
+      "https://res.cloudinary.com/dwenudxjh/image/upload/v1685981900/swiftmarket/jh4dtott4ip7cgwsicq4.jpg",
+      "https://res.cloudinary.com/dwenudxjh/image/upload/v1685981926/swiftmarket/uvf4oh0cviqwscum58ki.jpg"
+    ],
+    "thumbnailUrl": "https://res.cloudinary.com/dwenudxjh/image/upload/v1685981900/swiftmarket/dak1hasm16as2e4uspti.jpg",
+    "purchaseCount": 0,
+    "tags": [
+      "MSILaptop",
+      "GamingLaptop",
+      "HighPerformance",
+      "IntelCorei9",
+      "RTX4080"
+    ],
+    "ratingsAvg": 0,
+    "faqs": [
+      {
+        "question": "What is the processor model of this MSI laptop?",
+        "answer": "This MSI laptop is equipped with a 13th Generation Intel Core i9-13980HX processor, delivering high-performance computing power.",
+        "_id": "647e0b5a7ed3bb3870bbe3b9"
+      },
+      {
+        "question": "What operating system does this laptop come with?",
+        "answer": "This laptop comes pre-loaded with Windows 11 Home, providing a modern and user-friendly operating system experience.",
+        "_id": "647e0b5a7ed3bb3870bbe3ba"
+      }
+    ],
+    "featured": false,
+    "views": 0,
+    "likes": [
+      "643b7de40a416cdcadd8d065"
+    ],
+    "popularityScore": 0,
+    "updatedBy": {
+      "role": "seller",
+      "userId": "643b7de40a416cdcadd8d065"
+    },
+    "isAvailable": true,
+    "keywords": [
+      "msi",
+      "titan",
+      "gt77",
+      "hx",
+      "intel",
+      "13th",
+      "gen",
+      "i9",
+      "13980hx",
+      "44cm",
+      "fhd",
+      "144hz",
+      "mini",
+      "led",
+      "hdr",
+      "1000",
+      "game",
+      "laptop",
+      "64gb",
+      "2tb",
+      "nvme",
+      "ssd",
+      "window",
+      "11",
+      "home",
+      "nvidia",
+      "geforc",
+      "rtx40",
+      "thi",
+      "power",
+      "game",
+      "laptop",
+      "featur",
+      "13th",
+      "gener",
+      "intel",
+      "core",
+      "i9",
+      "13980hx",
+      "processor",
+      "deliv",
+      "impress",
+      "perform",
+      "speed",
+      "6ghz",
+      "pre",
+      "load",
+      "window",
+      "11",
+      "home",
+      "seamless",
+      "user",
+      "experi",
+      "packag",
+      "includ",
+      "msi",
+      "center",
+      "softwar",
+      "easi",
+      "system",
+      "manag",
+      "laptop",
+      "displai",
+      "44cm",
+      "uhd",
+      "panel",
+      "resolut",
+      "3840x2160",
+      "pixel",
+      "featur",
+      "mini",
+      "led",
+      "local",
+      "dim",
+      "hdr",
+      "1000",
+      "100",
+      "dci",
+      "p3",
+      "color",
+      "gamut",
+      "stun",
+      "visual",
+      "laptop",
+      "equip",
+      "32gbx2",
+      "ddr5",
+      "dual",
+      "channel",
+      "ram",
+      "spaciou",
+      "2tb",
+      "nvme",
+      "pcie",
+      "gen4x4",
+      "ssd",
+      "fast",
+      "effici",
+      "multitask",
+      "storag",
+      "nvidia",
+      "geforc",
+      "rtx",
+      "4080",
+      "graphic",
+      "card",
+      "12gb",
+      "gddr6",
+      "vram",
+      "ensur",
+      "except",
+      "game",
+      "perform",
+      "connect",
+      "option",
+      "includ",
+      "killer",
+      "gb",
+      "lan",
+      "killer",
+      "ax",
+      "wi",
+      "fi",
+      "6e",
+      "bluetooth",
+      "v5",
+      "laptop",
+      "featur",
+      "cherri",
+      "mechan",
+      "per",
+      "kei",
+      "rgb",
+      "game",
+      "keyboard",
+      "steelseri",
+      "provid",
+      "respons",
+      "customiz",
+      "type",
+      "experi",
+      "includ",
+      "ir",
+      "hd",
+      "camera",
+      "built",
+      "mic",
+      "electron",
+      "msilaptop"
+    ],
+    "ratings": [],
+    "createdAt": {
+      "$date": "2023-06-05T16:20:42.448Z"
+    },
+    "updatedAt": {
+      "$date": "2024-02-05T10:47:29.241Z"
+    },
+    "__v": 1
+  },
+  {
+    "_id": "647ea8c2dbc83afab0fec962",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "productName": "Stylee Couture Women's Soft Cotton & Silk Saree For Women With Attached Blouse Piece (MB-3198)",
+    "productDescription": "Care Instructions: Hand Wash Only\nMaterial: Soft Cotton & Silk Saree for Women\nQuality That Never Goes Out Of Style\nWork: Zari Woven; Weave Type: Soft Cotton Silk Sarees\n6.30 MTR Full Length Saree And Contrast Pallu With Contrast Matching Blouse\nOccasions: festive, wedding wear, traditional wear. Best gift for your loved ones.",
+    "price": 799,
+    "discountedPrice": 719,
+    "quantity": 21,
+    "category": "Fashion",
+    "imagesUrl": [
+      "https://res.cloudinary.com/dwenudxjh/image/upload/v1686022282/swiftmarket/niv1hcnkeje6p6itdna1.jpg",
+      "https://res.cloudinary.com/dwenudxjh/image/upload/v1686022282/swiftmarket/o6nbzusefpylioupxbza.jpg",
+      "https://res.cloudinary.com/dwenudxjh/image/upload/v1686022282/swiftmarket/rz8ssbfiksf9xwj27gea.jpg"
+    ],
+    "thumbnailUrl": "https://res.cloudinary.com/dwenudxjh/image/upload/v1686022282/swiftmarket/niv1hcnkeje6p6itdna1.jpg",
+    "purchaseCount": 0,
+    "tags": [
+      "Women",
+      "saree",
+      "sarees",
+      "Blouse",
+      "Cotton"
+    ],
+    "ratingsAvg": 0,
+    "faqs": [
+      {
+        "question": "Does the saree come with a blouse?",
+        "answer": "Yes, the saree comes with an un-stitched blouse. This allows you to customize the blouse according to your preferred style and measurements. You can choose to get it stitched as per your requirements to complement the saree. The un-stitched blouse provides flexibility and allows you to create a unique and personalized look to enhance your overall appearance.",
+        "_id": "647ea8c2dbc83afab0fec963"
+      }
+    ],
+    "featured": false,
+    "views": 0,
+    "likes": [],
+    "popularityScore": 0,
+    "updatedBy": {
+      "role": "seller",
+      "userId": "643b7de40a416cdcadd8d065"
+    },
+    "isAvailable": true,
+    "keywords": [
+      "style",
+      "coutur",
+      "women",
+      "soft",
+      "cotton",
+      "silk",
+      "sare",
+      "women",
+      "attach",
+      "blous",
+      "piec",
+      "mb",
+      "3198",
+      "care",
+      "instruct",
+      "hand",
+      "wash",
+      "onli",
+      "materi",
+      "soft",
+      "cotton",
+      "silk",
+      "sare",
+      "women",
+      "qualiti",
+      "goe",
+      "style",
+      "work",
+      "zari",
+      "woven",
+      "weav",
+      "type",
+      "soft",
+      "cotton",
+      "silk",
+      "sare",
+      "30",
+      "mtr",
+      "full",
+      "length",
+      "sare",
+      "contrast",
+      "pallu",
+      "contrast",
+      "match",
+      "blous",
+      "occas",
+      "festiv",
+      "wed",
+      "wear",
+      "tradit",
+      "wear",
+      "best",
+      "gift",
+      "love",
+      "fashion",
+      "women"
+    ],
+    "ratings": [],
+    "createdAt": {
+      "$date": "2023-06-06T03:32:18.128Z"
+    },
+    "updatedAt": {
+      "$date": "2023-07-28T03:49:54.583Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": "664d9e5eccc5ba3787e2d5af",
+    "seller": "664d9bc399e4f841ed91d5fd",
+    "productName": "test",
+    "productDescription": "test",
+    "price": 1000,
+    "discountedPrice": 900,
+    "quantity": 100,
+    "category": "Fashion",
+    "imagesUrl": [
+      "https://marketplace.canva.com/EAFf5rfnPgA/1/0/1600w/canva-blue-modern-eye-catching-vlog-youtube-thumbnail-LEcp-BYepDU.jpg"
+    ],
+    "thumbnailUrl": "https://marketplace.canva.com/EAFf5rfnPgA/1/0/1600w/canva-blue-modern-eye-catching-vlog-youtube-thumbnail-LEcp-BYepDU.jpg",
+    "purchaseCount": 0,
+    "tags": [
+      "test"
+    ],
+    "ratingsAvg": 0,
+    "faqs": [
+      {
+        "question": "testt",
+        "answer": "test",
+        "_id": "664d9e5eccc5ba3787e2d5b0"
+      }
+    ],
+    "featured": false,
+    "views": 0,
+    "likes": [],
+    "popularityScore": 0,
+    "updatedBy": {
+      "role": "seller",
+      "userId": "664d9b2699e4f841ed91d51e"
+    },
+    "isAvailable": true,
+    "keywords": [
+      "test",
+      "test",
+      "fashion",
+      "test"
+    ],
+    "ratings": [],
+    "createdAt": {
+      "$date": "2024-05-22T07:27:26.412Z"
+    },
+    "updatedAt": {
+      "$date": "2024-05-22T07:27:26.412Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": "69818f36066a38701def9aaf",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "productName": "Damaged Helmet",
+    "productDescription": "Highly detailed sci-fi helmet featuring realistic weathering, scratches, and PBR (Physically Based Rendering) materials.",
+    "price": 12500,
+    "discountedPrice": 10625,
+    "quantity": 25,
+    "category": "automotive",
+    "imagesUrl": [
+      "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/DamagedHelmet/screenshot/screenshot.png"
+    ],
+    "thumbnailUrl": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/DamagedHelmet/screenshot/screenshot.png",
+    "model3dUrl": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/DamagedHelmet/glTF-Binary/DamagedHelmet.glb",
+    "purchaseCount": 0,
+    "tags": [
+      "sci-fi",
+      "helmet",
+      "PBR"
+    ],
+    "ratingsAvg": 0,
+    "faqs": [
+      {
+        "question": "Does it include textures?",
+        "answer": "Yes, all textures are embedded within the GLB file.",
+        "_id": "69818f36066a38701def9ab0"
+      }
+    ],
+    "featured": false,
+    "views": 0,
+    "likes": [],
+    "popularityScore": 0,
+    "updatedBy": {
+      "role": "seller",
+      "userId": "643b7de40a416cdcadd8d065"
+    },
+    "isAvailable": true,
+    "keywords": [
+      "damag",
+      "helmet",
+      "highli",
+      "detail",
+      "sci",
+      "fi",
+      "helmet",
+      "featur",
+      "realist",
+      "weather",
+      "scratch",
+      "pbr",
+      "physic",
+      "base",
+      "render",
+      "materi",
+      "automot",
+      "sci",
+      "fi"
+    ],
+    "ratings": [],
+    "createdAt": {
+      "$date": "2026-02-03T06:01:26.916Z"
+    },
+    "updatedAt": {
+      "$date": "2026-02-03T06:01:26.916Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": "6981900b066a38701def9b30",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "productName": "Premium Hass Avocado (Single)",
+    "productDescription": "Naturally grown, creamy-textured Hass avocado. Perfect for guacamole, toast, or salads. This organic produce is picked at peak ripeness to ensure a rich, buttery flavor profile and high nutrient density including healthy fats and Vitamin E.",
+    "price": 99,
+    "discountedPrice": 94,
+    "quantity": 500,
+    "category": "farm-livestock-supplies",
+    "imagesUrl": [
+      "https://nutritionsource.hsph.harvard.edu/wp-content/uploads/2022/04/pexels-antonio-filigno-8538296-1024x657.jpg"
+    ],
+    "thumbnailUrl": "https://nutritionsource.hsph.harvard.edu/wp-content/uploads/2022/04/pexels-antonio-filigno-8538296-1024x657.jpg",
+    "model3dUrl": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/Avocado/glTF-Binary/Avocado.glb",
+    "purchaseCount": 0,
+    "tags": [
+      "organic",
+      "superfood",
+      "vegan",
+      "fresh-produce",
+      "healthy-fats"
+    ],
+    "ratingsAvg": 0,
+    "faqs": [
+      {
+        "question": "How do I know if the avocado is ripe?",
+        "answer": "Gently squeeze the fruit in the palm of your hand. If it yields to firm, gentle pressure, it is ripe and ready to eat.",
+        "_id": "6981900b066a38701def9b31"
+      },
+      {
+        "question": "How should I store a cut avocado?",
+        "answer": "Leave the pit in, sprinkle the flesh with lemon or lime juice, wrap it tightly in plastic wrap, and refrigerate to prevent browning.",
+        "_id": "6981900b066a38701def9b32"
+      },
+      {
+        "question": "Is this product organic certified?",
+        "answer": "Yes, our avocados are sourced from farms that follow strict organic farming practices without synthetic pesticides.",
+        "_id": "6981900b066a38701def9b33"
+      },
+      {
+        "question": "How can I speed up the ripening process?",
+        "answer": "Place the avocado in a brown paper bag with an apple or a banana at room temperature for 1-2 days.",
+        "_id": "6981900b066a38701def9b34"
+      }
+    ],
+    "featured": false,
+    "views": 0,
+    "likes": [],
+    "popularityScore": 0,
+    "updatedBy": {
+      "role": "seller",
+      "userId": "643b7de40a416cdcadd8d065"
+    },
+    "isAvailable": true,
+    "keywords": [
+      "premium",
+      "hass",
+      "avocado",
+      "singl",
+      "natur",
+      "grown",
+      "creami",
+      "textur",
+      "hass",
+      "avocado",
+      "perfect",
+      "guacamol",
+      "toast",
+      "salad",
+      "thi",
+      "organ",
+      "produc",
+      "pick",
+      "peak",
+      "ripe",
+      "ensur",
+      "rich",
+      "butteri",
+      "flavor",
+      "profil",
+      "high",
+      "nutrient",
+      "densiti",
+      "includ",
+      "healthi",
+      "fat",
+      "vitamin",
+      "farm",
+      "livestock",
+      "suppli",
+      "organ"
+    ],
+    "ratings": [],
+    "createdAt": {
+      "$date": "2026-02-03T06:04:59.619Z"
+    },
+    "updatedAt": {
+      "$date": "2026-02-03T06:04:59.619Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": "69819079066a38701def9bc6",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "productName": "Retro Ghetto Blaster 1980s",
+    "productDescription": "Relive the golden era of hip-hop with this detailed 80s Boombox. Featuring dual cassette decks, analog radio dials, and a chrome-finished handle. A must-have for retro-tech enthusiasts.",
+    "price": 8999,
+    "discountedPrice": 8549,
+    "quantity": 10,
+    "category": "appliances",
+    "imagesUrl": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/JVC_cassette-cd_boombox.jpg/250px-JVC_cassette-cd_boombox.jpg"
+    ],
+    "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/JVC_cassette-cd_boombox.jpg/250px-JVC_cassette-cd_boombox.jpg",
+    "model3dUrl": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/BoomBox/glTF-Binary/BoomBox.glb",
+    "purchaseCount": 0,
+    "tags": [
+      "retro",
+      "80s",
+      "music-player",
+      "vintage-electronics"
+    ],
+    "ratingsAvg": 0,
+    "faqs": [
+      {
+        "question": "Are the buttons clickable in 3D?",
+        "answer": "The model geometry includes individual buttons, allowing for custom interaction programming.",
+        "_id": "69819079066a38701def9bc7"
+      },
+      {
+        "question": "Does it include the internal cassette tapes?",
+        "answer": "The cassette doors are modeled shut to optimize performance.",
+        "_id": "69819079066a38701def9bc8"
+      }
+    ],
+    "featured": false,
+    "views": 0,
+    "likes": [],
+    "popularityScore": 0,
+    "updatedBy": {
+      "role": "seller",
+      "userId": "643b7de40a416cdcadd8d065"
+    },
+    "isAvailable": true,
+    "keywords": [
+      "retro",
+      "ghetto",
+      "blaster",
+      "1980",
+      "reliv",
+      "golden",
+      "era",
+      "hip",
+      "hop",
+      "thi",
+      "detail",
+      "80",
+      "boombox",
+      "featur",
+      "dual",
+      "cassett",
+      "deck",
+      "analog",
+      "radio",
+      "dial",
+      "chrome",
+      "finish",
+      "handl",
+      "retro",
+      "tech",
+      "enthusiast",
+      "applianc",
+      "retro"
+    ],
+    "ratings": [],
+    "createdAt": {
+      "$date": "2026-02-03T06:06:49.913Z"
+    },
+    "updatedAt": {
+      "$date": "2026-02-03T06:06:49.913Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": "698190b4066a38701def9c5c",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "productName": "Hydro-Pro Reusable Bottle",
+    "productDescription": "Eco-friendly, BPA-free stainless steel water bottle. Designed for the modern athlete with a leak-proof cap and a powder-coated finish for superior grip during workouts.",
+    "price": 1499,
+    "discountedPrice": 1199,
+    "quantity": 150,
+    "category": "home",
+    "imagesUrl": [
+      "https://m.media-amazon.com/images/I/61OBzh8vxbL._AC_UF1000,1000_QL80_.jpg"
+    ],
+    "thumbnailUrl": "https://m.media-amazon.com/images/I/61OBzh8vxbL._AC_UF1000,1000_QL80_.jpg",
+    "model3dUrl": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/WaterBottle/glTF-Binary/WaterBottle.glb",
+    "purchaseCount": 0,
+    "tags": [
+      "fitness",
+      "sustainable",
+      "hydration",
+      "gym-gear"
+    ],
+    "ratingsAvg": 0,
+    "faqs": [
+      {
+        "question": "Is it dishwasher safe?",
+        "answer": "Yes, but hand-washing is recommended to preserve the powder-coat finish.",
+        "_id": "698190b4066a38701def9c5d"
+      },
+      {
+        "question": "How long does it keep water cold?",
+        "answer": "The double-wall insulation maintains cold temperatures for up to 24 hours.",
+        "_id": "698190b4066a38701def9c5e"
+      }
+    ],
+    "featured": false,
+    "views": 0,
+    "likes": [],
+    "popularityScore": 0,
+    "updatedBy": {
+      "role": "seller",
+      "userId": "643b7de40a416cdcadd8d065"
+    },
+    "isAvailable": true,
+    "keywords": [
+      "hydro",
+      "pro",
+      "reusabl",
+      "bottl",
+      "eco",
+      "friendli",
+      "bpa",
+      "free",
+      "stainless",
+      "steel",
+      "water",
+      "bottl",
+      "design",
+      "modern",
+      "athlet",
+      "leak",
+      "proof",
+      "cap",
+      "powder",
+      "coat",
+      "finish",
+      "superior",
+      "grip",
+      "dure",
+      "workout",
+      "home",
+      "fit"
+    ],
+    "ratings": [],
+    "createdAt": {
+      "$date": "2026-02-03T06:07:48.636Z"
+    },
+    "updatedAt": {
+      "$date": "2026-02-03T06:07:48.636Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": "698190d4066a38701def9cf8",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "productName": "Classic Rubber Bath Duck",
+    "productDescription": "The quintessential yellow bath toy. Features a high-gloss finish and a perfectly balanced design. A cheerful addition to any bathroom or nursery.",
+    "price": 299,
+    "discountedPrice": 269,
+    "quantity": 100,
+    "category": "appliances",
+    "imagesUrl": [
+      "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/Duck/screenshot/screenshot.png"
+    ],
+    "thumbnailUrl": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/Duck/screenshot/screenshot.png",
+    "model3dUrl": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/Duck/glTF-Binary/Duck.glb",
+    "purchaseCount": 0,
+    "tags": [
+      "kids",
+      "bath-toy",
+      "classic",
+      "rubber-duck"
+    ],
+    "ratingsAvg": 0,
+    "faqs": [
+      {
+        "question": "Is the material non-toxic?",
+        "answer": "Yes, the physical product is made from BPA-free, food-grade rubber.",
+        "_id": "698190d4066a38701def9cf9"
+      }
+    ],
+    "featured": false,
+    "views": 0,
+    "likes": [],
+    "popularityScore": 0,
+    "updatedBy": {
+      "role": "seller",
+      "userId": "643b7de40a416cdcadd8d065"
+    },
+    "isAvailable": true,
+    "keywords": [
+      "classic",
+      "rubber",
+      "bath",
+      "duck",
+      "quintessenti",
+      "yellow",
+      "bath",
+      "toi",
+      "featur",
+      "high",
+      "gloss",
+      "finish",
+      "perfectli",
+      "balanc",
+      "design",
+      "cheer",
+      "addit",
+      "ani",
+      "bathroom",
+      "nurseri",
+      "applianc",
+      "kid"
+    ],
+    "ratings": [],
+    "createdAt": {
+      "$date": "2026-02-03T06:08:20.021Z"
+    },
+    "updatedAt": {
+      "$date": "2026-02-03T06:08:20.021Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": "698190f8066a38701def9d94",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "productName": "Tactical Aviator Helmet",
+    "productDescription": "Authentic-style flight helmet used by modern pilots. Includes a dual-stage visor system and integrated comm-link headset. Optimized for flight simulator setups and AR experiences.",
+    "price": 45000,
+    "discountedPrice": 39600,
+    "quantity": 15,
+    "category": "automotive",
+    "imagesUrl": [
+      "https://m.media-amazon.com/images/I/714dGlpXiVL.jpg"
+    ],
+    "thumbnailUrl": "https://m.media-amazon.com/images/I/714dGlpXiVL.jpg",
+    "model3dUrl": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/FlightHelmet/glTF-Binary/FlightHelmet.glb",
+    "purchaseCount": 0,
+    "tags": [
+      "military",
+      "pilot",
+      "professional-grade",
+      "flight-gear"
+    ],
+    "ratingsAvg": 0,
+    "faqs": [
+      {
+        "question": "Can the visor be raised?",
+        "answer": "The GLB file includes separate meshes for the visor, allowing for custom open/close animations.",
+        "_id": "698190f8066a38701def9d95"
+      }
+    ],
+    "featured": false,
+    "views": 0,
+    "likes": [],
+    "popularityScore": 0,
+    "updatedBy": {
+      "role": "seller",
+      "userId": "643b7de40a416cdcadd8d065"
+    },
+    "isAvailable": true,
+    "keywords": [
+      "tactic",
+      "aviat",
+      "helmet",
+      "authent",
+      "style",
+      "flight",
+      "helmet",
+      "us",
+      "modern",
+      "pilot",
+      "includ",
+      "dual",
+      "stage",
+      "visor",
+      "system",
+      "integr",
+      "comm",
+      "link",
+      "headset",
+      "optim",
+      "flight",
+      "simul",
+      "setup",
+      "ar",
+      "experi",
+      "automot",
+      "militari"
+    ],
+    "ratings": [],
+    "createdAt": {
+      "$date": "2026-02-03T06:08:56.473Z"
+    },
+    "updatedAt": {
+      "$date": "2026-02-03T06:08:56.473Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": "6981911c066a38701def9e33",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "productName": "Iron-Frame Oil Lantern",
+    "productDescription": "Vintage-style camping lantern with a weathered copper finish. This decorative piece provides a warm, rustic aesthetic to any outdoor or indoor space.",
+    "price": 3200,
+    "discountedPrice": 2720,
+    "quantity": 40,
+    "category": "home",
+    "imagesUrl": [
+      "https://tiimg.tistatic.com/fp/1/001/861/led-emergency-lantern-556.jpg"
+    ],
+    "thumbnailUrl": "https://tiimg.tistatic.com/fp/1/001/861/led-emergency-lantern-556.jpg",
+    "model3dUrl": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/Lantern/glTF-Binary/Lantern.glb",
+    "purchaseCount": 0,
+    "tags": [
+      "lighting",
+      "vintage",
+      "rustic",
+      "camping"
+    ],
+    "ratingsAvg": 0,
+    "faqs": [
+      {
+        "question": "Does it work with real oil?",
+        "answer": "This specific 3D model is based on a real-world kerosene design.",
+        "_id": "6981911c066a38701def9e34"
+      }
+    ],
+    "featured": false,
+    "views": 0,
+    "likes": [],
+    "popularityScore": 0,
+    "updatedBy": {
+      "role": "seller",
+      "userId": "643b7de40a416cdcadd8d065"
+    },
+    "isAvailable": true,
+    "keywords": [
+      "iron",
+      "frame",
+      "oil",
+      "lantern",
+      "vintag",
+      "style",
+      "camp",
+      "lantern",
+      "weather",
+      "copper",
+      "finish",
+      "thi",
+      "decor",
+      "piec",
+      "provid",
+      "warm",
+      "rustic",
+      "aesthet",
+      "ani",
+      "outdoor",
+      "indoor",
+      "space",
+      "home",
+      "light"
+    ],
+    "ratings": [],
+    "createdAt": {
+      "$date": "2026-02-03T06:09:32.091Z"
+    },
+    "updatedAt": {
+      "$date": "2026-02-03T06:09:32.091Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": "69819183066a38701def9ed5",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "productName": "Stallion Animated Model",
+    "productDescription": "A graceful 3D horse model pre-loaded with a realistic galloping animation. Perfect for testing character controllers or adding life to rural 3D environments.",
+    "price": 5000,
+    "discountedPrice": 5000,
+    "quantity": 1,
+    "category": "software-services",
+    "imagesUrl": [
+      "https://cdn.britannica.com/96/1296-050-4A65097D/gelding-bay-coat.jpg"
+    ],
+    "thumbnailUrl": "https://cdn.britannica.com/96/1296-050-4A65097D/gelding-bay-coat.jpg",
+    "model3dUrl": "https://math.hws.edu/eck/cs424/f21/lab8/lab8-files/Horse.glb",
+    "purchaseCount": 0,
+    "tags": [
+      "animal",
+      "animated",
+      "low-poly",
+      "nature"
+    ],
+    "ratingsAvg": 0,
+    "faqs": [
+      {
+        "question": "How do I trigger the run?",
+        "answer": "Use the AnimationMixer in Three.js to play the 'Gallop' clip.",
+        "_id": "69819183066a38701def9ed6"
+      }
+    ],
+    "featured": false,
+    "views": 0,
+    "likes": [],
+    "popularityScore": 0,
+    "updatedBy": {
+      "role": "seller",
+      "userId": "643b7de40a416cdcadd8d065"
+    },
+    "isAvailable": true,
+    "keywords": [
+      "stallion",
+      "anim",
+      "model",
+      "grace",
+      "3d",
+      "hors",
+      "model",
+      "pre",
+      "load",
+      "realist",
+      "gallop",
+      "anim",
+      "perfect",
+      "test",
+      "charact",
+      "control",
+      "ad",
+      "life",
+      "rural",
+      "3d",
+      "environ",
+      "softwar",
+      "servic",
+      "anim"
+    ],
+    "ratings": [],
+    "createdAt": {
+      "$date": "2026-02-03T06:11:15.418Z"
+    },
+    "updatedAt": {
+      "$date": "2026-02-03T06:11:15.418Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": "698192e8066a38701def9f7a",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "productName": "Vintage Die-Cast Toy Car",
+    "productDescription": "A classic collectible toy car featuring a high-gloss red finish, realistic rubber-textured tires, and polished chrome accents. This durable die-cast model is perfect for young enthusiasts and adult collectors alike, designed with meticulous attention to vintage automotive details.",
+    "price": 899,
+    "discountedPrice": 764,
+    "quantity": 120,
+    "category": "automotive",
+    "imagesUrl": [
+      "https://asset-explorer.needle.tools/resources/ToyCar/screenshot/screenshot_large.jpg"
+    ],
+    "thumbnailUrl": "https://github.com/KhronosGroup/glTF-Sample-Assets/blob/main/Models/ToyCar/screenshot/screenshot.jpg?raw=true",
+    "model3dUrl": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/ToyCar/glTF-Binary/ToyCar.glb",
+    "purchaseCount": 0,
+    "tags": [
+      "die-cast",
+      "vintage",
+      "collectible",
+      "miniature",
+      "red-car"
+    ],
+    "ratingsAvg": 0,
+    "faqs": [
+      {
+        "question": "What is the scale of this toy car?",
+        "answer": "This model is designed at a 1:43 scale, making it ideal for standard display cases.",
+        "_id": "698192e8066a38701def9f7b"
+      },
+      {
+        "question": "Are the wheels functional?",
+        "answer": "Yes, the model features free-rolling wheels with high-quality axle pins for smooth movement.",
+        "_id": "698192e8066a38701def9f7c"
+      },
+      {
+        "question": "Is the paint lead-free?",
+        "answer": "Absolutely. We use non-toxic, child-safe enamel paint that meets all safety standards.",
+        "_id": "698192e8066a38701def9f7d"
+      }
+    ],
+    "featured": false,
+    "views": 0,
+    "likes": [],
+    "popularityScore": 0,
+    "updatedBy": {
+      "role": "seller",
+      "userId": "643b7de40a416cdcadd8d065"
+    },
+    "isAvailable": true,
+    "keywords": [
+      "vintag",
+      "die",
+      "cast",
+      "toi",
+      "car",
+      "classic",
+      "collect",
+      "toi",
+      "car",
+      "featur",
+      "high",
+      "gloss",
+      "red",
+      "finish",
+      "realist",
+      "rubber",
+      "textur",
+      "tire",
+      "polish",
+      "chrome",
+      "accent",
+      "thi",
+      "durabl",
+      "die",
+      "cast",
+      "model",
+      "perfect",
+      "young",
+      "enthusiast",
+      "adult",
+      "collector",
+      "alik",
+      "design",
+      "meticul",
+      "attent",
+      "vintag",
+      "automot",
+      "detail",
+      "automot",
+      "die",
+      "cast"
+    ],
+    "ratings": [],
+    "createdAt": {
+      "$date": "2026-02-03T06:17:12.608Z"
+    },
+    "updatedAt": {
+      "$date": "2026-02-03T06:17:12.608Z"
+    },
+    "__v": 0
+  }
+]

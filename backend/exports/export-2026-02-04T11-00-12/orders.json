@@ -1,0 +1,1802 @@
+[
+  {
+    "_id": "645125128be12468b42621b5",
+    "fullname": "Ritik Makhija",
+    "cartId": "cart_1683039506087_b0ff3683-201a-4d7e-9e11-a2da6d1cb457",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "shippingAddress": "rrfsgdg rsgdfgdsf gdsfgdfs gsdf",
+    "number": "1234567890",
+    "customer": "643b7de40a416cdcadd8d065",
+    "products": [
+      {
+        "product": "643b83620a416cdcadd8d0f1",
+        "quantity": 1,
+        "price": 1499,
+        "discountedPrice": 1299,
+        "_id": "645125128be12468b42621b6"
+      }
+    ],
+    "orderStatus": "Returned",
+    "transactionId": "645125068be12468b4262187",
+    "orderAmount": 1499,
+    "totalDiscount": 200,
+    "orderTotal": 1299,
+    "orderDate": {
+      "$date": "2023-05-02T14:58:26.093Z"
+    },
+    "createdAt": {
+      "$date": "2023-05-02T14:58:26.093Z"
+    },
+    "updatedAt": {
+      "$date": "2023-05-05T14:40:51.757Z"
+    },
+    "orderId": "order_1683039506095_5364608e-f1e8-490e-b4a7-47754f32dbb4",
+    "__v": 0
+  },
+  {
+    "_id": "6448e2a765f135712c030624",
+    "fullname": "Ritik Makhija",
+    "cartId": "cart_1682498215457_e399f9ff-cdc9-4f3f-b3bb-1c04297eb2e6",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "shippingAddress": "rrfsgdg rsgdfgdsf gdsfgdfs gsdf",
+    "number": "1234567890",
+    "customer": "643b7de40a416cdcadd8d065",
+    "products": [
+      {
+        "product": "643b83620a416cdcadd8d0f1",
+        "quantity": 1,
+        "price": 1499,
+        "discountedPrice": 1299,
+        "_id": "6448e2a765f135712c030625"
+      }
+    ],
+    "orderStatus": "Cancelled",
+    "transactionId": "6448e29865f135712c03060f",
+    "orderAmount": 1499,
+    "totalDiscount": 200,
+    "orderTotal": 1299,
+    "orderDate": {
+      "$date": "2023-04-26T08:36:55.460Z"
+    },
+    "createdAt": {
+      "$date": "2023-04-26T08:36:55.460Z"
+    },
+    "updatedAt": {
+      "$date": "2023-05-03T03:39:11.187Z"
+    },
+    "orderId": "order_1682498215461_b84fe3c2-01ff-412a-9aba-f889c3d2b927",
+    "__v": 0,
+    "notes": {
+      "cancelOrderReason": "simply testing"
+    }
+  },
+  {
+    "_id": "6450e1b0dd3c04af0b1976a6",
+    "fullname": "remona jose",
+    "cartId": "cart_1683022256705_40dee48d-0b30-484c-9f15-6e02f5f3d104",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "shippingAddress": "rrfsgdg rsgdfgdsf gdsfgdfs gsdf",
+    "number": "1234567890",
+    "customer": "64475b08e8674dd1e21b4be5",
+    "products": [
+      {
+        "product": "643b83630a416cdcadd8d119",
+        "quantity": 1,
+        "price": 1499,
+        "discountedPrice": 1299,
+        "_id": "6450e1b0dd3c04af0b1976a7"
+      }
+    ],
+    "orderStatus": "Completed",
+    "transactionId": "6450e1a5dd3c04af0b197691",
+    "orderAmount": 1499,
+    "totalDiscount": 200,
+    "orderTotal": 1299,
+    "orderDate": {
+      "$date": "2023-05-02T10:10:56.710Z"
+    },
+    "createdAt": {
+      "$date": "2023-05-02T10:10:56.710Z"
+    },
+    "updatedAt": {
+      "$date": "2023-05-02T10:10:56.710Z"
+    },
+    "orderId": "order_1683022256712_87173443-6858-49db-bd3f-80736e820e01",
+    "__v": 0
+  },
+  {
+    "_id": "64409d3b292d9b644875df6e",
+    "fullname": "Ritik Makhija",
+    "cartId": "cart_1681956155901_ad0d16c0-e05e-4041-a78b-62e12f655d37",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "shippingAddress": "rrfsgdg rsgdfgdsf gdsfgdfs gsdf",
+    "number": "1234567890",
+    "customer": "643b7de40a416cdcadd8d065",
+    "products": [
+      {
+        "product": "643b835f0a416cdcadd8d0d1",
+        "quantity": 20,
+        "price": 1499,
+        "discountedPrice": 1199,
+        "_id": "64409d3b292d9b644875df6f"
+      }
+    ],
+    "orderStatus": "Completed",
+    "transactionId": "64409d31292d9b644875df55",
+    "orderAmount": 29980,
+    "totalDiscount": 6000,
+    "orderTotal": 23980,
+    "orderDate": {
+      "$date": "2023-04-20T02:02:35.907Z"
+    },
+    "createdAt": {
+      "$date": "2023-04-20T02:02:35.907Z"
+    },
+    "updatedAt": {
+      "$date": "2023-04-29T02:27:02.089Z"
+    },
+    "orderId": "order_1681956155910_c42efa4a-68f4-404b-9d84-40092c4833d6",
+    "__v": 0,
+    "trackingDetails": {
+      "carrierName": "fdsfadsf",
+      "deliveryDate": {
+        "$date": "2023-04-19T00:00:00.000Z"
+      },
+      "deliveryStatus": "In Transit",
+      "trackingNumber": "435245432",
+      "trackingUrl": "fdsafasd"
+    }
+  },
+  {
+    "_id": "6457e0c11ba9c61524d9845f",
+    "fullname": "Ritik Makhija",
+    "cartId": "cart_1683480769006_32a2ec13-0be3-450b-85bd-399791dcb271",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "shippingAddress": "rrfsgdg rsgdfgdsf gdsfgdfs gsdf",
+    "number": "1234567890",
+    "customer": "643b7de40a416cdcadd8d065",
+    "products": [
+      {
+        "product": "643b83620a416cdcadd8d0f1",
+        "quantity": 1,
+        "price": 1499,
+        "discountedPrice": 1299,
+        "_id": "6457e0c11ba9c61524d98460"
+      }
+    ],
+    "orderStatus": "Placed",
+    "transactionId": "6457e0981ba9c61524d98447",
+    "orderAmount": 1499,
+    "totalDiscount": 200,
+    "orderTotal": 1299,
+    "orderDate": {
+      "$date": "2023-05-07T17:32:49.011Z"
+    },
+    "createdAt": {
+      "$date": "2023-05-07T17:32:49.011Z"
+    },
+    "updatedAt": {
+      "$date": "2023-05-07T17:32:49.011Z"
+    },
+    "orderId": "order_1683480769013_dc7b672c-86c2-49cc-aaa9-4be9660f4046",
+    "__v": 0
+  },
+  {
+    "_id": "64400e68e054d4541dc75587",
+    "fullname": "Ritik Makhija",
+    "cartId": "cart_1681919592332_a1e608be-5b2c-4f96-aa5e-3b892bddaa2d",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "shippingAddress": "rrfsgdg rsgdfgdsf gdsfgdfs gsdf",
+    "number": "1234567890",
+    "customer": "643b7de40a416cdcadd8d065",
+    "products": [
+      {
+        "product": "643b835f0a416cdcadd8d0d1",
+        "quantity": 1,
+        "price": 1499,
+        "discountedPrice": 1199,
+        "_id": "64400e68e054d4541dc75588"
+      }
+    ],
+    "orderStatus": "Cancelled",
+    "transactionId": "64400e5fe054d4541dc7556e",
+    "orderAmount": 1499,
+    "totalDiscount": 300,
+    "orderTotal": 1199,
+    "orderDate": {
+      "$date": "2023-04-19T15:53:12.338Z"
+    },
+    "createdAt": {
+      "$date": "2023-04-19T15:53:12.338Z"
+    },
+    "updatedAt": {
+      "$date": "2023-05-05T12:54:38.425Z"
+    },
+    "orderId": "order_1681919592341_f97c587f-b52f-47c4-be42-fcf5787cf301",
+    "__v": 0,
+    "notes": {
+      "cancelOrderReason": "testing"
+    }
+  },
+  {
+    "_id": "6457a43903b63ab9546b8dd1",
+    "fullname": "Ritik Makhija",
+    "cartId": "cart_1683465273444_37e82dcd-4526-43c7-b3a1-a4f982d12135",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "shippingAddress": "rrfsgdg rsgdfgdsf gdsfgdfs gsdf",
+    "number": "1234567890",
+    "customer": "643b7de40a416cdcadd8d065",
+    "products": [
+      {
+        "product": "643b83620a416cdcadd8d0f1",
+        "quantity": 1,
+        "price": 1499,
+        "discountedPrice": 1299,
+        "_id": "6457a43903b63ab9546b8dd2"
+      }
+    ],
+    "orderStatus": "Placed",
+    "transactionId": "6457a43003b63ab9546b8db5",
+    "orderAmount": 1499,
+    "totalDiscount": 200,
+    "orderTotal": 1299,
+    "orderDate": {
+      "$date": "2023-05-07T13:14:33.453Z"
+    },
+    "createdAt": {
+      "$date": "2023-05-07T13:14:33.453Z"
+    },
+    "updatedAt": {
+      "$date": "2023-05-07T13:14:33.453Z"
+    },
+    "orderId": "order_1683465273454_cc7c67c4-3ef6-41c6-b054-7635eb9b13df",
+    "__v": 0
+  },
+  {
+    "_id": "6457e020169b3bc0c9a8bd28",
+    "fullname": "Ritik Makhija",
+    "cartId": "cart_1683480608595_66d3cc90-df59-4e30-8e96-7863c245fc8e",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "shippingAddress": "rrfsgdg rsgdfgdsf gdsfgdfs gsdf",
+    "number": "1234567890",
+    "customer": "643b7de40a416cdcadd8d065",
+    "products": [
+      {
+        "product": "643b83620a416cdcadd8d0f1",
+        "quantity": 1,
+        "price": 1499,
+        "discountedPrice": 1299,
+        "_id": "6457e020169b3bc0c9a8bd29"
+      }
+    ],
+    "orderStatus": "Placed",
+    "transactionId": "6457dfee169b3bc0c9a8bd10",
+    "orderAmount": 1499,
+    "totalDiscount": 200,
+    "orderTotal": 1299,
+    "orderDate": {
+      "$date": "2023-05-07T17:30:08.602Z"
+    },
+    "createdAt": {
+      "$date": "2023-05-07T17:30:08.602Z"
+    },
+    "updatedAt": {
+      "$date": "2023-05-07T17:30:08.602Z"
+    },
+    "orderId": "order_1683480608603_7fa21b72-35d7-4af7-9af2-158d9fdff286",
+    "__v": 0
+  },
+  {
+    "_id": "649132cd756677597894c60c",
+    "fullname": "Ritik Makhija",
+    "cartId": "cart_1687237325174_54422365-4a60-4289-b763-c2ac6a6a1df8",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "shippingAddress": "rrfsgdg rsgdfgdsf gdsfgdfs gsdf",
+    "number": "1234567890",
+    "customer": "6459cc873f9c353beb3c419f",
+    "products": [
+      {
+        "product": "647ea773dbc83afab0fec83c",
+        "quantity": 1,
+        "price": 60000,
+        "discountedPrice": 51600,
+        "_id": "649132cd756677597894c60d"
+      }
+    ],
+    "orderStatus": "Placed",
+    "transactionId": "649132b3756677597894c5f6",
+    "orderAmount": 60000,
+    "totalDiscount": 8400,
+    "orderTotal": 51600,
+    "orderDate": {
+      "$date": "2023-06-20T05:02:05.182Z"
+    },
+    "createdAt": {
+      "$date": "2023-06-20T05:02:05.182Z"
+    },
+    "updatedAt": {
+      "$date": "2023-06-20T05:02:05.182Z"
+    },
+    "orderId": "order_1687237325184_f52827ec-14c0-4425-b9fb-aa16c5d65b44",
+    "__v": 0
+  },
+  {
+    "_id": "64478e86d1d77885a22d456d",
+    "fullname": "Ritik Makhija",
+    "cartId": "cart_1682411142014_0216a1ba-c751-44f6-bda6-5d0c93cc57fc",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "shippingAddress": "resafsaf srfseafes affaesfsafassaefasef sae",
+    "number": "1234567890",
+    "customer": "64475b08e8674dd1e21b4be5",
+    "products": [
+      {
+        "product": "643b83620a416cdcadd8d0f1",
+        "quantity": 1,
+        "price": 1499,
+        "discountedPrice": 1299,
+        "_id": "64478e86d1d77885a22d456e"
+      }
+    ],
+    "orderStatus": "Placed",
+    "transactionId": "64478e7bd1d77885a22d4558",
+    "orderAmount": 1499,
+    "totalDiscount": 200,
+    "orderTotal": 1299,
+    "orderDate": {
+      "$date": "2023-04-25T08:25:42.020Z"
+    },
+    "createdAt": {
+      "$date": "2023-04-25T08:25:42.020Z"
+    },
+    "updatedAt": {
+      "$date": "2023-04-25T08:25:42.020Z"
+    },
+    "orderId": "order_1682411142023_1e9289bf-f54b-494a-844b-24eec77fd478",
+    "__v": 0
+  },
+  {
+    "_id": "6450e7b6009e41e34f9004c6",
+    "fullname": "remona jose",
+    "cartId": "cart_1683023798692_63fe22e7-5e70-4b3d-8e8f-3dfc7db79373",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "shippingAddress": "rrfsgdg rsgdfgdsf gdsfgdfs gsdf",
+    "number": "1234567890",
+    "customer": "64475b08e8674dd1e21b4be5",
+    "products": [
+      {
+        "product": "643b83620a416cdcadd8d0f1",
+        "quantity": 1,
+        "price": 1499,
+        "discountedPrice": 1299,
+        "_id": "6450e7b6009e41e34f9004c7"
+      }
+    ],
+    "orderStatus": "Returned",
+    "transactionId": "6450e79d009e41e34f9004a7",
+    "orderAmount": 1499,
+    "totalDiscount": 200,
+    "orderTotal": 1299,
+    "orderDate": {
+      "$date": "2023-05-02T10:36:38.697Z"
+    },
+    "createdAt": {
+      "$date": "2023-05-02T10:36:38.697Z"
+    },
+    "updatedAt": {
+      "$date": "2023-05-09T04:26:07.037Z"
+    },
+    "orderId": "order_1683023798699_377f3a96-a70c-405b-adfc-13788597783a",
+    "__v": 0,
+    "notes": {
+      "cancelOrderReason": "testing"
+    }
+  },
+  {
+    "_id": "6458fc6f959606c9d08757f0",
+    "fullname": "Ritik Makhija",
+    "cartId": "cart_1683553391808_9f20c6f8-900d-44fc-aba4-b09e986cf39d",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "shippingAddress": "rrfsgdg rsgdfgdsf gdsfgdfs gsdf",
+    "number": "1234567890",
+    "customer": "643b7de40a416cdcadd8d065",
+    "products": [
+      {
+        "product": "643b83630a416cdcadd8d119",
+        "quantity": 1,
+        "price": 1499,
+        "discountedPrice": 1299,
+        "_id": "6458fc6f959606c9d08757f1"
+      }
+    ],
+    "orderStatus": "Placed",
+    "transactionId": "6458fc62959606c9d08757d8",
+    "orderAmount": 1499,
+    "totalDiscount": 200,
+    "orderTotal": 1299,
+    "orderDate": {
+      "$date": "2023-05-08T13:43:11.814Z"
+    },
+    "createdAt": {
+      "$date": "2023-05-08T13:43:11.814Z"
+    },
+    "updatedAt": {
+      "$date": "2023-05-08T13:43:11.814Z"
+    },
+    "orderId": "order_1683553391816_da95fdcf-2b47-4469-9aed-fbe6eed5bba5",
+    "__v": 0
+  },
+  {
+    "_id": "64a3a3059516788112c5f53c",
+    "fullname": "Ritik Makhija",
+    "cartId": "cart_1688445701484_cca7180d-eead-4d32-b5cf-a5fc8a1be551",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "shippingAddress": "rrfsgdg rsgdfgdsf gdsfgdfs gsdf",
+    "number": "1234567890",
+    "customer": "6459cc873f9c353beb3c419f",
+    "products": [
+      {
+        "product": "647ea8c2dbc83afab0fec962",
+        "quantity": 1,
+        "price": 799,
+        "discountedPrice": 719,
+        "_id": "64a3a3059516788112c5f53d"
+      }
+    ],
+    "orderStatus": "Returned",
+    "transactionId": "64a3a2ea9516788112c5f526",
+    "orderAmount": 799,
+    "totalDiscount": 80,
+    "orderTotal": 719,
+    "orderDate": {
+      "$date": "2023-07-04T04:41:41.495Z"
+    },
+    "createdAt": {
+      "$date": "2023-07-04T04:41:41.495Z"
+    },
+    "updatedAt": {
+      "$date": "2023-07-27T13:50:17.959Z"
+    },
+    "orderId": "order_1688445701497_5216f742-2263-4730-95fd-3e0091a87fec",
+    "__v": 0,
+    "notes": {
+      "cancelOrderReason": "out of stock"
+    }
+  },
+  {
+    "_id": "646305dbd66b8622c7bb6b4c",
+    "fullname": "Ritik Makhija",
+    "cartId": "cart_1684211163261_8d0b0a04-d26a-4c80-b2d0-ce566b64e5de",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "shippingAddress": "rrfsgdg rsgdfgdsf gdsfgdfs gsdf",
+    "number": "1234567890",
+    "customer": "643b7de40a416cdcadd8d065",
+    "products": [
+      {
+        "product": "643b83620a416cdcadd8d0f1",
+        "quantity": 1,
+        "price": 1499,
+        "discountedPrice": 1299,
+        "_id": "646305dbd66b8622c7bb6b4d"
+      }
+    ],
+    "orderStatus": "Shipped",
+    "transactionId": "646305cbd66b8622c7bb6b1e",
+    "orderAmount": 1499,
+    "totalDiscount": 200,
+    "orderTotal": 1299,
+    "orderDate": {
+      "$date": "2023-05-16T04:26:03.271Z"
+    },
+    "createdAt": {
+      "$date": "2023-05-16T04:26:03.271Z"
+    },
+    "updatedAt": {
+      "$date": "2023-05-23T03:44:04.963Z"
+    },
+    "orderId": "order_1684211163273_5831ef7c-7d8b-4863-a69e-b8eb01f16bbe",
+    "__v": 0
+  },
+  {
+    "_id": "64512463970251f5d0892be0",
+    "fullname": "Ritik Makhija",
+    "cartId": "cart_1683039331088_37d91136-f67c-4560-94be-304fe8658d0f",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "shippingAddress": "rrfsgdg rsgdfgdsf gdsfgdfs gsdf",
+    "number": "1234567890",
+    "customer": "643b7de40a416cdcadd8d065",
+    "products": [
+      {
+        "product": "643b83620a416cdcadd8d0f1",
+        "quantity": 1,
+        "price": 1499,
+        "discountedPrice": 1299,
+        "_id": "64512463970251f5d0892be1"
+      }
+    ],
+    "orderStatus": "Cancelled",
+    "transactionId": "64512457970251f5d0892bb2",
+    "orderAmount": 1499,
+    "totalDiscount": 200,
+    "orderTotal": 1299,
+    "orderDate": {
+      "$date": "2023-05-02T14:55:31.094Z"
+    },
+    "createdAt": {
+      "$date": "2023-05-02T14:55:31.094Z"
+    },
+    "updatedAt": {
+      "$date": "2023-05-03T02:30:37.360Z"
+    },
+    "orderId": "order_1683039331096_03ca6564-1c2b-45ef-a08a-6dc600e54c4f",
+    "__v": 0,
+    "notes": {
+      "cancelOrderReason": "htuyyuuytyutytut"
+    }
+  },
+  {
+    "_id": "6475e158c1ce1a42fe091891",
+    "fullname": "Ritik Makhija",
+    "cartId": "cart_1685447000033_20f960c8-1ed2-47fb-85aa-b7b8c029077e",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "shippingAddress": "rrfsgdg rsgdfgdsf gdsfgdfs gsdf",
+    "number": "1234567890",
+    "customer": "6459cc873f9c353beb3c419f",
+    "products": [
+      {
+        "product": "643b83620a416cdcadd8d0f1",
+        "quantity": 1,
+        "price": 1499,
+        "discountedPrice": 1299,
+        "_id": "6475e158c1ce1a42fe091892"
+      }
+    ],
+    "orderStatus": "Cancelled",
+    "transactionId": "6475e14cc1ce1a42fe091875",
+    "orderAmount": 1499,
+    "totalDiscount": 200,
+    "orderTotal": 1299,
+    "orderDate": {
+      "$date": "2023-05-30T11:43:20.039Z"
+    },
+    "createdAt": {
+      "$date": "2023-05-30T11:43:20.039Z"
+    },
+    "updatedAt": {
+      "$date": "2023-05-30T11:43:44.982Z"
+    },
+    "orderId": "order_1685447000040_77e687cc-6352-47b6-862c-310b2b9729f1",
+    "__v": 0,
+    "notes": {
+      "cancelOrderReason": "testing"
+    }
+  },
+  {
+    "_id": "6457d839169b3bc0c9a8b502",
+    "fullname": "Ritik Makhija",
+    "cartId": "cart_1683478585317_856fc7f7-2ad7-4eca-bc2a-677cc31c1515",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "shippingAddress": "rrfsgdg rsgdfgdsf gdsfgdfs gsdf",
+    "number": "1234567890",
+    "customer": "643b7de40a416cdcadd8d065",
+    "products": [
+      {
+        "product": "643b83620a416cdcadd8d0f1",
+        "quantity": 2,
+        "price": 1499,
+        "discountedPrice": 1299,
+        "_id": "6457d839169b3bc0c9a8b503"
+      },
+      {
+        "product": "643b83650a416cdcadd8d149",
+        "quantity": 1,
+        "price": 1499,
+        "discountedPrice": 1299,
+        "_id": "6457d839169b3bc0c9a8b504"
+      }
+    ],
+    "orderStatus": "Placed",
+    "transactionId": "6457d82e169b3bc0c9a8b4e1",
+    "orderAmount": 4497,
+    "totalDiscount": 600,
+    "orderTotal": 3897,
+    "orderDate": {
+      "$date": "2023-05-07T16:56:25.323Z"
+    },
+    "createdAt": {
+      "$date": "2023-05-07T16:56:25.323Z"
+    },
+    "updatedAt": {
+      "$date": "2023-05-07T16:56:25.323Z"
+    },
+    "orderId": "order_1683478585325_07bd8b77-7f04-465b-ac41-6550c0f94376",
+    "__v": 0
+  },
+  {
+    "_id": "64a3a350c688dfb4b42cb0d7",
+    "fullname": "Ritik Makhija",
+    "cartId": "cart_1688445776970_bec88cb4-3c9e-49fc-99e0-7a0eea42508e",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "shippingAddress": "rrfsgdg rsgdfgdsf gdsfgdfs gsdf",
+    "number": "1234567890",
+    "customer": "6459cc873f9c353beb3c419f",
+    "products": [
+      {
+        "product": "643b83620a416cdcadd8d0f1",
+        "quantity": 1,
+        "price": 199900,
+        "discountedPrice": 183908,
+        "_id": "64a3a350c688dfb4b42cb0d8"
+      }
+    ],
+    "orderStatus": "Cancelled",
+    "transactionId": "64a3a347c688dfb4b42cb0bb",
+    "orderAmount": 199900,
+    "totalDiscount": 15992,
+    "orderTotal": 183908,
+    "orderDate": {
+      "$date": "2023-07-04T04:42:56.977Z"
+    },
+    "createdAt": {
+      "$date": "2023-07-04T04:42:56.977Z"
+    },
+    "updatedAt": {
+      "$date": "2023-07-27T12:55:02.202Z"
+    },
+    "orderId": "order_1688445776981_a9f4e00b-d742-46b8-8a1a-ca8dd5b549ba",
+    "__v": 0,
+    "notes": {
+      "cancelOrderReason": "simply"
+    }
+  },
+  {
+    "_id": "64475eede8674dd1e21b50f5",
+    "fullname": "remona jose",
+    "cartId": "cart_1682398957931_86c984d0-a23c-4378-9a86-454357c7e81a",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "shippingAddress": "resafsaf srfseafes affaesfsafassaefasef sae",
+    "number": "1234567890",
+    "customer": "64475b08e8674dd1e21b4be5",
+    "products": [
+      {
+        "product": "643b83620a416cdcadd8d0f1",
+        "quantity": 1,
+        "price": 1499,
+        "discountedPrice": 1299,
+        "_id": "64475eede8674dd1e21b50f6"
+      }
+    ],
+    "orderStatus": "Shipped",
+    "transactionId": "64475ee5e8674dd1e21b50e0",
+    "orderAmount": 1499,
+    "totalDiscount": 200,
+    "orderTotal": 1299,
+    "orderDate": {
+      "$date": "2023-04-25T05:02:37.941Z"
+    },
+    "createdAt": {
+      "$date": "2023-04-25T05:02:37.941Z"
+    },
+    "updatedAt": {
+      "$date": "2023-04-25T05:06:12.252Z"
+    },
+    "orderId": "order_1682398957943_11ceb1db-8252-4ce2-9920-1305b2c4f0b3",
+    "__v": 0,
+    "trackingDetails": {
+      "carrierName": "fdsfadsf",
+      "deliveryDate": {
+        "$date": "2023-04-26T00:00:00.000Z"
+      },
+      "deliveryStatus": "In Transit",
+      "trackingNumber": "twretgf",
+      "trackingUrl": "fdsafasd"
+    }
+  },
+  {
+    "_id": "644093ad0197c7511b058e27",
+    "fullname": "Ritik Makhija",
+    "cartId": "cart_1681953709310_6de6272d-6392-49a2-bc56-49ef6972eb36",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "shippingAddress": "rrfsgdg rsgdfgdsf gdsfgdfs gsdf",
+    "number": "1234567890",
+    "customer": "643b7de40a416cdcadd8d065",
+    "products": [
+      {
+        "product": "643b835f0a416cdcadd8d0d1",
+        "quantity": 1,
+        "price": 1499,
+        "discountedPrice": 1199,
+        "_id": "644093ad0197c7511b058e28"
+      }
+    ],
+    "orderStatus": "Completed",
+    "transactionId": "644093a30197c7511b058e0e",
+    "orderAmount": 1499,
+    "totalDiscount": 300,
+    "orderTotal": 1199,
+    "orderDate": {
+      "$date": "2023-04-20T01:21:49.320Z"
+    },
+    "createdAt": {
+      "$date": "2023-04-20T01:21:49.320Z"
+    },
+    "updatedAt": {
+      "$date": "2023-04-27T01:49:00.219Z"
+    },
+    "orderId": "order_1681953709324_b1768068-26ec-44ae-a424-176eab256f49",
+    "__v": 0,
+    "trackingDetails": {
+      "carrierName": "rwetwre",
+      "deliveryDate": {
+        "$date": "2023-04-26T00:00:00.000Z"
+      },
+      "deliveryStatus": "Out for Delivery",
+      "trackingNumber": "twretgf",
+      "trackingUrl": "twqrewr"
+    }
+  },
+  {
+    "_id": "6458d1eaf9789f104f04be5b",
+    "fullname": "Ritik Makhija",
+    "cartId": "cart_1683542506595_d50d9175-6826-47d3-a7ee-a644da49daf5",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "shippingAddress": "rrfsgdg rsgdfgdsf gdsfgdfs gsdf",
+    "number": "1234567890",
+    "customer": "6457cd6f4c66e8cca4c2d288",
+    "products": [
+      {
+        "product": "643b83630a416cdcadd8d119",
+        "quantity": 1,
+        "price": 1499,
+        "discountedPrice": 1299,
+        "_id": "6458d1eaf9789f104f04be5c"
+      }
+    ],
+    "orderStatus": "Returned",
+    "transactionId": "6458d1e2f9789f104f04be43",
+    "orderAmount": 1499,
+    "totalDiscount": 200,
+    "orderTotal": 1299,
+    "orderDate": {
+      "$date": "2023-05-08T10:41:46.605Z"
+    },
+    "createdAt": {
+      "$date": "2023-05-08T10:41:46.605Z"
+    },
+    "updatedAt": {
+      "$date": "2023-05-08T10:48:37.112Z"
+    },
+    "orderId": "order_1683542506608_97b6cdf1-cfcd-4d5d-8f57-b055ab2e3498",
+    "__v": 0,
+    "notes": {
+      "cancelOrderReason": "testing"
+    }
+  },
+  {
+    "_id": "6457e90f1ba9c61524d9881a",
+    "fullname": "Ritik Makhija",
+    "cartId": "cart_1683482895748_3fb72523-1405-4ba1-903f-dada4f6d530e",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "shippingAddress": "rrfsgdg rsgdfgdsf gdsfgdfs gsdf",
+    "number": "1234567890",
+    "customer": "643b7de40a416cdcadd8d065",
+    "products": [
+      {
+        "product": "643b83620a416cdcadd8d0f1",
+        "quantity": 1,
+        "price": 1499,
+        "discountedPrice": 1299,
+        "_id": "6457e90f1ba9c61524d9881b"
+      }
+    ],
+    "orderStatus": "Placed",
+    "transactionId": "6457e7e51ba9c61524d98802",
+    "orderAmount": 1499,
+    "totalDiscount": 200,
+    "orderTotal": 1299,
+    "orderDate": {
+      "$date": "2023-05-07T18:08:15.751Z"
+    },
+    "createdAt": {
+      "$date": "2023-05-07T18:08:15.751Z"
+    },
+    "updatedAt": {
+      "$date": "2023-05-07T18:08:15.751Z"
+    },
+    "orderId": "order_1683482895754_8c67e2c8-6a40-480f-823e-bce5c8a768de",
+    "__v": 0
+  },
+  {
+    "_id": "6459c1e20867d08ef880a315",
+    "fullname": "remona jose",
+    "cartId": "cart_1683603938877_6229b93e-7d0c-4c9a-a9fc-3c2b5048ea3a",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "shippingAddress": "rrfsgdg rsgdfgdsf gdsfgdfs gsdf",
+    "number": "1234567890",
+    "customer": "64475b08e8674dd1e21b4be5",
+    "products": [
+      {
+        "product": "643b83620a416cdcadd8d0f1",
+        "quantity": 1,
+        "price": 1499,
+        "discountedPrice": 1299,
+        "_id": "6459c1e20867d08ef880a316"
+      }
+    ],
+    "orderStatus": "Completed",
+    "transactionId": "6459c1b10867d08ef880a2f9",
+    "orderAmount": 1499,
+    "totalDiscount": 200,
+    "orderTotal": 1299,
+    "orderDate": {
+      "$date": "2023-05-09T03:45:38.884Z"
+    },
+    "createdAt": {
+      "$date": "2023-05-09T03:45:38.884Z"
+    },
+    "updatedAt": {
+      "$date": "2023-05-16T04:26:03.381Z"
+    },
+    "orderId": "order_1683603938886_9f33566d-3f8a-47d1-8d28-e3c656013e5b",
+    "__v": 0,
+    "trackingDetails": {
+      "carrierName": "fdsfadsf",
+      "deliveryDate": {
+        "$date": "2023-05-09T00:00:00.000Z"
+      },
+      "deliveryStatus": "Delivered",
+      "trackingNumber": "twretgf",
+      "trackingUrl": "fdsafasd"
+    }
+  },
+  {
+    "_id": "6448e19665f135712c03052c",
+    "fullname": "Ritik Makhija",
+    "cartId": "cart_1682497942883_cd9cfa9d-2d36-4752-8fe4-b030f795eb3c",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "shippingAddress": "rrfsgdg rsgdfgdsf gdsfgdfs gsdf",
+    "number": "1234567890",
+    "customer": "643b7de40a416cdcadd8d065",
+    "products": [
+      {
+        "product": "643b83620a416cdcadd8d0f1",
+        "quantity": 1,
+        "price": 1499,
+        "discountedPrice": 1299,
+        "_id": "6448e19665f135712c03052d"
+      }
+    ],
+    "orderStatus": "Cancelled",
+    "transactionId": "6448e14d65f135712c030513",
+    "orderAmount": 1499,
+    "totalDiscount": 200,
+    "orderTotal": 1299,
+    "orderDate": {
+      "$date": "2023-04-26T08:32:22.893Z"
+    },
+    "createdAt": {
+      "$date": "2023-04-26T08:32:22.894Z"
+    },
+    "updatedAt": {
+      "$date": "2023-05-05T12:50:37.543Z"
+    },
+    "orderId": "order_1682497942896_e8ab6c30-a107-4b2c-b811-cee6a1f5809c",
+    "__v": 0,
+    "notes": {
+      "cancelOrderReason": "testing"
+    }
+  },
+  {
+    "_id": "64400fca9fac291fac6d5ee0",
+    "fullname": "Ritik Makhija",
+    "cartId": "cart_1681919946523_a3282c77-6e78-4a56-b5f3-f819952dbc8f",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "shippingAddress": "fsdfadsf dsfadsfasd fsdafasd ",
+    "number": "1234567890",
+    "customer": "643b7de40a416cdcadd8d065",
+    "products": [
+      {
+        "product": "643b835f0a416cdcadd8d0d1",
+        "quantity": 1,
+        "price": 1499,
+        "discountedPrice": 1199,
+        "_id": "64400fca9fac291fac6d5ee1"
+      }
+    ],
+    "orderStatus": "Cancelled",
+    "transactionId": "64400fc19fac291fac6d5ec7",
+    "orderAmount": 1499,
+    "totalDiscount": 300,
+    "orderTotal": 1199,
+    "orderDate": {
+      "$date": "2023-04-19T15:59:06.529Z"
+    },
+    "createdAt": {
+      "$date": "2023-04-19T15:59:06.529Z"
+    },
+    "updatedAt": {
+      "$date": "2023-04-24T10:57:00.066Z"
+    },
+    "orderId": "order_1681919946532_d145075a-6368-46b3-bdc8-32f95d5a2e7c",
+    "__v": 0
+  },
+  {
+    "_id": "6448e2fc65f135712c030702",
+    "fullname": "Ritik Makhija",
+    "cartId": "cart_1682498300942_127def86-dcd3-4678-9611-ce609a82ed42",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "shippingAddress": "rrfsgdg rsgdfgdsf gdsfgdfs gsdf",
+    "number": "1234567890",
+    "customer": "643b7de40a416cdcadd8d065",
+    "products": [
+      {
+        "product": "643b83620a416cdcadd8d0f1",
+        "quantity": 1,
+        "price": 1499,
+        "discountedPrice": 1299,
+        "_id": "6448e2fc65f135712c030703"
+      }
+    ],
+    "orderStatus": "Returned",
+    "transactionId": "6448e2f465f135712c0306ed",
+    "orderAmount": 1499,
+    "totalDiscount": 200,
+    "orderTotal": 1299,
+    "orderDate": {
+      "$date": "2023-04-26T08:38:20.945Z"
+    },
+    "createdAt": {
+      "$date": "2023-04-26T08:38:20.945Z"
+    },
+    "updatedAt": {
+      "$date": "2023-05-05T14:35:26.666Z"
+    },
+    "orderId": "order_1682498300946_97394829-1054-48a4-93cd-4baba9dec880",
+    "__v": 0,
+    "notes": {
+      "cancelOrderReason": "simply i want to refund"
+    }
+  },
+  {
+    "_id": "6459ce463f9c353beb3c49f8",
+    "fullname": "remona jose",
+    "cartId": "cart_1683607110875_7fde95e2-48f8-4e43-b19e-d13e6790216c",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "shippingAddress": "rrfsgdg rsgdfgdsf gdsfgdfs gsdf",
+    "number": "1234567890",
+    "customer": "6459cc873f9c353beb3c419f",
+    "products": [
+      {
+        "product": "643b83620a416cdcadd8d0e0",
+        "quantity": 1,
+        "price": 1499,
+        "discountedPrice": 600,
+        "_id": "6459ce463f9c353beb3c49f9"
+      },
+      {
+        "product": "643b83620a416cdcadd8d0f1",
+        "quantity": 1,
+        "price": 1499,
+        "discountedPrice": 1299,
+        "_id": "6459ce463f9c353beb3c49fa"
+      },
+      {
+        "product": "643b83650a416cdcadd8d149",
+        "quantity": 1,
+        "price": 1499,
+        "discountedPrice": 1299,
+        "_id": "6459ce463f9c353beb3c49fb"
+      }
+    ],
+    "orderStatus": "Completed",
+    "transactionId": "6459ce2b3f9c353beb3c49d2",
+    "orderAmount": 4497,
+    "totalDiscount": 1299,
+    "orderTotal": 3198,
+    "orderDate": {
+      "$date": "2023-05-09T04:38:30.889Z"
+    },
+    "createdAt": {
+      "$date": "2023-05-09T04:38:30.889Z"
+    },
+    "updatedAt": {
+      "$date": "2023-05-30T11:42:17.707Z"
+    },
+    "orderId": "order_1683607110891_e326e3c3-03cd-4065-95c1-fb4b9adc4457",
+    "__v": 0,
+    "trackingDetails": {
+      "carrierName": "fdsfadsf",
+      "deliveryDate": {
+        "$date": "2023-06-07T00:00:00.000Z"
+      },
+      "deliveryStatus": "Out for Delivery",
+      "trackingNumber": "twretgf",
+      "trackingUrl": "twqrewr"
+    }
+  },
+  {
+    "_id": "6487f5629a2e0d2efbc51c2f",
+    "fullname": "Ritik Makhija",
+    "cartId": "cart_1686631778057_ed419b9b-7028-4051-bc67-228a03ddd7de",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "shippingAddress": "rrfsgdg rsgdfgdsf gdsfgdfs gsdf",
+    "number": "1234567890",
+    "customer": "6459cc873f9c353beb3c419f",
+    "products": [
+      {
+        "product": "647ea8c2dbc83afab0fec962",
+        "quantity": 1,
+        "price": 799,
+        "discountedPrice": 719,
+        "_id": "6487f5629a2e0d2efbc51c30"
+      }
+    ],
+    "orderStatus": "Cancelled",
+    "transactionId": "6487f52b9a2e0d2efbc51c15",
+    "orderAmount": 799,
+    "totalDiscount": 80,
+    "orderTotal": 719,
+    "orderDate": {
+      "$date": "2023-06-13T04:49:38.062Z"
+    },
+    "createdAt": {
+      "$date": "2023-06-13T04:49:38.062Z"
+    },
+    "updatedAt": {
+      "$date": "2023-06-13T04:52:07.491Z"
+    },
+    "orderId": "order_1686631778063_52e98715-635e-44b8-a680-75a40b258240",
+    "__v": 0,
+    "notes": {
+      "cancelOrderReason": "fasdfdasfasdf"
+    }
+  },
+  {
+    "_id": "649305ab3fa2c89a322a60e8",
+    "fullname": "Ritik Makhija",
+    "cartId": "cart_1687356843817_00e1379b-6ad9-4340-be92-6ce638b2c91a",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "shippingAddress": "rrfsgdg rsgdfgdsf gdsfgdfs gsdf",
+    "number": "1234567890",
+    "customer": "6459cc873f9c353beb3c419f",
+    "products": [
+      {
+        "product": "643b83620a416cdcadd8d0f1",
+        "quantity": 1,
+        "price": 199900,
+        "discountedPrice": 183908,
+        "_id": "649305ab3fa2c89a322a60e9"
+      }
+    ],
+    "orderStatus": "Confirmed",
+    "transactionId": "6493059f3fa2c89a322a60cc",
+    "orderAmount": 199900,
+    "totalDiscount": 15992,
+    "orderTotal": 183908,
+    "orderDate": {
+      "$date": "2023-06-21T14:14:03.829Z"
+    },
+    "createdAt": {
+      "$date": "2023-06-21T14:14:03.829Z"
+    },
+    "updatedAt": {
+      "$date": "2023-07-27T13:14:19.935Z"
+    },
+    "orderId": "order_1687356843830_7aa7dfff-5629-43d5-8699-04b41e32ffab",
+    "__v": 0,
+    "notes": {
+      "cancelOrderReason": "simply"
+    }
+  },
+  {
+    "_id": "6447dfd44993b86bcda3d979",
+    "fullname": "Ritik Makhija",
+    "cartId": "cart_1682431956284_4a86b0dd-7c9b-4a5c-88dd-38d08eee664e",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "shippingAddress": "rrfsgdg rsgdfgdsf gdsfgdfs gsdf",
+    "number": "1234567890",
+    "customer": "643b7de40a416cdcadd8d065",
+    "products": [
+      {
+        "product": "643b83650a416cdcadd8d149",
+        "quantity": 1,
+        "price": 1499,
+        "discountedPrice": 1299,
+        "_id": "6447dfd44993b86bcda3d97a"
+      }
+    ],
+    "orderStatus": "Completed",
+    "transactionId": "6447dfc24993b86bcda3d964",
+    "orderAmount": 1499,
+    "totalDiscount": 200,
+    "orderTotal": 1299,
+    "orderDate": {
+      "$date": "2023-04-25T14:12:36.289Z"
+    },
+    "createdAt": {
+      "$date": "2023-04-25T14:12:36.289Z"
+    },
+    "updatedAt": {
+      "$date": "2023-05-02T14:16:05.263Z"
+    },
+    "orderId": "order_1682431956291_66e40621-6c83-4079-88ab-92c27ff8e5dd",
+    "__v": 0,
+    "trackingDetails": {
+      "carrierName": "dfsafdas",
+      "deliveryDate": {
+        "$date": "2023-05-21T00:00:00.000Z"
+      },
+      "deliveryStatus": "Delivered",
+      "trackingNumber": "fadsfadsfdas",
+      "trackingUrl": "afdsafadsf"
+    }
+  },
+  {
+    "_id": "6450e3a5e6363ab1f0855ce0",
+    "fullname": "Ritik Makhija",
+    "cartId": "cart_1683022757898_3e004fd7-be2e-48b7-b618-0687ceb93c6d",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "shippingAddress": "rrfsgdg rsgdfgdsf gdsfgdfs gsdf",
+    "number": "1234567890",
+    "customer": "64475b08e8674dd1e21b4be5",
+    "products": [
+      {
+        "product": "643b83620a416cdcadd8d0f1",
+        "quantity": 1,
+        "price": 1499,
+        "discountedPrice": 1299,
+        "_id": "6450e3a5e6363ab1f0855ce1"
+      }
+    ],
+    "orderStatus": "Completed",
+    "transactionId": "6450e39ce6363ab1f0855cc1",
+    "orderAmount": 1499,
+    "totalDiscount": 200,
+    "orderTotal": 1299,
+    "orderDate": {
+      "$date": "2023-05-02T10:19:17.909Z"
+    },
+    "createdAt": {
+      "$date": "2023-05-02T10:19:17.910Z"
+    },
+    "updatedAt": {
+      "$date": "2023-05-10T11:08:35.736Z"
+    },
+    "orderId": "order_1683022757912_1a584175-39bb-4982-9062-ef1ed31b666a",
+    "__v": 0
+  },
+  {
+    "_id": "64c238c66d80836f4c243201",
+    "fullname": "niyapiya",
+    "cartId": "cart_1690450118065_324b71cd-8f3f-4a7d-8f4f-a2d83f0034c3",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "shippingAddress": "qwertyuioplkjhgfdsaz",
+    "number": "1234567890",
+    "customer": "6459cc873f9c353beb3c419f",
+    "products": [
+      {
+        "product": "643b83620a416cdcadd8d0f1",
+        "quantity": 1,
+        "price": 199900,
+        "discountedPrice": 183908,
+        "_id": "64c238c66d80836f4c243202"
+      }
+    ],
+    "orderStatus": "Completed",
+    "transactionId": "64c238866d80836f4c2431e1",
+    "orderAmount": 199900,
+    "totalDiscount": 15992,
+    "orderTotal": 183908,
+    "orderDate": {
+      "$date": "2023-07-27T09:28:38.177Z"
+    },
+    "createdAt": {
+      "$date": "2023-07-27T09:28:38.178Z"
+    },
+    "updatedAt": {
+      "$date": "2023-07-27T13:05:50.354Z"
+    },
+    "orderId": "order_1690450118187_afba2125-76f5-4d80-9c23-5eefe0cf534c",
+    "__v": 0,
+    "trackingDetails": {
+      "carrierName": "fdsfadsf",
+      "deliveryDate": {
+        "$date": "2023-07-27T00:00:00.000Z"
+      },
+      "deliveryStatus": "Delivered",
+      "trackingNumber": "twretgf",
+      "trackingUrl": "fdsafasd"
+    }
+  },
+  {
+    "_id": "64c28ed891ca536ce7b8ae56",
+    "fullname": "remonajose",
+    "cartId": "cart_1690472152215_497a94ba-eba8-4a8e-802e-e7b91d46ab73",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "shippingAddress": "asdfghjklzxcvbnmqwer",
+    "number": "1234567890",
+    "customer": "6459cc873f9c353beb3c419f",
+    "products": [
+      {
+        "product": "647ea773dbc83afab0fec83c",
+        "quantity": 1,
+        "price": 60000,
+        "discountedPrice": 51600,
+        "_id": "64c28ed891ca536ce7b8ae57"
+      }
+    ],
+    "orderStatus": "Placed",
+    "transactionId": "64c28ebe91ca536ce7b8ae3c",
+    "orderAmount": 60000,
+    "totalDiscount": 8400,
+    "orderTotal": 51600,
+    "orderDate": {
+      "$date": "2023-07-27T15:35:52.251Z"
+    },
+    "createdAt": {
+      "$date": "2023-07-27T15:35:52.252Z"
+    },
+    "updatedAt": {
+      "$date": "2023-07-27T15:35:52.252Z"
+    },
+    "orderId": "order_1690472152255_8c7274a4-c592-40cd-8bd0-ab544abc4dcf",
+    "__v": 0
+  },
+  {
+    "_id": "64c3222c86e191a9c8d9b3ae",
+    "fullname": "Ritik Makhija",
+    "cartId": "cart_1690509868347_090e89cb-7728-4397-b41e-8ae1a05a93ac",
+    "seller": "64c27304cc470f04c54c675d",
+    "shippingAddress": "hebbal kempapura 5420011 banagalore",
+    "number": "1234567890",
+    "customer": "643b7de40a416cdcadd8d065",
+    "products": [
+      {
+        "product": "64c3219b516ae9380b4707a2",
+        "quantity": 1,
+        "price": 5000,
+        "discountedPrice": 4500,
+        "_id": "64c3222c86e191a9c8d9b3af"
+      }
+    ],
+    "orderStatus": "Placed",
+    "transactionId": "64c3222286e191a9c8d9b390",
+    "orderAmount": 5000,
+    "totalDiscount": 500,
+    "orderTotal": 4500,
+    "orderDate": {
+      "$date": "2023-07-28T02:04:28.366Z"
+    },
+    "createdAt": {
+      "$date": "2023-07-28T02:04:28.366Z"
+    },
+    "updatedAt": {
+      "$date": "2023-07-28T02:04:28.366Z"
+    },
+    "orderId": "order_1690509868369_946b7c83-8425-4e39-8f06-280b1f225b15",
+    "__v": 0
+  },
+  {
+    "_id": "64c3222c86e191a9c8d9b3be",
+    "fullname": "Ritik Makhija",
+    "cartId": "cart_1690509868347_090e89cb-7728-4397-b41e-8ae1a05a93ac",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "shippingAddress": "hebbal kempapura 5420011 banagalore",
+    "number": "1234567890",
+    "customer": "643b7de40a416cdcadd8d065",
+    "products": [
+      {
+        "product": "647ea8c2dbc83afab0fec962",
+        "quantity": 1,
+        "price": 799,
+        "discountedPrice": 719,
+        "_id": "64c3222c86e191a9c8d9b3bf"
+      }
+    ],
+    "orderStatus": "Placed",
+    "transactionId": "64c3222286e191a9c8d9b390",
+    "orderAmount": 799,
+    "totalDiscount": 80,
+    "orderTotal": 719,
+    "orderDate": {
+      "$date": "2023-07-28T02:04:28.833Z"
+    },
+    "createdAt": {
+      "$date": "2023-07-28T02:04:28.833Z"
+    },
+    "updatedAt": {
+      "$date": "2023-07-28T02:04:28.833Z"
+    },
+    "orderId": "order_1690509868835_0560093f-d6d4-4312-863a-9436c854a388",
+    "__v": 0
+  },
+  {
+    "_id": "64c3224b516ae9380b470981",
+    "fullname": "remonajose",
+    "cartId": "cart_1690509899443_c889eefb-392f-496e-92e3-5730a973d846",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "shippingAddress": "asdfghjklzxcvbnmqwer",
+    "number": "1234567890",
+    "customer": "6459cc873f9c353beb3c419f",
+    "products": [
+      {
+        "product": "643b83620a416cdcadd8d0f1",
+        "quantity": 1,
+        "price": 199900,
+        "discountedPrice": 183908,
+        "_id": "64c3224b516ae9380b470982"
+      }
+    ],
+    "orderStatus": "Placed",
+    "transactionId": "64c32234516ae9380b470961",
+    "orderAmount": 199900,
+    "totalDiscount": 15992,
+    "orderTotal": 183908,
+    "orderDate": {
+      "$date": "2023-07-28T02:04:59.568Z"
+    },
+    "createdAt": {
+      "$date": "2023-07-28T02:04:59.569Z"
+    },
+    "updatedAt": {
+      "$date": "2023-07-28T02:04:59.569Z"
+    },
+    "orderId": "order_1690509899594_5f69c832-3e93-4718-9dfa-0190f1bafbce",
+    "__v": 0
+  },
+  {
+    "_id": "64c3228f516ae9380b470b28",
+    "fullname": "remonajose",
+    "cartId": "cart_1690509967570_f2ca9f63-4bc6-4c03-a330-f2d7d5d6165f",
+    "seller": "64c27304cc470f04c54c675d",
+    "shippingAddress": "near presidency college hebbal",
+    "number": "1234567890",
+    "customer": "6459cc873f9c353beb3c419f",
+    "products": [
+      {
+        "product": "64c3219b516ae9380b4707a2",
+        "quantity": 1,
+        "price": 5000,
+        "discountedPrice": 4500,
+        "_id": "64c3228f516ae9380b470b29"
+      }
+    ],
+    "orderStatus": "Completed",
+    "transactionId": "64c32283516ae9380b470b0e",
+    "orderAmount": 5000,
+    "totalDiscount": 500,
+    "orderTotal": 4500,
+    "orderDate": {
+      "$date": "2023-07-28T02:06:07.809Z"
+    },
+    "createdAt": {
+      "$date": "2023-07-28T02:06:07.809Z"
+    },
+    "updatedAt": {
+      "$date": "2024-02-05T10:43:01.145Z"
+    },
+    "orderId": "order_1690509967827_d5b3e34e-39fa-45b3-903e-0876a2423489",
+    "__v": 0
+  },
+  {
+    "_id": "64c33ae03a048b7fe83b6755",
+    "fullname": "Ritik Makhija",
+    "cartId": "cart_1690516192143_1a237fcb-d33f-47f4-9dba-a9770065022d",
+    "seller": "64c27304cc470f04c54c675d",
+    "shippingAddress": "rrfsgdg rsgdfgdsf gdsfgdfs gsdf",
+    "number": "1234567890",
+    "customer": "6459cc873f9c353beb3c419f",
+    "products": [
+      {
+        "product": "64c3219b516ae9380b4707a2",
+        "quantity": 1,
+        "price": 5000,
+        "discountedPrice": 4500,
+        "_id": "64c33ae03a048b7fe83b6756"
+      }
+    ],
+    "orderStatus": "Placed",
+    "transactionId": "64c33ac83a048b7fe83b6732",
+    "orderAmount": 5000,
+    "totalDiscount": 500,
+    "orderTotal": 4500,
+    "orderDate": {
+      "$date": "2023-07-28T03:49:52.161Z"
+    },
+    "createdAt": {
+      "$date": "2023-07-28T03:49:52.161Z"
+    },
+    "updatedAt": {
+      "$date": "2023-07-28T03:49:52.161Z"
+    },
+    "orderId": "order_1690516192164_efa87c29-452b-47b3-afe6-96522c80c89f",
+    "__v": 0
+  },
+  {
+    "_id": "64c33ae13a048b7fe83b6765",
+    "fullname": "Ritik Makhija",
+    "cartId": "cart_1690516192143_1a237fcb-d33f-47f4-9dba-a9770065022d",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "shippingAddress": "rrfsgdg rsgdfgdsf gdsfgdfs gsdf",
+    "number": "1234567890",
+    "customer": "6459cc873f9c353beb3c419f",
+    "products": [
+      {
+        "product": "646c38e739938acf1a4f1029",
+        "quantity": 1,
+        "price": 82000,
+        "discountedPrice": 69700,
+        "_id": "64c33ae13a048b7fe83b6766"
+      },
+      {
+        "product": "647ea8c2dbc83afab0fec962",
+        "quantity": 1,
+        "price": 799,
+        "discountedPrice": 719,
+        "_id": "64c33ae13a048b7fe83b6767"
+      }
+    ],
+    "orderStatus": "Placed",
+    "transactionId": "64c33ac83a048b7fe83b6732",
+    "orderAmount": 82799,
+    "totalDiscount": 12380,
+    "orderTotal": 70419,
+    "orderDate": {
+      "$date": "2023-07-28T03:49:53.341Z"
+    },
+    "createdAt": {
+      "$date": "2023-07-28T03:49:53.341Z"
+    },
+    "updatedAt": {
+      "$date": "2023-07-28T03:49:53.341Z"
+    },
+    "orderId": "order_1690516193342_d6df39d8-73e4-412c-aa82-c04d1e951347",
+    "__v": 0
+  },
+  {
+    "_id": "64c370206c95682356bbbac8",
+    "fullname": "remona jose",
+    "cartId": "cart_1690529824264_1a565bb8-ca5f-4ef6-85d7-81819d48ee3b",
+    "seller": "64c27304cc470f04c54c675d",
+    "shippingAddress": "rrfsgdg rsgdfgdsf gdsfgdfs gsdf",
+    "number": "1234567890",
+    "customer": "64c36e876c95682356bbb852",
+    "products": [
+      {
+        "product": "64c3219b516ae9380b4707a2",
+        "quantity": 1,
+        "price": 5000,
+        "discountedPrice": 4500,
+        "_id": "64c370206c95682356bbbac9"
+      }
+    ],
+    "orderStatus": "Placed",
+    "transactionId": "64c3700c6c95682356bbba9d",
+    "orderAmount": 5000,
+    "totalDiscount": 500,
+    "orderTotal": 4500,
+    "orderDate": {
+      "$date": "2023-07-28T07:37:04.278Z"
+    },
+    "createdAt": {
+      "$date": "2023-07-28T07:37:04.278Z"
+    },
+    "updatedAt": {
+      "$date": "2023-07-28T07:37:04.278Z"
+    },
+    "orderId": "order_1690529824280_e48039ab-6a31-433d-a344-5af322e3a9ea",
+    "__v": 0
+  },
+  {
+    "_id": "64c370216c95682356bbbad8",
+    "fullname": "remona jose",
+    "cartId": "cart_1690529824264_1a565bb8-ca5f-4ef6-85d7-81819d48ee3b",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "shippingAddress": "rrfsgdg rsgdfgdsf gdsfgdfs gsdf",
+    "number": "1234567890",
+    "customer": "64c36e876c95682356bbb852",
+    "products": [
+      {
+        "product": "647ea773dbc83afab0fec83c",
+        "quantity": 1,
+        "price": 60000,
+        "discountedPrice": 51600,
+        "_id": "64c370216c95682356bbbad9"
+      },
+      {
+        "product": "643b83620a416cdcadd8d0f1",
+        "quantity": 1,
+        "price": 199900,
+        "discountedPrice": 183908,
+        "_id": "64c370216c95682356bbbada"
+      },
+      {
+        "product": "647e087f7ed3bb3870bbe24a",
+        "quantity": 1,
+        "price": 164999,
+        "discountedPrice": 145199,
+        "_id": "64c370216c95682356bbbadb"
+      }
+    ],
+    "orderStatus": "Returned",
+    "transactionId": "64c3700c6c95682356bbba9d",
+    "orderAmount": 424899,
+    "totalDiscount": 44192,
+    "orderTotal": 380707,
+    "orderDate": {
+      "$date": "2023-07-28T07:37:05.350Z"
+    },
+    "createdAt": {
+      "$date": "2023-07-28T07:37:05.350Z"
+    },
+    "updatedAt": {
+      "$date": "2024-05-22T10:02:51.500Z"
+    },
+    "orderId": "order_1690529825352_957eef4a-e51a-4cc7-aa9e-729fa53e458d",
+    "__v": 0,
+    "notes": {
+      "cancelOrderReason": "fsdfd"
+    }
+  },
+  {
+    "_id": "664dc14eb72ef177c3d35a83",
+    "fullname": "testestd fads fasd",
+    "cartId": "cart_1716371790278_bb7f226a-397a-418c-997c-1fa12aaa880b",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "shippingAddress": "Bangalore fdsf dsaf dasf. dsa f das fas",
+    "number": "8269591710",
+    "customer": "643b7de40a416cdcadd8d065",
+    "products": [
+      {
+        "product": "643b83620a416cdcadd8d0f1",
+        "quantity": 1,
+        "price": 199900,
+        "discountedPrice": 183908,
+        "_id": "664dc14eb72ef177c3d35a84"
+      }
+    ],
+    "orderStatus": "Placed",
+    "transactionId": "664dc13db72ef177c3d35a63",
+    "orderAmount": 199900,
+    "totalDiscount": 15992,
+    "orderTotal": 183908,
+    "orderDate": {
+      "$date": "2024-05-22T09:56:30.285Z"
+    },
+    "createdAt": {
+      "$date": "2024-05-22T09:56:30.285Z"
+    },
+    "updatedAt": {
+      "$date": "2024-05-22T09:56:30.285Z"
+    },
+    "orderId": "order_1716371790285_ad2a5f60-f4dc-4981-9642-63a752b89e40",
+    "__v": 0
+  },
+  {
+    "_id": "6676b1fa9a18be336d8a679c",
+    "fullname": "Ritik Makhija",
+    "cartId": "cart_1719054842709_eacb33f1-2fb9-4fb8-a629-06ad9fe23e09",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "shippingAddress": "test test test test test test ",
+    "number": "1234567890",
+    "customer": "643b7de40a416cdcadd8d065",
+    "products": [
+      {
+        "product": "643b83620a416cdcadd8d0f1",
+        "quantity": 1,
+        "price": 199900,
+        "discountedPrice": 183908,
+        "_id": "6676b1fa9a18be336d8a679d"
+      },
+      {
+        "product": "646c38e739938acf1a4f1029",
+        "quantity": 1,
+        "price": 82000,
+        "discountedPrice": 69700,
+        "_id": "6676b1fa9a18be336d8a679e"
+      }
+    ],
+    "orderStatus": "Returned",
+    "transactionId": "6676b1ec9a18be336d8a6777",
+    "orderAmount": 281900,
+    "totalDiscount": 28292,
+    "orderTotal": 253608,
+    "orderDate": {
+      "$date": "2024-06-22T11:14:02.718Z"
+    },
+    "createdAt": {
+      "$date": "2024-06-22T11:14:02.718Z"
+    },
+    "updatedAt": {
+      "$date": "2024-06-22T11:17:10.932Z"
+    },
+    "orderId": "order_1719054842719_de0b3ee3-682f-4768-b305-6fbda022e375",
+    "__v": 0,
+    "notes": {
+      "cancelOrderReason": "Out of stock"
+    }
+  },
+  {
+    "_id": "66cecea24909378ef433e7b0",
+    "fullname": "Ritik Makhija",
+    "cartId": "cart_1724829346493_1628f387-9cb6-4785-85f6-9c1fefb14eb4",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "shippingAddress": "Presidency Aqua Boys Hostel 8th Cross Road Bhuvaneswari Nagar Dasarahalli",
+    "number": "7417456308",
+    "customer": "643b7de40a416cdcadd8d065",
+    "products": [
+      {
+        "product": "647e07167ed3bb3870bbe152",
+        "quantity": 1,
+        "price": 19990,
+        "discountedPrice": 17991,
+        "_id": "66cecea24909378ef433e7b1"
+      },
+      {
+        "product": "647e087f7ed3bb3870bbe24a",
+        "quantity": 1,
+        "price": 164999,
+        "discountedPrice": 145199,
+        "_id": "66cecea24909378ef433e7b2"
+      }
+    ],
+    "orderStatus": "Placed",
+    "transactionId": "66cece984909378ef433e78d",
+    "orderAmount": 184989,
+    "totalDiscount": 21799,
+    "orderTotal": 163190,
+    "orderDate": {
+      "$date": "2024-08-28T07:15:46.506Z"
+    },
+    "createdAt": {
+      "$date": "2024-08-28T07:15:46.507Z"
+    },
+    "updatedAt": {
+      "$date": "2024-08-28T07:15:46.507Z"
+    },
+    "orderId": "order_1724829346510_3c9d3f5a-73b1-4701-b5c2-cc245a6407c1",
+    "__v": 0
+  },
+  {
+    "_id": "66cecf7e4909378ef433ec38",
+    "fullname": "Testing124",
+    "cartId": "cart_1724829566290_ea1b6b73-0e67-4ec2-a630-b38ed83ff1c6",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "shippingAddress": "tresting testing testing",
+    "number": "1234567890",
+    "customer": "66cec26d41751fc36795f602",
+    "products": [
+      {
+        "product": "647eb138dbc83afab0fecb71",
+        "quantity": 1,
+        "price": 1999,
+        "discountedPrice": 1699,
+        "_id": "66cecf7e4909378ef433ec39"
+      },
+      {
+        "product": "647e087f7ed3bb3870bbe24a",
+        "quantity": 1,
+        "price": 164999,
+        "discountedPrice": 145199,
+        "_id": "66cecf7e4909378ef433ec3a"
+      }
+    ],
+    "orderStatus": "Placed",
+    "transactionId": "66cecf714909378ef433ec1a",
+    "orderAmount": 166998,
+    "totalDiscount": 20100,
+    "orderTotal": 146898,
+    "orderDate": {
+      "$date": "2024-08-28T07:19:26.301Z"
+    },
+    "createdAt": {
+      "$date": "2024-08-28T07:19:26.301Z"
+    },
+    "updatedAt": {
+      "$date": "2024-08-28T07:19:26.301Z"
+    },
+    "orderId": "order_1724829566302_5281fb1d-019f-46fa-8b23-2c55c23ffb48",
+    "__v": 0
+  },
+  {
+    "_id": "67ea14fa4807c655792a9bb0",
+    "fullname": "Ritik Makhija",
+    "cartId": "cart_1743394042527_42e131cf-8537-47c0-b62d-5cd67f971981",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "shippingAddress": "Bangaloredfa fd asd fds af dsa fa sdf ads",
+    "number": "1234567890",
+    "customer": "643b7de40a416cdcadd8d065",
+    "products": [
+      {
+        "product": "643b83620a416cdcadd8d0f1",
+        "quantity": 1,
+        "price": 199900,
+        "discountedPrice": 183908,
+        "_id": "67ea14fa4807c655792a9bb1"
+      }
+    ],
+    "orderStatus": "Placed",
+    "transactionId": "67ea14ef4807c655792a9b90",
+    "orderAmount": 199900,
+    "totalDiscount": 15992,
+    "orderTotal": 183908,
+    "orderDate": {
+      "$date": "2025-03-31T04:07:22.536Z"
+    },
+    "createdAt": {
+      "$date": "2025-03-31T04:07:22.536Z"
+    },
+    "updatedAt": {
+      "$date": "2025-03-31T04:07:22.536Z"
+    },
+    "orderId": "order_1743394042539_1e050c42-6c5d-4fbc-85c8-8778e81ec792",
+    "__v": 0
+  },
+  {
+    "_id": "67f0d60154702fd6821f1df7",
+    "fullname": "rdsfdsfadsafdas",
+    "cartId": "cart_1743836673006_7ca04557-88d8-4a44-a293-53292bee6270",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "shippingAddress": "fdsafsdafdasaa fsd f sdaf sda f sd f sdafas",
+    "number": "8269591710",
+    "customer": "643b7de40a416cdcadd8d065",
+    "products": [
+      {
+        "product": "647e087f7ed3bb3870bbe24a",
+        "quantity": 1,
+        "price": 164999,
+        "discountedPrice": 145199,
+        "_id": "67f0d60154702fd6821f1df8"
+      }
+    ],
+    "orderStatus": "Placed",
+    "transactionId": "67f0d5db54702fd6821f1dda",
+    "orderAmount": 164999,
+    "totalDiscount": 19800,
+    "orderTotal": 145199,
+    "orderDate": {
+      "$date": "2025-04-05T07:04:33.033Z"
+    },
+    "createdAt": {
+      "$date": "2025-04-05T07:04:33.036Z"
+    },
+    "updatedAt": {
+      "$date": "2025-04-05T07:04:33.036Z"
+    },
+    "orderId": "order_1743836673170_e6427db6-6782-4386-9e20-bcac4e5299c2",
+    "__v": 0
+  },
+  {
+    "_id": "6826ca4cd666982d4d30d704",
+    "fullname": "rdsfdsfadsafdas",
+    "cartId": "cart_1747372620165_8569ca74-c001-4813-b343-c9a4f734e950",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "shippingAddress": "fdsafsdafdasaa fsd f sdaf sda f sd f sdafas",
+    "number": "8269591710",
+    "customer": "643b7de40a416cdcadd8d065",
+    "products": [
+      {
+        "product": "647e087f7ed3bb3870bbe24a",
+        "quantity": 2,
+        "price": 164999,
+        "discountedPrice": 145199,
+        "_id": "6826ca4cd666982d4d30d705"
+      }
+    ],
+    "orderStatus": "Placed",
+    "transactionId": "6826ca32d666982d4d30d6e7",
+    "orderAmount": 329998,
+    "totalDiscount": 39600,
+    "orderTotal": 290398,
+    "orderDate": {
+      "$date": "2025-05-16T05:17:00.181Z"
+    },
+    "createdAt": {
+      "$date": "2025-05-16T05:17:00.181Z"
+    },
+    "updatedAt": {
+      "$date": "2025-05-16T05:17:00.181Z"
+    },
+    "orderId": "order_1747372620185_5e916171-2e93-4f76-a4c6-109fa7f9c19a",
+    "__v": 0
+  }
+]

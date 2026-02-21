@@ -1,0 +1,95 @@
+<body>
+    <div class="container">
+        {{#if newSeller}}
+        <div class="notification success">
+            <h2>New Seller Created</h2>
+            <p>Hello {{newSeller.name}},</p>
+            <p>
+                A new seller account has been created for you on our platform with the
+                following details:
+            </p>
+            <ul>
+                <li>Name: {{newSeller.businessUsername}}</li>
+                <li>Email: {{newSeller.email}}</li>
+            </ul>
+            <p>
+                Please keep this information safe and secure. You can now log in to
+                your account using your email and the password you provided during the
+                registration process.
+            </p>
+            <p>Thank you for joining our platform as a seller!</p>
+            <p>Best regards,</p>
+            <p>{{adminUsername}} - QuickCart</p>
+        </div>
+        {{/if}} {{#if sellerUpdated}}
+        <div class="notification success">
+            <h2>Seller Updated</h2>
+            <p>The following seller has been updated:</p>
+            <ul>
+                <li>Name: {{sellerUpdated.name}}</li>
+                <li>Email: {{sellerUpdated.email}}</li>
+            </ul>
+        </div>
+        {{/if}} {{#if sellerDeleted}}
+        <div class="notification warning">
+            <h2>Seller Deleted</h2>
+            <p>The following seller has been deleted:</p>
+            <ul>
+                <li>Name: {{sellerDeleted.name}}</li>
+                <li>Email: {{sellerDeleted.email}}</li>
+            </ul>
+        </div>
+        {{/if}} {{#if sellerBanned}}
+        <div class="notification error">
+            <h2>Seller Banned</h2>
+            <p>The following seller has been banned:</p>
+            <ul>
+                <li>Name: {{sellerBanned.name}}</li>
+                <li>Email: {{sellerBanned.email}}</li>
+                <li>Reason: {{sellerBanned.reason}}</li>
+            </ul>
+        </div>
+        {{/if}} {{#if ipBanned}}
+        <div class="notification error">
+            <h2>IP Banned</h2>
+            <p>The following IP address has been banned:</p>
+            <ul>
+                <li>IP Address: {{ipBanned.address}}</li>
+                <li>Reason: {{ipBanned.reason}}</li>
+            </ul>
+            {{#if duration}}
+            <p class="warning">This ban will expire in {{ duration }}.</p>
+            {{/if}}
+        </div>
+        {{/if}} 
+        {{#if actionLink}}
+        <p>To take action, please click the button below:</p>
+        <a class="button" href="{{ actionLink }}">{{ actionText }}</a>
+        {{/if}}
+        {{#if violation}}
+        <div class="notification error">
+            <h2>Violation of Terms</h2>
+            <p>The following user has violated the terms of use:</p>
+            <ul>
+                <li>Name: {{violation.name}}</li>
+                <li>Reason: {{violation.reason}}</li>
+            </ul>
+            <p>
+                We would like to remind you that it is your responsibility to ensure
+                that the information you provide is accurate and up-to-date. Please
+                review the updated information and make any necessary changes to
+                ensure that it complies with our terms and conditions.
+            </p>
+            <p>
+                If you have any questions or concerns, please don't hesitate to
+                contact our friendly customer support team at support@QuickCart.com.
+                We are always here to help and happy to answer any questions you may
+                have.
+            </p>
+            <p>Thank you for your understanding and cooperation in this matter.</p>
+            <p>Best regards,</p>
+            <p>{{violation.adminUsername}} - QuickCart</p>
+        </div>
+        {{/if}}
+    </div>
+</body>

@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>Order Confirmation</title>
+    <style>
+      body { font-family: Arial, sans-serif; margin: 0; padding: 0; } .header {
+      background-color: #f2f2f2; padding: 20px; text-align: center; } .header h1
+      { margin: 0; color: #333333; } .details { padding: 20px; } .details table
+      { width: 100%; border-collapse: collapse; } .details th, .details td {
+      border: 1px solid #cccccc; padding: 10px; text-align: left; } .details th
+      { background-color: #f2f2f2; } .footer { background-color: #333333; color:
+      #ffffff; padding: 20px; text-align: center; } .footer p { margin: 0; }
+      .highlight { color: #007bff; font-weight: bold; }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Order Confirmation</h1>
+    </div>
+    <p>Order Number: <span class="highlight">{{order._id}}</span></p>
+    <p>Order Status:
+      <span class="highlight">{{order.orderStatus}}</span></p>
+    <p>Order Amount:
+      <span class="highlight">₹{{order.orderTotal}}</span></p>
+    <p>Shipping Address:
+      <span class="highlight">{{order.shippingAddress}}</span></p>
+    <div class="details">
+      <table>
+        <tr>
+          <th>Product</th>
+          <th>Price</th>
+          <th>Quantity</th>
+        </tr>
+        {{#each order.products}}
+          <tr>
+            <td>{{this.product.productName}}</td>
+            <td>{{this.price}}</td>
+            <td>{{this.quantity}}</td>
+          </tr>
+        {{/each}}
+      </table>
+      <br />
+    </div>
+    <div class="footer">
+      <p>Thank you for your purchase!</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+[
+  {
+    "_id": "6444f6cd55a57a3a5f31b775",
+    "role": "seller",
+    "salary": 0,
+    "amount": 217481,
+    "transactions": [
+      {
+        "transaction": "6455b6bc1e3df3baec479e56",
+        "_id": "6455b6bc1e3df3baec479e59",
+        "date": {
+          "$date": "2023-05-06T02:09:00.264Z"
+        }
+      },
+      {
+        "transaction": "6455b6e2438630599d1f1711",
+        "_id": "6455b6e2438630599d1f1714",
+        "date": {
+          "$date": "2023-05-06T02:09:38.615Z"
+        }
+      },
+      {
+        "transaction": "6455b7732c53f6c76fae4b68",
+        "_id": "6455b7732c53f6c76fae4b6b",
+        "date": {
+          "$date": "2023-05-06T02:12:03.968Z"
+        }
+      },
+      {
+        "transaction": "6455b9eca78dbce9afe79fb7",
+        "_id": "6455b9eca78dbce9afe79fba",
+        "date": {
+          "$date": "2023-05-06T02:22:36.794Z"
+        }
+      },
+      {
+        "transaction": "6455b9efa78dbce9afe79fce",
+        "_id": "6455b9efa78dbce9afe79fd1",
+        "date": {
+          "$date": "2023-05-06T02:22:39.330Z"
+        }
+      },
+      {
+        "transaction": "64c277215b5871fc532ff403",
+        "_id": "64c277215b5871fc532ff406",
+        "date": {
+          "$date": "2023-07-27T13:54:41.117Z"
+        }
+      }
+    ],
+    "createdAt": {
+      "$date": "2023-04-23T09:13:49.165Z"
+    },
+    "updatedAt": {
+      "$date": "2024-02-05T10:43:01.232Z"
+    },
+    "__v": 6,
+    "paidAmount": 28777,
+    "seller": "643b80c00a416cdcadd8d0af"
+  },
+  {
+    "_id": "6457a26c03b63ab9546b87f1",
+    "seller": "6457a0a80d50a1cee2d99d84",
+    "role": "seller",
+    "salary": 0,
+    "amount": 0,
+    "paidAmount": 0,
+    "transactions": [],
+    "createdAt": {
+      "$date": "2023-05-07T13:06:52.478Z"
+    },
+    "updatedAt": {
+      "$date": "2023-05-07T13:06:52.478Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": "64c274d2cfdc7c367385f442",
+    "seller": "64c27304cc470f04c54c675d",
+    "role": "seller",
+    "salary": 0,
+    "amount": 0,
+    "paidAmount": 0,
+    "transactions": [],
+    "createdAt": {
+      "$date": "2023-07-27T13:44:50.434Z"
+    },
+    "updatedAt": {
+      "$date": "2023-07-27T13:44:50.434Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": "664dc062b72ef177c3d355a1",
+    "seller": "664d9bc399e4f841ed91d5fd",
+    "role": "seller",
+    "salary": 0,
+    "amount": 0,
+    "paidAmount": 0,
+    "transactions": [],
+    "createdAt": {
+      "$date": "2024-05-22T09:52:34.081Z"
+    },
+    "updatedAt": {
+      "$date": "2024-05-22T09:52:34.081Z"
+    },
+    "__v": 0
+  }
+]
