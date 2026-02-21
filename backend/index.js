@@ -11,17 +11,17 @@ const https = require('https');
 const fs = require('fs');
 
 const authRouter = require('./routes/auth/authRouter');
-const sellerRouter = require('./Routes/seller/sellerRouter');
-const adminRouter = require('./Routes/admin/adminRouter');
-const productRouter = require('./Routes/product/productRouter');
-const superAdminRouter = require('./Routes/superadmin/superAdminRouter');
-const orderRoutes = require('./Routes/order/orderRoutes');
-const paymentRoutes = require('./Routes/payment/paymentRoutes')
-const payrollRoutes = require('./Routes/payroll/payrollRoutes')
-const ticketRoutes = require('./Routes/ticket/ticketRouter')
-const ticketMasterRoutes = require('./Routes/ticketmaster/ticketMasterRoutes')
-const superAdminRoutes = require('./Routes/superadmin/superAdminRouter')
-const rootRouter = require('./Routes/root/rootRouter')
+const sellerRouter = require('./routes/seller/sellerRouter');
+const adminRouter = require('./routes/admin/adminRouter');
+const productRouter = require('./routes/product/productRouter');
+const superAdminRouter = require('./routes/superadmin/superAdminRouter');
+const orderRoutes = require('./routes/order/orderRoutes');
+const paymentRoutes = require('./routes/payment/paymentRoutes')
+const payrollRoutes = require('./routes/payroll/payrollRoutes')
+const ticketRoutes = require('./routes/ticket/ticketRouter')
+const ticketMasterRoutes = require('./routes/ticketmaster/ticketMasterRoutes')
+const superAdminRoutes = require('./routes/superadmin/superAdminRouter')
+const rootRouter = require('./routes/root/rootRouter')
 
 const rateLimiterMiddleware = require('./middleware/rateLimitermiddleware.js');
 
