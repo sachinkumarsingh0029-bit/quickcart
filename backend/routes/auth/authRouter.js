@@ -6,16 +6,18 @@ const authenticateMiddleware = require("../../middleware/authenticateMiddleware"
 
 const router = express.Router();
 
+/* ===== SIGNUP ===== */
 router.post(
   "/signup",
   [
-    check("username").notEmpty().isLength({ min: 4, max: 15 }),
+    check("username").not().isEmpty().isLength({ min: 4, max: 15 }),
     check("email").isEmail(),
     check("password").isLength({ min: 6 }),
   ],
   authController.signup
 );
 
+/* ===== LOGIN ===== */
 router.post(
   "/login",
   [
@@ -25,16 +27,13 @@ router.post(
   authController.login
 );
 
-router.get(
-  "/profile",
-  authenticateMiddleware,
-  authController.getUser
-);
+/* ===== VERIFY SELLER OTP ===== */
+router.post("/verify-seller-otp", authController.verifySellerOTP);
 
-router.post(
-  "/logout",
-  authenticateMiddleware,
-  authController.logout
-);
+/* ===== GET PROFILE ===== */
+router.get("/profile", authenticateMiddleware, authController.getUser);
+
+/* ===== LOGOUT ===== */
+router.post("/logout", authenticateMiddleware, authController.logout);
 
 module.exports = router;

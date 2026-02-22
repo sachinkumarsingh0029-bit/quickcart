@@ -7,11 +7,6 @@ const Seller = require("../../models/seller/sellerSchema");
 const handleError = require("../../utils/errorHandler");
 const sendEmail = require("../../utils/sendEmail");
 const generateCode = require("../../utils/generateCode");
-const { v4: uuidv4 } = require("uuid");
-
-/* =====================================
-   COOKIE OPTIONS (CROSS DOMAIN FIX)
-===================================== */
 
 const cookieOptions = {
   httpOnly: true,
@@ -20,9 +15,9 @@ const cookieOptions = {
   maxAge: 5 * 60 * 60 * 1000,
 };
 
-/* =====================================
+/* ================================
    SIGNUP
-===================================== */
+================================ */
 
 exports.signup = async (req, res) => {
   const errors = validationResult(req);
@@ -60,9 +55,9 @@ exports.signup = async (req, res) => {
   }
 };
 
-/* =====================================
-   LOGIN (WITH SELLER OTP)
-===================================== */
+/* ================================
+   LOGIN
+================================ */
 
 exports.login = async (req, res) => {
   const errors = validationResult(req);
@@ -87,28 +82,25 @@ exports.login = async (req, res) => {
       });
     }
 
-    /* ===============================
-       SELLER LOGIN FLOW
-    =============================== */
+    /* ===== SELLER OTP FLOW ===== */
 
     if (user.role === "seller") {
       const seller = await Seller.findOne({ user: user._id });
 
       if (!seller) {
-        return handleError(res, {
+        return res.status(404).json({
+          status: "error",
           message: "Seller profile not found",
-          status: 404,
         });
       }
 
       const otpCode = generateCode();
-      const expiry = Date.now() + 10 * 60 * 1000; // 10 minutes
+      const expiry = Date.now() + 10 * 60 * 1000;
 
       seller.loginCode = otpCode;
       seller.loginCodeExpiresAt = expiry;
       await seller.save();
 
-      // Send OTP email
       await sendEmail(
         seller.businessEmail,
         {
@@ -120,19 +112,18 @@ exports.login = async (req, res) => {
       );
 
       return res.status(200).json({
-        role: "seller",
-        message: "OTP sent to seller email",
         status: "otp_required",
+        message: "OTP sent to seller email",
+        role: "seller",
       });
     }
 
-    /* ===============================
-       NORMAL USER LOGIN
-    =============================== */
+    /* ===== NORMAL USER LOGIN ===== */
 
     res.cookie("token", token, cookieOptions);
 
     res.status(200).json({
+      status: "success",
       user: {
         id: user._id,
         name: user.name,
@@ -143,7 +134,6 @@ exports.login = async (req, res) => {
         role: user.role,
         number: user.number,
       },
-      status: "success",
     });
   } catch (err) {
     return handleError(res, {
@@ -154,9 +144,9 @@ exports.login = async (req, res) => {
   }
 };
 
-/* =====================================
+/* ================================
    VERIFY SELLER OTP
-===================================== */
+================================ */
 
 exports.verifySellerOTP = async (req, res) => {
   const { email, otp } = req.body;
@@ -172,6 +162,13 @@ exports.verifySellerOTP = async (req, res) => {
     }
 
     const seller = await Seller.findOne({ user: user._id });
+
+    if (!seller) {
+      return res.status(404).json({
+        status: "error",
+        message: "Seller not found",
+      });
+    }
 
     if (
       seller.loginCode !== otp ||
@@ -199,9 +196,9 @@ exports.verifySellerOTP = async (req, res) => {
   }
 };
 
-/* =====================================
+/* ================================
    GET USER
-===================================== */
+================================ */
 
 exports.getUser = async (req, res) => {
   try {
@@ -218,17 +215,17 @@ exports.getUser = async (req, res) => {
     const user = await User.findById(decoded._id).select("-password");
 
     res.status(200).json({
-      user,
       status: "success",
+      user,
     });
   } catch (err) {
     return handleError(res, err);
   }
 };
 
-/* =====================================
+/* ================================
    LOGOUT
-===================================== */
+================================ */
 
 exports.logout = async (req, res) => {
   res.clearCookie("token", cookieOptions);
