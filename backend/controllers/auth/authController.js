@@ -8,6 +8,10 @@ const handleError = require("../../utils/errorHandler");
 const sendEmail = require("../../utils/sendEmail");
 const generateCode = require("../../utils/generateCode");
 
+/* =====================================
+   COOKIE OPTIONS (CROSS DOMAIN FIX)
+===================================== */
+
 const cookieOptions = {
   httpOnly: true,
   secure: true,
@@ -15,9 +19,9 @@ const cookieOptions = {
   maxAge: 5 * 60 * 60 * 1000,
 };
 
-/* ================================
+/* =====================================
    SIGNUP
-================================ */
+===================================== */
 
 exports.signup = async (req, res) => {
   const errors = validationResult(req);
@@ -55,9 +59,9 @@ exports.signup = async (req, res) => {
   }
 };
 
-/* ================================
-   LOGIN
-================================ */
+/* =====================================
+   LOGIN (WITH SELLER OTP)
+===================================== */
 
 exports.login = async (req, res) => {
   const errors = validationResult(req);
@@ -82,7 +86,9 @@ exports.login = async (req, res) => {
       });
     }
 
-    /* ===== SELLER OTP FLOW ===== */
+    /* ===============================
+       SELLER LOGIN FLOW
+    =============================== */
 
     if (user.role === "seller") {
       const seller = await Seller.findOne({ user: user._id });
@@ -101,17 +107,15 @@ exports.login = async (req, res) => {
       seller.loginCodeExpiresAt = expiry;
       await seller.save();
 
-      // 🔥 FIXED TEMPLATE VARIABLES HERE
+      // ✅ FIXED TEMPLATE PATH HERE
       await sendEmail(
         seller.businessEmail,
         {
           subject: "Seller Login OTP - QuickCart",
           username: seller.businessName,
-          verificationCode: otpCode,
-          verificationLink:
-            process.env.FRONTEND_URL + "/seller/verify-otp",
+          otp: otpCode,
         },
-        "./seller/loginVerification.hbs"
+        "loginVerification.hbs"   // 🔥 FIXED (NO ./seller/)
       );
 
       return res.status(200).json({
@@ -121,7 +125,9 @@ exports.login = async (req, res) => {
       });
     }
 
-    /* ===== NORMAL USER LOGIN ===== */
+    /* ===============================
+       NORMAL USER LOGIN
+    =============================== */
 
     res.cookie("token", token, cookieOptions);
 
@@ -147,9 +153,9 @@ exports.login = async (req, res) => {
   }
 };
 
-/* ================================
+/* =====================================
    VERIFY SELLER OTP
-================================ */
+===================================== */
 
 exports.verifySellerOTP = async (req, res) => {
   const { email, otp } = req.body;
@@ -199,9 +205,9 @@ exports.verifySellerOTP = async (req, res) => {
   }
 };
 
-/* ================================
+/* =====================================
    GET USER
-================================ */
+===================================== */
 
 exports.getUser = async (req, res) => {
   try {
@@ -226,16 +232,12 @@ exports.getUser = async (req, res) => {
   }
 };
 
-/* ================================
+/* =====================================
    LOGOUT
-================================ */
+===================================== */
 
 exports.logout = async (req, res) => {
-  res.clearCookie("token", {
-    httpOnly: true,
-    secure: true,
-    sameSite: "none",
-  });
+  res.clearCookie("token");
 
   res.status(200).json({
     status: "success",
