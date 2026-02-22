@@ -1,5 +1,7 @@
 import instance from "../../utils/Axios";
 
+/* ================= SIGNUP ================= */
+
 export const signUpApi = async (email: any, password: any, username: any) => {
   const response = await instance.post("/auth/signup", {
     username,
@@ -9,6 +11,8 @@ export const signUpApi = async (email: any, password: any, username: any) => {
   return response;
 };
 
+/* ================= LOGIN ================= */
+
 export const signInApi = async (email: any, password: any) => {
   const response = await instance.post("/auth/login", {
     email,
@@ -17,6 +21,8 @@ export const signInApi = async (email: any, password: any) => {
   return response;
 };
 
+/* ================= VERIFY ================= */
+
 export const verifyApi = async (code: any) => {
   const response = await instance.post("/auth/verify", {
     code,
@@ -24,42 +30,52 @@ export const verifyApi = async (code: any) => {
   return response;
 };
 
-export const ResendVerificationMail = async () => {
-  const response = await instance.post("/auth/sendVerificationCodeAgain");
+/* ================= 🔥 RESEND OTP (FIXED) ================= */
+
+export const ResendVerificationMail = async (email: any) => {
+  const response = await instance.post("/auth/sendVerificationCodeAgain", {
+    email,
+  });
   return response;
 };
 
-// logout
+/* ================= LOGOUT ================= */
+
 export const logoutApi = async () => {
   const response = await instance.post("/auth/logout");
   return response;
 };
 
-// update profile
+/* ================= UPDATE PROFILE ================= */
+
 export const updateProfileApi = async (data: any) => {
   const response = await instance.put("/auth/updateprofile", data);
   return response;
 };
 
-// update password
+/* ================= UPDATE PASSWORD ================= */
+
 export const updatePasswordApi = async (data: any) => {
   const response = await instance.put("/auth/updatepassword", data);
   return response.data;
 };
 
-// delete account
+/* ================= DELETE ACCOUNT ================= */
+
 export const deleteAccountApi = async (data: any) => {
   const response = await instance.post("/auth/deleteaccount", data);
   return response.data;
 };
 
-// forgot password
+/* ================= FORGOT PASSWORD ================= */
+
 export const forgotPasswordApi = async (data: any) => {
   const response = await instance.post("/auth/forgotpassword", data);
   return response.data;
 };
 
-// reset password
+/* ================= RESET PASSWORD ================= */
+
 export const resetPasswordApi = async (data: any) => {
   const response = await instance.put("/auth/resetpassword", data);
   return response.data;
