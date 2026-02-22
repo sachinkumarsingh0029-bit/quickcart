@@ -12,14 +12,17 @@ const MainLayout: React.FC = () => {
     (state: RootState) => state.user
   );
 
+  // Ban check
   if (ban?.status && ban?.banExpiresAt < Date.now()) {
     return <IpBanned />;
   }
 
-  if (isAuthenticated && !user.verificationStatus) {
-    return <Navigate to="/verification" />;
+  // Verification check
+  if (isAuthenticated && !user?.verificationStatus) {
+    return <Navigate to="/verification" replace />;
   }
 
+  // ALWAYS return JSX (never null)
   return (
     <div className="flex flex-col min-h-screen bg-white dark:bg-gray-900">
       <HomeLayout>
@@ -31,4 +34,4 @@ const MainLayout: React.FC = () => {
   );
 };
 
-export default MainLayout;  
+export default MainLayout;
