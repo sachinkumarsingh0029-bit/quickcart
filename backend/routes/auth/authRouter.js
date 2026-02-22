@@ -1,6 +1,5 @@
 const express = require("express");
 const { check } = require("express-validator");
-
 const authController = require("../../controllers/auth/authController");
 
 const router = express.Router();
@@ -18,6 +17,9 @@ router.post(
 
 /* ================= LOGIN ================= */
 router.post("/login", authController.login);
+
+/* ================= VERIFY NORMAL USER ================= */
+router.post("/verify", authController.verifyUser);
 
 /* ================= VERIFY SELLER LOGIN ================= */
 router.post("/verify-seller-login", authController.verifySellerLogin);
