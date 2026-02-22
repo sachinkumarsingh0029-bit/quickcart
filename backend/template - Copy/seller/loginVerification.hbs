@@ -1,0 +1,30 @@
+<html>
+  <body style="font-family: Arial, sans-serif; background:#f5f5f5; padding:40px;">
+    <div style="background:white; padding:30px; border-radius:8px; text-align:center;">
+      
+      <h2>Seller Login Verification</h2>
+
+      <p>Hello {{username}},</p>
+
+      <p>Your login OTP is:</p>
+
+      <div style="font-size:32px; font-weight:bold; margin:20px 0; color:#007bff;">
+        {{verificationCode}}
+      </div>
+
+      <p>This OTP is valid for 10 minutes.</p>
+
+      <a href="{{verificationLink}}" 
+         style="display:inline-block;
+                padding:12px 25px;
+                background:#007bff;
+                color:white;
+                text-decoration:none;
+                border-radius:5px;
+                margin-top:20px;">
+        Login to Dashboard
+      </a>
+
+    </div>
+  </body>
+</html>

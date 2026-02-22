@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Notification</title>
+    <style>
+        /* Styles for the email template */
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        h1 {
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4caf50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: #3e8e41;
+        }
+
+        .warning {
+            color: #ffa500;
+        }
+
+        .error {
+            color: #ff0000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        {{#if newUser}}
+        <div class="notification success">
+            <h2>New User Created</h2>
+            <p>Hello {{newUser.name}},</p>
+            <p>A new user account has been created for you on our platform with the following details:</p>
+            <ul>
+                <li>Name: {{newUser.name}}</li>
+                <li>Email: {{newUser.email}}</li>
+            </ul>
+            <p>Keep this information safe and secure. You can now log in to your account using your email and password
+                provided during registration.</p>
+            <p>Thank you for choosing our platform!</p>
+            <p>Best regards,<br />QuickCart</p>
+        </div>
+        {{/if}}
+        {{#if userUpdated}}
+        <div class="notification warning">
+            <h2>Warning: User Account Updated</h2>
+            <p>The following user's account has been updated:</p>
+            <ul>
+                <li>Name: {{userUpdated.name}}</li>
+                <li>Email: {{userUpdated.email}}</li>
+            </ul>
+            <h2>Please verify that the changes made to this user's account are correct.</h2>
+        </div>
+        {{/if}}
+        {{#if passwordUpdated}}
+        <div class="notification warning">
+            <h2>Warning: Password Changed</h2>
+            <p>The following user's account has been updated:</p>
+            <ul>
+                <li>Name: {{passwordUpdated.name}}</li>
+                <li>Email: {{passwordUpdated.email}}</li>
+            </ul>
+            <h2>Please verify that the changes made to this user's account are correct.</h2>
+        </div>
+        {{/if}}
+        {{#if userDeleted}}
+        <div class="notification warning">
+            <h2>Warning: User Account Deleted</h2>
+            <p>The following user's account has been deleted:</p>
+            <ul>
+                <li>Name: {{userDeleted.name}}</li>
+                <li>Email: {{userDeleted.email}}</li>
+                <li>Date and Time: {{userDeleted.deletedAt}}</li>
+            </ul>
+            <h2>Please take appropriate actions based on your account.</h2>
+            <p>If you would like to create a new account, please click <a href="/signup">here</a>.</p>
+            <p>If you need further assistance, please contact our support team at <a
+                    href="mailto:support@QuickCart.com">support@QuickCart.com</a>.</p>
+        </div>
+        {{/if}}
+        {{#if actionLink}}
+        <p>Please click the button below to take necessary action:</p>
+        <a class="button" href="{{ actionLink }}">{{ actionText }}</a>
+        {{/if}}
+        <p>Best regards,<br />QuickCart</p>
+    </div>
+</body>
+
+</html>

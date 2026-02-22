@@ -12,8 +12,8 @@ const generateCode = require("../../utils/generateCode");
 
 const cookieOptions = {
   httpOnly: true,
-  secure: process.env.NODE_ENV === "production", // ✅ Production safe
-  sameSite: "none", // ✅ Required for Vercel → Render
+  secure: true,           // 🔥 REQUIRED FOR HTTPS (Render)
+  sameSite: "none",       // 🔥 REQUIRED FOR Vercel → Render
   maxAge: 5 * 60 * 60 * 1000,
 };
 
@@ -191,7 +191,7 @@ exports.verifySellerLogin = async (req, res) => {
 
     const token = await user.generateAuthToken();
 
-    // ✅ FIXED COOKIE SET
+    // 🔥 IMPORTANT
     res.cookie("token", token, cookieOptions);
 
     return res.status(200).json({
@@ -206,7 +206,11 @@ exports.verifySellerLogin = async (req, res) => {
 /* ================= LOGOUT ================= */
 
 exports.logout = async (req, res) => {
-  res.clearCookie("token", cookieOptions);
+  res.clearCookie("token", {
+    httpOnly: true,
+    secure: true,
+    sameSite: "none",
+  });
 
   res.status(200).json({
     status: "success",

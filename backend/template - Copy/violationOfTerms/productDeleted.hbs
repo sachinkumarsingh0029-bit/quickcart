@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Deletion Notification</title>
+  </head>
+  <body style="font-family: Arial, sans-serif; font-size: 16px; color: #444">
+    <div style="max-width: 600px; margin: 0 auto">
+      <header
+        style="background-color: #f8f8f8; padding: 20px; text-align: center"
+      >
+        <h1 style="margin: 0; color: #e74c3c; font-size: 28px">
+          Product Deletion Notification
+        </h1>
+      </header>
+      <main style="padding: 20px">
+        <p>Dear {{username}},</p>
+        <p>
+          We regret to inform you that your product "{{productName}}" has been
+          deleted.
+        </p>
+        <p>
+          Our team has reviewed the product and found that it violated our terms
+          of service.
+        </p>
+        <p>The product was deleted on {{deletionDate}} {{timeZone}}.</p>
+        <p>The reason for the violation was: "{{violationReason}}".</p>
+        <p>
+          We would like to remind you that our guidelines are in place to ensure
+          a safe and fair marketplace for all our users. Please take a moment to
+          review our terms and conditions and ensure that any future products
+          you post adhere to our guidelines to avoid any further action against
+          your account.
+        </p>
+        <p>
+          If you have any questions or concerns, please don't hesitate to
+          contact our customer support team at support@QuickCart.com. We are
+          always here to help and happy to answer any questions you may have.
+        </p>
+        <p>Thank you for your understanding and cooperation in this matter.</p>
+        <p>Best regards,</p>
+        <p>{{adminUsername}} - QuickCart</p>
+      </main>
+      <footer
+        style="background-color: #f8f8f8; padding: 20px; text-align: center"
+      >
+        <p style="margin: 0">&copy; 2023 QuickCart. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>

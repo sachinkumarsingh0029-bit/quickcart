@@ -1,0 +1,2861 @@
+[
+  {
+    "_id": "643ffd58a0d77e0b918952cd",
+    "customer": "643b7de40a416cdcadd8d065",
+    "type": "purchase",
+    "amount": 1199,
+    "status": "Completed",
+    "paymentMethod": "stripe",
+    "version": 3,
+    "trans_id": "trans_1681915224259_643ffd58a0d77e0b918952ce_00245564-546c-47c5-a695-88e913e18817",
+    "createdAt": {
+      "$date": "2023-04-19T14:40:24.260Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "643b7de40a416cdcadd8d065",
+      "type": "purchase",
+      "amount": 1199,
+      "status": "Completed",
+      "paymentMethod": "stripe",
+      "version": 3,
+      "trans_id": "trans_1681915224259_643ffd58a0d77e0b918952ce_00245564-546c-47c5-a695-88e913e18817",
+      "__v": 0,
+      "previous": {
+        "customer": "643b7de40a416cdcadd8d065",
+        "type": "purchase",
+        "amount": 1199,
+        "status": "Completed",
+        "paymentMethod": "stripe",
+        "version": 2,
+        "trans_id": "trans_1681915224259_643ffd58a0d77e0b918952ce_00245564-546c-47c5-a695-88e913e18817",
+        "__v": 0
+      },
+      "cartId": "cart_1681915233991_a2fcd0eb-54d8-48d2-a51e-c14ee96389c8"
+    },
+    "cartId": "cart_1681915233991_a2fcd0eb-54d8-48d2-a51e-c14ee96389c8"
+  },
+  {
+    "_id": "6450e695cc8d5868bd5feb65",
+    "customer": "64475b08e8674dd1e21b4be5",
+    "type": "purchase",
+    "amount": 2598,
+    "status": "Completed",
+    "paymentMethod": "stripe",
+    "version": 2,
+    "trans_id": "trans_1683023509312_6450e695cc8d5868bd5feb66_06f4eea5-2912-4fdc-9b54-3797a473ac33",
+    "createdAt": {
+      "$date": "2023-05-02T10:31:49.313Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "64475b08e8674dd1e21b4be5",
+      "type": "purchase",
+      "amount": 2598,
+      "status": "Completed",
+      "paymentMethod": "stripe",
+      "version": 2,
+      "trans_id": "trans_1683023509312_6450e695cc8d5868bd5feb66_06f4eea5-2912-4fdc-9b54-3797a473ac33",
+      "__v": 0
+    }
+  },
+  {
+    "_id": "64400e5fe054d4541dc7556e",
+    "customer": "643b7de40a416cdcadd8d065",
+    "type": "purchase",
+    "amount": 1199,
+    "status": "Refunded",
+    "paymentMethod": "stripe",
+    "version": 4,
+    "trans_id": "trans_1681919583497_64400e5fe054d4541dc7556f_13bf7318-e9f9-437d-89f1-e52f5f2a7aed",
+    "createdAt": {
+      "$date": "2023-04-19T15:53:03.498Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "643b7de40a416cdcadd8d065",
+      "type": "purchase",
+      "amount": 1199,
+      "status": "Refunded",
+      "paymentMethod": "stripe",
+      "version": 4,
+      "trans_id": "trans_1681919583497_64400e5fe054d4541dc7556f_13bf7318-e9f9-437d-89f1-e52f5f2a7aed",
+      "__v": 0,
+      "previous": {
+        "customer": "643b7de40a416cdcadd8d065",
+        "type": "purchase",
+        "amount": 1199,
+        "status": "Completed",
+        "paymentMethod": "stripe",
+        "version": 3,
+        "trans_id": "trans_1681919583497_64400e5fe054d4541dc7556f_13bf7318-e9f9-437d-89f1-e52f5f2a7aed",
+        "__v": 0,
+        "previous": {
+          "customer": "643b7de40a416cdcadd8d065",
+          "type": "purchase",
+          "amount": 1199,
+          "status": "Completed",
+          "paymentMethod": "stripe",
+          "version": 2,
+          "trans_id": "trans_1681919583497_64400e5fe054d4541dc7556f_13bf7318-e9f9-437d-89f1-e52f5f2a7aed",
+          "__v": 0
+        },
+        "cartId": "cart_1681919592332_a1e608be-5b2c-4f96-aa5e-3b892bddaa2d"
+      },
+      "cartId": "cart_1681919592332_a1e608be-5b2c-4f96-aa5e-3b892bddaa2d",
+      "refundReason": "testing"
+    },
+    "cartId": "cart_1681919592332_a1e608be-5b2c-4f96-aa5e-3b892bddaa2d",
+    "refundReason": "testing"
+  },
+  {
+    "_id": "6450e1a5dd3c04af0b197691",
+    "customer": "64475b08e8674dd1e21b4be5",
+    "type": "purchase",
+    "amount": 1299,
+    "status": "Completed",
+    "paymentMethod": "stripe",
+    "version": 3,
+    "trans_id": "trans_1683022245771_6450e1a5dd3c04af0b197692_6d367ef5-7a78-4b26-bd0e-1ad0ed24ab5c",
+    "createdAt": {
+      "$date": "2023-05-02T10:10:45.773Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "64475b08e8674dd1e21b4be5",
+      "type": "purchase",
+      "amount": 1299,
+      "status": "Completed",
+      "paymentMethod": "stripe",
+      "version": 3,
+      "trans_id": "trans_1683022245771_6450e1a5dd3c04af0b197692_6d367ef5-7a78-4b26-bd0e-1ad0ed24ab5c",
+      "__v": 0,
+      "previous": {
+        "customer": "64475b08e8674dd1e21b4be5",
+        "type": "purchase",
+        "amount": 1299,
+        "status": "Completed",
+        "paymentMethod": "stripe",
+        "version": 2,
+        "trans_id": "trans_1683022245771_6450e1a5dd3c04af0b197692_6d367ef5-7a78-4b26-bd0e-1ad0ed24ab5c",
+        "__v": 0
+      },
+      "cartId": "cart_1683022256705_40dee48d-0b30-484c-9f15-6e02f5f3d104"
+    },
+    "cartId": "cart_1683022256705_40dee48d-0b30-484c-9f15-6e02f5f3d104"
+  },
+  {
+    "_id": "644093a30197c7511b058e0e",
+    "customer": "643b7de40a416cdcadd8d065",
+    "type": "purchase",
+    "amount": 1199,
+    "status": "Completed",
+    "paymentMethod": "stripe",
+    "version": 3,
+    "trans_id": "trans_1681953699248_644093a30197c7511b058e0f_ffaf3c10-d660-4f70-b74f-ad9b70761617",
+    "createdAt": {
+      "$date": "2023-04-20T01:21:39.250Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "643b7de40a416cdcadd8d065",
+      "type": "purchase",
+      "amount": 1199,
+      "status": "Completed",
+      "paymentMethod": "stripe",
+      "version": 3,
+      "trans_id": "trans_1681953699248_644093a30197c7511b058e0f_ffaf3c10-d660-4f70-b74f-ad9b70761617",
+      "__v": 0,
+      "previous": {
+        "customer": "643b7de40a416cdcadd8d065",
+        "type": "purchase",
+        "amount": 1199,
+        "status": "Completed",
+        "paymentMethod": "stripe",
+        "version": 2,
+        "trans_id": "trans_1681953699248_644093a30197c7511b058e0f_ffaf3c10-d660-4f70-b74f-ad9b70761617",
+        "__v": 0
+      },
+      "cartId": "cart_1681953709310_6de6272d-6392-49a2-bc56-49ef6972eb36"
+    },
+    "cartId": "cart_1681953709310_6de6272d-6392-49a2-bc56-49ef6972eb36"
+  },
+  {
+    "_id": "64400fc19fac291fac6d5ec7",
+    "customer": "643b7de40a416cdcadd8d065",
+    "type": "purchase",
+    "amount": 1199,
+    "status": "Completed",
+    "paymentMethod": "stripe",
+    "version": 3,
+    "trans_id": "trans_1681919937323_64400fc19fac291fac6d5ec8_cad0ce57-66a9-474e-b3f9-7d752aff7ca7",
+    "createdAt": {
+      "$date": "2023-04-19T15:58:57.325Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "643b7de40a416cdcadd8d065",
+      "type": "purchase",
+      "amount": 1199,
+      "status": "Completed",
+      "paymentMethod": "stripe",
+      "version": 3,
+      "trans_id": "trans_1681919937323_64400fc19fac291fac6d5ec8_cad0ce57-66a9-474e-b3f9-7d752aff7ca7",
+      "__v": 0,
+      "previous": {
+        "customer": "643b7de40a416cdcadd8d065",
+        "type": "purchase",
+        "amount": 1199,
+        "status": "Completed",
+        "paymentMethod": "stripe",
+        "version": 2,
+        "trans_id": "trans_1681919937323_64400fc19fac291fac6d5ec8_cad0ce57-66a9-474e-b3f9-7d752aff7ca7",
+        "__v": 0
+      },
+      "cartId": "cart_1681919946523_a3282c77-6e78-4a56-b5f3-f819952dbc8f"
+    },
+    "cartId": "cart_1681919946523_a3282c77-6e78-4a56-b5f3-f819952dbc8f"
+  },
+  {
+    "_id": "644ddb195d43caad0cacbd68",
+    "customer": "643b7de40a416cdcadd8d065",
+    "type": "purchase",
+    "amount": 3897,
+    "status": "Failed",
+    "paymentMethod": "blockchain",
+    "version": 2,
+    "trans_id": "trans_1682823961688_644ddb195d43caad0cacbd69_761653a0-f0c2-4f38-926b-f75ca195b686",
+    "createdAt": {
+      "$date": "2023-04-30T03:06:01.689Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "643b7de40a416cdcadd8d065",
+      "type": "purchase",
+      "amount": 3897,
+      "status": "Failed",
+      "paymentMethod": "blockchain",
+      "version": 2,
+      "trans_id": "trans_1682823961688_644ddb195d43caad0cacbd69_761653a0-f0c2-4f38-926b-f75ca195b686",
+      "__v": 0
+    }
+  },
+  {
+    "_id": "64409d31292d9b644875df55",
+    "customer": "643b7de40a416cdcadd8d065",
+    "type": "purchase",
+    "amount": 23980,
+    "status": "Completed",
+    "paymentMethod": "stripe",
+    "version": 3,
+    "trans_id": "trans_1681956145913_64409d31292d9b644875df56_085e1220-1ecf-47b8-8ba5-07e034104974",
+    "createdAt": {
+      "$date": "2023-04-20T02:02:25.915Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "643b7de40a416cdcadd8d065",
+      "type": "purchase",
+      "amount": 23980,
+      "status": "Completed",
+      "paymentMethod": "stripe",
+      "version": 3,
+      "trans_id": "trans_1681956145913_64409d31292d9b644875df56_085e1220-1ecf-47b8-8ba5-07e034104974",
+      "__v": 0,
+      "previous": {
+        "customer": "643b7de40a416cdcadd8d065",
+        "type": "purchase",
+        "amount": 23980,
+        "status": "Completed",
+        "paymentMethod": "stripe",
+        "version": 2,
+        "trans_id": "trans_1681956145913_64409d31292d9b644875df56_085e1220-1ecf-47b8-8ba5-07e034104974",
+        "__v": 0
+      },
+      "cartId": "cart_1681956155901_ad0d16c0-e05e-4041-a78b-62e12f655d37"
+    },
+    "cartId": "cart_1681956155901_ad0d16c0-e05e-4041-a78b-62e12f655d37"
+  },
+  {
+    "_id": "6448e29865f135712c03060f",
+    "customer": "643b7de40a416cdcadd8d065",
+    "type": "purchase",
+    "amount": 1299,
+    "status": "Refunded",
+    "paymentMethod": "stripe",
+    "version": 4,
+    "trans_id": "trans_1682498200266_6448e29865f135712c030610_d22d37e3-6659-42ad-91ba-9403e5bb9d58",
+    "createdAt": {
+      "$date": "2023-04-26T08:36:40.267Z"
+    },
+    "__v": 0,
+    "previous": {
+      "refundedAmount": 1299,
+      "customer": "643b7de40a416cdcadd8d065",
+      "type": "purchase",
+      "amount": 1299,
+      "status": "Refunded",
+      "paymentMethod": "stripe",
+      "version": 4,
+      "trans_id": "trans_1682498200266_6448e29865f135712c030610_d22d37e3-6659-42ad-91ba-9403e5bb9d58",
+      "__v": 0,
+      "previous": {
+        "customer": "643b7de40a416cdcadd8d065",
+        "type": "purchase",
+        "amount": 1299,
+        "status": "Completed",
+        "paymentMethod": "stripe",
+        "version": 3,
+        "trans_id": "trans_1682498200266_6448e29865f135712c030610_d22d37e3-6659-42ad-91ba-9403e5bb9d58",
+        "__v": 0,
+        "previous": {
+          "customer": "643b7de40a416cdcadd8d065",
+          "type": "purchase",
+          "amount": 1299,
+          "status": "Completed",
+          "paymentMethod": "stripe",
+          "version": 2,
+          "trans_id": "trans_1682498200266_6448e29865f135712c030610_d22d37e3-6659-42ad-91ba-9403e5bb9d58",
+          "__v": 0
+        },
+        "cartId": "cart_1682498215457_e399f9ff-cdc9-4f3f-b3bb-1c04297eb2e6"
+      },
+      "cartId": "cart_1682498215457_e399f9ff-cdc9-4f3f-b3bb-1c04297eb2e6",
+      "refundReason": "simply testing"
+    },
+    "cartId": "cart_1682498215457_e399f9ff-cdc9-4f3f-b3bb-1c04297eb2e6",
+    "refundReason": "simply testing",
+    "refundedAmount": 1299
+  },
+  {
+    "_id": "64512457970251f5d0892bb2",
+    "customer": "643b7de40a416cdcadd8d065",
+    "type": "purchase",
+    "amount": 1299,
+    "status": "Refunded",
+    "paymentMethod": "stripe",
+    "version": 4,
+    "trans_id": "trans_1683039319927_64512457970251f5d0892bb3_c3ca84d8-9b41-4afa-9626-9530c6a9d517",
+    "createdAt": {
+      "$date": "2023-05-02T14:55:19.927Z"
+    },
+    "__v": 0,
+    "previous": {
+      "refundedAmount": 1299,
+      "customer": "643b7de40a416cdcadd8d065",
+      "type": "purchase",
+      "amount": 1299,
+      "status": "Refunded",
+      "paymentMethod": "stripe",
+      "version": 4,
+      "trans_id": "trans_1683039319927_64512457970251f5d0892bb3_c3ca84d8-9b41-4afa-9626-9530c6a9d517",
+      "__v": 0,
+      "previous": {
+        "customer": "643b7de40a416cdcadd8d065",
+        "type": "purchase",
+        "amount": 1299,
+        "status": "Completed",
+        "paymentMethod": "stripe",
+        "version": 3,
+        "trans_id": "trans_1683039319927_64512457970251f5d0892bb3_c3ca84d8-9b41-4afa-9626-9530c6a9d517",
+        "__v": 0,
+        "previous": {
+          "customer": "643b7de40a416cdcadd8d065",
+          "type": "purchase",
+          "amount": 1299,
+          "status": "Completed",
+          "paymentMethod": "stripe",
+          "version": 2,
+          "trans_id": "trans_1683039319927_64512457970251f5d0892bb3_c3ca84d8-9b41-4afa-9626-9530c6a9d517",
+          "__v": 0
+        },
+        "cartId": "cart_1683039331088_37d91136-f67c-4560-94be-304fe8658d0f"
+      },
+      "cartId": "cart_1683039331088_37d91136-f67c-4560-94be-304fe8658d0f",
+      "refundReason": "htuyyuuytyutytut"
+    },
+    "cartId": "cart_1683039331088_37d91136-f67c-4560-94be-304fe8658d0f",
+    "refundReason": "htuyyuuytyutytut",
+    "refundedAmount": 1299
+  },
+  {
+    "_id": "6459c106585157257920d3c8",
+    "customer": "64475b08e8674dd1e21b4be5",
+    "type": "purchase",
+    "amount": 1299,
+    "refundedAmount": 0,
+    "status": "Failed",
+    "paymentMethod": "stripe",
+    "version": 2,
+    "trans_id": "trans_1683603718468_6459c106585157257920d3c9_33653938-111c-4db9-a6cc-b486366a2a3f",
+    "createdAt": {
+      "$date": "2023-05-09T03:41:58.469Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "64475b08e8674dd1e21b4be5",
+      "type": "purchase",
+      "amount": 1299,
+      "refundedAmount": 0,
+      "status": "Failed",
+      "paymentMethod": "stripe",
+      "version": 2,
+      "trans_id": "trans_1683603718468_6459c106585157257920d3c9_33653938-111c-4db9-a6cc-b486366a2a3f",
+      "__v": 0
+    }
+  },
+  {
+    "_id": "6459c11f0c79dbb1e1d62166",
+    "customer": "64475b08e8674dd1e21b4be5",
+    "type": "purchase",
+    "amount": 1299,
+    "refundedAmount": 0,
+    "status": "Failed",
+    "paymentMethod": "stripe",
+    "version": 2,
+    "trans_id": "trans_1683603743380_6459c11f0c79dbb1e1d62167_4cc74db8-1374-41bb-9d35-18669b229c53",
+    "createdAt": {
+      "$date": "2023-05-09T03:42:23.380Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "64475b08e8674dd1e21b4be5",
+      "type": "purchase",
+      "amount": 1299,
+      "refundedAmount": 0,
+      "status": "Failed",
+      "paymentMethod": "stripe",
+      "version": 2,
+      "trans_id": "trans_1683603743380_6459c11f0c79dbb1e1d62167_4cc74db8-1374-41bb-9d35-18669b229c53",
+      "__v": 0
+    }
+  },
+  {
+    "_id": "645125068be12468b4262187",
+    "customer": "643b7de40a416cdcadd8d065",
+    "type": "purchase",
+    "amount": 1299,
+    "status": "Refunded",
+    "paymentMethod": "stripe",
+    "version": 4,
+    "trans_id": "trans_1683039494650_645125068be12468b4262188_37d9ebba-2ec8-4bd8-9d3e-b8d8066864a1",
+    "createdAt": {
+      "$date": "2023-05-02T14:58:14.652Z"
+    },
+    "__v": 0,
+    "previous": {
+      "refundedAmount": 1299,
+      "customer": "643b7de40a416cdcadd8d065",
+      "type": "purchase",
+      "amount": 1299,
+      "status": "Refunded",
+      "paymentMethod": "stripe",
+      "version": 4,
+      "trans_id": "trans_1683039494650_645125068be12468b4262188_37d9ebba-2ec8-4bd8-9d3e-b8d8066864a1",
+      "__v": 0,
+      "previous": {
+        "customer": "643b7de40a416cdcadd8d065",
+        "type": "purchase",
+        "amount": 1299,
+        "status": "Completed",
+        "paymentMethod": "stripe",
+        "version": 3,
+        "trans_id": "trans_1683039494650_645125068be12468b4262188_37d9ebba-2ec8-4bd8-9d3e-b8d8066864a1",
+        "__v": 0,
+        "previous": {
+          "customer": "643b7de40a416cdcadd8d065",
+          "type": "purchase",
+          "amount": 1299,
+          "status": "Completed",
+          "paymentMethod": "stripe",
+          "version": 2,
+          "trans_id": "trans_1683039494650_645125068be12468b4262188_37d9ebba-2ec8-4bd8-9d3e-b8d8066864a1",
+          "__v": 0
+        },
+        "cartId": "cart_1683039506087_b0ff3683-201a-4d7e-9e11-a2da6d1cb457"
+      },
+      "cartId": "cart_1683039506087_b0ff3683-201a-4d7e-9e11-a2da6d1cb457",
+      "refundReason": "simply"
+    },
+    "cartId": "cart_1683039506087_b0ff3683-201a-4d7e-9e11-a2da6d1cb457",
+    "refundReason": "simply",
+    "refundedAmount": 1299
+  },
+  {
+    "_id": "6457dc3c169b3bc0c9a8bcc8",
+    "customer": "643b7de40a416cdcadd8d065",
+    "type": "purchase",
+    "amount": 1299,
+    "refundedAmount": 0,
+    "status": "Completed",
+    "paymentMethod": "blockchain",
+    "version": 3,
+    "trans_id": "trans_1683479612672_6457dc3c169b3bc0c9a8bcc9_c524838a-0967-4822-b196-63cc3c1694d5",
+    "createdAt": {
+      "$date": "2023-05-07T17:13:32.673Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "643b7de40a416cdcadd8d065",
+      "type": "purchase",
+      "amount": 1299,
+      "refundedAmount": 0,
+      "status": "Completed",
+      "paymentMethod": "blockchain",
+      "version": 3,
+      "trans_id": "trans_1683479612672_6457dc3c169b3bc0c9a8bcc9_c524838a-0967-4822-b196-63cc3c1694d5",
+      "__v": 0,
+      "previous": {
+        "customer": "643b7de40a416cdcadd8d065",
+        "type": "purchase",
+        "amount": 1299,
+        "refundedAmount": 0,
+        "status": "Failed",
+        "paymentMethod": "blockchain",
+        "version": 2,
+        "trans_id": "trans_1683479612672_6457dc3c169b3bc0c9a8bcc9_c524838a-0967-4822-b196-63cc3c1694d5",
+        "__v": 0
+      }
+    }
+  },
+  {
+    "_id": "6459c1338c687d6e9ca88a49",
+    "customer": "64475b08e8674dd1e21b4be5",
+    "type": "purchase",
+    "amount": 1299,
+    "refundedAmount": 0,
+    "status": "Failed",
+    "paymentMethod": "stripe",
+    "version": 2,
+    "trans_id": "trans_1683603763763_6459c1338c687d6e9ca88a4a_cd2d5022-3ee6-4def-9e9b-80292bba6479",
+    "createdAt": {
+      "$date": "2023-05-09T03:42:43.764Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "64475b08e8674dd1e21b4be5",
+      "type": "purchase",
+      "amount": 1299,
+      "refundedAmount": 0,
+      "status": "Failed",
+      "paymentMethod": "stripe",
+      "version": 2,
+      "trans_id": "trans_1683603763763_6459c1338c687d6e9ca88a4a_cd2d5022-3ee6-4def-9e9b-80292bba6479",
+      "__v": 0
+    }
+  },
+  {
+    "_id": "6475e14cc1ce1a42fe091875",
+    "customer": "6459cc873f9c353beb3c419f",
+    "type": "purchase",
+    "amount": 1299,
+    "refundedAmount": 0,
+    "status": "Completed",
+    "paymentMethod": "stripe",
+    "version": 3,
+    "trans_id": "trans_1685446988150_6475e14cc1ce1a42fe091876_5e7c8d79-5c5b-4dbb-b190-e4728f9601aa",
+    "createdAt": {
+      "$date": "2023-05-30T11:43:08.151Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "6459cc873f9c353beb3c419f",
+      "type": "purchase",
+      "amount": 1299,
+      "refundedAmount": 0,
+      "status": "Completed",
+      "paymentMethod": "stripe",
+      "version": 3,
+      "trans_id": "trans_1685446988150_6475e14cc1ce1a42fe091876_5e7c8d79-5c5b-4dbb-b190-e4728f9601aa",
+      "__v": 0,
+      "previous": {
+        "customer": "6459cc873f9c353beb3c419f",
+        "type": "purchase",
+        "amount": 1299,
+        "refundedAmount": 0,
+        "status": "Completed",
+        "paymentMethod": "stripe",
+        "version": 2,
+        "trans_id": "trans_1685446988150_6475e14cc1ce1a42fe091876_5e7c8d79-5c5b-4dbb-b190-e4728f9601aa",
+        "__v": 0
+      },
+      "cartId": "cart_1685447000033_20f960c8-1ed2-47fb-85aa-b7b8c029077e"
+    },
+    "cartId": "cart_1685447000033_20f960c8-1ed2-47fb-85aa-b7b8c029077e"
+  },
+  {
+    "_id": "6457da58169b3bc0c9a8bc33",
+    "customer": "643b7de40a416cdcadd8d065",
+    "type": "purchase",
+    "amount": 1299,
+    "refundedAmount": 0,
+    "status": "Failed",
+    "paymentMethod": "blockchain",
+    "version": 2,
+    "trans_id": "trans_1683479128109_6457da58169b3bc0c9a8bc34_c9c57d48-392f-4898-b080-285b44cf5433",
+    "createdAt": {
+      "$date": "2023-05-07T17:05:28.110Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "643b7de40a416cdcadd8d065",
+      "type": "purchase",
+      "amount": 1299,
+      "refundedAmount": 0,
+      "status": "Failed",
+      "paymentMethod": "blockchain",
+      "version": 2,
+      "trans_id": "trans_1683479128109_6457da58169b3bc0c9a8bc34_c9c57d48-392f-4898-b080-285b44cf5433",
+      "__v": 0
+    }
+  },
+  {
+    "_id": "64478e7bd1d77885a22d4558",
+    "customer": "64475b08e8674dd1e21b4be5",
+    "type": "purchase",
+    "amount": 1299,
+    "status": "Completed",
+    "paymentMethod": "stripe",
+    "version": 3,
+    "trans_id": "trans_1682411131007_64478e7bd1d77885a22d4559_7304ac26-7729-4bf7-bb77-0627780d3bba",
+    "createdAt": {
+      "$date": "2023-04-25T08:25:31.010Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "64475b08e8674dd1e21b4be5",
+      "type": "purchase",
+      "amount": 1299,
+      "status": "Completed",
+      "paymentMethod": "stripe",
+      "version": 3,
+      "trans_id": "trans_1682411131007_64478e7bd1d77885a22d4559_7304ac26-7729-4bf7-bb77-0627780d3bba",
+      "__v": 0,
+      "previous": {
+        "customer": "64475b08e8674dd1e21b4be5",
+        "type": "purchase",
+        "amount": 1299,
+        "status": "Completed",
+        "paymentMethod": "stripe",
+        "version": 2,
+        "trans_id": "trans_1682411131007_64478e7bd1d77885a22d4559_7304ac26-7729-4bf7-bb77-0627780d3bba",
+        "__v": 0
+      },
+      "cartId": "cart_1682411142014_0216a1ba-c751-44f6-bda6-5d0c93cc57fc"
+    },
+    "cartId": "cart_1682411142014_0216a1ba-c751-44f6-bda6-5d0c93cc57fc"
+  },
+  {
+    "_id": "6448f821360be30ed8d0b800",
+    "customer": "643b7de40a416cdcadd8d065",
+    "type": "purchase",
+    "amount": 1299,
+    "status": "Failed",
+    "paymentMethod": "blockchain",
+    "version": 2,
+    "trans_id": "trans_1682503713207_6448f821360be30ed8d0b801_99a72b95-7485-496b-8516-14da56fb8519",
+    "createdAt": {
+      "$date": "2023-04-26T10:08:33.208Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "643b7de40a416cdcadd8d065",
+      "type": "purchase",
+      "amount": 1299,
+      "status": "Failed",
+      "paymentMethod": "blockchain",
+      "version": 2,
+      "trans_id": "trans_1682503713207_6448f821360be30ed8d0b801_99a72b95-7485-496b-8516-14da56fb8519",
+      "__v": 0
+    }
+  },
+  {
+    "_id": "6457e6331ba9c61524d987f0",
+    "customer": "643b7de40a416cdcadd8d065",
+    "type": "purchase",
+    "amount": 1299,
+    "refundedAmount": 0,
+    "status": "Failed",
+    "paymentMethod": "blockchain",
+    "version": 2,
+    "trans_id": "trans_1683482163839_6457e6331ba9c61524d987f1_64ec7ab2-0c3c-4ae9-9358-ce58799ded1e",
+    "createdAt": {
+      "$date": "2023-05-07T17:56:03.840Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "643b7de40a416cdcadd8d065",
+      "type": "purchase",
+      "amount": 1299,
+      "refundedAmount": 0,
+      "status": "Failed",
+      "paymentMethod": "blockchain",
+      "version": 2,
+      "trans_id": "trans_1683482163839_6457e6331ba9c61524d987f1_64ec7ab2-0c3c-4ae9-9358-ce58799ded1e",
+      "__v": 0
+    }
+  },
+  {
+    "_id": "6459c0ba585157257920d38a",
+    "customer": "64475b08e8674dd1e21b4be5",
+    "type": "purchase",
+    "amount": 1299,
+    "refundedAmount": 0,
+    "status": "Failed",
+    "paymentMethod": "stripe",
+    "version": 2,
+    "trans_id": "trans_1683603642205_6459c0ba585157257920d38b_05461ab2-f761-4a7d-ba47-f31e5d7f9884",
+    "createdAt": {
+      "$date": "2023-05-09T03:40:42.207Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "64475b08e8674dd1e21b4be5",
+      "type": "purchase",
+      "amount": 1299,
+      "refundedAmount": 0,
+      "status": "Failed",
+      "paymentMethod": "stripe",
+      "version": 2,
+      "trans_id": "trans_1683603642205_6459c0ba585157257920d38b_05461ab2-f761-4a7d-ba47-f31e5d7f9884",
+      "__v": 0
+    }
+  },
+  {
+    "_id": "64475ee5e8674dd1e21b50e0",
+    "customer": "64475b08e8674dd1e21b4be5",
+    "type": "purchase",
+    "amount": 1299,
+    "status": "Completed",
+    "paymentMethod": "stripe",
+    "version": 3,
+    "trans_id": "trans_1682398949282_64475ee5e8674dd1e21b50e1_feb10d16-c391-4041-a5f9-47032bec3924",
+    "createdAt": {
+      "$date": "2023-04-25T05:02:29.283Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "64475b08e8674dd1e21b4be5",
+      "type": "purchase",
+      "amount": 1299,
+      "status": "Completed",
+      "paymentMethod": "stripe",
+      "version": 3,
+      "trans_id": "trans_1682398949282_64475ee5e8674dd1e21b50e1_feb10d16-c391-4041-a5f9-47032bec3924",
+      "__v": 0,
+      "previous": {
+        "customer": "64475b08e8674dd1e21b4be5",
+        "type": "purchase",
+        "amount": 1299,
+        "status": "Completed",
+        "paymentMethod": "stripe",
+        "version": 2,
+        "trans_id": "trans_1682398949282_64475ee5e8674dd1e21b50e1_feb10d16-c391-4041-a5f9-47032bec3924",
+        "__v": 0
+      },
+      "cartId": "cart_1682398957931_86c984d0-a23c-4378-9a86-454357c7e81a"
+    },
+    "cartId": "cart_1682398957931_86c984d0-a23c-4378-9a86-454357c7e81a"
+  },
+  {
+    "_id": "64478e94d1d77885a22d4645",
+    "customer": "64475b08e8674dd1e21b4be5",
+    "type": "purchase",
+    "amount": 1299,
+    "status": "Failed",
+    "paymentMethod": "stripe",
+    "version": 2,
+    "trans_id": "trans_1682411156469_64478e94d1d77885a22d4646_f7565628-0664-4704-b4b2-aeb23f67509c",
+    "createdAt": {
+      "$date": "2023-04-25T08:25:56.470Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "64475b08e8674dd1e21b4be5",
+      "type": "purchase",
+      "amount": 1299,
+      "status": "Failed",
+      "paymentMethod": "stripe",
+      "version": 2,
+      "trans_id": "trans_1682411156469_64478e94d1d77885a22d4646_f7565628-0664-4704-b4b2-aeb23f67509c",
+      "__v": 0
+    }
+  },
+  {
+    "_id": "6455b7732c53f6c76fae4b68",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "type": "withdraw",
+    "amount": 10000,
+    "refundedAmount": 0,
+    "status": "Completed",
+    "paymentMethod": "Bank",
+    "version": 1,
+    "trans_id": "trans_1683339123951_6455b7732c53f6c76fae4b69_be3cc333-ab0f-4c7d-aa7f-d8cf2298a723",
+    "createdAt": {
+      "$date": "2023-05-06T02:12:03.957Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": "6455b6bc1e3df3baec479e56",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "type": "withdraw",
+    "amount": 10000,
+    "refundedAmount": 0,
+    "status": "Completed",
+    "paymentMethod": "Bank",
+    "version": 1,
+    "trans_id": "trans_1683338940246_6455b6bc1e3df3baec479e57_ab3c1745-9eb3-4b64-8fb8-cd5ebc9c20ac",
+    "createdAt": {
+      "$date": "2023-05-06T02:09:00.251Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": "6457e7e51ba9c61524d98802",
+    "customer": "643b7de40a416cdcadd8d065",
+    "type": "purchase",
+    "amount": 1299,
+    "refundedAmount": 0,
+    "status": "Completed",
+    "paymentMethod": "blockchain",
+    "version": 3,
+    "trans_id": "trans_1683482597411_6457e7e51ba9c61524d98803_86ea21b5-8fe6-4c31-8637-2449be1327ae",
+    "createdAt": {
+      "$date": "2023-05-07T18:03:17.411Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "643b7de40a416cdcadd8d065",
+      "type": "purchase",
+      "amount": 1299,
+      "refundedAmount": 0,
+      "status": "Completed",
+      "paymentMethod": "blockchain",
+      "version": 3,
+      "trans_id": "trans_1683482597411_6457e7e51ba9c61524d98803_86ea21b5-8fe6-4c31-8637-2449be1327ae",
+      "__v": 0,
+      "previous": {
+        "customer": "643b7de40a416cdcadd8d065",
+        "type": "purchase",
+        "amount": 1299,
+        "refundedAmount": 0,
+        "status": "Completed",
+        "paymentMethod": "blockchain",
+        "version": 2,
+        "trans_id": "trans_1683482597411_6457e7e51ba9c61524d98803_86ea21b5-8fe6-4c31-8637-2449be1327ae",
+        "__v": 0
+      },
+      "cartId": "cart_1683482895748_3fb72523-1405-4ba1-903f-dada4f6d530e"
+    },
+    "cartId": "cart_1683482895748_3fb72523-1405-4ba1-903f-dada4f6d530e"
+  },
+  {
+    "_id": "646305cbd66b8622c7bb6b1e",
+    "customer": "643b7de40a416cdcadd8d065",
+    "type": "purchase",
+    "amount": 1299,
+    "refundedAmount": 0,
+    "status": "Completed",
+    "paymentMethod": "stripe",
+    "version": 3,
+    "trans_id": "trans_1684211147891_646305cbd66b8622c7bb6b1f_ba8c04ff-5911-4032-96b8-c1c130ff06b2",
+    "createdAt": {
+      "$date": "2023-05-16T04:25:47.893Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "643b7de40a416cdcadd8d065",
+      "type": "purchase",
+      "amount": 1299,
+      "refundedAmount": 0,
+      "status": "Completed",
+      "paymentMethod": "stripe",
+      "version": 3,
+      "trans_id": "trans_1684211147891_646305cbd66b8622c7bb6b1f_ba8c04ff-5911-4032-96b8-c1c130ff06b2",
+      "__v": 0,
+      "previous": {
+        "customer": "643b7de40a416cdcadd8d065",
+        "type": "purchase",
+        "amount": 1299,
+        "refundedAmount": 0,
+        "status": "Completed",
+        "paymentMethod": "stripe",
+        "version": 2,
+        "trans_id": "trans_1684211147891_646305cbd66b8622c7bb6b1f_ba8c04ff-5911-4032-96b8-c1c130ff06b2",
+        "__v": 0
+      },
+      "cartId": "cart_1684211163261_8d0b0a04-d26a-4c80-b2d0-ce566b64e5de"
+    },
+    "cartId": "cart_1684211163261_8d0b0a04-d26a-4c80-b2d0-ce566b64e5de"
+  },
+  {
+    "_id": "6448f019360be30ed8d0b7d6",
+    "customer": "643b7de40a416cdcadd8d065",
+    "type": "purchase",
+    "amount": 1299,
+    "status": "Failed",
+    "paymentMethod": "blockchain",
+    "version": 2,
+    "trans_id": "trans_1682501657840_6448f019360be30ed8d0b7d7_6ee8d83f-58d2-4957-b5ff-794095e7f154",
+    "createdAt": {
+      "$date": "2023-04-26T09:34:17.841Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "643b7de40a416cdcadd8d065",
+      "type": "purchase",
+      "amount": 1299,
+      "status": "Failed",
+      "paymentMethod": "blockchain",
+      "version": 2,
+      "trans_id": "trans_1682501657840_6448f019360be30ed8d0b7d7_6ee8d83f-58d2-4957-b5ff-794095e7f154",
+      "__v": 0
+    }
+  },
+  {
+    "_id": "6448e14d65f135712c030513",
+    "customer": "643b7de40a416cdcadd8d065",
+    "type": "purchase",
+    "amount": 1299,
+    "status": "Completed",
+    "paymentMethod": "stripe",
+    "version": 3,
+    "trans_id": "trans_1682497869449_6448e14d65f135712c030514_7c22a011-9cd1-4bfd-9022-ae0074396cfc",
+    "createdAt": {
+      "$date": "2023-04-26T08:31:09.450Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "643b7de40a416cdcadd8d065",
+      "type": "purchase",
+      "amount": 1299,
+      "status": "Completed",
+      "paymentMethod": "stripe",
+      "version": 3,
+      "trans_id": "trans_1682497869449_6448e14d65f135712c030514_7c22a011-9cd1-4bfd-9022-ae0074396cfc",
+      "__v": 0,
+      "previous": {
+        "customer": "643b7de40a416cdcadd8d065",
+        "type": "purchase",
+        "amount": 1299,
+        "status": "Completed",
+        "paymentMethod": "stripe",
+        "version": 2,
+        "trans_id": "trans_1682497869449_6448e14d65f135712c030514_7c22a011-9cd1-4bfd-9022-ae0074396cfc",
+        "__v": 0
+      },
+      "cartId": "cart_1682497942883_cd9cfa9d-2d36-4752-8fe4-b030f795eb3c"
+    },
+    "cartId": "cart_1682497942883_cd9cfa9d-2d36-4752-8fe4-b030f795eb3c"
+  },
+  {
+    "_id": "6448e2f465f135712c0306ed",
+    "customer": "643b7de40a416cdcadd8d065",
+    "type": "purchase",
+    "amount": 1299,
+    "status": "Refunded",
+    "paymentMethod": "stripe",
+    "version": 4,
+    "trans_id": "trans_1682498292003_6448e2f465f135712c0306ee_0973179d-4eec-42f0-98e7-699c893c2d11",
+    "createdAt": {
+      "$date": "2023-04-26T08:38:12.003Z"
+    },
+    "__v": 0,
+    "previous": {
+      "refundedAmount": 1299,
+      "customer": "643b7de40a416cdcadd8d065",
+      "type": "purchase",
+      "amount": 1299,
+      "status": "Refunded",
+      "paymentMethod": "stripe",
+      "version": 4,
+      "trans_id": "trans_1682498292003_6448e2f465f135712c0306ee_0973179d-4eec-42f0-98e7-699c893c2d11",
+      "__v": 0,
+      "previous": {
+        "customer": "643b7de40a416cdcadd8d065",
+        "type": "purchase",
+        "amount": 1299,
+        "status": "Completed",
+        "paymentMethod": "stripe",
+        "version": 3,
+        "trans_id": "trans_1682498292003_6448e2f465f135712c0306ee_0973179d-4eec-42f0-98e7-699c893c2d11",
+        "__v": 0,
+        "previous": {
+          "customer": "643b7de40a416cdcadd8d065",
+          "type": "purchase",
+          "amount": 1299,
+          "status": "Completed",
+          "paymentMethod": "stripe",
+          "version": 2,
+          "trans_id": "trans_1682498292003_6448e2f465f135712c0306ee_0973179d-4eec-42f0-98e7-699c893c2d11",
+          "__v": 0
+        },
+        "cartId": "cart_1682498300942_127def86-dcd3-4678-9611-ce609a82ed42"
+      },
+      "cartId": "cart_1682498300942_127def86-dcd3-4678-9611-ce609a82ed42",
+      "refundReason": "simply i want to refund"
+    },
+    "cartId": "cart_1682498300942_127def86-dcd3-4678-9611-ce609a82ed42",
+    "refundReason": "simply i want to refund",
+    "refundedAmount": 1299
+  },
+  {
+    "_id": "6457e08d1ba9c61524d98426",
+    "customer": "643b7de40a416cdcadd8d065",
+    "type": "purchase",
+    "amount": 1299,
+    "refundedAmount": 0,
+    "status": "Failed",
+    "paymentMethod": "stripe",
+    "version": 2,
+    "trans_id": "trans_1683480717890_6457e08d1ba9c61524d98427_5d6a5545-b766-40ca-b044-a43096afca39",
+    "createdAt": {
+      "$date": "2023-05-07T17:31:57.891Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "643b7de40a416cdcadd8d065",
+      "type": "purchase",
+      "amount": 1299,
+      "refundedAmount": 0,
+      "status": "Failed",
+      "paymentMethod": "stripe",
+      "version": 2,
+      "trans_id": "trans_1683480717890_6457e08d1ba9c61524d98427_5d6a5545-b766-40ca-b044-a43096afca39",
+      "__v": 0
+    }
+  },
+  {
+    "_id": "6447dfc24993b86bcda3d964",
+    "customer": "643b7de40a416cdcadd8d065",
+    "type": "purchase",
+    "amount": 1299,
+    "status": "Completed",
+    "paymentMethod": "stripe",
+    "version": 3,
+    "trans_id": "trans_1682431938693_6447dfc24993b86bcda3d965_cdcd5b0f-51e3-45db-b591-2516384b17f7",
+    "createdAt": {
+      "$date": "2023-04-25T14:12:18.696Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "643b7de40a416cdcadd8d065",
+      "type": "purchase",
+      "amount": 1299,
+      "status": "Completed",
+      "paymentMethod": "stripe",
+      "version": 3,
+      "trans_id": "trans_1682431938693_6447dfc24993b86bcda3d965_cdcd5b0f-51e3-45db-b591-2516384b17f7",
+      "__v": 0,
+      "previous": {
+        "customer": "643b7de40a416cdcadd8d065",
+        "type": "purchase",
+        "amount": 1299,
+        "status": "Completed",
+        "paymentMethod": "stripe",
+        "version": 2,
+        "trans_id": "trans_1682431938693_6447dfc24993b86bcda3d965_cdcd5b0f-51e3-45db-b591-2516384b17f7",
+        "__v": 0
+      },
+      "cartId": "cart_1682431956284_4a86b0dd-7c9b-4a5c-88dd-38d08eee664e"
+    },
+    "cartId": "cart_1682431956284_4a86b0dd-7c9b-4a5c-88dd-38d08eee664e"
+  },
+  {
+    "_id": "644ddcfa5d43caad0cacbd99",
+    "customer": "643b7de40a416cdcadd8d065",
+    "type": "purchase",
+    "amount": 3897,
+    "status": "Failed",
+    "paymentMethod": "blockchain",
+    "version": 2,
+    "trans_id": "trans_1682824442571_644ddcfa5d43caad0cacbd9a_08b91e6c-1581-46be-a1ca-ab76e67334c1",
+    "createdAt": {
+      "$date": "2023-04-30T03:14:02.572Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "643b7de40a416cdcadd8d065",
+      "type": "purchase",
+      "amount": 3897,
+      "status": "Failed",
+      "paymentMethod": "blockchain",
+      "version": 2,
+      "trans_id": "trans_1682824442571_644ddcfa5d43caad0cacbd9a_08b91e6c-1581-46be-a1ca-ab76e67334c1",
+      "__v": 0
+    }
+  },
+  {
+    "_id": "644dee345d43caad0cacbeb3",
+    "customer": "643b7de40a416cdcadd8d065",
+    "type": "purchase",
+    "amount": 3897,
+    "status": "Failed",
+    "paymentMethod": "blockchain",
+    "version": 2,
+    "trans_id": "trans_1682828852796_644dee345d43caad0cacbeb4_6f17e1ac-1a03-4e50-b531-c79a45b24d6b",
+    "createdAt": {
+      "$date": "2023-04-30T04:27:32.799Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "643b7de40a416cdcadd8d065",
+      "type": "purchase",
+      "amount": 3897,
+      "status": "Failed",
+      "paymentMethod": "blockchain",
+      "version": 2,
+      "trans_id": "trans_1682828852796_644dee345d43caad0cacbeb4_6f17e1ac-1a03-4e50-b531-c79a45b24d6b",
+      "__v": 0
+    }
+  },
+  {
+    "_id": "6458fc62959606c9d08757d8",
+    "customer": "643b7de40a416cdcadd8d065",
+    "type": "purchase",
+    "amount": 1299,
+    "refundedAmount": 0,
+    "status": "Completed",
+    "paymentMethod": "stripe",
+    "version": 3,
+    "trans_id": "trans_1683553378489_6458fc62959606c9d08757d9_5d31f14b-a6e0-422b-beef-3bfa91818174",
+    "createdAt": {
+      "$date": "2023-05-08T13:42:58.490Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "643b7de40a416cdcadd8d065",
+      "type": "purchase",
+      "amount": 1299,
+      "refundedAmount": 0,
+      "status": "Completed",
+      "paymentMethod": "stripe",
+      "version": 3,
+      "trans_id": "trans_1683553378489_6458fc62959606c9d08757d9_5d31f14b-a6e0-422b-beef-3bfa91818174",
+      "__v": 0,
+      "previous": {
+        "customer": "643b7de40a416cdcadd8d065",
+        "type": "purchase",
+        "amount": 1299,
+        "refundedAmount": 0,
+        "status": "Completed",
+        "paymentMethod": "stripe",
+        "version": 2,
+        "trans_id": "trans_1683553378489_6458fc62959606c9d08757d9_5d31f14b-a6e0-422b-beef-3bfa91818174",
+        "__v": 0
+      },
+      "cartId": "cart_1683553391808_9f20c6f8-900d-44fc-aba4-b09e986cf39d"
+    },
+    "cartId": "cart_1683553391808_9f20c6f8-900d-44fc-aba4-b09e986cf39d"
+  },
+  {
+    "_id": "649132b3756677597894c5f6",
+    "customer": "6459cc873f9c353beb3c419f",
+    "type": "purchase",
+    "amount": 51600,
+    "refundedAmount": 0,
+    "status": "Completed",
+    "paymentMethod": "stripe",
+    "version": 3,
+    "trans_id": "trans_1687237299721_649132b3756677597894c5f7_9061af4e-f159-4593-8118-1882aab19269",
+    "createdAt": {
+      "$date": "2023-06-20T05:01:39.724Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "6459cc873f9c353beb3c419f",
+      "type": "purchase",
+      "amount": 51600,
+      "refundedAmount": 0,
+      "status": "Completed",
+      "paymentMethod": "stripe",
+      "version": 3,
+      "trans_id": "trans_1687237299721_649132b3756677597894c5f7_9061af4e-f159-4593-8118-1882aab19269",
+      "__v": 0,
+      "previous": {
+        "customer": "6459cc873f9c353beb3c419f",
+        "type": "purchase",
+        "amount": 51600,
+        "refundedAmount": 0,
+        "status": "Completed",
+        "paymentMethod": "stripe",
+        "version": 2,
+        "trans_id": "trans_1687237299721_649132b3756677597894c5f7_9061af4e-f159-4593-8118-1882aab19269",
+        "__v": 0
+      },
+      "cartId": "cart_1687237325174_54422365-4a60-4289-b763-c2ac6a6a1df8"
+    },
+    "cartId": "cart_1687237325174_54422365-4a60-4289-b763-c2ac6a6a1df8"
+  },
+  {
+    "_id": "6458d1e2f9789f104f04be43",
+    "customer": "6457cd6f4c66e8cca4c2d288",
+    "type": "purchase",
+    "amount": 1299,
+    "refundedAmount": 1299,
+    "status": "Refunded",
+    "paymentMethod": "stripe",
+    "version": 4,
+    "trans_id": "trans_1683542498093_6458d1e2f9789f104f04be44_11dc9f6b-719a-4a30-8682-4f60bff37b18",
+    "createdAt": {
+      "$date": "2023-05-08T10:41:38.093Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "6457cd6f4c66e8cca4c2d288",
+      "type": "purchase",
+      "amount": 1299,
+      "refundedAmount": 1299,
+      "status": "Refunded",
+      "paymentMethod": "stripe",
+      "version": 4,
+      "trans_id": "trans_1683542498093_6458d1e2f9789f104f04be44_11dc9f6b-719a-4a30-8682-4f60bff37b18",
+      "__v": 0,
+      "previous": {
+        "customer": "6457cd6f4c66e8cca4c2d288",
+        "type": "purchase",
+        "amount": 1299,
+        "refundedAmount": 0,
+        "status": "Completed",
+        "paymentMethod": "stripe",
+        "version": 3,
+        "trans_id": "trans_1683542498093_6458d1e2f9789f104f04be44_11dc9f6b-719a-4a30-8682-4f60bff37b18",
+        "__v": 0,
+        "previous": {
+          "customer": "6457cd6f4c66e8cca4c2d288",
+          "type": "purchase",
+          "amount": 1299,
+          "refundedAmount": 0,
+          "status": "Completed",
+          "paymentMethod": "stripe",
+          "version": 2,
+          "trans_id": "trans_1683542498093_6458d1e2f9789f104f04be44_11dc9f6b-719a-4a30-8682-4f60bff37b18",
+          "__v": 0
+        },
+        "cartId": "cart_1683542506595_d50d9175-6826-47d3-a7ee-a644da49daf5"
+      },
+      "cartId": "cart_1683542506595_d50d9175-6826-47d3-a7ee-a644da49daf5",
+      "refundReason": "testing"
+    },
+    "cartId": "cart_1683542506595_d50d9175-6826-47d3-a7ee-a644da49daf5",
+    "refundReason": "testing"
+  },
+  {
+    "_id": "64a3a347c688dfb4b42cb0bb",
+    "customer": "6459cc873f9c353beb3c419f",
+    "type": "purchase",
+    "amount": 183908,
+    "refundedAmount": 0,
+    "status": "Completed",
+    "paymentMethod": "stripe",
+    "version": 3,
+    "trans_id": "trans_1688445767991_64a3a347c688dfb4b42cb0bc_139911a9-66de-42d2-a928-2adf5806306f",
+    "createdAt": {
+      "$date": "2023-07-04T04:42:47.993Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "6459cc873f9c353beb3c419f",
+      "type": "purchase",
+      "amount": 183908,
+      "refundedAmount": 0,
+      "status": "Completed",
+      "paymentMethod": "stripe",
+      "version": 3,
+      "trans_id": "trans_1688445767991_64a3a347c688dfb4b42cb0bc_139911a9-66de-42d2-a928-2adf5806306f",
+      "__v": 0,
+      "previous": {
+        "customer": "6459cc873f9c353beb3c419f",
+        "type": "purchase",
+        "amount": 183908,
+        "refundedAmount": 0,
+        "status": "Completed",
+        "paymentMethod": "stripe",
+        "version": 2,
+        "trans_id": "trans_1688445767991_64a3a347c688dfb4b42cb0bc_139911a9-66de-42d2-a928-2adf5806306f",
+        "__v": 0
+      },
+      "cartId": "cart_1688445776970_bec88cb4-3c9e-49fc-99e0-7a0eea42508e"
+    },
+    "cartId": "cart_1688445776970_bec88cb4-3c9e-49fc-99e0-7a0eea42508e"
+  },
+  {
+    "_id": "6450e79d009e41e34f9004a7",
+    "customer": "64475b08e8674dd1e21b4be5",
+    "type": "purchase",
+    "amount": 1299,
+    "status": "Refunded",
+    "paymentMethod": "stripe",
+    "version": 4,
+    "trans_id": "trans_1683023773111_6450e79d009e41e34f9004a8_604723a9-afde-4dad-a255-059d1687496f",
+    "createdAt": {
+      "$date": "2023-05-02T10:36:13.113Z"
+    },
+    "__v": 0,
+    "previous": {
+      "refundedAmount": 1299,
+      "customer": "64475b08e8674dd1e21b4be5",
+      "type": "purchase",
+      "amount": 1299,
+      "status": "Refunded",
+      "paymentMethod": "stripe",
+      "version": 4,
+      "trans_id": "trans_1683023773111_6450e79d009e41e34f9004a8_604723a9-afde-4dad-a255-059d1687496f",
+      "__v": 0,
+      "previous": {
+        "customer": "64475b08e8674dd1e21b4be5",
+        "type": "purchase",
+        "amount": 1299,
+        "status": "Completed",
+        "paymentMethod": "stripe",
+        "version": 3,
+        "trans_id": "trans_1683023773111_6450e79d009e41e34f9004a8_604723a9-afde-4dad-a255-059d1687496f",
+        "__v": 0,
+        "previous": {
+          "customer": "64475b08e8674dd1e21b4be5",
+          "type": "purchase",
+          "amount": 1299,
+          "status": "Completed",
+          "paymentMethod": "stripe",
+          "version": 2,
+          "trans_id": "trans_1683023773111_6450e79d009e41e34f9004a8_604723a9-afde-4dad-a255-059d1687496f",
+          "__v": 0
+        },
+        "cartId": "cart_1683023798692_63fe22e7-5e70-4b3d-8e8f-3dfc7db79373"
+      },
+      "cartId": "cart_1683023798692_63fe22e7-5e70-4b3d-8e8f-3dfc7db79373",
+      "refundReason": "testing"
+    },
+    "cartId": "cart_1683023798692_63fe22e7-5e70-4b3d-8e8f-3dfc7db79373",
+    "refundReason": "testing",
+    "refundedAmount": 1299
+  },
+  {
+    "_id": "6455b9eca78dbce9afe79fb7",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "type": "withdraw",
+    "amount": 1000,
+    "refundedAmount": 0,
+    "status": "Completed",
+    "paymentMethod": "Bank",
+    "version": 1,
+    "trans_id": "trans_1683339756777_6455b9eca78dbce9afe79fb8_78845ac9-d8b8-46ec-bace-4b2f0227803b",
+    "createdAt": {
+      "$date": "2023-05-06T02:22:36.784Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": "64575304b1aec39be3a0675f",
+    "customer": "64475b08e8674dd1e21b4be5",
+    "type": "purchase",
+    "amount": 1299,
+    "refundedAmount": 0,
+    "status": "Failed",
+    "paymentMethod": "blockchain",
+    "version": 2,
+    "trans_id": "trans_1683444484196_64575304b1aec39be3a06760_5efc8b75-32a9-42c2-a5df-24b9720a9145",
+    "createdAt": {
+      "$date": "2023-05-07T07:28:04.197Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "64475b08e8674dd1e21b4be5",
+      "type": "purchase",
+      "amount": 1299,
+      "refundedAmount": 0,
+      "status": "Failed",
+      "paymentMethod": "blockchain",
+      "version": 2,
+      "trans_id": "trans_1683444484196_64575304b1aec39be3a06760_5efc8b75-32a9-42c2-a5df-24b9720a9145",
+      "__v": 0
+    }
+  },
+  {
+    "_id": "6457a43003b63ab9546b8db5",
+    "customer": "643b7de40a416cdcadd8d065",
+    "type": "purchase",
+    "amount": 1299,
+    "refundedAmount": 0,
+    "status": "Completed",
+    "paymentMethod": "stripe",
+    "version": 3,
+    "trans_id": "trans_1683465264863_6457a43003b63ab9546b8db6_3fac03d8-0378-41f9-8105-c330de4ee7d9",
+    "createdAt": {
+      "$date": "2023-05-07T13:14:24.864Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "643b7de40a416cdcadd8d065",
+      "type": "purchase",
+      "amount": 1299,
+      "refundedAmount": 0,
+      "status": "Completed",
+      "paymentMethod": "stripe",
+      "version": 3,
+      "trans_id": "trans_1683465264863_6457a43003b63ab9546b8db6_3fac03d8-0378-41f9-8105-c330de4ee7d9",
+      "__v": 0,
+      "previous": {
+        "customer": "643b7de40a416cdcadd8d065",
+        "type": "purchase",
+        "amount": 1299,
+        "refundedAmount": 0,
+        "status": "Completed",
+        "paymentMethod": "stripe",
+        "version": 2,
+        "trans_id": "trans_1683465264863_6457a43003b63ab9546b8db6_3fac03d8-0378-41f9-8105-c330de4ee7d9",
+        "__v": 0
+      },
+      "cartId": "cart_1683465273444_37e82dcd-4526-43c7-b3a1-a4f982d12135"
+    },
+    "cartId": "cart_1683465273444_37e82dcd-4526-43c7-b3a1-a4f982d12135"
+  },
+  {
+    "_id": "6459c1b10867d08ef880a2f9",
+    "customer": "64475b08e8674dd1e21b4be5",
+    "type": "purchase",
+    "amount": 1299,
+    "refundedAmount": 0,
+    "status": "Completed",
+    "paymentMethod": "stripe",
+    "version": 3,
+    "trans_id": "trans_1683603889078_6459c1b10867d08ef880a2fa_1b05d883-cd4c-4afe-97f1-f87a5e395a79",
+    "createdAt": {
+      "$date": "2023-05-09T03:44:49.079Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "64475b08e8674dd1e21b4be5",
+      "type": "purchase",
+      "amount": 1299,
+      "refundedAmount": 0,
+      "status": "Completed",
+      "paymentMethod": "stripe",
+      "version": 3,
+      "trans_id": "trans_1683603889078_6459c1b10867d08ef880a2fa_1b05d883-cd4c-4afe-97f1-f87a5e395a79",
+      "__v": 0,
+      "previous": {
+        "customer": "64475b08e8674dd1e21b4be5",
+        "type": "purchase",
+        "amount": 1299,
+        "refundedAmount": 0,
+        "status": "Completed",
+        "paymentMethod": "stripe",
+        "version": 2,
+        "trans_id": "trans_1683603889078_6459c1b10867d08ef880a2fa_1b05d883-cd4c-4afe-97f1-f87a5e395a79",
+        "__v": 0
+      },
+      "cartId": "cart_1683603938877_6229b93e-7d0c-4c9a-a9fc-3c2b5048ea3a"
+    },
+    "cartId": "cart_1683603938877_6229b93e-7d0c-4c9a-a9fc-3c2b5048ea3a"
+  },
+  {
+    "_id": "6487f4e99a2e0d2efbc51b4f",
+    "customer": "6459cc873f9c353beb3c419f",
+    "type": "purchase",
+    "amount": 805332,
+    "refundedAmount": 0,
+    "status": "Failed",
+    "paymentMethod": "blockchain",
+    "version": 2,
+    "trans_id": "trans_1686631657655_6487f4e99a2e0d2efbc51b50_44a49db8-4226-43f4-9978-f92a30e98191",
+    "createdAt": {
+      "$date": "2023-06-13T04:47:37.656Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "6459cc873f9c353beb3c419f",
+      "type": "purchase",
+      "amount": 805332,
+      "refundedAmount": 0,
+      "status": "Failed",
+      "paymentMethod": "blockchain",
+      "version": 2,
+      "trans_id": "trans_1686631657655_6487f4e99a2e0d2efbc51b50_44a49db8-4226-43f4-9978-f92a30e98191",
+      "__v": 0
+    }
+  },
+  {
+    "_id": "6493059f3fa2c89a322a60cc",
+    "customer": "6459cc873f9c353beb3c419f",
+    "type": "purchase",
+    "amount": 183908,
+    "refundedAmount": 0,
+    "status": "Completed",
+    "paymentMethod": "stripe",
+    "version": 3,
+    "trans_id": "trans_1687356831924_6493059f3fa2c89a322a60cd_b0d58232-5077-4a62-bc65-4c0efc2b68fd",
+    "createdAt": {
+      "$date": "2023-06-21T14:13:51.928Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "6459cc873f9c353beb3c419f",
+      "type": "purchase",
+      "amount": 183908,
+      "refundedAmount": 0,
+      "status": "Completed",
+      "paymentMethod": "stripe",
+      "version": 3,
+      "trans_id": "trans_1687356831924_6493059f3fa2c89a322a60cd_b0d58232-5077-4a62-bc65-4c0efc2b68fd",
+      "__v": 0,
+      "previous": {
+        "customer": "6459cc873f9c353beb3c419f",
+        "type": "purchase",
+        "amount": 183908,
+        "refundedAmount": 0,
+        "status": "Completed",
+        "paymentMethod": "stripe",
+        "version": 2,
+        "trans_id": "trans_1687356831924_6493059f3fa2c89a322a60cd_b0d58232-5077-4a62-bc65-4c0efc2b68fd",
+        "__v": 0
+      },
+      "cartId": "cart_1687356843817_00e1379b-6ad9-4340-be92-6ce638b2c91a"
+    },
+    "cartId": "cart_1687356843817_00e1379b-6ad9-4340-be92-6ce638b2c91a"
+  },
+  {
+    "_id": "64a3a2ea9516788112c5f526",
+    "customer": "6459cc873f9c353beb3c419f",
+    "type": "purchase",
+    "amount": 719,
+    "refundedAmount": 719,
+    "status": "Refunded",
+    "paymentMethod": "stripe",
+    "version": 4,
+    "trans_id": "trans_1688445674455_64a3a2ea9516788112c5f527_a5460d5f-7da9-4b4e-9494-128be4d4e3ac",
+    "createdAt": {
+      "$date": "2023-07-04T04:41:14.456Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "6459cc873f9c353beb3c419f",
+      "type": "purchase",
+      "amount": 719,
+      "refundedAmount": 719,
+      "status": "Refunded",
+      "paymentMethod": "stripe",
+      "version": 4,
+      "trans_id": "trans_1688445674455_64a3a2ea9516788112c5f527_a5460d5f-7da9-4b4e-9494-128be4d4e3ac",
+      "__v": 0,
+      "previous": {
+        "customer": "6459cc873f9c353beb3c419f",
+        "type": "purchase",
+        "amount": 719,
+        "refundedAmount": 0,
+        "status": "Completed",
+        "paymentMethod": "stripe",
+        "version": 3,
+        "trans_id": "trans_1688445674455_64a3a2ea9516788112c5f527_a5460d5f-7da9-4b4e-9494-128be4d4e3ac",
+        "__v": 0,
+        "previous": {
+          "customer": "6459cc873f9c353beb3c419f",
+          "type": "purchase",
+          "amount": 719,
+          "refundedAmount": 0,
+          "status": "Completed",
+          "paymentMethod": "stripe",
+          "version": 2,
+          "trans_id": "trans_1688445674455_64a3a2ea9516788112c5f527_a5460d5f-7da9-4b4e-9494-128be4d4e3ac",
+          "__v": 0
+        },
+        "cartId": "cart_1688445701484_cca7180d-eead-4d32-b5cf-a5fc8a1be551"
+      },
+      "cartId": "cart_1688445701484_cca7180d-eead-4d32-b5cf-a5fc8a1be551",
+      "refundReason": "out of stock"
+    },
+    "cartId": "cart_1688445701484_cca7180d-eead-4d32-b5cf-a5fc8a1be551",
+    "refundReason": "out of stock"
+  },
+  {
+    "_id": "6450e39ce6363ab1f0855cc1",
+    "customer": "64475b08e8674dd1e21b4be5",
+    "type": "purchase",
+    "amount": 1299,
+    "status": "Completed",
+    "paymentMethod": "stripe",
+    "version": 3,
+    "trans_id": "trans_1683022748118_6450e39ce6363ab1f0855cc2_feb6bce6-8d25-40da-8200-7908969f731e",
+    "createdAt": {
+      "$date": "2023-05-02T10:19:08.120Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "64475b08e8674dd1e21b4be5",
+      "type": "purchase",
+      "amount": 1299,
+      "status": "Completed",
+      "paymentMethod": "stripe",
+      "version": 3,
+      "trans_id": "trans_1683022748118_6450e39ce6363ab1f0855cc2_feb6bce6-8d25-40da-8200-7908969f731e",
+      "__v": 0,
+      "previous": {
+        "customer": "64475b08e8674dd1e21b4be5",
+        "type": "purchase",
+        "amount": 1299,
+        "status": "Completed",
+        "paymentMethod": "stripe",
+        "version": 2,
+        "trans_id": "trans_1683022748118_6450e39ce6363ab1f0855cc2_feb6bce6-8d25-40da-8200-7908969f731e",
+        "__v": 0
+      },
+      "cartId": "cart_1683022757898_3e004fd7-be2e-48b7-b618-0687ceb93c6d"
+    },
+    "cartId": "cart_1683022757898_3e004fd7-be2e-48b7-b618-0687ceb93c6d"
+  },
+  {
+    "_id": "6455b6e2438630599d1f1711",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "type": "withdraw",
+    "amount": 10000,
+    "refundedAmount": 0,
+    "status": "Completed",
+    "paymentMethod": "Bank",
+    "version": 1,
+    "trans_id": "trans_1683338978606_6455b6e2438630599d1f1712_183ae4d3-12c4-4aec-8f56-f1410f6a24ca",
+    "createdAt": {
+      "$date": "2023-05-06T02:09:38.609Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": "6457d82e169b3bc0c9a8b4e1",
+    "customer": "643b7de40a416cdcadd8d065",
+    "type": "purchase",
+    "amount": 3897,
+    "refundedAmount": 0,
+    "status": "Completed",
+    "paymentMethod": "stripe",
+    "version": 3,
+    "trans_id": "trans_1683478574604_6457d82e169b3bc0c9a8b4e2_f742ad5e-688a-42b4-8e2a-ba1209aa0d3f",
+    "createdAt": {
+      "$date": "2023-05-07T16:56:14.605Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "643b7de40a416cdcadd8d065",
+      "type": "purchase",
+      "amount": 3897,
+      "refundedAmount": 0,
+      "status": "Completed",
+      "paymentMethod": "stripe",
+      "version": 3,
+      "trans_id": "trans_1683478574604_6457d82e169b3bc0c9a8b4e2_f742ad5e-688a-42b4-8e2a-ba1209aa0d3f",
+      "__v": 0,
+      "previous": {
+        "customer": "643b7de40a416cdcadd8d065",
+        "type": "purchase",
+        "amount": 3897,
+        "refundedAmount": 0,
+        "status": "Completed",
+        "paymentMethod": "stripe",
+        "version": 2,
+        "trans_id": "trans_1683478574604_6457d82e169b3bc0c9a8b4e2_f742ad5e-688a-42b4-8e2a-ba1209aa0d3f",
+        "__v": 0
+      },
+      "cartId": "cart_1683478585317_856fc7f7-2ad7-4eca-bc2a-677cc31c1515"
+    },
+    "cartId": "cart_1683478585317_856fc7f7-2ad7-4eca-bc2a-677cc31c1515"
+  },
+  {
+    "_id": "6457dfee169b3bc0c9a8bd10",
+    "customer": "643b7de40a416cdcadd8d065",
+    "type": "purchase",
+    "amount": 1299,
+    "refundedAmount": 0,
+    "status": "Completed",
+    "paymentMethod": "blockchain",
+    "version": 3,
+    "trans_id": "trans_1683480558970_6457dfee169b3bc0c9a8bd11_8cb04d21-5e5d-4fac-ad99-e765ced78c24",
+    "createdAt": {
+      "$date": "2023-05-07T17:29:18.971Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "643b7de40a416cdcadd8d065",
+      "type": "purchase",
+      "amount": 1299,
+      "refundedAmount": 0,
+      "status": "Completed",
+      "paymentMethod": "blockchain",
+      "version": 3,
+      "trans_id": "trans_1683480558970_6457dfee169b3bc0c9a8bd11_8cb04d21-5e5d-4fac-ad99-e765ced78c24",
+      "__v": 0,
+      "previous": {
+        "customer": "643b7de40a416cdcadd8d065",
+        "type": "purchase",
+        "amount": 1299,
+        "refundedAmount": 0,
+        "status": "Completed",
+        "paymentMethod": "blockchain",
+        "version": 2,
+        "trans_id": "trans_1683480558970_6457dfee169b3bc0c9a8bd11_8cb04d21-5e5d-4fac-ad99-e765ced78c24",
+        "__v": 0
+      },
+      "cartId": "cart_1683480608595_66d3cc90-df59-4e30-8e96-7863c245fc8e"
+    },
+    "cartId": "cart_1683480608595_66d3cc90-df59-4e30-8e96-7863c245fc8e"
+  },
+  {
+    "_id": "6459c0cc585157257920d3a3",
+    "customer": "64475b08e8674dd1e21b4be5",
+    "type": "purchase",
+    "amount": 1299,
+    "refundedAmount": 0,
+    "status": "Failed",
+    "paymentMethod": "stripe",
+    "version": 2,
+    "trans_id": "trans_1683603660503_6459c0cc585157257920d3a4_3872601e-7248-438d-82e8-82e66801d57a",
+    "createdAt": {
+      "$date": "2023-05-09T03:41:00.504Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "64475b08e8674dd1e21b4be5",
+      "type": "purchase",
+      "amount": 1299,
+      "refundedAmount": 0,
+      "status": "Failed",
+      "paymentMethod": "stripe",
+      "version": 2,
+      "trans_id": "trans_1683603660503_6459c0cc585157257920d3a4_3872601e-7248-438d-82e8-82e66801d57a",
+      "__v": 0
+    }
+  },
+  {
+    "_id": "645123694af8da7b01964e62",
+    "customer": "643b7de40a416cdcadd8d065",
+    "type": "purchase",
+    "amount": 1299,
+    "status": "Completed",
+    "paymentMethod": "stripe",
+    "version": 2,
+    "trans_id": "trans_1683039081421_645123694af8da7b01964e63_6180bf84-6b9e-43bb-ad0c-82d7fbc50454",
+    "createdAt": {
+      "$date": "2023-05-02T14:51:21.426Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "643b7de40a416cdcadd8d065",
+      "type": "purchase",
+      "amount": 1299,
+      "status": "Completed",
+      "paymentMethod": "stripe",
+      "version": 2,
+      "trans_id": "trans_1683039081421_645123694af8da7b01964e63_6180bf84-6b9e-43bb-ad0c-82d7fbc50454",
+      "__v": 0
+    }
+  },
+  {
+    "_id": "6457e0981ba9c61524d98447",
+    "customer": "643b7de40a416cdcadd8d065",
+    "type": "purchase",
+    "amount": 1299,
+    "refundedAmount": 0,
+    "status": "Completed",
+    "paymentMethod": "blockchain",
+    "version": 3,
+    "trans_id": "trans_1683480728996_6457e0981ba9c61524d98448_9193fe25-c650-422b-80f4-923d2c9563bf",
+    "createdAt": {
+      "$date": "2023-05-07T17:32:08.997Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "643b7de40a416cdcadd8d065",
+      "type": "purchase",
+      "amount": 1299,
+      "refundedAmount": 0,
+      "status": "Completed",
+      "paymentMethod": "blockchain",
+      "version": 3,
+      "trans_id": "trans_1683480728996_6457e0981ba9c61524d98448_9193fe25-c650-422b-80f4-923d2c9563bf",
+      "__v": 0,
+      "previous": {
+        "customer": "643b7de40a416cdcadd8d065",
+        "type": "purchase",
+        "amount": 1299,
+        "refundedAmount": 0,
+        "status": "Completed",
+        "paymentMethod": "blockchain",
+        "version": 2,
+        "trans_id": "trans_1683480728996_6457e0981ba9c61524d98448_9193fe25-c650-422b-80f4-923d2c9563bf",
+        "__v": 0
+      },
+      "cartId": "cart_1683480769006_32a2ec13-0be3-450b-85bd-399791dcb271"
+    },
+    "cartId": "cart_1683480769006_32a2ec13-0be3-450b-85bd-399791dcb271"
+  },
+  {
+    "_id": "6459ce0b3f9c353beb3c49c1",
+    "customer": "6459cc873f9c353beb3c419f",
+    "type": "purchase",
+    "amount": 3198,
+    "refundedAmount": 0,
+    "status": "Failed",
+    "paymentMethod": "blockchain",
+    "version": 2,
+    "trans_id": "trans_1683607051310_6459ce0b3f9c353beb3c49c2_2a6adacf-191f-4bba-8d82-afcd322eb0eb",
+    "createdAt": {
+      "$date": "2023-05-09T04:37:31.311Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "6459cc873f9c353beb3c419f",
+      "type": "purchase",
+      "amount": 3198,
+      "refundedAmount": 0,
+      "status": "Failed",
+      "paymentMethod": "blockchain",
+      "version": 2,
+      "trans_id": "trans_1683607051310_6459ce0b3f9c353beb3c49c2_2a6adacf-191f-4bba-8d82-afcd322eb0eb",
+      "__v": 0
+    }
+  },
+  {
+    "_id": "6487f52b9a2e0d2efbc51c15",
+    "customer": "6459cc873f9c353beb3c419f",
+    "type": "purchase",
+    "amount": 719,
+    "refundedAmount": 0,
+    "status": "Completed",
+    "paymentMethod": "blockchain",
+    "version": 3,
+    "trans_id": "trans_1686631723752_6487f52b9a2e0d2efbc51c16_3824aa35-3fcb-466f-b2ff-dee6c48a2c0b",
+    "createdAt": {
+      "$date": "2023-06-13T04:48:43.753Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "6459cc873f9c353beb3c419f",
+      "type": "purchase",
+      "amount": 719,
+      "refundedAmount": 0,
+      "status": "Completed",
+      "paymentMethod": "blockchain",
+      "version": 3,
+      "trans_id": "trans_1686631723752_6487f52b9a2e0d2efbc51c16_3824aa35-3fcb-466f-b2ff-dee6c48a2c0b",
+      "__v": 0,
+      "previous": {
+        "customer": "6459cc873f9c353beb3c419f",
+        "type": "purchase",
+        "amount": 719,
+        "refundedAmount": 0,
+        "status": "Completed",
+        "paymentMethod": "blockchain",
+        "version": 2,
+        "trans_id": "trans_1686631723752_6487f52b9a2e0d2efbc51c16_3824aa35-3fcb-466f-b2ff-dee6c48a2c0b",
+        "__v": 0
+      },
+      "cartId": "cart_1686631778057_ed419b9b-7028-4051-bc67-228a03ddd7de"
+    },
+    "cartId": "cart_1686631778057_ed419b9b-7028-4051-bc67-228a03ddd7de"
+  },
+  {
+    "_id": "6455b9efa78dbce9afe79fce",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "type": "withdraw",
+    "amount": 16777,
+    "refundedAmount": 0,
+    "status": "Completed",
+    "paymentMethod": "Bank",
+    "version": 1,
+    "trans_id": "trans_1683339759326_6455b9efa78dbce9afe79fcf_c72dc0d6-909b-4583-ba18-0b3ee0019b24",
+    "createdAt": {
+      "$date": "2023-05-06T02:22:39.327Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": "6458d197f9789f104f04be32",
+    "customer": "6457cd6f4c66e8cca4c2d288",
+    "type": "purchase",
+    "amount": 1299,
+    "refundedAmount": 0,
+    "status": "Failed",
+    "paymentMethod": "blockchain",
+    "version": 2,
+    "trans_id": "trans_1683542423722_6458d197f9789f104f04be33_3ff2f1b9-e417-446d-a35d-93712d2d76d5",
+    "createdAt": {
+      "$date": "2023-05-08T10:40:23.723Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "6457cd6f4c66e8cca4c2d288",
+      "type": "purchase",
+      "amount": 1299,
+      "refundedAmount": 0,
+      "status": "Failed",
+      "paymentMethod": "blockchain",
+      "version": 2,
+      "trans_id": "trans_1683542423722_6458d197f9789f104f04be33_3ff2f1b9-e417-446d-a35d-93712d2d76d5",
+      "__v": 0
+    }
+  },
+  {
+    "_id": "6459ce2b3f9c353beb3c49d2",
+    "customer": "6459cc873f9c353beb3c419f",
+    "type": "purchase",
+    "amount": 3198,
+    "refundedAmount": 0,
+    "status": "Completed",
+    "paymentMethod": "stripe",
+    "version": 3,
+    "trans_id": "trans_1683607083168_6459ce2b3f9c353beb3c49d3_0698cf33-944b-4cb5-bbac-0effa0f07c33",
+    "createdAt": {
+      "$date": "2023-05-09T04:38:03.169Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "6459cc873f9c353beb3c419f",
+      "type": "purchase",
+      "amount": 3198,
+      "refundedAmount": 0,
+      "status": "Completed",
+      "paymentMethod": "stripe",
+      "version": 3,
+      "trans_id": "trans_1683607083168_6459ce2b3f9c353beb3c49d3_0698cf33-944b-4cb5-bbac-0effa0f07c33",
+      "__v": 0,
+      "previous": {
+        "customer": "6459cc873f9c353beb3c419f",
+        "type": "purchase",
+        "amount": 3198,
+        "refundedAmount": 0,
+        "status": "Completed",
+        "paymentMethod": "stripe",
+        "version": 2,
+        "trans_id": "trans_1683607083168_6459ce2b3f9c353beb3c49d3_0698cf33-944b-4cb5-bbac-0effa0f07c33",
+        "__v": 0
+      },
+      "cartId": "cart_1683607110875_7fde95e2-48f8-4e43-b19e-d13e6790216c"
+    },
+    "cartId": "cart_1683607110875_7fde95e2-48f8-4e43-b19e-d13e6790216c"
+  },
+  {
+    "_id": "64a3a2cb9516788112c5f509",
+    "customer": "6459cc873f9c353beb3c419f",
+    "type": "purchase",
+    "amount": 719,
+    "refundedAmount": 0,
+    "status": "Failed",
+    "paymentMethod": "stripe",
+    "version": 2,
+    "trans_id": "trans_1688445643248_64a3a2cb9516788112c5f50a_3db584cb-1a40-4330-babc-486704393fdd",
+    "createdAt": {
+      "$date": "2023-07-04T04:40:43.249Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "6459cc873f9c353beb3c419f",
+      "type": "purchase",
+      "amount": 719,
+      "refundedAmount": 0,
+      "status": "Failed",
+      "paymentMethod": "stripe",
+      "version": 2,
+      "trans_id": "trans_1688445643248_64a3a2cb9516788112c5f50a_3db584cb-1a40-4330-babc-486704393fdd",
+      "__v": 0
+    }
+  },
+  {
+    "_id": "64c238346d80836f4c243132",
+    "customer": "6459cc873f9c353beb3c419f",
+    "type": "purchase",
+    "amount": 69700,
+    "refundedAmount": 0,
+    "status": "Failed",
+    "paymentMethod": "stripe",
+    "version": 2,
+    "trans_id": "trans_1690449972246_64c238346d80836f4c243133_1c99f764-0403-4f84-9d41-3112790dc22e",
+    "createdAt": {
+      "$date": "2023-07-27T09:26:12.250Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "6459cc873f9c353beb3c419f",
+      "type": "purchase",
+      "amount": 69700,
+      "refundedAmount": 0,
+      "status": "Failed",
+      "paymentMethod": "stripe",
+      "version": 2,
+      "trans_id": "trans_1690449972246_64c238346d80836f4c243133_1c99f764-0403-4f84-9d41-3112790dc22e",
+      "__v": 0
+    }
+  },
+  {
+    "_id": "64c238866d80836f4c2431e1",
+    "customer": "6459cc873f9c353beb3c419f",
+    "type": "purchase",
+    "amount": 183908,
+    "refundedAmount": 0,
+    "status": "Completed",
+    "paymentMethod": "stripe",
+    "version": 3,
+    "trans_id": "trans_1690450054065_64c238866d80836f4c2431e2_e3ca53d0-f9fa-480d-8c37-5eb262cb4265",
+    "createdAt": {
+      "$date": "2023-07-27T09:27:34.066Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "6459cc873f9c353beb3c419f",
+      "type": "purchase",
+      "amount": 183908,
+      "refundedAmount": 0,
+      "status": "Completed",
+      "paymentMethod": "stripe",
+      "version": 3,
+      "trans_id": "trans_1690450054065_64c238866d80836f4c2431e2_e3ca53d0-f9fa-480d-8c37-5eb262cb4265",
+      "__v": 0,
+      "previous": {
+        "customer": "6459cc873f9c353beb3c419f",
+        "type": "purchase",
+        "amount": 183908,
+        "refundedAmount": 0,
+        "status": "Completed",
+        "paymentMethod": "stripe",
+        "version": 2,
+        "trans_id": "trans_1690450054065_64c238866d80836f4c2431e2_e3ca53d0-f9fa-480d-8c37-5eb262cb4265",
+        "__v": 0
+      },
+      "cartId": "cart_1690450118065_324b71cd-8f3f-4a7d-8f4f-a2d83f0034c3"
+    },
+    "cartId": "cart_1690450118065_324b71cd-8f3f-4a7d-8f4f-a2d83f0034c3"
+  },
+  {
+    "_id": "64c277215b5871fc532ff403",
+    "seller": "643b80c00a416cdcadd8d0af",
+    "type": "withdraw",
+    "amount": 1000,
+    "refundedAmount": 0,
+    "status": "Completed",
+    "paymentMethod": "Bank",
+    "version": 1,
+    "trans_id": "trans_1690466081074_64c277215b5871fc532ff404_9b60e382-955b-40be-99bb-efba94edff20",
+    "createdAt": {
+      "$date": "2023-07-27T13:54:41.080Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": "64c28ebe91ca536ce7b8ae3c",
+    "customer": "6459cc873f9c353beb3c419f",
+    "type": "purchase",
+    "amount": 51600,
+    "refundedAmount": 0,
+    "status": "Completed",
+    "paymentMethod": "stripe",
+    "version": 3,
+    "trans_id": "trans_1690472126921_64c28ebe91ca536ce7b8ae3d_4a9c67fc-02e1-4f73-b01a-44dafe89d56a",
+    "createdAt": {
+      "$date": "2023-07-27T15:35:26.924Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "6459cc873f9c353beb3c419f",
+      "type": "purchase",
+      "amount": 51600,
+      "refundedAmount": 0,
+      "status": "Completed",
+      "paymentMethod": "stripe",
+      "version": 3,
+      "trans_id": "trans_1690472126921_64c28ebe91ca536ce7b8ae3d_4a9c67fc-02e1-4f73-b01a-44dafe89d56a",
+      "__v": 0,
+      "previous": {
+        "customer": "6459cc873f9c353beb3c419f",
+        "type": "purchase",
+        "amount": 51600,
+        "refundedAmount": 0,
+        "status": "Completed",
+        "paymentMethod": "stripe",
+        "version": 2,
+        "trans_id": "trans_1690472126921_64c28ebe91ca536ce7b8ae3d_4a9c67fc-02e1-4f73-b01a-44dafe89d56a",
+        "__v": 0
+      },
+      "cartId": "cart_1690472152215_497a94ba-eba8-4a8e-802e-e7b91d46ab73"
+    },
+    "cartId": "cart_1690472152215_497a94ba-eba8-4a8e-802e-e7b91d46ab73"
+  },
+  {
+    "_id": "64c3222286e191a9c8d9b390",
+    "customer": "643b7de40a416cdcadd8d065",
+    "type": "purchase",
+    "amount": 5219,
+    "refundedAmount": 0,
+    "status": "Completed",
+    "paymentMethod": "stripe",
+    "version": 3,
+    "trans_id": "trans_1690509858211_64c3222286e191a9c8d9b391_d6942ffd-4b17-4322-a7e0-ddd4943cb0ae",
+    "createdAt": {
+      "$date": "2023-07-28T02:04:18.213Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "643b7de40a416cdcadd8d065",
+      "type": "purchase",
+      "amount": 5219,
+      "refundedAmount": 0,
+      "status": "Completed",
+      "paymentMethod": "stripe",
+      "version": 3,
+      "trans_id": "trans_1690509858211_64c3222286e191a9c8d9b391_d6942ffd-4b17-4322-a7e0-ddd4943cb0ae",
+      "__v": 0,
+      "previous": {
+        "customer": "643b7de40a416cdcadd8d065",
+        "type": "purchase",
+        "amount": 5219,
+        "refundedAmount": 0,
+        "status": "Completed",
+        "paymentMethod": "stripe",
+        "version": 2,
+        "trans_id": "trans_1690509858211_64c3222286e191a9c8d9b391_d6942ffd-4b17-4322-a7e0-ddd4943cb0ae",
+        "__v": 0
+      },
+      "cartId": "cart_1690509868347_090e89cb-7728-4397-b41e-8ae1a05a93ac"
+    },
+    "cartId": "cart_1690509868347_090e89cb-7728-4397-b41e-8ae1a05a93ac"
+  },
+  {
+    "_id": "64c32234516ae9380b470961",
+    "customer": "6459cc873f9c353beb3c419f",
+    "type": "purchase",
+    "amount": 183908,
+    "refundedAmount": 0,
+    "status": "Completed",
+    "paymentMethod": "stripe",
+    "version": 3,
+    "trans_id": "trans_1690509876494_64c32234516ae9380b470962_e9d05336-e9b1-4990-ac5b-232bb6acb964",
+    "createdAt": {
+      "$date": "2023-07-28T02:04:36.497Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "6459cc873f9c353beb3c419f",
+      "type": "purchase",
+      "amount": 183908,
+      "refundedAmount": 0,
+      "status": "Completed",
+      "paymentMethod": "stripe",
+      "version": 3,
+      "trans_id": "trans_1690509876494_64c32234516ae9380b470962_e9d05336-e9b1-4990-ac5b-232bb6acb964",
+      "__v": 0,
+      "previous": {
+        "customer": "6459cc873f9c353beb3c419f",
+        "type": "purchase",
+        "amount": 183908,
+        "refundedAmount": 0,
+        "status": "Completed",
+        "paymentMethod": "stripe",
+        "version": 2,
+        "trans_id": "trans_1690509876494_64c32234516ae9380b470962_e9d05336-e9b1-4990-ac5b-232bb6acb964",
+        "__v": 0
+      },
+      "cartId": "cart_1690509899443_c889eefb-392f-496e-92e3-5730a973d846"
+    },
+    "cartId": "cart_1690509899443_c889eefb-392f-496e-92e3-5730a973d846"
+  },
+  {
+    "_id": "64c32283516ae9380b470b0e",
+    "customer": "6459cc873f9c353beb3c419f",
+    "type": "purchase",
+    "amount": 4500,
+    "refundedAmount": 0,
+    "status": "Completed",
+    "paymentMethod": "stripe",
+    "version": 3,
+    "trans_id": "trans_1690509955853_64c32283516ae9380b470b0f_3ae29f71-d61c-4e30-b435-636d6499a88e",
+    "createdAt": {
+      "$date": "2023-07-28T02:05:55.854Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "6459cc873f9c353beb3c419f",
+      "type": "purchase",
+      "amount": 4500,
+      "refundedAmount": 0,
+      "status": "Completed",
+      "paymentMethod": "stripe",
+      "version": 3,
+      "trans_id": "trans_1690509955853_64c32283516ae9380b470b0f_3ae29f71-d61c-4e30-b435-636d6499a88e",
+      "__v": 0,
+      "previous": {
+        "customer": "6459cc873f9c353beb3c419f",
+        "type": "purchase",
+        "amount": 4500,
+        "refundedAmount": 0,
+        "status": "Completed",
+        "paymentMethod": "stripe",
+        "version": 2,
+        "trans_id": "trans_1690509955853_64c32283516ae9380b470b0f_3ae29f71-d61c-4e30-b435-636d6499a88e",
+        "__v": 0
+      },
+      "cartId": "cart_1690509967570_f2ca9f63-4bc6-4c03-a330-f2d7d5d6165f"
+    },
+    "cartId": "cart_1690509967570_f2ca9f63-4bc6-4c03-a330-f2d7d5d6165f"
+  },
+  {
+    "_id": "64c33ac83a048b7fe83b6732",
+    "customer": "6459cc873f9c353beb3c419f",
+    "type": "purchase",
+    "amount": 74919,
+    "refundedAmount": 0,
+    "status": "Completed",
+    "paymentMethod": "stripe",
+    "version": 3,
+    "trans_id": "trans_1690516168656_64c33ac83a048b7fe83b6733_90f09d13-b4b0-483f-b7f8-1c82e0ccec7e",
+    "createdAt": {
+      "$date": "2023-07-28T03:49:28.659Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "6459cc873f9c353beb3c419f",
+      "type": "purchase",
+      "amount": 74919,
+      "refundedAmount": 0,
+      "status": "Completed",
+      "paymentMethod": "stripe",
+      "version": 3,
+      "trans_id": "trans_1690516168656_64c33ac83a048b7fe83b6733_90f09d13-b4b0-483f-b7f8-1c82e0ccec7e",
+      "__v": 0,
+      "previous": {
+        "customer": "6459cc873f9c353beb3c419f",
+        "type": "purchase",
+        "amount": 74919,
+        "refundedAmount": 0,
+        "status": "Completed",
+        "paymentMethod": "stripe",
+        "version": 2,
+        "trans_id": "trans_1690516168656_64c33ac83a048b7fe83b6733_90f09d13-b4b0-483f-b7f8-1c82e0ccec7e",
+        "__v": 0
+      },
+      "cartId": "cart_1690516192143_1a237fcb-d33f-47f4-9dba-a9770065022d"
+    },
+    "cartId": "cart_1690516192143_1a237fcb-d33f-47f4-9dba-a9770065022d"
+  },
+  {
+    "_id": "64c3700c6c95682356bbba9d",
+    "customer": "64c36e876c95682356bbb852",
+    "type": "purchase",
+    "amount": 385207,
+    "refundedAmount": 380707,
+    "status": "Partially Refunded",
+    "paymentMethod": "stripe",
+    "version": 4,
+    "trans_id": "trans_1690529804798_64c3700c6c95682356bbba9e_bc57608d-25a2-451c-9a20-e37cafd19e8a",
+    "createdAt": {
+      "$date": "2023-07-28T07:36:44.800Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "64c36e876c95682356bbb852",
+      "type": "purchase",
+      "amount": 385207,
+      "refundedAmount": 380707,
+      "status": "Partially Refunded",
+      "paymentMethod": "stripe",
+      "version": 4,
+      "trans_id": "trans_1690529804798_64c3700c6c95682356bbba9e_bc57608d-25a2-451c-9a20-e37cafd19e8a",
+      "__v": 0,
+      "previous": {
+        "customer": "64c36e876c95682356bbb852",
+        "type": "purchase",
+        "amount": 385207,
+        "refundedAmount": 0,
+        "status": "Completed",
+        "paymentMethod": "stripe",
+        "version": 3,
+        "trans_id": "trans_1690529804798_64c3700c6c95682356bbba9e_bc57608d-25a2-451c-9a20-e37cafd19e8a",
+        "__v": 0,
+        "previous": {
+          "customer": "64c36e876c95682356bbb852",
+          "type": "purchase",
+          "amount": 385207,
+          "refundedAmount": 0,
+          "status": "Completed",
+          "paymentMethod": "stripe",
+          "version": 2,
+          "trans_id": "trans_1690529804798_64c3700c6c95682356bbba9e_bc57608d-25a2-451c-9a20-e37cafd19e8a",
+          "__v": 0
+        },
+        "cartId": "cart_1690529824264_1a565bb8-ca5f-4ef6-85d7-81819d48ee3b"
+      },
+      "cartId": "cart_1690529824264_1a565bb8-ca5f-4ef6-85d7-81819d48ee3b",
+      "refundReason": "fsdfd"
+    },
+    "cartId": "cart_1690529824264_1a565bb8-ca5f-4ef6-85d7-81819d48ee3b",
+    "refundReason": "fsdfd"
+  },
+  {
+    "_id": "664dc13db72ef177c3d35a63",
+    "customer": "643b7de40a416cdcadd8d065",
+    "type": "purchase",
+    "amount": 183908,
+    "refundedAmount": 0,
+    "status": "Completed",
+    "paymentMethod": "stripe",
+    "version": 3,
+    "trans_id": "trans_1716371773138_664dc13db72ef177c3d35a64_61fbc43d-9b5c-4956-97a5-6752981f8429",
+    "createdAt": {
+      "$date": "2024-05-22T09:56:13.140Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "643b7de40a416cdcadd8d065",
+      "type": "purchase",
+      "amount": 183908,
+      "refundedAmount": 0,
+      "status": "Completed",
+      "paymentMethod": "stripe",
+      "version": 3,
+      "trans_id": "trans_1716371773138_664dc13db72ef177c3d35a64_61fbc43d-9b5c-4956-97a5-6752981f8429",
+      "__v": 0,
+      "previous": {
+        "customer": "643b7de40a416cdcadd8d065",
+        "type": "purchase",
+        "amount": 183908,
+        "refundedAmount": 0,
+        "status": "Completed",
+        "paymentMethod": "stripe",
+        "version": 2,
+        "trans_id": "trans_1716371773138_664dc13db72ef177c3d35a64_61fbc43d-9b5c-4956-97a5-6752981f8429",
+        "__v": 0
+      },
+      "cartId": "cart_1716371790278_bb7f226a-397a-418c-997c-1fa12aaa880b"
+    },
+    "cartId": "cart_1716371790278_bb7f226a-397a-418c-997c-1fa12aaa880b"
+  },
+  {
+    "_id": "6676b1ec9a18be336d8a6777",
+    "customer": "643b7de40a416cdcadd8d065",
+    "type": "purchase",
+    "amount": 253608,
+    "refundedAmount": 253608,
+    "status": "Refunded",
+    "paymentMethod": "stripe",
+    "version": 4,
+    "trans_id": "trans_1719054828958_6676b1ec9a18be336d8a6778_db85921c-e0e7-4339-9429-2a4c008c35b9",
+    "createdAt": {
+      "$date": "2024-06-22T11:13:48.961Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "643b7de40a416cdcadd8d065",
+      "type": "purchase",
+      "amount": 253608,
+      "refundedAmount": 253608,
+      "status": "Refunded",
+      "paymentMethod": "stripe",
+      "version": 4,
+      "trans_id": "trans_1719054828958_6676b1ec9a18be336d8a6778_db85921c-e0e7-4339-9429-2a4c008c35b9",
+      "__v": 0,
+      "previous": {
+        "customer": "643b7de40a416cdcadd8d065",
+        "type": "purchase",
+        "amount": 253608,
+        "refundedAmount": 0,
+        "status": "Completed",
+        "paymentMethod": "stripe",
+        "version": 3,
+        "trans_id": "trans_1719054828958_6676b1ec9a18be336d8a6778_db85921c-e0e7-4339-9429-2a4c008c35b9",
+        "__v": 0,
+        "previous": {
+          "customer": "643b7de40a416cdcadd8d065",
+          "type": "purchase",
+          "amount": 253608,
+          "refundedAmount": 0,
+          "status": "Completed",
+          "paymentMethod": "stripe",
+          "version": 2,
+          "trans_id": "trans_1719054828958_6676b1ec9a18be336d8a6778_db85921c-e0e7-4339-9429-2a4c008c35b9",
+          "__v": 0
+        },
+        "cartId": "cart_1719054842709_eacb33f1-2fb9-4fb8-a629-06ad9fe23e09"
+      },
+      "cartId": "cart_1719054842709_eacb33f1-2fb9-4fb8-a629-06ad9fe23e09",
+      "refundReason": "Out of stock"
+    },
+    "cartId": "cart_1719054842709_eacb33f1-2fb9-4fb8-a629-06ad9fe23e09",
+    "refundReason": "Out of stock"
+  },
+  {
+    "_id": "66cec42041751fc36795fadb",
+    "customer": "66cec26d41751fc36795f602",
+    "type": "purchase",
+    "amount": 1699,
+    "refundedAmount": 0,
+    "status": "Failed",
+    "paymentMethod": "stripe",
+    "version": 2,
+    "trans_id": "trans_1724826656054_66cec42041751fc36795fadc_1f320cf3-7c70-43de-9ae0-b3ce406a4459",
+    "createdAt": {
+      "$date": "2024-08-28T06:30:56.057Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "66cec26d41751fc36795f602",
+      "type": "purchase",
+      "amount": 1699,
+      "refundedAmount": 0,
+      "status": "Failed",
+      "paymentMethod": "stripe",
+      "version": 2,
+      "trans_id": "trans_1724826656054_66cec42041751fc36795fadc_1f320cf3-7c70-43de-9ae0-b3ce406a4459",
+      "__v": 0
+    }
+  },
+  {
+    "_id": "66cec46741751fc36795faf0",
+    "customer": "66cec26d41751fc36795f602",
+    "type": "purchase",
+    "amount": 1699,
+    "refundedAmount": 0,
+    "status": "Failed",
+    "paymentMethod": "stripe",
+    "version": 2,
+    "trans_id": "trans_1724826727666_66cec46741751fc36795faf1_24e83cce-b38e-4e60-9bd6-802985671de5",
+    "createdAt": {
+      "$date": "2024-08-28T06:32:07.668Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "66cec26d41751fc36795f602",
+      "type": "purchase",
+      "amount": 1699,
+      "refundedAmount": 0,
+      "status": "Failed",
+      "paymentMethod": "stripe",
+      "version": 2,
+      "trans_id": "trans_1724826727666_66cec46741751fc36795faf1_24e83cce-b38e-4e60-9bd6-802985671de5",
+      "__v": 0
+    }
+  },
+  {
+    "_id": "66cec48141751fc36795fb05",
+    "customer": "66cec26d41751fc36795f602",
+    "type": "purchase",
+    "amount": 1699,
+    "refundedAmount": 0,
+    "status": "Failed",
+    "paymentMethod": "stripe",
+    "version": 2,
+    "trans_id": "trans_1724826753786_66cec48141751fc36795fb06_1fc038e5-8682-4fdc-9369-4d681825392e",
+    "createdAt": {
+      "$date": "2024-08-28T06:32:33.787Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "66cec26d41751fc36795f602",
+      "type": "purchase",
+      "amount": 1699,
+      "refundedAmount": 0,
+      "status": "Failed",
+      "paymentMethod": "stripe",
+      "version": 2,
+      "trans_id": "trans_1724826753786_66cec48141751fc36795fb06_1fc038e5-8682-4fdc-9369-4d681825392e",
+      "__v": 0
+    }
+  },
+  {
+    "_id": "66cec638da9ddcb763d81dce",
+    "customer": "66cec26d41751fc36795f602",
+    "type": "purchase",
+    "amount": 1699,
+    "refundedAmount": 0,
+    "status": "Failed",
+    "paymentMethod": "stripe",
+    "version": 2,
+    "trans_id": "trans_1724827192313_66cec638da9ddcb763d81dcf_7932847f-11fd-4f29-aab2-f8bcd040bee2",
+    "createdAt": {
+      "$date": "2024-08-28T06:39:52.315Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "66cec26d41751fc36795f602",
+      "type": "purchase",
+      "amount": 1699,
+      "refundedAmount": 0,
+      "status": "Failed",
+      "paymentMethod": "stripe",
+      "version": 2,
+      "trans_id": "trans_1724827192313_66cec638da9ddcb763d81dcf_7932847f-11fd-4f29-aab2-f8bcd040bee2",
+      "__v": 0
+    }
+  },
+  {
+    "_id": "66cec7ce470e6479a10df643",
+    "customer": "66cec26d41751fc36795f602",
+    "type": "purchase",
+    "amount": 1699,
+    "refundedAmount": 0,
+    "status": "Failed",
+    "paymentMethod": "stripe",
+    "version": 2,
+    "trans_id": "trans_1724827598394_66cec7ce470e6479a10df644_bb4712af-4e70-43c4-af44-9a907e3485c5",
+    "createdAt": {
+      "$date": "2024-08-28T06:46:38.395Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "66cec26d41751fc36795f602",
+      "type": "purchase",
+      "amount": 1699,
+      "refundedAmount": 0,
+      "status": "Failed",
+      "paymentMethod": "stripe",
+      "version": 2,
+      "trans_id": "trans_1724827598394_66cec7ce470e6479a10df644_bb4712af-4e70-43c4-af44-9a907e3485c5",
+      "__v": 0
+    }
+  },
+  {
+    "_id": "66cec80e7e73c994f64dd7da",
+    "customer": "66cec26d41751fc36795f602",
+    "type": "purchase",
+    "amount": 1699,
+    "refundedAmount": 0,
+    "status": "Failed",
+    "paymentMethod": "stripe",
+    "version": 2,
+    "trans_id": "trans_1724827662617_66cec80e7e73c994f64dd7db_174e4fa4-77c4-407a-93a8-df4b2ac6e542",
+    "createdAt": {
+      "$date": "2024-08-28T06:47:42.619Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "66cec26d41751fc36795f602",
+      "type": "purchase",
+      "amount": 1699,
+      "refundedAmount": 0,
+      "status": "Failed",
+      "paymentMethod": "stripe",
+      "version": 2,
+      "trans_id": "trans_1724827662617_66cec80e7e73c994f64dd7db_174e4fa4-77c4-407a-93a8-df4b2ac6e542",
+      "__v": 0
+    }
+  },
+  {
+    "_id": "66cec84c7e73c994f64dd8e1",
+    "customer": "643b7de40a416cdcadd8d065",
+    "type": "purchase",
+    "amount": 163190,
+    "refundedAmount": 0,
+    "status": "Failed",
+    "paymentMethod": "stripe",
+    "version": 2,
+    "trans_id": "trans_1724827724701_66cec84c7e73c994f64dd8e2_dfa9d827-22d8-4302-8f7d-c86ed08f8f17",
+    "createdAt": {
+      "$date": "2024-08-28T06:48:44.702Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "643b7de40a416cdcadd8d065",
+      "type": "purchase",
+      "amount": 163190,
+      "refundedAmount": 0,
+      "status": "Failed",
+      "paymentMethod": "stripe",
+      "version": 2,
+      "trans_id": "trans_1724827724701_66cec84c7e73c994f64dd8e2_dfa9d827-22d8-4302-8f7d-c86ed08f8f17",
+      "__v": 0
+    }
+  },
+  {
+    "_id": "66cec901210939cb3a3c4c55",
+    "customer": "643b7de40a416cdcadd8d065",
+    "type": "purchase",
+    "amount": 163190,
+    "refundedAmount": 0,
+    "status": "Failed",
+    "paymentMethod": "stripe",
+    "version": 2,
+    "trans_id": "trans_1724827905828_66cec901210939cb3a3c4c56_96a37f9c-0caf-4ca6-af35-c07ea6d5765f",
+    "createdAt": {
+      "$date": "2024-08-28T06:51:45.829Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "643b7de40a416cdcadd8d065",
+      "type": "purchase",
+      "amount": 163190,
+      "refundedAmount": 0,
+      "status": "Failed",
+      "paymentMethod": "stripe",
+      "version": 2,
+      "trans_id": "trans_1724827905828_66cec901210939cb3a3c4c56_96a37f9c-0caf-4ca6-af35-c07ea6d5765f",
+      "__v": 0
+    }
+  },
+  {
+    "_id": "66ceccc91c61cb85cb4de1d0",
+    "customer": "643b7de40a416cdcadd8d065",
+    "type": "purchase",
+    "amount": 163190,
+    "refundedAmount": 0,
+    "status": "Failed",
+    "paymentMethod": "stripe",
+    "version": 2,
+    "trans_id": "trans_1724828873213_66ceccc91c61cb85cb4de1d1_b6049bfb-fc84-4646-a5a1-d4c92c96cba3",
+    "createdAt": {
+      "$date": "2024-08-28T07:07:53.215Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "643b7de40a416cdcadd8d065",
+      "type": "purchase",
+      "amount": 163190,
+      "refundedAmount": 0,
+      "status": "Failed",
+      "paymentMethod": "stripe",
+      "version": 2,
+      "trans_id": "trans_1724828873213_66ceccc91c61cb85cb4de1d1_b6049bfb-fc84-4646-a5a1-d4c92c96cba3",
+      "__v": 0
+    }
+  },
+  {
+    "_id": "66ceccec1c61cb85cb4de1eb",
+    "customer": "643b7de40a416cdcadd8d065",
+    "type": "purchase",
+    "amount": 163190,
+    "refundedAmount": 0,
+    "status": "Failed",
+    "paymentMethod": "stripe",
+    "version": 2,
+    "trans_id": "trans_1724828908151_66ceccec1c61cb85cb4de1ec_26e332d6-6c37-471c-a09d-8c0fda697b97",
+    "createdAt": {
+      "$date": "2024-08-28T07:08:28.153Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "643b7de40a416cdcadd8d065",
+      "type": "purchase",
+      "amount": 163190,
+      "refundedAmount": 0,
+      "status": "Failed",
+      "paymentMethod": "stripe",
+      "version": 2,
+      "trans_id": "trans_1724828908151_66ceccec1c61cb85cb4de1ec_26e332d6-6c37-471c-a09d-8c0fda697b97",
+      "__v": 0
+    }
+  },
+  {
+    "_id": "66cecdd11c61cb85cb4de206",
+    "customer": "643b7de40a416cdcadd8d065",
+    "type": "purchase",
+    "amount": 163190,
+    "refundedAmount": 0,
+    "status": "Failed",
+    "paymentMethod": "stripe",
+    "version": 2,
+    "trans_id": "trans_1724829137236_66cecdd11c61cb85cb4de207_affe4d06-25bf-4566-bfc8-4bcab30d3123",
+    "createdAt": {
+      "$date": "2024-08-28T07:12:17.238Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "643b7de40a416cdcadd8d065",
+      "type": "purchase",
+      "amount": 163190,
+      "refundedAmount": 0,
+      "status": "Failed",
+      "paymentMethod": "stripe",
+      "version": 2,
+      "trans_id": "trans_1724829137236_66cecdd11c61cb85cb4de207_affe4d06-25bf-4566-bfc8-4bcab30d3123",
+      "__v": 0
+    }
+  },
+  {
+    "_id": "66cece984909378ef433e78d",
+    "customer": "643b7de40a416cdcadd8d065",
+    "type": "purchase",
+    "amount": 163190,
+    "refundedAmount": 0,
+    "status": "Completed",
+    "paymentMethod": "stripe",
+    "version": 3,
+    "trans_id": "trans_1724829336254_66cece984909378ef433e78e_9dccd3da-b577-48a8-8d00-19d8e5980e67",
+    "createdAt": {
+      "$date": "2024-08-28T07:15:36.256Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "643b7de40a416cdcadd8d065",
+      "type": "purchase",
+      "amount": 163190,
+      "refundedAmount": 0,
+      "status": "Completed",
+      "paymentMethod": "stripe",
+      "version": 3,
+      "trans_id": "trans_1724829336254_66cece984909378ef433e78e_9dccd3da-b577-48a8-8d00-19d8e5980e67",
+      "__v": 0,
+      "previous": {
+        "customer": "643b7de40a416cdcadd8d065",
+        "type": "purchase",
+        "amount": 163190,
+        "refundedAmount": 0,
+        "status": "Completed",
+        "paymentMethod": "stripe",
+        "version": 2,
+        "trans_id": "trans_1724829336254_66cece984909378ef433e78e_9dccd3da-b577-48a8-8d00-19d8e5980e67",
+        "__v": 0
+      },
+      "cartId": "cart_1724829346493_1628f387-9cb6-4785-85f6-9c1fefb14eb4"
+    },
+    "cartId": "cart_1724829346493_1628f387-9cb6-4785-85f6-9c1fefb14eb4"
+  },
+  {
+    "_id": "66cecf714909378ef433ec1a",
+    "customer": "66cec26d41751fc36795f602",
+    "type": "purchase",
+    "amount": 146898,
+    "refundedAmount": 0,
+    "status": "Completed",
+    "paymentMethod": "stripe",
+    "version": 3,
+    "trans_id": "trans_1724829553831_66cecf714909378ef433ec1b_54aed80d-0b6f-4e79-9861-c53e97036856",
+    "createdAt": {
+      "$date": "2024-08-28T07:19:13.832Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "66cec26d41751fc36795f602",
+      "type": "purchase",
+      "amount": 146898,
+      "refundedAmount": 0,
+      "status": "Completed",
+      "paymentMethod": "stripe",
+      "version": 3,
+      "trans_id": "trans_1724829553831_66cecf714909378ef433ec1b_54aed80d-0b6f-4e79-9861-c53e97036856",
+      "__v": 0,
+      "previous": {
+        "customer": "66cec26d41751fc36795f602",
+        "type": "purchase",
+        "amount": 146898,
+        "refundedAmount": 0,
+        "status": "Completed",
+        "paymentMethod": "stripe",
+        "version": 2,
+        "trans_id": "trans_1724829553831_66cecf714909378ef433ec1b_54aed80d-0b6f-4e79-9861-c53e97036856",
+        "__v": 0
+      },
+      "cartId": "cart_1724829566290_ea1b6b73-0e67-4ec2-a630-b38ed83ff1c6"
+    },
+    "cartId": "cart_1724829566290_ea1b6b73-0e67-4ec2-a630-b38ed83ff1c6"
+  },
+  {
+    "_id": "67ea14ef4807c655792a9b90",
+    "customer": "643b7de40a416cdcadd8d065",
+    "type": "purchase",
+    "amount": 183908,
+    "refundedAmount": 0,
+    "status": "Completed",
+    "paymentMethod": "stripe",
+    "version": 3,
+    "trans_id": "trans_1743394031287_67ea14ef4807c655792a9b91_ab2e8e48-bafd-4d54-a7f3-3c6910844276",
+    "createdAt": {
+      "$date": "2025-03-31T04:07:11.287Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "643b7de40a416cdcadd8d065",
+      "type": "purchase",
+      "amount": 183908,
+      "refundedAmount": 0,
+      "status": "Completed",
+      "paymentMethod": "stripe",
+      "version": 3,
+      "trans_id": "trans_1743394031287_67ea14ef4807c655792a9b91_ab2e8e48-bafd-4d54-a7f3-3c6910844276",
+      "__v": 0,
+      "previous": {
+        "customer": "643b7de40a416cdcadd8d065",
+        "type": "purchase",
+        "amount": 183908,
+        "refundedAmount": 0,
+        "status": "Completed",
+        "paymentMethod": "stripe",
+        "version": 2,
+        "trans_id": "trans_1743394031287_67ea14ef4807c655792a9b91_ab2e8e48-bafd-4d54-a7f3-3c6910844276",
+        "__v": 0
+      },
+      "cartId": "cart_1743394042527_42e131cf-8537-47c0-b62d-5cd67f971981"
+    },
+    "cartId": "cart_1743394042527_42e131cf-8537-47c0-b62d-5cd67f971981"
+  },
+  {
+    "_id": "67f0d5db54702fd6821f1dda",
+    "customer": "643b7de40a416cdcadd8d065",
+    "type": "purchase",
+    "amount": 145199,
+    "refundedAmount": 0,
+    "status": "Completed",
+    "paymentMethod": "stripe",
+    "version": 3,
+    "trans_id": "trans_1743836635321_67f0d5db54702fd6821f1ddb_5bbce244-b47e-4696-b497-aeff8c92ccd7",
+    "createdAt": {
+      "$date": "2025-04-05T07:03:55.325Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "643b7de40a416cdcadd8d065",
+      "type": "purchase",
+      "amount": 145199,
+      "refundedAmount": 0,
+      "status": "Completed",
+      "paymentMethod": "stripe",
+      "version": 3,
+      "trans_id": "trans_1743836635321_67f0d5db54702fd6821f1ddb_5bbce244-b47e-4696-b497-aeff8c92ccd7",
+      "__v": 0,
+      "previous": {
+        "customer": "643b7de40a416cdcadd8d065",
+        "type": "purchase",
+        "amount": 145199,
+        "refundedAmount": 0,
+        "status": "Completed",
+        "paymentMethod": "stripe",
+        "version": 2,
+        "trans_id": "trans_1743836635321_67f0d5db54702fd6821f1ddb_5bbce244-b47e-4696-b497-aeff8c92ccd7",
+        "__v": 0
+      },
+      "cartId": "cart_1743836673006_7ca04557-88d8-4a44-a293-53292bee6270"
+    },
+    "cartId": "cart_1743836673006_7ca04557-88d8-4a44-a293-53292bee6270"
+  },
+  {
+    "_id": "6826ca32d666982d4d30d6e7",
+    "customer": "643b7de40a416cdcadd8d065",
+    "type": "purchase",
+    "amount": 290398,
+    "refundedAmount": 0,
+    "status": "Completed",
+    "paymentMethod": "stripe",
+    "version": 3,
+    "trans_id": "trans_1747372594463_6826ca32d666982d4d30d6e8_e8791ee5-d5b3-4875-9072-ea45f566fed4",
+    "createdAt": {
+      "$date": "2025-05-16T05:16:34.464Z"
+    },
+    "__v": 0,
+    "previous": {
+      "customer": "643b7de40a416cdcadd8d065",
+      "type": "purchase",
+      "amount": 290398,
+      "refundedAmount": 0,
+      "status": "Completed",
+      "paymentMethod": "stripe",
+      "version": 3,
+      "trans_id": "trans_1747372594463_6826ca32d666982d4d30d6e8_e8791ee5-d5b3-4875-9072-ea45f566fed4",
+      "__v": 0,
+      "previous": {
+        "customer": "643b7de40a416cdcadd8d065",
+        "type": "purchase",
+        "amount": 290398,
+        "refundedAmount": 0,
+        "status": "Completed",
+        "paymentMethod": "stripe",
+        "version": 2,
+        "trans_id": "trans_1747372594463_6826ca32d666982d4d30d6e8_e8791ee5-d5b3-4875-9072-ea45f566fed4",
+        "__v": 0
+      },
+      "cartId": "cart_1747372620165_8569ca74-c001-4813-b343-c9a4f734e950"
+    },
+    "cartId": "cart_1747372620165_8569ca74-c001-4813-b343-c9a4f734e950"
+  }
+]

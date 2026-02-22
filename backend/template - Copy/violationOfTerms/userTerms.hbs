@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Notification</title>
+    <style>
+      /* Styles for the email template */
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f4f4f4;
+        border-radius: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+      }
+
+      h1 {
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-size: 24px;
+      }
+
+      p {
+        margin-top: 0;
+        margin-bottom: 20px;
+      }
+
+      .button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #4caf50;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+
+      .button:hover {
+        background-color: #3e8e41;
+      }
+
+      .warning {
+        color: #ffa500;
+      }
+
+      .error {
+        color: #ff0000;
+      }
+    </style>
+  </head>
+
+  <body>
+  <div class="container">
+    {{#if newUser}}
+    <div class="notification success">
+      <h2>New User Created</h2>
+      <p>Hello {{newUser.name}},</p>
+      <p>
+        A new user account has been created for you on our platform with the following details:
+      </p>
+      <ul>
+        <li>Name: {{newUser.name}}</li>
+        <li>Email: {{newUser.email}}</li>
+        <li>Password: {{newUser.password}}</li>
+        <li>Role: {{newUser.role}}</li>
+      </ul>
+      <p>Please keep this information safe and secure. You can now log in to your account using your email and the password you provided during the registration process.</p>
+      <p>Thank you for choosing our platform!</p>
+      <p>Best regards,</p>
+      <p>{{adminUsername}} - QuickCart</p>
+    </div>
+    {{/if}}
+    {{#if userUpdated}}
+    <div class="notification success">
+      <h2>User Updated</h2>
+      <p>The following user has been updated:</p>
+      <ul>
+        <li>Name: {{userUpdated.name}}</li>
+        <li>Email: {{userUpdated.email}}</li>
+        <li>Role: {{userUpdated.role}}</li>
+      </ul>
+    </div>
+    {{/if}}
+    {{#if userDeleted}}
+    <div class="notification warning">
+      <h2>User Deleted</h2>
+      <p>The following user has been deleted:</p>
+      <ul>
+        <li>Name: {{userDeleted.name}}</li>
+        <li>Email: {{userDeleted.email}}</li>
+        <li>Role: {{userDeleted.role}}</li>
+      </ul>
+    </div>
+    {{/if}}
+    {{#if userBanned}}
+    <div class="notification error">
+      <h2>User Banned</h2>
+      <p>The following user has been banned:</p>
+      <ul>
+        <li>Name: {{userBanned.name}}</li>
+        <li>Email: {{userBanned.email}}</li>
+      </ul>
+    </div>
+    {{/if}}
+    {{#if ipBanned}}
+    <div class="notification error">
+      <h2>IP Banned</h2>
+      <p>The following IP address has been banned:</p>
+      <ul>
+        <li>IP Address: {{ipBanned.address}}</li>
+        <li>Reason: {{ipBanned.reason}}</li>
+      </ul>
+    </div>
+    {{/if}}
+    {{#if duration}}
+    <p class="warning">This ban will expire in {{ duration }}.</p>
+    {{/if}}
+    {{#if actionLink}}
+    <p>To take action, please click the button below:</p>
+    <a class="button" href="{{ actionLink }}">{{ actionText }}</a>
+    {{/if}}
+    {{#if violation}}
+      <div class="notification error">
+        <h2>Violation of Terms</h2>
+        <p>The following user has violated the terms of use:</p>
+        <ul>
+          <li>Name: {{violation.name}}</li>
+          <li>Reason: {{violation.reason}}</li>
+        </ul>
+        <p>
+          We would like to remind you that it is your responsibility to ensure
+          that the information you provide is accurate and up-to-date. Please
+          review the updated information and make any necessary changes to
+          ensure that it complies with our terms and conditions.
+        </p>
+        <p>
+          If you have any questions or concerns, please don't hesitate to
+          contact our friendly customer support team at support@QuickCart.com.
+          We are always here to help and happy to answer any questions you may
+          have.
+        </p>
+        <p>Thank you for your understanding and cooperation in this matter.</p>
+        <p>Best regards,</p>
+        <p>{{violation.adminUsername}} - QuickCart</p>
+      </div>
+      {{/if}}
+    </div>
+  </body>
+</html>

@@ -1,0 +1,493 @@
+[
+  {
+    "_id": "6450967d58783f51bfe5336f",
+    "type": "Query",
+    "subject": "testing",
+    "order": "64475eede8674dd1e21b50f5",
+    "description": "testing",
+    "status": "Completed",
+    "priority": "Low",
+    "customer_id": "64475b08e8674dd1e21b4be5",
+    "reason": "testing loew",
+    "messages": [
+      {
+        "message": "remona jose",
+        "user_id": "64475b08e8674dd1e21b4be5",
+        "_id": "6450969158783f51bfe53382",
+        "time": {
+          "$date": "2023-05-02T04:50:25.916Z"
+        }
+      },
+      {
+        "message": "fdsafadsf",
+        "user_id": "64475b08e8674dd1e21b4be5",
+        "_id": "6450969358783f51bfe53390",
+        "time": {
+          "$date": "2023-05-02T04:50:27.846Z"
+        }
+      },
+      {
+        "message": "fdsafsadf",
+        "user_id": "64475b08e8674dd1e21b4be5",
+        "_id": "6450969658783f51bfe533a6",
+        "time": {
+          "$date": "2023-05-02T04:50:30.294Z"
+        }
+      },
+      {
+        "message": "fdsafdas",
+        "user_id": "64475b08e8674dd1e21b4be5",
+        "_id": "6450969758783f51bfe533b8",
+        "time": {
+          "$date": "2023-05-02T04:50:31.610Z"
+        }
+      },
+      {
+        "message": "fsdafasd",
+        "user_id": "64475b08e8674dd1e21b4be5",
+        "_id": "6450969858783f51bfe533cc",
+        "time": {
+          "$date": "2023-05-02T04:50:32.959Z"
+        }
+      },
+      {
+        "message": "fdsafsafd",
+        "user_id": "64475b08e8674dd1e21b4be5",
+        "_id": "6450969a58783f51bfe533e2",
+        "time": {
+          "$date": "2023-05-02T04:50:34.294Z"
+        }
+      },
+      {
+        "message": "fdsafsadf",
+        "user_id": "64475b08e8674dd1e21b4be5",
+        "_id": "6450969b58783f51bfe533fa",
+        "time": {
+          "$date": "2023-05-02T04:50:35.608Z"
+        }
+      },
+      {
+        "message": "fsdafsda",
+        "user_id": "64475b08e8674dd1e21b4be5",
+        "_id": "6450969c58783f51bfe53414",
+        "time": {
+          "$date": "2023-05-02T04:50:36.861Z"
+        }
+      },
+      {
+        "message": "hyy\n",
+        "user_id": "643b7de40a416cdcadd8d065",
+        "_id": "6453aded58b27db15e44a0b9",
+        "time": {
+          "$date": "2023-05-04T13:06:53.165Z"
+        }
+      },
+      {
+        "message": "gfgzxvx",
+        "user_id": "643b7de40a416cdcadd8d065",
+        "_id": "6453b04158b27db15e44a90e",
+        "time": {
+          "$date": "2023-05-04T13:16:49.582Z"
+        }
+      },
+      {
+        "message": "xcvxzvzxcv",
+        "user_id": "643b7de40a416cdcadd8d065",
+        "_id": "6453b04358b27db15e44a938",
+        "time": {
+          "$date": "2023-05-04T13:16:51.642Z"
+        }
+      },
+      {
+        "message": "hyy",
+        "user_id": "6453a94de8aece19448cd1bd",
+        "_id": "6453b17d56ec9e8f6e36c8fe",
+        "time": {
+          "$date": "2023-05-04T13:22:05.013Z"
+        }
+      },
+      {
+        "message": "how may i help you",
+        "user_id": "6453a94de8aece19448cd1bd",
+        "_id": "6453b18756ec9e8f6e36c92b",
+        "time": {
+          "$date": "2023-05-04T13:22:15.815Z"
+        }
+      },
+      {
+        "message": "working\n",
+        "user_id": "643b7de40a416cdcadd8d065",
+        "_id": "6453cf79697173a593815ff7",
+        "time": {
+          "$date": "2023-05-04T15:30:01.437Z"
+        }
+      },
+      {
+        "message": "dsafdasfadsfasdfyadstfyudsajfadsuhfiuadshuifhadsuihfuiadshuifhiadshfuadshuifhasudhfiuhdasfhuadshfuihdsaiufhadsiuhfiudsahfiuhasdiufsa",
+        "user_id": "643b7de40a416cdcadd8d065",
+        "_id": "6453cf80697173a593816029",
+        "time": {
+          "$date": "2023-05-04T15:30:08.352Z"
+        }
+      },
+      {
+        "message": "dsafdasfadsfasdfyadstfyudsajfadsuhfiuadshuifhadsuihfuiadshuifhiadshfuadshuifhasudhfiuhdasfhuadshfuihdsaiufhadsiuhfiudsahfiuhasdiufsa dsafdasfadsfasdfyadstfyudsajfadsuhfiuadshuifhadsuihfuiadshuifhiadshfuadshuifhasudhfiuhdasfhuadshfuihdsaiufhadsiuhfiudsahfiuhasdiufsa dsafdasfadsfasdfyadstfyudsajfadsuhfiuadshuifhadsuihfuiadshuifhiadshfuadshuifhasudhfiuhdasfhuadshfuihdsaiufhadsiuhfiudsahfiuhasdiufsa dsafdasfadsfasdfyadstfyudsajfadsuhfiuadshuifhadsuihfuiadshuifhiadshfuadshuifhasudhfiuhdasfhuadshfuihdsaiufhadsiuhfiudsahfiuhasdiufsa dsafdasfadsfasdfyadstfyudsajfadsuhfiuadshuifhadsuihfuiadshuifhiadshfuadshuifhasudhfiuhdasfhuadshfuihdsaiufhadsiuhfiudsahfiuhasdiufsa dsafdasfadsfasdfyadstfyudsajfadsuhfiuadshuifhadsuihfuiadshuifhiadshfuadshuifhasudhfiuhdasfhuadshfuihdsaiufhadsiuhfiudsahfiuhasdiufsa",
+        "user_id": "643b7de40a416cdcadd8d065",
+        "_id": "6453d46a697173a593816e69",
+        "time": {
+          "$date": "2023-05-04T15:51:06.031Z"
+        }
+      },
+      {
+        "message": "hyyy",
+        "user_id": "6453a94de8aece19448cd1bd",
+        "_id": "6455bbc290456b6f7fd96ee0",
+        "time": {
+          "$date": "2023-05-06T02:30:26.750Z"
+        }
+      },
+      {
+        "message": "hyy",
+        "user_id": "643b7de40a416cdcadd8d065",
+        "_id": "6459ca2e6fe16c13dd80ea43",
+        "time": {
+          "$date": "2023-05-09T04:21:02.136Z"
+        }
+      },
+      {
+        "message": "fdsafdsafdas",
+        "user_id": "643b7de40a416cdcadd8d065",
+        "_id": "6459ca786fe16c13dd80ea7d",
+        "time": {
+          "$date": "2023-05-09T04:22:16.974Z"
+        }
+      },
+      {
+        "message": "hy\n",
+        "user_id": "6462fd38534af5392a1d021e",
+        "_id": "6676b2a69a18be336d8a6f4d",
+        "time": {
+          "$date": "2024-06-22T11:16:54.840Z"
+        }
+      }
+    ],
+    "createdAt": {
+      "$date": "2023-05-02T04:50:05.444Z"
+    },
+    "updatedAt": {
+      "$date": "2024-06-22T11:16:54.859Z"
+    },
+    "__v": 20,
+    "agent_id": "6453a94de8aece19448cd1bd"
+  },
+  {
+    "_id": "64572a58dd5f14534b95c7f4",
+    "type": "Query",
+    "subject": "testing",
+    "order": "64512463970251f5d0892be0",
+    "description": "hghj",
+    "status": "Spam",
+    "priority": "Low",
+    "customer_id": "643b7de40a416cdcadd8d065",
+    "reason": "",
+    "messages": [
+      {
+        "message": "---spam ticket---",
+        "user_id": "649306363fa2c89a322a63b5",
+        "_id": "64c27128cc470f04c54c65f8",
+        "time": {
+          "$date": "2023-07-27T13:29:12.307Z"
+        }
+      },
+      {
+        "message": "Hello",
+        "user_id": "649306363fa2c89a322a63b5",
+        "_id": "6676b2839a18be336d8a6cb8",
+        "time": {
+          "$date": "2024-06-22T11:16:19.112Z"
+        }
+      }
+    ],
+    "createdAt": {
+      "$date": "2023-05-07T04:34:32.652Z"
+    },
+    "updatedAt": {
+      "$date": "2024-06-22T11:16:19.114Z"
+    },
+    "__v": 2,
+    "agent_id": "649306363fa2c89a322a63b5"
+  },
+  {
+    "_id": "6487f5cc9a2e0d2efbc51ebe",
+    "type": "Query",
+    "subject": "product is defective",
+    "order": "6487f5629a2e0d2efbc51c2f",
+    "description": "i don't like the quality of silk it's very poor",
+    "status": "Closed",
+    "priority": "Low",
+    "customer_id": "6459cc873f9c353beb3c419f",
+    "reason": "",
+    "messages": [],
+    "createdAt": {
+      "$date": "2023-06-13T04:51:24.786Z"
+    },
+    "updatedAt": {
+      "$date": "2023-07-20T03:01:49.744Z"
+    },
+    "__v": 0,
+    "agent_id": "649306363fa2c89a322a63b5"
+  },
+  {
+    "_id": "6453d651697173a593818ef6",
+    "type": "Query",
+    "subject": "testing",
+    "order": "6448e2fc65f135712c030702",
+    "description": "testing",
+    "status": "Closed",
+    "priority": "Low",
+    "customer_id": "643b7de40a416cdcadd8d065",
+    "reason": "",
+    "messages": [
+      {
+        "message": "hyyy what's up\n",
+        "user_id": "643b7de40a416cdcadd8d065",
+        "_id": "6453d664697173a593818f7b",
+        "time": {
+          "$date": "2023-05-04T15:59:32.793Z"
+        }
+      },
+      {
+        "message": "tell me about your problem",
+        "user_id": "643b7de40a416cdcadd8d065",
+        "_id": "6453d66b697173a593818f93",
+        "time": {
+          "$date": "2023-05-04T15:59:39.261Z"
+        }
+      },
+      {
+        "message": "nothing much",
+        "user_id": "643b7de40a416cdcadd8d065",
+        "_id": "6453d671697173a593818fc5",
+        "time": {
+          "$date": "2023-05-04T15:59:45.689Z"
+        }
+      },
+      {
+        "message": "products are good",
+        "user_id": "643b7de40a416cdcadd8d065",
+        "_id": "6453d678697173a593818fd9",
+        "time": {
+          "$date": "2023-05-04T15:59:52.955Z"
+        }
+      },
+      {
+        "message": "ok",
+        "user_id": "643b7de40a416cdcadd8d065",
+        "_id": "6453d67d697173a593819013",
+        "time": {
+          "$date": "2023-05-04T15:59:57.435Z"
+        }
+      },
+      {
+        "message": "hyy",
+        "user_id": "6453a94de8aece19448cd1bd",
+        "_id": "6455bbc990456b6f7fd96f69",
+        "time": {
+          "$date": "2023-05-06T02:30:33.500Z"
+        }
+      }
+    ],
+    "createdAt": {
+      "$date": "2023-05-04T15:59:13.529Z"
+    },
+    "updatedAt": {
+      "$date": "2023-05-06T02:30:33.503Z"
+    },
+    "__v": 6,
+    "agent_id": "6453a94de8aece19448cd1bd"
+  },
+  {
+    "_id": "64c26775570912e48aeace30",
+    "type": "Query",
+    "subject": "Order placed by mistake",
+    "order": "64c238c66d80836f4c243201",
+    "description": "cancel my order and refund the amount",
+    "status": "Transfer to Another Agent",
+    "priority": "Medium",
+    "customer_id": "6459cc873f9c353beb3c419f",
+    "reason": "user want refund - transfer to admin",
+    "messages": [
+      {
+        "message": "please do it soon",
+        "user_id": "6459cc873f9c353beb3c419f",
+        "_id": "64c2677f570912e48aeace47",
+        "time": {
+          "$date": "2023-07-27T12:47:59.153Z"
+        }
+      },
+      {
+        "message": "we are transferring this ticket to admin",
+        "user_id": "649306363fa2c89a322a63b5",
+        "_id": "64c27187cc470f04c54c664d",
+        "time": {
+          "$date": "2023-07-27T13:30:47.921Z"
+        }
+      },
+      {
+        "message": "kindly wait for admin to join ",
+        "user_id": "649306363fa2c89a322a63b5",
+        "_id": "64c27193cc470f04c54c6666",
+        "time": {
+          "$date": "2023-07-27T13:30:59.598Z"
+        }
+      },
+      {
+        "message": "In 7 business days your money will be refunded",
+        "user_id": "6462fd38534af5392a1d021e",
+        "_id": "64c275f8cfdc7c367385f883",
+        "time": {
+          "$date": "2023-07-27T13:49:44.801Z"
+        }
+      }
+    ],
+    "createdAt": {
+      "$date": "2023-07-27T12:47:49.767Z"
+    },
+    "updatedAt": {
+      "$date": "2024-06-22T11:16:24.064Z"
+    },
+    "__v": 4,
+    "agent_id": "649306363fa2c89a322a63b5"
+  },
+  {
+    "_id": "64c28f4391ca536ce7b8afad",
+    "type": "Query",
+    "subject": "abc",
+    "order": "64c28ed891ca536ce7b8ae56",
+    "description": "poor quality",
+    "status": "Spam",
+    "priority": "Low",
+    "customer_id": "6459cc873f9c353beb3c419f",
+    "reason": "",
+    "messages": [
+      {
+        "message": "hyy refund my amount",
+        "user_id": "6459cc873f9c353beb3c419f",
+        "_id": "64c33baa3a048b7fe83b6b4f",
+        "time": {
+          "$date": "2023-07-28T03:53:14.203Z"
+        }
+      },
+      {
+        "message": "spammm",
+        "user_id": "649306363fa2c89a322a63b5",
+        "_id": "64c33cae3a048b7fe83b6c9a",
+        "time": {
+          "$date": "2023-07-28T03:57:34.442Z"
+        }
+      }
+    ],
+    "createdAt": {
+      "$date": "2023-07-27T15:37:39.030Z"
+    },
+    "updatedAt": {
+      "$date": "2023-07-28T03:57:42.105Z"
+    },
+    "__v": 2,
+    "agent_id": "649306363fa2c89a322a63b5"
+  },
+  {
+    "_id": "64c370816c95682356bbbbf6",
+    "type": "Query",
+    "subject": "placed order by mistake",
+    "order": "64c370216c95682356bbbad8",
+    "description": "kindly refund my money ",
+    "status": "Transfer to Another Agent",
+    "priority": "Low",
+    "customer_id": "64c36e876c95682356bbb852",
+    "reason": "Test",
+    "messages": [
+      {
+        "message": "Hello",
+        "user_id": "649306363fa2c89a322a63b5",
+        "_id": "65c0bc2cd1643bbbc36a94e6",
+        "time": {
+          "$date": "2024-02-05T10:45:00.666Z"
+        }
+      }
+    ],
+    "createdAt": {
+      "$date": "2023-07-28T07:38:41.894Z"
+    },
+    "updatedAt": {
+      "$date": "2024-02-05T10:45:12.966Z"
+    },
+    "__v": 1
+  },
+  {
+    "_id": "664dc19eb72ef177c3d35ebd",
+    "type": "Query",
+    "subject": "TEst",
+    "order": "664dc14eb72ef177c3d35a83",
+    "description": "test",
+    "status": "Open",
+    "priority": "Low",
+    "customer_id": "643b7de40a416cdcadd8d065",
+    "reason": "",
+    "messages": [
+      {
+        "message": "xyzasvsv",
+        "user_id": "643b7de40a416cdcadd8d065",
+        "_id": "664dc1adb72ef177c3d35ee9",
+        "time": {
+          "$date": "2024-05-22T09:58:05.909Z"
+        }
+      }
+    ],
+    "createdAt": {
+      "$date": "2024-05-22T09:57:50.261Z"
+    },
+    "updatedAt": {
+      "$date": "2024-06-22T11:16:06.918Z"
+    },
+    "__v": 1,
+    "agent_id": "649306363fa2c89a322a63b5"
+  },
+  {
+    "_id": "66cecf9f4909378ef433ecfa",
+    "type": "Query",
+    "subject": "Order Details",
+    "order": "66cecf7e4909378ef433ec38",
+    "description": "Give me details about order",
+    "status": "Open",
+    "priority": "Low",
+    "customer_id": "66cec26d41751fc36795f602",
+    "reason": "",
+    "messages": [
+      {
+        "message": "Please help",
+        "user_id": "66cec26d41751fc36795f602",
+        "_id": "66cecfa64909378ef433ed0c",
+        "time": {
+          "$date": "2024-08-28T07:20:06.791Z"
+        }
+      },
+      {
+        "message": "What details are required?\n",
+        "user_id": "649306363fa2c89a322a63b5",
+        "_id": "66cecfd94909378ef433ee0e",
+        "time": {
+          "$date": "2024-08-28T07:20:57.346Z"
+        }
+      }
+    ],
+    "createdAt": {
+      "$date": "2024-08-28T07:19:59.636Z"
+    },
+    "updatedAt": {
+      "$date": "2024-08-28T07:20:57.348Z"
+    },
+    "__v": 2,
+    "agent_id": "649306363fa2c89a322a63b5"
+  }
+]

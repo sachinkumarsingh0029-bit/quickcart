@@ -26,7 +26,7 @@ router.post(
   authController.login
 );
 
-/* ================= VERIFY SELLER LOGIN ================= */
+/* ================= VERIFY SELLER LOGIN (🔥 FIXED NAME) ================= */
 router.post(
   "/verify-seller-login",
   authController.verifySellerLogin
@@ -34,7 +34,6 @@ router.post(
 
 /* ================= LOGOUT ================= */
 router.post("/logout", authController.logout);
-
 /* ================= CHECK AUTH ================= */
 const jwt = require("jsonwebtoken");
 const User = require("../../models/auth/userSchema");
@@ -67,5 +66,4 @@ router.get("/check", async (req, res) => {
     res.status(401).json({ status: "error" });
   }
 });
-
 module.exports = router;
