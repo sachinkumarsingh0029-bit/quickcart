@@ -5,7 +5,6 @@ const authController = require("../../controllers/auth/authController");
 
 const router = express.Router();
 
-/* ================= SIGNUP ================= */
 router.post(
   "/signup",
   [
@@ -16,7 +15,6 @@ router.post(
   authController.signup
 );
 
-/* ================= LOGIN ================= */
 router.post(
   "/login",
   [
@@ -26,13 +24,8 @@ router.post(
   authController.login
 );
 
-/* ================= VERIFY SELLER OTP ================= */
-router.post("/verify-seller-otp", authController.verifySellerOTP);
+router.post("/verify-seller-login", authController.verifySellerLogin);
 
-/* ================= GET USER ================= */
-router.get("/profile", authController.getUser);
-
-/* ================= LOGOUT ================= */
 router.post("/logout", authController.logout);
 
 module.exports = router;

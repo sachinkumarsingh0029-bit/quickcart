@@ -80,7 +80,7 @@ exports.login = async (req, res) => {
       });
     }
 
-    /* ===== SELLER OTP FLOW ===== */
+    /* ===== SELLER MAGIC LOGIN FLOW ===== */
 
     if (user.role === "seller") {
       const seller = await Seller.findOne({ user: user._id });
@@ -99,20 +99,23 @@ exports.login = async (req, res) => {
       seller.loginCodeExpiresAt = expiry;
       await seller.save();
 
+      const verificationLink = `https://quickcart-hazel-iota.vercel.app/seller-login/${seller.businessEmail}`;
+
       await sendEmail(
         seller.businessEmail,
         {
-          subject: "Seller Login OTP - QuickCart",
+          subject: "Seller Login - QuickCart",
           username: seller.businessName,
-          otp: otpCode,
+          verificationCode: otpCode,
+          verificationLink: verificationLink,
         },
         "seller/loginVerification.hbs"
       );
 
       return res.status(200).json({
-        status: "otp_required",
-        message: "OTP sent to seller email",
         role: "seller",
+        message: "Please check your email for login verification.",
+        status: "success",
       });
     }
 
@@ -142,10 +145,10 @@ exports.login = async (req, res) => {
   }
 };
 
-/* ================= VERIFY SELLER OTP ================= */
+/* ================= VERIFY SELLER LOGIN ================= */
 
-exports.verifySellerOTP = async (req, res) => {
-  const { email, otp } = req.body;
+exports.verifySellerLogin = async (req, res) => {
+  const { email, otp, password } = req.body;
 
   try {
     const user = await User.findOne({ email });
@@ -159,13 +162,6 @@ exports.verifySellerOTP = async (req, res) => {
 
     const seller = await Seller.findOne({ user: user._id });
 
-    if (!seller) {
-      return res.status(404).json({
-        status: "error",
-        message: "Seller not found",
-      });
-    }
-
     if (
       seller.loginCode !== otp ||
       seller.loginCodeExpiresAt < Date.now()
@@ -173,6 +169,14 @@ exports.verifySellerOTP = async (req, res) => {
       return res.status(400).json({
         status: "error",
         message: "Invalid or expired OTP",
+      });
+    }
+
+    const isMatch = await bcrypt.compare(password, user.password);
+    if (!isMatch) {
+      return res.status(400).json({
+        status: "error",
+        message: "Invalid Password",
       });
     }
 
@@ -192,36 +196,10 @@ exports.verifySellerOTP = async (req, res) => {
   }
 };
 
-/* ================= GET USER ================= */
-
-exports.getUser = async (req, res) => {
-  try {
-    const token = req.cookies.token;
-
-    if (!token) {
-      return res.status(401).json({
-        status: "error",
-        message: "Unauthorized",
-      });
-    }
-
-    const decoded = jwt.verify(token, process.env.JWT_SECRET);
-    const user = await User.findById(decoded._id).select("-password");
-
-    res.status(200).json({
-      status: "success",
-      user,
-    });
-  } catch (err) {
-    return handleError(res, err);
-  }
-};
-
 /* ================= LOGOUT ================= */
 
 exports.logout = async (req, res) => {
   res.clearCookie("token");
-
   res.status(200).json({
     status: "success",
     message: "Logged out successfully",
