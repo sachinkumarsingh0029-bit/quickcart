@@ -40,26 +40,41 @@ app.use(mongoSanitize());
 app.use(helmet());
 app.use(morgan('combined'));
 
-/* ✅ PRODUCTION CORS FIX */
+/* =======================
+   ✅ FINAL CORS FIX
+======================= */
+
 const allowedOrigins = [
-    "http://localhost:3000",
-    "http://localhost:3001",
-    "https://quickcart-hazel-iota.vercel.app",
-    "https://quickcart-5uy5.vercel.app"
+  "http://localhost:3000",
+  "http://localhost:3001",
+  "https://quickcart-hazel-iota.vercel.app",
+  "https://quickcart-5uy5.vercel.app",
+  "https://quickcart-luow.onrender.com"
 ];
 
-app.use(cors({
-    origin: function (origin, callback) {
-        if (!origin || allowedOrigins.includes(origin)) {
-            callback(null, true);
-        } else {
-            callback(new Error("Not allowed by CORS"));
-        }
-    },
-    credentials: true
-}));
+const corsOptions = {
+  origin: function (origin, callback) {
 
-app.options('*', cors());
+    // Allow requests with no origin (mobile apps, Postman etc.)
+    if (!origin) return callback(null, true);
+
+    // Allow production URLs
+    if (allowedOrigins.includes(origin)) {
+      return callback(null, true);
+    }
+
+    // ✅ Allow ALL Vercel preview deployments automatically
+    if (origin.includes("vercel.app")) {
+      return callback(null, true);
+    }
+
+    return callback(new Error("Not allowed by CORS"));
+  },
+  credentials: true
+};
+
+app.use(cors(corsOptions));
+app.options("*", cors(corsOptions));
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -89,7 +104,7 @@ app.use('/api/root', rootRouter);
 ======================= */
 
 app.get('/', (req, res) => {
-    res.send('🚀 QuickCart API is running successfully');
+  res.send('🚀 QuickCart API is running successfully');
 });
 
 /* =======================
@@ -97,18 +112,18 @@ app.get('/', (req, res) => {
 ======================= */
 
 app.use((req, res) => {
-    res.status(404).json({
-        error: 'not_found',
-        message: 'Route Not Found',
-    });
+  res.status(404).json({
+    error: 'not_found',
+    message: 'Route Not Found',
+  });
 });
 
 app.use((err, req, res, next) => {
-    console.error(err.stack);
-    res.status(500).json({
-        error: 'server_error',
-        message: 'Internal Server Error',
-    });
+  console.error(err.stack);
+  res.status(500).json({
+    error: 'server_error',
+    message: err.message || 'Internal Server Error',
+  });
 });
 
 /* =======================
@@ -116,5 +131,5 @@ app.use((err, req, res, next) => {
 ======================= */
 
 app.listen(PORT, "0.0.0.0", () => {
-    console.log(`Server running on port ${PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });
