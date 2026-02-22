@@ -5,6 +5,7 @@ const authController = require("../../controllers/auth/authController");
 
 const router = express.Router();
 
+/* ================= SIGNUP ================= */
 router.post(
   "/signup",
   [
@@ -15,6 +16,7 @@ router.post(
   authController.signup
 );
 
+/* ================= LOGIN ================= */
 router.post(
   "/login",
   [
@@ -24,8 +26,13 @@ router.post(
   authController.login
 );
 
-router.post("/verify-seller-login", authController.verifySellerLogin);
+/* ================= VERIFY SELLER LOGIN (🔥 FIXED NAME) ================= */
+router.post(
+  "/verify-seller-login",
+  authController.verifySellerLogin
+);
 
+/* ================= LOGOUT ================= */
 router.post("/logout", authController.logout);
 
 module.exports = router;
