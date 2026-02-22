@@ -6,8 +6,6 @@ const authenticateMiddleware = require("../../middleware/authenticateMiddleware"
 
 const router = express.Router();
 
-/* ================= SIGNUP ================= */
-
 router.post(
   "/signup",
   [
@@ -18,8 +16,6 @@ router.post(
   authController.signup
 );
 
-/* ================= LOGIN ================= */
-
 router.post(
   "/login",
   [
@@ -29,15 +25,11 @@ router.post(
   authController.login
 );
 
-/* ================= PROFILE ================= */
-
 router.get(
   "/profile",
   authenticateMiddleware,
   authController.getUser
 );
-
-/* ================= LOGOUT ================= */
 
 router.post(
   "/logout",
