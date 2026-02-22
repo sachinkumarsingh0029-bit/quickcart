@@ -32,6 +32,12 @@ router.post(
   authController.verifySellerLogin
 );
 
+/* ================= 🔥 RESEND OTP ================= */
+router.post(
+  "/sendVerificationCodeAgain",
+  authController.sendVerificationCodeAgain
+);
+
 /* ================= LOGOUT ================= */
 router.post("/logout", authController.logout);
 
