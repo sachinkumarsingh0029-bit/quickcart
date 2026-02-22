@@ -7,25 +7,66 @@ const User = require('../../models/auth/userSchema');
 const { sendVerificationCode } = require('./verificationController');
 const handleError = require('../../utils/errorHandler');
 const sendEmail = require('../../utils/sendEmail');
-const { default: mongoose } = require('mongoose');
 const Seller = require('../../models/seller/sellerSchema');
 const generateCode = require('../../utils/generateCode');
 const customLogger = require('../../utils/logHandler');
 const { v4: uuidv4 } = require('uuid');
 
-/* ===================================
-   🔥 FIXED COOKIE OPTIONS
-=================================== */
+/* ===============================
+   🔥 CROSS DOMAIN COOKIE FIX
+================================= */
 
 const cookieOptions = {
     httpOnly: true,
-    secure: true,        // required for sameSite none
-    sameSite: "none",    // REQUIRED for Vercel → Render
+    secure: true,
+    sameSite: "none",
     maxAge: 5 * 60 * 60 * 1000
 };
 
 /* ===============================
-   LOGIN (ONLY COOKIE CHANGED)
+   SIGNUP
+================================= */
+
+exports.signup = async (req, res) => {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+        return handleError(res, {
+            code: 'CustomValidationError',
+            status: 'error',
+            errors: errors.array()
+        });
+    }
+
+    const { email, password, username } = req.body;
+
+    try {
+        let user = await User.findOne({ $or: [{ email }, { username }] });
+
+        if (user) {
+            return handleError(res, {
+                code: 'already_exists',
+                status: 'error',
+                message: 'User already exists',
+            });
+        }
+
+        user = new User({ email, password, username });
+
+        const salt = await bcrypt.genSalt(10);
+        user.password = await bcrypt.hash(password, salt);
+
+        await user.save();
+        await sendVerificationCode(res, user.email);
+
+        res.status(200).json({ status: 'success' });
+
+    } catch (err) {
+        return handleError(res, err);
+    }
+};
+
+/* ===============================
+   LOGIN
 ================================= */
 
 exports.login = async (req, res) => {
@@ -41,36 +82,32 @@ exports.login = async (req, res) => {
     const { email, password } = req.body;
 
     try {
-        User.findByCredentials(email, password).then(async ({ token, user }) => {
+        const { token, user } = await User.findByCredentials(email, password);
 
-            if (!user) {
-                return handleError(res, {
-                    message: 'Invalid Credentials',
-                    status: 401,
-                    code: 'authentication_failed'
-                });
-            }
-
-            // 🔥 FIXED COOKIE
-            res.cookie('token', token, cookieOptions);
-
-            return res.status(200).json({
-                user: {
-                    id: user._id,
-                    name: user.name,
-                    email: user.email,
-                    username: user.username,
-                    address: user.address,
-                    verificationStatus: user.verificationStatus,
-                    role: user.role,
-                    number: user.number
-                },
-                status: 'success'
+        if (!user) {
+            return handleError(res, {
+                message: 'Invalid Credentials',
+                status: 401,
+                code: 'authentication_failed'
             });
+        }
 
-        }).catch((err) => {
-            throw err;
+        res.cookie('token', token, cookieOptions);
+
+        res.status(200).json({
+            user: {
+                id: user._id,
+                name: user.name,
+                email: user.email,
+                username: user.username,
+                address: user.address,
+                verificationStatus: user.verificationStatus,
+                role: user.role,
+                number: user.number
+            },
+            status: 'success'
         });
+
     } catch (err) {
         return handleError(res, {
             message: 'Invalid Credentials',
@@ -81,7 +118,88 @@ exports.login = async (req, res) => {
 };
 
 /* ===============================
-   UPDATE PASSWORD (COOKIE FIXED)
+   GET USER
+================================= */
+
+exports.getUser = async (req, res) => {
+    try {
+        const token = req.cookies.token;
+
+        if (!token) {
+            return handleError(res, {
+                code: 'unauthorized_access',
+                status: 'error',
+                message: 'Unauthorized Access',
+            });
+        }
+
+        const decoded = jwt.verify(token, process.env.JWT_SECRET);
+        const user = await User.findById(decoded._id).select('-password');
+
+        if (!user) {
+            return handleError(res, {
+                code: 'not_found',
+                status: 'error',
+                message: 'User not found',
+            });
+        }
+
+        res.status(200).json({
+            user: {
+                id: user._id,
+                name: user.name,
+                email: user.email,
+                username: user.username,
+                address: user.address,
+                verificationStatus: user.verificationStatus,
+                role: user.role,
+                number: user.number
+            },
+            status: 'success'
+        });
+
+    } catch (err) {
+        return handleError(res, err);
+    }
+};
+
+/* ===============================
+   UPDATE PROFILE
+================================= */
+
+exports.updateProfile = async (req, res) => {
+    try {
+        const user = await User.findById(req.user.id);
+        if (!user) {
+            return handleError(res, {
+                code: 'not_found',
+                status: 'error',
+                message: 'User not found',
+            });
+        }
+
+        const { username, name, email, number, address } = req.body;
+
+        user.username = username || user.username;
+        user.name = name || user.name;
+        user.email = email || user.email;
+        user.number = number || user.number;
+        user.address = address || user.address;
+
+        await user.save();
+
+        res.status(200).json({
+            user,
+            status: 'success'
+        });
+
+    } catch (err) {
+        return handleError(res, err);
+    }
+};
+
+/* ===============================
+   UPDATE PASSWORD
 ================================= */
 
 exports.updatePassword = async (req, res) => {
@@ -101,8 +219,6 @@ exports.updatePassword = async (req, res) => {
         await user.save();
 
         const token = await user.generateAuthToken();
-
-        // 🔥 FIXED COOKIE
         res.cookie('token', token, cookieOptions);
 
         res.status(200).json({
@@ -116,7 +232,7 @@ exports.updatePassword = async (req, res) => {
 };
 
 /* ===============================
-   LOGOUT (COOKIE FIXED)
+   LOGOUT
 ================================= */
 
 exports.logout = async (req, res) => {
@@ -126,6 +242,93 @@ exports.logout = async (req, res) => {
         res.status(200).json({
             message: 'Logged out successfully',
             status: 'success'
+        });
+
+    } catch (err) {
+        return handleError(res, err);
+    }
+};
+
+/* ===============================
+   DELETE ACCOUNT
+================================= */
+
+exports.deleteAccount = async (req, res) => {
+    try {
+        const user = await User.findById(req.user.id);
+        await user.remove();
+
+        res.clearCookie('token', cookieOptions);
+
+        res.status(200).json({
+            status: 'success',
+            message: 'User deleted successfully'
+        });
+
+    } catch (err) {
+        return handleError(res, err);
+    }
+};
+
+/* ===============================
+   FORGOT PASSWORD
+================================= */
+
+exports.forgotPassword = async (req, res) => {
+    try {
+        const user = await User.findOne({ email: req.body.email });
+
+        if (!user) {
+            return res.status(200).json({
+                status: 'success',
+                message: 'If account exists, reset email sent'
+            });
+        }
+
+        const resetToken = `reset_${uuidv4()}`;
+        user.resetPasswordCode = resetToken;
+        user.resetPasswordCodeExpiresAt = Date.now() + 5 * 60 * 1000;
+
+        await user.save();
+
+        res.status(200).json({
+            status: 'success',
+            message: 'Reset password code sent'
+        });
+
+    } catch (err) {
+        return handleError(res, err);
+    }
+};
+
+/* ===============================
+   RESET PASSWORD
+================================= */
+
+exports.resetPassword = async (req, res) => {
+    try {
+        const user = await User.findOne({
+            resetPasswordCode: req.body.resetToken,
+            resetPasswordCodeExpiresAt: { $gt: Date.now() }
+        });
+
+        if (!user) {
+            return res.status(400).json({
+                status: 'error',
+                message: 'Invalid or expired token'
+            });
+        }
+
+        const salt = await bcrypt.genSalt(10);
+        user.password = await bcrypt.hash(req.body.newPassword, salt);
+        user.resetPasswordCode = null;
+        user.resetPasswordCodeExpiresAt = null;
+
+        await user.save();
+
+        res.status(200).json({
+            status: 'success',
+            message: 'Password reset successful'
         });
 
     } catch (err) {
