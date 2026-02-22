@@ -1,21 +1,17 @@
 import { createBrowserRouter } from "react-router-dom";
-
 import Error404 from "../pages/error/Error404";
 import Verification from "../pages/auth/Verification";
-import Login from "../pages/auth/SignIn";
-import SellerLogin from "../pages/seller/SellerLogin";
-import SellerPage from "../pages/seller/SellerPage";
-
-import CheckoutLayout from "../pages/order/checkout/index";
-import MetaMask from "../pages/order/checkout/MetaMask";
-import StripeLayout from "../pages/order/checkout/StripeLayout";
-
 import Profile from "../pages/profile";
-
 import { MainLayoutRoutes } from "./MainLayoutRoutes";
 import { SecuredLayoutRoutes } from "./SecuredLayoutRoutes";
 import { RestrictedLayoutRoutes } from "./RestrictedLayout";
 import { ProfileLayoutRoutes } from "./ProfileLayoutRoutes";
+import CheckoutLayout from "../pages/order/checkout/index";
+import MetaMask from "../pages/order/checkout/MetaMask";
+import StripeLayout from "../pages/order/checkout/StripeLayout";
+import Login from "../pages/auth/SignIn";
+import SellerLogin from "../pages/seller/SellerLogin";
+import SellerPage from "../pages/seller/SellerPage";
 
 const routes = [
   MainLayoutRoutes,
@@ -24,13 +20,8 @@ const routes = [
   ProfileLayoutRoutes,
 
   {
-    path: "/seller-login/:email",
-    element: <SellerLogin />,
-  },
-
-  {
-    path: "/seller",
-    element: <SellerPage />,
+    path: "profile",
+    element: <Profile />,
   },
 
   {
@@ -58,9 +49,16 @@ const routes = [
     element: <Login />,
   },
 
+  // ✅ SELLER OTP PAGE
   {
-    path: "profile",
-    element: <Profile />,
+    path: "/seller-login/:email",
+    element: <SellerLogin />,
+  },
+
+  // ✅ SELLER DASHBOARD PAGE (VERY IMPORTANT)
+  {
+    path: "/seller/:username",
+    element: <SellerPage />,
   },
 
   {

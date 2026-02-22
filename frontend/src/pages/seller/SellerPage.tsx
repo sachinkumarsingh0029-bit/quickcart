@@ -1,121 +1,64 @@
-import React, { useEffect, useState } from "react";
-import { AiFillMail } from "react-icons/ai";
-import { BiPhoneCall, BiWorld } from "react-icons/bi";
-import { useNavigate, useParams } from "react-router-dom";
-import { getSellerProfileAndProducts } from "../../api/seller";
+import { useState } from "react";
+import axios from "axios";
 
-function SellerPage() {
-  const { username } = useParams();
-  const [seller, setSeller] = useState<any>();
-  const navigate = useNavigate();
+const SellerLogin = () => {
+  const [email, setEmail] = useState("");
+  const [otp, setOtp] = useState("");
+  const [password, setPassword] = useState("");
 
-  async function getSellerDetails() {
-    const response = await getSellerProfileAndProducts({ username });
-    console.log(response.data.seller);
-
-    setSeller(response.data.seller);
-    return response.data.seller;
-  }
-
-  useEffect(() => {
+  const handleLogin = async () => {
     try {
-      getSellerDetails();
-    } catch (err) {
-      console.log("Not found");
+      await axios.post(
+        "https://quickcart-luow.onrender.com/api/auth/verify-seller-login",
+        {
+          email,
+          otp,
+          password,
+        },
+        { withCredentials: true }
+      );
+
+      alert("Login successful!");
+
+      // ✅ IMPORTANT FIX — redirect with username param
+      window.location.href = `/seller/${email}`;
+
+    } catch (err: any) {
+      alert(err.response?.data?.message || "Login failed");
     }
-  }, []);
+  };
 
-  return seller ? (
-    <div className="container mx-auto p-4 bg-white dark:bg-gray-800">
-      <div className="flex mb-4 items-center">
-        <img
-          src={seller?.businessLogo}
-          alt={seller.businessName}
-          className="w-20 h-20 rounded-full object-cover mr-4 shadow-md"
-        />
-        <div>
-          <h2 className="text-2xl font-medium text-gray-800 dark:text-white">
-            {seller?.businessName}
-          </h2>
-          <p className="text-gray-600 dark:text-gray-400">
-            {seller?.businessType}
-          </p>
-          <p className="text-gray-600 dark:text-gray-400">
-            {seller?.businessAddress}
-          </p>
-          <div className={`flex items-center mt-3`}>
-            <p className="text-blue-500 text-lg hover:text-blue-700">
-              <BiPhoneCall className="text-xl mr-2" />
-            </p>
-            <a
-              href={`mailto:${seller?.businessEmail}`}
-              className="text-blue-500 text-lg hover:text-blue-700 ml-4"
-            >
-              <AiFillMail className="text-xl mr-2" />
-            </a>
-            <a
-              href={seller?.businessWebsite}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-500 text-lg hover:text-blue-700 ml-4"
-            >
-              <BiWorld className="text-xl mr-2" />
-            </a>
-          </div>
-        </div>
-      </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-        {seller?.productListings?.map((product: any) => (
-          <div
-            key={product?._id}
-            className="border rounded-md p-4 mb-4 dark:border-gray-600"
-          >
-            <img
-              src={product?.thumbnailUrl}
-              alt={product?.productName}
-              className="mb-4 rounded-md object-cover w-full h-48 shadow-md cursor-pointer"
-              onClick={() => navigate(`/product?query=${product._id}`)}
-            />
-            <h3 className="text-lg font-medium text-gray-800 dark:text-white">
-              {product?.productName}
-            </h3>
-            <p className="text-gray-600 dark:text-gray-400">
-              {product?.productDescription}
-            </p>
-            {product.isAvailable ? (
-              <div className="flex justify-between items-center mt-4">
-                {product?.discountedPrice !== 0 ? (
-                  <div className="mt-1 flex items-end">
-                    <p className="text-xs line-through font-medium text-gray-500 dark:text-gray-100">
-                      ₹{product.price}
-                    </p>
-                    <p className="text-md font-medium text-gray-900 dark:text-white">
-                      &nbsp;&nbsp;₹{product.discountedPrice}
-                    </p>
-                    &nbsp;&nbsp;
-                    <p className="text-sm font-medium text-green-500">
-                      ₹{product.price - product.discountedPrice}
-                    </p>
-                  </div>
-                ) : (
-                  <p className="text-gray-600 dark:text-gray-400">
-                    ₹{product.price}
-                  </p>
-                )}
-                <p className="text-gray-600 dark:text-gray-400">
-                  {product.category}
-                </p>
-              </div>
-            ) : (
-              <p className="text-red-500 font-medium mt-4">Out of stock</p>
-            )}
-          </div>
-        ))}
-      </div>
+  return (
+    <div style={{ padding: "40px" }}>
+      <h2>Seller OTP Login</h2>
+
+      <input
+        type="email"
+        placeholder="Seller Email"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+      />
+      <br /><br />
+
+      <input
+        type="text"
+        placeholder="Enter OTP"
+        value={otp}
+        onChange={(e) => setOtp(e.target.value)}
+      />
+      <br /><br />
+
+      <input
+        type="password"
+        placeholder="Seller Password"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+      />
+      <br /><br />
+
+      <button onClick={handleLogin}>Login</button>
     </div>
-  ) : (
-    <div>No seller found</div>
   );
-}
+};
 
-export default SellerPage;
+export default SellerLogin;
