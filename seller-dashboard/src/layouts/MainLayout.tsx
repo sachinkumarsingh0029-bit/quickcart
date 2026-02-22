@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import SideBar from "../component/sidebar/SideBar";
 import { Navigate, Outlet } from "react-router-dom";
 import IpBanned from "../pages/error/IpBanned";
@@ -13,31 +13,45 @@ const MainLayout = () => {
   const { isAuthenticated, user } = useSelector(
     (state: RootState) => state.user
   );
-  const { seller } = useSelector((state: RootState) => state.seller);
 
   const dispatch = useDispatch();
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const checkAuth = async () => {
       try {
         const response = await instance.get("/auth/check");
 
-        if (response.data.status !== "success") {
+        if (response?.data?.status !== "success") {
           dispatch(logoutSuccess());
         }
       } catch (err) {
         dispatch(logoutSuccess());
+      } finally {
+        setLoading(false);
       }
     };
 
     checkAuth();
   }, [dispatch]);
 
+  // Wait until auth check finishes
+  if (loading) {
+    return null;
+  }
+
+  // IP ban check
   if (ban?.status && ban?.banExpiresAt < Date.now()) {
     return <IpBanned />;
   }
 
+  // Not logged in
   if (!isAuthenticated) {
+    return <Navigate to="/error" replace />;
+  }
+
+  // If user exists but not verified
+  if (user && user.verificationStatus === false) {
     return <Navigate to="/error" replace />;
   }
 
