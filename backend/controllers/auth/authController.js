@@ -9,7 +9,7 @@ const sendEmail = require("../../utils/sendEmail");
 const generateCode = require("../../utils/generateCode");
 
 /* =====================================
-   COOKIE OPTIONS (CROSS DOMAIN FIX)
+   COOKIE OPTIONS
 ===================================== */
 
 const cookieOptions = {
@@ -60,7 +60,7 @@ exports.signup = async (req, res) => {
 };
 
 /* =====================================
-   LOGIN (WITH SELLER OTP)
+   LOGIN
 ===================================== */
 
 exports.login = async (req, res) => {
@@ -86,9 +86,7 @@ exports.login = async (req, res) => {
       });
     }
 
-    /* ===============================
-       SELLER LOGIN FLOW
-    =============================== */
+    /* ================= SELLER OTP FLOW ================= */
 
     if (user.role === "seller") {
       const seller = await Seller.findOne({ user: user._id });
@@ -101,13 +99,13 @@ exports.login = async (req, res) => {
       }
 
       const otpCode = generateCode();
-      const expiry = Date.now() + 10 * 60 * 1000; // 10 minutes
+      const expiry = Date.now() + 10 * 60 * 1000;
 
       seller.loginCode = otpCode;
       seller.loginCodeExpiresAt = expiry;
       await seller.save();
 
-      // ✅ FIXED TEMPLATE PATH HERE
+      // ✅ CORRECT TEMPLATE PATH
       await sendEmail(
         seller.businessEmail,
         {
@@ -115,7 +113,7 @@ exports.login = async (req, res) => {
           username: seller.businessName,
           otp: otpCode,
         },
-        "loginVerification.hbs"   // 🔥 FIXED (NO ./seller/)
+        "seller/loginVerification.hbs"
       );
 
       return res.status(200).json({
@@ -125,9 +123,7 @@ exports.login = async (req, res) => {
       });
     }
 
-    /* ===============================
-       NORMAL USER LOGIN
-    =============================== */
+    /* ================= NORMAL USER LOGIN ================= */
 
     res.cookie("token", token, cookieOptions);
 
