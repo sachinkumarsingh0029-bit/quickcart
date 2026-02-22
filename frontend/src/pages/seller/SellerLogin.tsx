@@ -1,18 +1,14 @@
 import { useState } from "react";
 import axios from "axios";
-import { useNavigate, useParams } from "react-router-dom";
 
 const SellerLogin = () => {
-  const navigate = useNavigate();
-  const { email: emailFromUrl } = useParams();
-
-  const [email, setEmail] = useState(emailFromUrl || "");
+  const [email, setEmail] = useState("");
   const [otp, setOtp] = useState("");
   const [password, setPassword] = useState("");
 
   const handleLogin = async () => {
     try {
-      await axios.post(
+      const res = await axios.post(
         "https://quickcart-luow.onrender.com/api/auth/verify-seller-login",
         {
           email,
@@ -24,8 +20,8 @@ const SellerLogin = () => {
 
       alert("Login successful!");
 
-      // ✅ Proper React redirect
-      navigate("/seller");
+      // 🔥 FIXED REDIRECT
+      window.location.href = `/seller/${email}`;
 
     } catch (err: any) {
       alert(err.response?.data?.message || "Login failed");
