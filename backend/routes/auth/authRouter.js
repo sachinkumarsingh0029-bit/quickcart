@@ -2,11 +2,10 @@ const express = require("express");
 const { check } = require("express-validator");
 
 const authController = require("../../controllers/auth/authController");
-const authenticateMiddleware = require("../../middleware/authenticateMiddleware");
 
 const router = express.Router();
 
-/* ===== SIGNUP ===== */
+/* ================= SIGNUP ================= */
 router.post(
   "/signup",
   [
@@ -17,7 +16,7 @@ router.post(
   authController.signup
 );
 
-/* ===== LOGIN ===== */
+/* ================= LOGIN ================= */
 router.post(
   "/login",
   [
@@ -27,13 +26,13 @@ router.post(
   authController.login
 );
 
-/* ===== VERIFY SELLER OTP ===== */
+/* ================= VERIFY SELLER OTP ================= */
 router.post("/verify-seller-otp", authController.verifySellerOTP);
 
-/* ===== GET PROFILE ===== */
-router.get("/profile", authenticateMiddleware, authController.getUser);
+/* ================= GET USER ================= */
+router.get("/profile", authController.getUser);
 
-/* ===== LOGOUT ===== */
-router.post("/logout", authenticateMiddleware, authController.logout);
+/* ================= LOGOUT ================= */
+router.post("/logout", authController.logout);
 
 module.exports = router;
