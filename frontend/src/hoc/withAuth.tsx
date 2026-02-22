@@ -2,10 +2,8 @@ import React from "react";
 import useAuth from "../hooks/useAuth";
 import { Navigate } from "react-router-dom";
 
-const withAuth = <P extends object>(
-  Component: React.ComponentType<P>
-): React.FC<P> => {
-  const AuthenticatedComponent: React.FC<P> = (props: P) => {
+function withAuth(Component: any) {
+  return function AuthenticatedComponent(props: any) {
     const { isAuthenticated, user } = useAuth();
 
     if (!isAuthenticated) {
@@ -18,8 +16,6 @@ const withAuth = <P extends object>(
 
     return <Component {...props} />;
   };
-
-  return AuthenticatedComponent;
-};
+}
 
 export default withAuth;
