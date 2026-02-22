@@ -23,7 +23,6 @@ exports.signup = async (req, res) => {
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
     return handleError(res, {
-      code: "CustomValidationError",
       status: "error",
       errors: errors.array(),
     });
@@ -35,21 +34,26 @@ exports.signup = async (req, res) => {
     let user = await User.findOne({ $or: [{ email }, { username }] });
 
     if (user) {
-      return handleError(res, {
-        code: "already_exists",
+      return res.status(400).json({
         status: "error",
         message: "User already exists",
       });
     }
 
-    user = new User({ email, password, username });
+    const hashedPassword = await bcrypt.hash(password, 10);
 
-    const salt = await bcrypt.genSalt(10);
-    user.password = await bcrypt.hash(password, salt);
+    user = new User({
+      email,
+      username,
+      password: hashedPassword,
+    });
 
     await user.save();
 
-    res.status(200).json({ status: "success" });
+    return res.status(200).json({
+      status: "success",
+      message: "Signup successful",
+    });
   } catch (err) {
     return handleError(res, err);
   }
@@ -58,29 +62,28 @@ exports.signup = async (req, res) => {
 /* ================= LOGIN ================= */
 
 exports.login = async (req, res) => {
-  const errors = validationResult(req);
-  if (!errors.isEmpty()) {
-    return handleError(res, {
-      code: "CustomValidationError",
-      status: "error",
-      errors: errors.array(),
-    });
-  }
-
   const { email, password } = req.body;
 
   try {
-    const { token, user } = await User.findByCredentials(email, password);
+    const user = await User.findOne({ email });
 
     if (!user) {
-      return handleError(res, {
-        message: "Invalid Credentials",
-        status: 401,
-        code: "authentication_failed",
+      return res.status(401).json({
+        status: "error",
+        message: "Invalid credentials",
       });
     }
 
-    /* ===== SELLER LOGIN FLOW ===== */
+    const isMatch = await bcrypt.compare(password, user.password);
+
+    if (!isMatch) {
+      return res.status(401).json({
+        status: "error",
+        message: "Invalid credentials",
+      });
+    }
+
+    /* ===== SELLER LOGIN ===== */
 
     if (user.role === "seller") {
       const seller = await Seller.findOne({ user: user._id });
@@ -93,34 +96,34 @@ exports.login = async (req, res) => {
       }
 
       const otpCode = generateCode();
-      const expiry = Date.now() + 10 * 60 * 1000;
-
       seller.loginCode = otpCode;
-      seller.loginCodeExpiresAt = expiry;
+      seller.loginCodeExpiresAt = Date.now() + 10 * 60 * 1000;
       await seller.save();
-
-      const verificationLink =
-        "https://quickcart-5uy5.vercel.app/login/" + seller.businessEmail;
 
       await sendEmail(
         seller.businessEmail,
         {
-          subject: "Seller Login - QuickCart",
+          subject: "Seller Login OTP - QuickCart",
           username: seller.businessName,
           verificationCode: otpCode,
-          verificationLink: verificationLink,
         },
         "seller/loginVerification.hbs"
       );
 
       return res.status(200).json({
-        role: "seller",
-        message: "Check your email for OTP login.",
         status: "success",
+        role: "seller",
+        message: "OTP sent to seller email",
       });
     }
 
     /* ===== NORMAL USER LOGIN ===== */
+
+    const token = jwt.sign(
+      { _id: user._id },
+      process.env.JWT_SECRET,
+      { expiresIn: process.env.JWT_EXPIRY || "5h" }
+    );
 
     res.cookie("token", token, cookieOptions);
 
@@ -128,46 +131,28 @@ exports.login = async (req, res) => {
       status: "success",
       user: {
         id: user._id,
-        name: user.name,
         email: user.email,
         username: user.username,
         role: user.role,
+        verificationStatus: user.verificationStatus,
       },
     });
   } catch (err) {
-    return handleError(res, {
-      message: "Invalid Credentials",
-      status: 401,
-      code: "authentication_failed",
-    });
+    return handleError(res, err);
   }
 };
 
 /* ================= VERIFY SELLER LOGIN ================= */
 
 exports.verifySellerLogin = async (req, res) => {
-  const { email, otp, password } = req.body;
+  const { email, otp } = req.body;
 
   try {
     const user = await User.findOne({ email });
-
-    if (!user || user.role !== "seller") {
-      return res.status(400).json({
-        status: "error",
-        message: "Invalid seller account",
-      });
-    }
-
     const seller = await Seller.findOne({ user: user._id });
 
-    if (!seller) {
-      return res.status(404).json({
-        status: "error",
-        message: "Seller not found",
-      });
-    }
-
     if (
+      !seller ||
       seller.loginCode !== otp ||
       seller.loginCodeExpiresAt < Date.now()
     ) {
@@ -177,19 +162,15 @@ exports.verifySellerLogin = async (req, res) => {
       });
     }
 
-    const isMatch = await bcrypt.compare(password, user.password);
-    if (!isMatch) {
-      return res.status(400).json({
-        status: "error",
-        message: "Invalid Password",
-      });
-    }
-
-    seller.loginCode = "";
+    seller.loginCode = null;
     seller.loginCodeExpiresAt = null;
     await seller.save();
 
-    const token = await user.generateAuthToken();
+    const token = jwt.sign(
+      { _id: user._id },
+      process.env.JWT_SECRET,
+      { expiresIn: process.env.JWT_EXPIRY || "5h" }
+    );
 
     res.cookie("token", token, cookieOptions);
 
@@ -202,68 +183,83 @@ exports.verifySellerLogin = async (req, res) => {
   }
 };
 
-/* ================= RESEND SELLER OTP ================= */
+/* ================= 🔥 RESEND USER VERIFICATION ================= */
 
-exports.sendVerificationCodeAgain = async (req, res) => {
+exports.resendUserVerificationCode = async (req, res) => {
+  const { email } = req.body;
+
+  if (!email) {
+    return res.status(400).json({
+      status: "error",
+      message: "Email is required",
+    });
+  }
+
   try {
-    const { email } = req.body;
-
-    if (!email) {
-      return res.status(400).json({
-        status: "error",
-        message: "Email is required",
-      });
-    }
-
     const user = await User.findOne({ email });
 
-    if (!user || user.role !== "seller") {
-      return res.status(400).json({
-        status: "error",
-        message: "Invalid seller account",
-      });
-    }
-
-    const seller = await Seller.findOne({ user: user._id });
-
-    if (!seller) {
+    if (!user) {
       return res.status(404).json({
         status: "error",
-        message: "Seller not found",
+        message: "User not found",
       });
     }
 
     const otpCode = generateCode();
-    const expiry = Date.now() + 10 * 60 * 1000;
+    user.verificationCode = otpCode;
+    user.verificationCodeExpiresAt = Date.now() + 10 * 60 * 1000;
 
+    await user.save();
+
+    await sendEmail(
+      user.email,
+      {
+        subject: "Email Verification - QuickCart",
+        username: user.username,
+        verificationCode: otpCode,
+      },
+      "auth/verification.hbs"
+    );
+
+    return res.status(200).json({
+      status: "success",
+      message: "Verification email sent",
+    });
+  } catch (err) {
+    return handleError(res, err);
+  }
+};
+
+/* ================= 🔥 RESEND SELLER OTP ================= */
+
+exports.sendVerificationCodeAgain = async (req, res) => {
+  const { email } = req.body;
+
+  try {
+    const user = await User.findOne({ email });
+    const seller = await Seller.findOne({ user: user._id });
+
+    const otpCode = generateCode();
     seller.loginCode = otpCode;
-    seller.loginCodeExpiresAt = expiry;
+    seller.loginCodeExpiresAt = Date.now() + 10 * 60 * 1000;
     await seller.save();
-
-    const verificationLink =
-      "https://quickcart-5uy5.vercel.app/login/" + seller.businessEmail;
 
     await sendEmail(
       seller.businessEmail,
       {
-        subject: "Seller Login - QuickCart",
+        subject: "Seller Login OTP - QuickCart",
         username: seller.businessName,
         verificationCode: otpCode,
-        verificationLink: verificationLink,
       },
       "seller/loginVerification.hbs"
     );
 
     return res.status(200).json({
       status: "success",
-      message: "OTP sent again successfully",
+      message: "Seller OTP sent again",
     });
   } catch (err) {
-    console.error("Resend OTP Error:", err);
-    return res.status(500).json({
-      status: "error",
-      message: "Something went wrong",
-    });
+    return handleError(res, err);
   }
 };
 
@@ -272,7 +268,7 @@ exports.sendVerificationCodeAgain = async (req, res) => {
 exports.logout = async (req, res) => {
   res.clearCookie("token", cookieOptions);
 
-  res.status(200).json({
+  return res.status(200).json({
     status: "success",
     message: "Logged out successfully",
   });
