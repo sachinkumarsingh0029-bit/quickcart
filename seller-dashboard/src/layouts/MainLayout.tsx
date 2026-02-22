@@ -5,10 +5,9 @@ import IpBanned from "../pages/error/IpBanned";
 import { logoutSuccess } from "../redux/user/userSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../redux/rootReducer";
-import withAuth from "../hoc/withAuth";
 import instance from "../utils/Axios";
 
-const MainLayout = () => {
+const MainLayout = (): JSX.Element => {
   const ban = useSelector((state: RootState) => state.user.ban);
   const { isAuthenticated, user } = useSelector(
     (state: RootState) => state.user
@@ -35,22 +34,19 @@ const MainLayout = () => {
     checkAuth();
   }, [dispatch]);
 
-  // Wait until auth check finishes
+  // 🔥 FIX: Never return null (must return JSX)
   if (loading) {
-    return null;
+    return <div className="flex items-center justify-center h-screen">Loading...</div>;
   }
 
-  // IP ban check
   if (ban?.status && ban?.banExpiresAt < Date.now()) {
     return <IpBanned />;
   }
 
-  // Not logged in
   if (!isAuthenticated) {
     return <Navigate to="/error" replace />;
   }
 
-  // If user exists but not verified
   if (user && user.verificationStatus === false) {
     return <Navigate to="/error" replace />;
   }
@@ -65,4 +61,4 @@ const MainLayout = () => {
   );
 };
 
-export default withAuth(MainLayout);
+export default MainLayout;
