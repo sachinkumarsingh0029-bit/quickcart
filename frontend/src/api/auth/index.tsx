@@ -3,54 +3,48 @@ import instance from "../../utils/Axios";
 /* ================= SIGNUP ================= */
 
 export const signUpApi = async (email: any, password: any, username: any) => {
-  const response = await instance.post("/auth/signup", {
+  return await instance.post("/auth/signup", {
     username,
     email,
     password,
   });
-  return response;
 };
 
 /* ================= LOGIN ================= */
 
 export const signInApi = async (email: any, password: any) => {
-  const response = await instance.post("/auth/login", {
+  return await instance.post("/auth/login", {
     email,
     password,
   });
-  return response;
 };
 
 /* ================= VERIFY ================= */
 
 export const verifyApi = async (code: any) => {
-  const response = await instance.post("/auth/verify", {
+  return await instance.post("/auth/verify", {
     code,
   });
-  return response;
 };
 
-/* ================= 🔥 RESEND OTP (FIXED) ================= */
+/* ================= RESEND OTP ================= */
 
 export const ResendVerificationMail = async (email: any) => {
-  const response = await instance.post("/auth/sendVerificationCodeAgain", {
+  return await instance.post("/auth/sendVerificationCodeAgain", {
     email,
   });
-  return response;
 };
 
 /* ================= LOGOUT ================= */
 
 export const logoutApi = async () => {
-  const response = await instance.post("/auth/logout");
-  return response;
+  return await instance.post("/auth/logout");
 };
 
 /* ================= UPDATE PROFILE ================= */
 
 export const updateProfileApi = async (data: any) => {
-  const response = await instance.put("/auth/updateprofile", data);
-  return response;
+  return await instance.put("/auth/updateprofile", data);
 };
 
 /* ================= UPDATE PASSWORD ================= */
