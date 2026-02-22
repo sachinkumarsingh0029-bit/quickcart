@@ -95,19 +95,21 @@ exports.login = async (req, res) => {
       }
 
       const otpCode = generateCode();
-      const expiry = Date.now() + 10 * 60 * 1000;
+      const expiry = Date.now() + 10 * 60 * 1000; // 10 minutes
 
       seller.loginCode = otpCode;
       seller.loginCodeExpiresAt = expiry;
       await seller.save();
 
-      // ✅ FIXED VARIABLE NAME
+      // 🔥 FIXED TEMPLATE VARIABLES HERE
       await sendEmail(
         seller.businessEmail,
         {
           subject: "Seller Login OTP - QuickCart",
           username: seller.businessName,
-          verificationCode: otpCode,   // 🔥 THIS MATCHES TEMPLATE
+          verificationCode: otpCode,
+          verificationLink:
+            process.env.FRONTEND_URL + "/seller/verify-otp",
         },
         "./seller/loginVerification.hbs"
       );
@@ -229,7 +231,11 @@ exports.getUser = async (req, res) => {
 ================================ */
 
 exports.logout = async (req, res) => {
-  res.clearCookie("token", cookieOptions);
+  res.clearCookie("token", {
+    httpOnly: true,
+    secure: true,
+    sameSite: "none",
+  });
 
   res.status(200).json({
     status: "success",
