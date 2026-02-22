@@ -40,8 +40,9 @@ app.use(mongoSanitize());
 app.use(helmet());
 app.use(morgan('combined'));
 
+/* 🔥 FIXED CORS FOR VERCEL */
 const corsConfig = {
-    origin: true,
+    origin: "https://quickcart-hazel-iota.vercel.app", // 👈 your frontend domain
     credentials: true,
 };
 
@@ -50,11 +51,6 @@ app.options('*', cors(corsConfig));
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-
-app.use((req, res, next) => {
-    res.setHeader('Content-Security-Policy', "default-src 'self'");
-    next();
-});
 
 app.use(rateLimiterMiddleware);
 app.use(ipBannedMiddleware);
@@ -77,7 +73,7 @@ app.use('/api/ticketmaster', ticketMasterRoutes);
 app.use('/api/root', rootRouter);
 
 /* =======================
-   ROOT ROUTE (Optional but Recommended)
+   ROOT ROUTE
 ======================= */
 
 app.get('/', (req, res) => {
@@ -104,7 +100,7 @@ app.use((err, req, res, next) => {
 });
 
 /* =======================
-   SERVER START (Render Compatible)
+   SERVER START
 ======================= */
 
 app.listen(PORT, "0.0.0.0", () => {
