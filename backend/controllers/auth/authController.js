@@ -1,337 +1,240 @@
-const bcrypt = require('bcryptjs');
-const { validationResult } = require('express-validator');
+const bcrypt = require("bcryptjs");
+const { validationResult } = require("express-validator");
 const jwt = require("jsonwebtoken");
 
-const Ip = require('../../models/auth/ipSchema');
-const User = require('../../models/auth/userSchema');
-const { sendVerificationCode } = require('./verificationController');
-const handleError = require('../../utils/errorHandler');
-const sendEmail = require('../../utils/sendEmail');
-const Seller = require('../../models/seller/sellerSchema');
-const generateCode = require('../../utils/generateCode');
-const customLogger = require('../../utils/logHandler');
-const { v4: uuidv4 } = require('uuid');
+const User = require("../../models/auth/userSchema");
+const Seller = require("../../models/seller/sellerSchema");
+const handleError = require("../../utils/errorHandler");
+const sendEmail = require("../../utils/sendEmail");
+const generateCode = require("../../utils/generateCode");
+const { v4: uuidv4 } = require("uuid");
 
-/* ===============================
-   🔥 CROSS DOMAIN COOKIE FIX
-================================= */
+/* =====================================
+   COOKIE OPTIONS (CROSS DOMAIN FIX)
+===================================== */
 
 const cookieOptions = {
-    httpOnly: true,
-    secure: true,
-    sameSite: "none",
-    maxAge: 5 * 60 * 60 * 1000
+  httpOnly: true,
+  secure: true,
+  sameSite: "none",
+  maxAge: 5 * 60 * 60 * 1000,
 };
 
-/* ===============================
+/* =====================================
    SIGNUP
-================================= */
+===================================== */
 
 exports.signup = async (req, res) => {
-    const errors = validationResult(req);
-    if (!errors.isEmpty()) {
-        return handleError(res, {
-            code: 'CustomValidationError',
-            status: 'error',
-            errors: errors.array()
-        });
+  const errors = validationResult(req);
+  if (!errors.isEmpty()) {
+    return handleError(res, {
+      code: "CustomValidationError",
+      status: "error",
+      errors: errors.array(),
+    });
+  }
+
+  const { email, password, username } = req.body;
+
+  try {
+    let user = await User.findOne({ $or: [{ email }, { username }] });
+
+    if (user) {
+      return handleError(res, {
+        code: "already_exists",
+        status: "error",
+        message: "User already exists",
+      });
     }
 
-    const { email, password, username } = req.body;
+    user = new User({ email, password, username });
 
-    try {
-        let user = await User.findOne({ $or: [{ email }, { username }] });
+    const salt = await bcrypt.genSalt(10);
+    user.password = await bcrypt.hash(password, salt);
 
-        if (user) {
-            return handleError(res, {
-                code: 'already_exists',
-                status: 'error',
-                message: 'User already exists',
-            });
-        }
+    await user.save();
 
-        user = new User({ email, password, username });
-
-        const salt = await bcrypt.genSalt(10);
-        user.password = await bcrypt.hash(password, salt);
-
-        await user.save();
-        await sendVerificationCode(res, user.email);
-
-        res.status(200).json({ status: 'success' });
-
-    } catch (err) {
-        return handleError(res, err);
-    }
+    res.status(200).json({ status: "success" });
+  } catch (err) {
+    return handleError(res, err);
+  }
 };
 
-/* ===============================
-   LOGIN
-================================= */
+/* =====================================
+   LOGIN (WITH SELLER OTP)
+===================================== */
 
 exports.login = async (req, res) => {
-    const errors = validationResult(req);
-    if (!errors.isEmpty()) {
-        return handleError(res, {
-            code: 'CustomValidationError',
-            status: 'error',
-            errors: errors.array()
-        });
+  const errors = validationResult(req);
+  if (!errors.isEmpty()) {
+    return handleError(res, {
+      code: "CustomValidationError",
+      status: "error",
+      errors: errors.array(),
+    });
+  }
+
+  const { email, password } = req.body;
+
+  try {
+    const { token, user } = await User.findByCredentials(email, password);
+
+    if (!user) {
+      return handleError(res, {
+        message: "Invalid Credentials",
+        status: 401,
+        code: "authentication_failed",
+      });
     }
 
-    const { email, password } = req.body;
+    /* ===============================
+       SELLER LOGIN FLOW
+    =============================== */
 
-    try {
-        const { token, user } = await User.findByCredentials(email, password);
+    if (user.role === "seller") {
+      const seller = await Seller.findOne({ user: user._id });
 
-        if (!user) {
-            return handleError(res, {
-                message: 'Invalid Credentials',
-                status: 401,
-                code: 'authentication_failed'
-            });
-        }
-
-        res.cookie('token', token, cookieOptions);
-
-        res.status(200).json({
-            user: {
-                id: user._id,
-                name: user.name,
-                email: user.email,
-                username: user.username,
-                address: user.address,
-                verificationStatus: user.verificationStatus,
-                role: user.role,
-                number: user.number
-            },
-            status: 'success'
-        });
-
-    } catch (err) {
+      if (!seller) {
         return handleError(res, {
-            message: 'Invalid Credentials',
-            status: 401,
-            code: 'authentication_failed'
+          message: "Seller profile not found",
+          status: 404,
         });
+      }
+
+      const otpCode = generateCode();
+      const expiry = Date.now() + 10 * 60 * 1000; // 10 minutes
+
+      seller.loginCode = otpCode;
+      seller.loginCodeExpiresAt = expiry;
+      await seller.save();
+
+      // Send OTP email
+      await sendEmail(
+        seller.businessEmail,
+        {
+          subject: "Seller Login OTP - QuickCart",
+          username: seller.businessName,
+          otp: otpCode,
+        },
+        "./seller/loginVerification.hbs"
+      );
+
+      return res.status(200).json({
+        role: "seller",
+        message: "OTP sent to seller email",
+        status: "otp_required",
+      });
     }
+
+    /* ===============================
+       NORMAL USER LOGIN
+    =============================== */
+
+    res.cookie("token", token, cookieOptions);
+
+    res.status(200).json({
+      user: {
+        id: user._id,
+        name: user.name,
+        email: user.email,
+        username: user.username,
+        address: user.address,
+        verificationStatus: user.verificationStatus,
+        role: user.role,
+        number: user.number,
+      },
+      status: "success",
+    });
+  } catch (err) {
+    return handleError(res, {
+      message: "Invalid Credentials",
+      status: 401,
+      code: "authentication_failed",
+    });
+  }
 };
 
-/* ===============================
+/* =====================================
+   VERIFY SELLER OTP
+===================================== */
+
+exports.verifySellerOTP = async (req, res) => {
+  const { email, otp } = req.body;
+
+  try {
+    const user = await User.findOne({ email });
+
+    if (!user || user.role !== "seller") {
+      return res.status(400).json({
+        status: "error",
+        message: "Invalid seller account",
+      });
+    }
+
+    const seller = await Seller.findOne({ user: user._id });
+
+    if (
+      seller.loginCode !== otp ||
+      seller.loginCodeExpiresAt < Date.now()
+    ) {
+      return res.status(400).json({
+        status: "error",
+        message: "Invalid or expired OTP",
+      });
+    }
+
+    seller.loginCode = "";
+    seller.loginCodeExpiresAt = null;
+    await seller.save();
+
+    const token = await user.generateAuthToken();
+    res.cookie("token", token, cookieOptions);
+
+    res.status(200).json({
+      status: "success",
+      message: "Seller login successful",
+    });
+  } catch (err) {
+    return handleError(res, err);
+  }
+};
+
+/* =====================================
    GET USER
-================================= */
+===================================== */
 
 exports.getUser = async (req, res) => {
-    try {
-        const token = req.cookies.token;
+  try {
+    const token = req.cookies.token;
 
-        if (!token) {
-            return handleError(res, {
-                code: 'unauthorized_access',
-                status: 'error',
-                message: 'Unauthorized Access',
-            });
-        }
-
-        const decoded = jwt.verify(token, process.env.JWT_SECRET);
-        const user = await User.findById(decoded._id).select('-password');
-
-        if (!user) {
-            return handleError(res, {
-                code: 'not_found',
-                status: 'error',
-                message: 'User not found',
-            });
-        }
-
-        res.status(200).json({
-            user: {
-                id: user._id,
-                name: user.name,
-                email: user.email,
-                username: user.username,
-                address: user.address,
-                verificationStatus: user.verificationStatus,
-                role: user.role,
-                number: user.number
-            },
-            status: 'success'
-        });
-
-    } catch (err) {
-        return handleError(res, err);
+    if (!token) {
+      return res.status(401).json({
+        status: "error",
+        message: "Unauthorized",
+      });
     }
+
+    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+    const user = await User.findById(decoded._id).select("-password");
+
+    res.status(200).json({
+      user,
+      status: "success",
+    });
+  } catch (err) {
+    return handleError(res, err);
+  }
 };
 
-/* ===============================
-   UPDATE PROFILE
-================================= */
-
-exports.updateProfile = async (req, res) => {
-    try {
-        const user = await User.findById(req.user.id);
-        if (!user) {
-            return handleError(res, {
-                code: 'not_found',
-                status: 'error',
-                message: 'User not found',
-            });
-        }
-
-        const { username, name, email, number, address } = req.body;
-
-        user.username = username || user.username;
-        user.name = name || user.name;
-        user.email = email || user.email;
-        user.number = number || user.number;
-        user.address = address || user.address;
-
-        await user.save();
-
-        res.status(200).json({
-            user,
-            status: 'success'
-        });
-
-    } catch (err) {
-        return handleError(res, err);
-    }
-};
-
-/* ===============================
-   UPDATE PASSWORD
-================================= */
-
-exports.updatePassword = async (req, res) => {
-    try {
-        const user = await User.findById(req.user.id);
-
-        const isMatch = await bcrypt.compare(req.body.currentPassword, user.password);
-        if (!isMatch) {
-            return handleError(res, {
-                message: 'Invalid Credentials',
-                code: 401
-            });
-        }
-
-        const salt = await bcrypt.genSalt(10);
-        user.password = await bcrypt.hash(req.body.newPassword, salt);
-        await user.save();
-
-        const token = await user.generateAuthToken();
-        res.cookie('token', token, cookieOptions);
-
-        res.status(200).json({
-            message: 'Password updated successfully',
-            status: 'success'
-        });
-
-    } catch (err) {
-        return handleError(res, err);
-    }
-};
-
-/* ===============================
+/* =====================================
    LOGOUT
-================================= */
+===================================== */
 
 exports.logout = async (req, res) => {
-    try {
-        res.clearCookie('token', cookieOptions);
+  res.clearCookie("token", cookieOptions);
 
-        res.status(200).json({
-            message: 'Logged out successfully',
-            status: 'success'
-        });
-
-    } catch (err) {
-        return handleError(res, err);
-    }
-};
-
-/* ===============================
-   DELETE ACCOUNT
-================================= */
-
-exports.deleteAccount = async (req, res) => {
-    try {
-        const user = await User.findById(req.user.id);
-        await user.remove();
-
-        res.clearCookie('token', cookieOptions);
-
-        res.status(200).json({
-            status: 'success',
-            message: 'User deleted successfully'
-        });
-
-    } catch (err) {
-        return handleError(res, err);
-    }
-};
-
-/* ===============================
-   FORGOT PASSWORD
-================================= */
-
-exports.forgotPassword = async (req, res) => {
-    try {
-        const user = await User.findOne({ email: req.body.email });
-
-        if (!user) {
-            return res.status(200).json({
-                status: 'success',
-                message: 'If account exists, reset email sent'
-            });
-        }
-
-        const resetToken = `reset_${uuidv4()}`;
-        user.resetPasswordCode = resetToken;
-        user.resetPasswordCodeExpiresAt = Date.now() + 5 * 60 * 1000;
-
-        await user.save();
-
-        res.status(200).json({
-            status: 'success',
-            message: 'Reset password code sent'
-        });
-
-    } catch (err) {
-        return handleError(res, err);
-    }
-};
-
-/* ===============================
-   RESET PASSWORD
-================================= */
-
-exports.resetPassword = async (req, res) => {
-    try {
-        const user = await User.findOne({
-            resetPasswordCode: req.body.resetToken,
-            resetPasswordCodeExpiresAt: { $gt: Date.now() }
-        });
-
-        if (!user) {
-            return res.status(400).json({
-                status: 'error',
-                message: 'Invalid or expired token'
-            });
-        }
-
-        const salt = await bcrypt.genSalt(10);
-        user.password = await bcrypt.hash(req.body.newPassword, salt);
-        user.resetPasswordCode = null;
-        user.resetPasswordCodeExpiresAt = null;
-
-        await user.save();
-
-        res.status(200).json({
-            status: 'success',
-            message: 'Password reset successful'
-        });
-
-    } catch (err) {
-        return handleError(res, err);
-    }
+  res.status(200).json({
+    status: "success",
+    message: "Logged out successfully",
+  });
 };

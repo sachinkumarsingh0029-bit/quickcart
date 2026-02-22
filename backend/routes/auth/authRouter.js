@@ -3,8 +3,7 @@ const { check, validationResult } = require("express-validator");
 
 const authController = require("../../controllers/auth/authController");
 const authenticateMiddleware = require("../../middleware/authenticateMiddleware");
-const checkUserBanMiddleware = require("../../middleware/checkUserBanMiddleware");
-const signupRateLimiter = require("../../middleware/signupRateLimiter");
+const checkVerificationMiddleware = require("../../middleware/checkVerificationMiddleware");
 
 const {
   sendVerificationCodeAgain,
@@ -12,26 +11,27 @@ const {
 } = require("../../controllers/auth/verificationController");
 
 const handleError = require("../../utils/errorHandler");
-const checkVerificationMiddleware = require("../../middleware/checkVerificationMiddleware");
-const customLogger = require("../../utils/logHandler");
 
 const router = express.Router();
 
+/* =====================================
+   SIGNUP
+===================================== */
 
-// ================= NORMAL ROUTES =================
-
-// Signup
 router.post(
   "/signup",
   [
-    check("username").not().isEmpty().isLength({ min: 4, max: 15 }),
+    check("username").notEmpty().isLength({ min: 4, max: 15 }),
     check("email").isEmail(),
     check("password").isLength({ min: 6 }),
   ],
   authController.signup
 );
 
-// Login
+/* =====================================
+   LOGIN
+===================================== */
+
 router.post(
   "/login",
   [
@@ -41,8 +41,24 @@ router.post(
   authController.login
 );
 
-// Check login
-router.get("/check", [authenticateMiddleware], (req, res) =>
+/* =====================================
+   VERIFY SELLER OTP
+===================================== */
+
+router.post(
+  "/verify-seller-otp",
+  [
+    check("email").isEmail(),
+    check("otp").notEmpty(),
+  ],
+  authController.verifySellerOTP
+);
+
+/* =====================================
+   CHECK LOGIN
+===================================== */
+
+router.get("/check", authenticateMiddleware, (req, res) =>
   res.status(200).json({
     status: "success",
     message: "User is logged in",
@@ -50,27 +66,15 @@ router.get("/check", [authenticateMiddleware], (req, res) =>
   })
 );
 
-// Email verification resend
-router.post(
-  "/sendVerificationCodeAgain",
-  [authenticateMiddleware],
-  async (req, res) => {
-    try {
-      const { email } = req.user;
-      const status = await sendVerificationCodeAgain(email);
-      return res.status(200).json({ status: "success", ...status });
-    } catch (err) {
-      return handleError(res, err);
-    }
-  }
-);
+/* =====================================
+   VERIFY USER EMAIL
+===================================== */
 
-// Verify
 router.post(
   "/verify",
   [
-    check("code").isLength({ min: 4, max: 4 }).isNumeric(),
     authenticateMiddleware,
+    check("code").isLength({ min: 4, max: 4 }).isNumeric(),
   ],
   async (req, res) => {
     try {
@@ -84,44 +88,77 @@ router.post(
       }
 
       if (req.user.verificationStatus) {
-        return res.status(411).json({
+        return res.status(400).json({
           status: "error",
           message: "User already verified",
         });
       }
 
       const { code } = req.body;
-      const status = await verifyUser(req.user.email, code);
-      res.status(200).json({ status: "success", ...status });
+      const result = await verifyUser(req.user.email, code);
+
+      res.status(200).json({
+        status: "success",
+        ...result,
+      });
     } catch (err) {
       return handleError(res, err);
     }
   }
 );
 
-// Profile
+/* =====================================
+   RESEND VERIFICATION CODE
+===================================== */
+
+router.post(
+  "/sendVerificationCodeAgain",
+  authenticateMiddleware,
+  async (req, res) => {
+    try {
+      const result = await sendVerificationCodeAgain(req.user.email);
+      res.status(200).json({
+        status: "success",
+        ...result,
+      });
+    } catch (err) {
+      return handleError(res, err);
+    }
+  }
+);
+
+/* =====================================
+   PROFILE
+===================================== */
+
 router.get(
   "/profile",
   [authenticateMiddleware, checkVerificationMiddleware],
   authController.getUser
 );
 
-// Update profile
+/* =====================================
+   UPDATE PROFILE
+===================================== */
+
 router.put(
   "/updateprofile",
   [
     authenticateMiddleware,
     checkVerificationMiddleware,
-    check("username").notEmpty().trim(),
-    check("name").notEmpty().trim(),
-    check("email").isEmail().normalizeEmail(),
-    check("address").notEmpty().trim(),
-    check("number").notEmpty().trim(),
+    check("username").notEmpty(),
+    check("name").notEmpty(),
+    check("email").isEmail(),
+    check("address").notEmpty(),
+    check("number").notEmpty(),
   ],
   authController.updateProfile
 );
 
-// Update password
+/* =====================================
+   UPDATE PASSWORD
+===================================== */
+
 router.put(
   "/updatepassword",
   [
@@ -133,28 +170,40 @@ router.put(
   authController.updatePassword
 );
 
-// Delete account
+/* =====================================
+   DELETE ACCOUNT
+===================================== */
+
 router.post(
   "/deleteaccount",
   [authenticateMiddleware, checkVerificationMiddleware],
   authController.deleteAccount
 );
 
-// Logout
+/* =====================================
+   LOGOUT
+===================================== */
+
 router.post(
   "/logout",
-  [authenticateMiddleware, checkVerificationMiddleware],
+  authenticateMiddleware,
   authController.logout
 );
 
-// Forgot password
+/* =====================================
+   FORGOT PASSWORD
+===================================== */
+
 router.post(
   "/forgotpassword",
   [check("email").isEmail()],
   authController.forgotPassword
 );
 
-// Reset password
+/* =====================================
+   RESET PASSWORD
+===================================== */
+
 router.put(
   "/resetpassword",
   [
