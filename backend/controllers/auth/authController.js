@@ -101,12 +101,13 @@ exports.login = async (req, res) => {
       seller.loginCodeExpiresAt = expiry;
       await seller.save();
 
+      // ✅ FIXED VARIABLE NAME
       await sendEmail(
         seller.businessEmail,
         {
           subject: "Seller Login OTP - QuickCart",
           username: seller.businessName,
-          otp: otpCode,
+          verificationCode: otpCode,   // 🔥 THIS MATCHES TEMPLATE
         },
         "./seller/loginVerification.hbs"
       );
