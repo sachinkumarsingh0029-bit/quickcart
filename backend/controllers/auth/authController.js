@@ -12,8 +12,8 @@ const generateCode = require("../../utils/generateCode");
 
 const cookieOptions = {
   httpOnly: true,
-  secure: true,
-  sameSite: "none",
+  secure: true,           // 🔥 REQUIRED FOR HTTPS (Render)
+  sameSite: "none",       // 🔥 REQUIRED FOR Vercel → Render
   maxAge: 5 * 60 * 60 * 1000,
 };
 
@@ -80,7 +80,7 @@ exports.login = async (req, res) => {
       });
     }
 
-    /* ===== SELLER MAGIC LOGIN FLOW ===== */
+    /* ===== SELLER LOGIN FLOW ===== */
 
     if (user.role === "seller") {
       const seller = await Seller.findOne({ user: user._id });
@@ -99,7 +99,8 @@ exports.login = async (req, res) => {
       seller.loginCodeExpiresAt = expiry;
       await seller.save();
 
-      const verificationLink = `https://quickcart-hazel-iota.vercel.app/seller-login/${seller.businessEmail}`;
+      const verificationLink =
+        "https://quickcart-5uy5.vercel.app/login/" + seller.businessEmail;
 
       await sendEmail(
         seller.businessEmail,
@@ -114,7 +115,7 @@ exports.login = async (req, res) => {
 
       return res.status(200).json({
         role: "seller",
-        message: "Please check your email for login verification.",
+        message: "Check your email for OTP login.",
         status: "success",
       });
     }
@@ -123,17 +124,14 @@ exports.login = async (req, res) => {
 
     res.cookie("token", token, cookieOptions);
 
-    res.status(200).json({
+    return res.status(200).json({
       status: "success",
       user: {
         id: user._id,
         name: user.name,
         email: user.email,
         username: user.username,
-        address: user.address,
-        verificationStatus: user.verificationStatus,
         role: user.role,
-        number: user.number,
       },
     });
   } catch (err) {
@@ -162,6 +160,13 @@ exports.verifySellerLogin = async (req, res) => {
 
     const seller = await Seller.findOne({ user: user._id });
 
+    if (!seller) {
+      return res.status(404).json({
+        status: "error",
+        message: "Seller not found",
+      });
+    }
+
     if (
       seller.loginCode !== otp ||
       seller.loginCodeExpiresAt < Date.now()
@@ -185,9 +190,11 @@ exports.verifySellerLogin = async (req, res) => {
     await seller.save();
 
     const token = await user.generateAuthToken();
+
+    // 🔥 IMPORTANT
     res.cookie("token", token, cookieOptions);
 
-    res.status(200).json({
+    return res.status(200).json({
       status: "success",
       message: "Seller login successful",
     });
@@ -199,7 +206,12 @@ exports.verifySellerLogin = async (req, res) => {
 /* ================= LOGOUT ================= */
 
 exports.logout = async (req, res) => {
-  res.clearCookie("token");
+  res.clearCookie("token", {
+    httpOnly: true,
+    secure: true,
+    sameSite: "none",
+  });
+
   res.status(200).json({
     status: "success",
     message: "Logged out successfully",

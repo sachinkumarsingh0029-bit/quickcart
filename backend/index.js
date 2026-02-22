@@ -40,14 +40,26 @@ app.use(mongoSanitize());
 app.use(helmet());
 app.use(morgan('combined'));
 
-/* 🔥 FIXED CORS FOR VERCEL */
-const corsConfig = {
-    origin: "https://quickcart-hazel-iota.vercel.app", // 👈 your frontend domain
-    credentials: true,
-};
+/* ✅ PRODUCTION CORS FIX */
+const allowedOrigins = [
+    "http://localhost:3000",
+    "http://localhost:3001",
+    "https://quickcart-hazel-iota.vercel.app",
+    "https://quickcart-5uy5.vercel.app"
+];
 
-app.use(cors(corsConfig));
-app.options('*', cors(corsConfig));
+app.use(cors({
+    origin: function (origin, callback) {
+        if (!origin || allowedOrigins.includes(origin)) {
+            callback(null, true);
+        } else {
+            callback(new Error("Not allowed by CORS"));
+        }
+    },
+    credentials: true
+}));
+
+app.options('*', cors());
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
