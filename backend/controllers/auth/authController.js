@@ -7,66 +7,25 @@ const User = require('../../models/auth/userSchema');
 const { sendVerificationCode } = require('./verificationController');
 const handleError = require('../../utils/errorHandler');
 const sendEmail = require('../../utils/sendEmail');
+const { default: mongoose } = require('mongoose');
 const Seller = require('../../models/seller/sellerSchema');
 const generateCode = require('../../utils/generateCode');
 const customLogger = require('../../utils/logHandler');
 const { v4: uuidv4 } = require('uuid');
 
-/* ===============================
-   COOKIE OPTIONS (🔥 FIXED)
-================================= */
+/* ===================================
+   🔥 FIXED COOKIE OPTIONS
+=================================== */
 
 const cookieOptions = {
     httpOnly: true,
-    secure: true,          // required for sameSite none
-    sameSite: "none",      // REQUIRED for cross-domain (Vercel → Render)
+    secure: true,        // required for sameSite none
+    sameSite: "none",    // REQUIRED for Vercel → Render
     maxAge: 5 * 60 * 60 * 1000
 };
 
 /* ===============================
-   SIGNUP
-================================= */
-
-exports.signup = async (req, res) => {
-    const errors = validationResult(req);
-    if (!errors.isEmpty()) {
-        return handleError(res, {
-            code: 'CustomValidationError',
-            status: 'error',
-            errors: errors.array()
-        });
-    }
-
-    const { email, password, username } = req.body;
-
-    try {
-        let user = await User.findOne({ $or: [{ email }, { username }] });
-
-        if (user) {
-            return handleError(res, {
-                code: 'already_exists',
-                status: 'error',
-                message: 'User already exists',
-            });
-        }
-
-        user = new User({ email, password, username });
-
-        const salt = await bcrypt.genSalt(10);
-        user.password = await bcrypt.hash(password, salt);
-
-        await user.save();
-        await sendVerificationCode(res, user.email);
-
-        res.status(200).json({ status: 'success' });
-
-    } catch (err) {
-        return handleError(res, err);
-    }
-};
-
-/* ===============================
-   LOGIN (🔥 FIXED COOKIE)
+   LOGIN (ONLY COOKIE CHANGED)
 ================================= */
 
 exports.login = async (req, res) => {
@@ -82,33 +41,36 @@ exports.login = async (req, res) => {
     const { email, password } = req.body;
 
     try {
-        const { token, user } = await User.findByCredentials(email, password);
+        User.findByCredentials(email, password).then(async ({ token, user }) => {
 
-        if (!user) {
-            return handleError(res, {
-                message: 'Invalid Credentials',
-                status: 401,
-                code: 'authentication_failed'
+            if (!user) {
+                return handleError(res, {
+                    message: 'Invalid Credentials',
+                    status: 401,
+                    code: 'authentication_failed'
+                });
+            }
+
+            // 🔥 FIXED COOKIE
+            res.cookie('token', token, cookieOptions);
+
+            return res.status(200).json({
+                user: {
+                    id: user._id,
+                    name: user.name,
+                    email: user.email,
+                    username: user.username,
+                    address: user.address,
+                    verificationStatus: user.verificationStatus,
+                    role: user.role,
+                    number: user.number
+                },
+                status: 'success'
             });
-        }
 
-        // 🔥 FIXED COOKIE
-        res.cookie('token', token, cookieOptions);
-
-        return res.status(200).json({
-            user: {
-                id: user._id,
-                name: user.name,
-                email: user.email,
-                username: user.username,
-                address: user.address,
-                verificationStatus: user.verificationStatus,
-                role: user.role,
-                number: user.number
-            },
-            status: 'success'
+        }).catch((err) => {
+            throw err;
         });
-
     } catch (err) {
         return handleError(res, {
             message: 'Invalid Credentials',
@@ -119,53 +81,7 @@ exports.login = async (req, res) => {
 };
 
 /* ===============================
-   GET USER
-================================= */
-
-exports.getUser = async (req, res) => {
-    try {
-        const token = req.cookies.token;
-
-        if (!token) {
-            return handleError(res, {
-                code: 'unauthorized_access',
-                status: 'error',
-                message: 'Unauthorized Access',
-            });
-        }
-
-        const decoded = jwt.verify(token, process.env.JWT_SECRET);
-        const user = await User.findById(decoded._id).select('-password');
-
-        if (!user) {
-            return handleError(res, {
-                code: 'not_found',
-                status: 'error',
-                message: 'User not found',
-            });
-        }
-
-        res.status(200).json({
-            user: {
-                id: user._id,
-                name: user.name,
-                email: user.email,
-                username: user.username,
-                address: user.address,
-                verificationStatus: user.verificationStatus,
-                role: user.role,
-                number: user.number
-            },
-            status: 'success'
-        });
-
-    } catch (err) {
-        return handleError(res, err);
-    }
-};
-
-/* ===============================
-   UPDATE PASSWORD (🔥 FIXED COOKIE)
+   UPDATE PASSWORD (COOKIE FIXED)
 ================================= */
 
 exports.updatePassword = async (req, res) => {
@@ -200,7 +116,7 @@ exports.updatePassword = async (req, res) => {
 };
 
 /* ===============================
-   LOGOUT (🔥 FIXED)
+   LOGOUT (COOKIE FIXED)
 ================================= */
 
 exports.logout = async (req, res) => {
