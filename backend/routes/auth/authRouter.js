@@ -14,9 +14,7 @@ const handleError = require("../../utils/errorHandler");
 
 const router = express.Router();
 
-/* =====================================
-   SIGNUP
-===================================== */
+/* ================= SIGNUP ================= */
 
 router.post(
   "/signup",
@@ -28,9 +26,7 @@ router.post(
   authController.signup
 );
 
-/* =====================================
-   LOGIN
-===================================== */
+/* ================= LOGIN ================= */
 
 router.post(
   "/login",
@@ -41,22 +37,7 @@ router.post(
   authController.login
 );
 
-/* =====================================
-   VERIFY SELLER OTP
-===================================== */
-
-router.post(
-  "/verify-seller-otp",
-  [
-    check("email").isEmail(),
-    check("otp").notEmpty(),
-  ],
-  authController.verifySellerOTP
-);
-
-/* =====================================
-   CHECK LOGIN
-===================================== */
+/* ================= CHECK LOGIN ================= */
 
 router.get("/check", authenticateMiddleware, (req, res) =>
   res.status(200).json({
@@ -66,9 +47,7 @@ router.get("/check", authenticateMiddleware, (req, res) =>
   })
 );
 
-/* =====================================
-   VERIFY USER EMAIL
-===================================== */
+/* ================= VERIFY EMAIL ================= */
 
 router.post(
   "/verify",
@@ -107,29 +86,7 @@ router.post(
   }
 );
 
-/* =====================================
-   RESEND VERIFICATION CODE
-===================================== */
-
-router.post(
-  "/sendVerificationCodeAgain",
-  authenticateMiddleware,
-  async (req, res) => {
-    try {
-      const result = await sendVerificationCodeAgain(req.user.email);
-      res.status(200).json({
-        status: "success",
-        ...result,
-      });
-    } catch (err) {
-      return handleError(res, err);
-    }
-  }
-);
-
-/* =====================================
-   PROFILE
-===================================== */
+/* ================= PROFILE ================= */
 
 router.get(
   "/profile",
@@ -137,9 +94,7 @@ router.get(
   authController.getUser
 );
 
-/* =====================================
-   UPDATE PROFILE
-===================================== */
+/* ================= UPDATE PROFILE ================= */
 
 router.put(
   "/updateprofile",
@@ -155,9 +110,7 @@ router.put(
   authController.updateProfile
 );
 
-/* =====================================
-   UPDATE PASSWORD
-===================================== */
+/* ================= UPDATE PASSWORD ================= */
 
 router.put(
   "/updatepassword",
@@ -170,9 +123,7 @@ router.put(
   authController.updatePassword
 );
 
-/* =====================================
-   DELETE ACCOUNT
-===================================== */
+/* ================= DELETE ACCOUNT ================= */
 
 router.post(
   "/deleteaccount",
@@ -180,9 +131,7 @@ router.post(
   authController.deleteAccount
 );
 
-/* =====================================
-   LOGOUT
-===================================== */
+/* ================= LOGOUT ================= */
 
 router.post(
   "/logout",
@@ -190,9 +139,7 @@ router.post(
   authController.logout
 );
 
-/* =====================================
-   FORGOT PASSWORD
-===================================== */
+/* ================= FORGOT PASSWORD ================= */
 
 router.post(
   "/forgotpassword",
@@ -200,9 +147,7 @@ router.post(
   authController.forgotPassword
 );
 
-/* =====================================
-   RESET PASSWORD
-===================================== */
+/* ================= RESET PASSWORD ================= */
 
 router.put(
   "/resetpassword",
